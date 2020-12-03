@@ -6,6 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10"
     }
 }
 
@@ -23,5 +24,6 @@ allprojects {
             name 'Google'
         }
         google()
+        maven { url 'https://jitpack.io' }
     }
 }
