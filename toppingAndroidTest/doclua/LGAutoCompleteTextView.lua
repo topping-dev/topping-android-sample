@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 
----@class LGAutoCompleteTextView
+---@class LGAutoCompleteTextView:LGEditText
 local LGAutoCompleteTextView = Class()
 
 -------------------------------------------------------------------------------

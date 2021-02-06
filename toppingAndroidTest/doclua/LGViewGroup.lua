@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 
----@class LGViewGroup
+---@class LGViewGroup:LGView
 local LGViewGroup = Class()
 
 -------------------------------------------------------------------------------
@@ -8,6 +8,12 @@ local LGViewGroup = Class()
 ---@param lc LuaContext
 ---@return LGViewGroup
 function LGViewGroup.Create(lc)
+end
+
+-------------------------------------------------------------------------------
+---@function Gets view bindings
+---@return table<string,LGView>
+function LGViewGroup:GetBindings()
 end
 
 _G['LGViewGroup'] = LGViewGroup

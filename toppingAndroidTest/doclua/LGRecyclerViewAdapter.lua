@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 
----@class LGRecyclerViewAdapter
+---@class LGRecyclerViewAdapter:Adapter
 local LGRecyclerViewAdapter = Class()
 
 -------------------------------------------------------------------------------

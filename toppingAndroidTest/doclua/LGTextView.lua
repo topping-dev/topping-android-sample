@@ -1,14 +1,13 @@
 -------------------------------------------------------------------------------
 
----@class LGTextView
+---@class LGTextView:LGView
 local LGTextView = Class()
 
 -------------------------------------------------------------------------------
 ---@function Creates LGTextView Object From Lua.
 ---@param lc LuaContext
----@param luaId string
 ---@return LGTextView
-function LGTextView.Create(lc,luaId)
+function LGTextView.Create(lc)
 end
 
 -------------------------------------------------------------------------------
@@ -33,24 +32,6 @@ end
 ---@function Sets the text color
 ---@param color string
 function LGTextView:SetTextColor(color)
-end
-
--------------------------------------------------------------------------------
----@function Sets text changed listener
----@param lt fun(textView: LGTextView, view: LGView, s: string):void
-function LGTextView:SetTextChangedListener(lt)
-end
-
--------------------------------------------------------------------------------
----@function Sets before text changed listener
----@param lt fun(textView: LGTextView, view: LGView, s: string):void
-function LGTextView:SetBeforeTextChangedListener(lt)
-end
-
--------------------------------------------------------------------------------
----@function Sets after text changed listener
----@param lt fun(textView: LGTextView, view: LGView, s: string):void
-function LGTextView:SetAfterTextChangedListener(lt)
 end
 
 _G['LGTextView'] = LGTextView

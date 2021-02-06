@@ -1,15 +1,24 @@
 -------------------------------------------------------------------------------
 
----@class LuaNativeCall
+---@class LuaNativeCall:LuaInterface
 local LuaNativeCall = Class()
 
 -------------------------------------------------------------------------------
 ---@function Call native function on underlying system
----@param self userdata
+---@param obj userdata
 ---@param func string
----@param params HashMap< Integer, Object >
+---@param params userdata[]
 ---@return LuaObjectStore
-function LuaNativeCall.Call(self,func,params)
+function LuaNativeCall.Call(obj,func,params)
+end
+
+-------------------------------------------------------------------------------
+---@function Call native function on underlying system
+---@param cls string
+---@param func string
+---@param params userdata[]
+---@return LuaObjectStore
+function LuaNativeCall.CallClass(cls,func,params)
 end
 
 _G['LuaNativeCall'] = LuaNativeCall

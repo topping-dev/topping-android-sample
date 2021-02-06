@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 
----@class LGView
+---@class LGView:Object
 local LGView = Class()
 
 -------------------------------------------------------------------------------
@@ -37,7 +37,7 @@ end
 
 -------------------------------------------------------------------------------
 ---@function Set background ref
----@param backgroundRef string
+---@param backgroundRef LuaRef
 function LGView:SetBackgroundRef(backgroundRef)
 end
 

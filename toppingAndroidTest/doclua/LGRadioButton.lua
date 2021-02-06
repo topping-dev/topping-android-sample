@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 
----@class LGRadioButton
+---@class LGRadioButton:LGCompoundButton
 local LGRadioButton = Class()
 
 -------------------------------------------------------------------------------
@@ -8,12 +8,6 @@ local LGRadioButton = Class()
 ---@param lc LuaContext
 ---@return LGRadioButton
 function LGRadioButton.Create(lc)
-end
-
--------------------------------------------------------------------------------
----@function Sets combo changed listener
----@param lt fun(radioButton: LGRadioButton, context: LuaContext, isChecked: bool):void
-function LGRadioButton:SetOnCheckedChangedListener(lt)
 end
 
 _G['LGRadioButton'] = LGRadioButton

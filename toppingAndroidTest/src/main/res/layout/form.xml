@@ -38,7 +38,9 @@
 	<LGProgressBar
 	    lua:id="formTestProgressBar"
 	    android:layout_width="fill_parent"
-    	android:layout_height="wrap_content">
+    	android:layout_height="wrap_content"
+		style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+		android:max="100">
 	</LGProgressBar>
 	<LGImageView
 	    lua:id="formTestIv"

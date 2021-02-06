@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 
----@class LGDatePicker
+---@class LGDatePicker:LGFrameLayout
 local LGDatePicker = Class()
 
 -------------------------------------------------------------------------------
@@ -8,16 +8,6 @@ local LGDatePicker = Class()
 ---@param lc LuaContext
 ---@return LGDatePicker
 function LGDatePicker.Create(lc)
-end
-
--------------------------------------------------------------------------------
----@function Creates LGDatePicker Object From Lua.
----@param lc LuaContext
----@param day number
----@param month number
----@param year number
----@return LGDatePicker
-function LGDatePicker.Create(lc,day,month,year)
 end
 
 -------------------------------------------------------------------------------

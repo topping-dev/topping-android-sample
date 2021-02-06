@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 
----@class LGMapView
+---@class LGMapView:LGView
 local LGMapView = Class()
 
 -------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ end
 
 -------------------------------------------------------------------------------
 ---@function Adds marker to map with extended options
----@param points HashMap< Integer, LuaPoint >
+---@param points table<number,LuaPoint>
 ---@param strokeColor LuaColor
 ---@param fillColor LuaColor
 ---@return LuaMapPolygon

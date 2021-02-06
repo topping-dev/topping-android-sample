@@ -29,5 +29,6 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation 'com.google.android.gms:play-services-maps:11.0.2'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.4.10'
-    implementation files("libs/toppingAndroid.aar")
+    //implementation files("../../topping-android/toppingAndroid/build/outputs/aar/toppingAndroid-debug.aar")
+    implementation 'dev.topping:toppingandroid:0.1.2'
 }

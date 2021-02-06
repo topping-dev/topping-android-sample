@@ -26,6 +26,9 @@ function FormTestLL_Constructor(pGUI, luacontext)
 	local pb = pGUI:GetViewById("formTestProgressBar");
 	pb:SetMax(100);
 	pb:SetProgress(15);
+	local bindings = pGUI:GetBindings();
+	local pb2 = bindings.formTestProgressBar;
+    pb2:SetProgress(50);
 end
 
 LuaForm.RegisterFormEvent("formTestLL", LuaForm.FORM_EVENT_CREATE, FormTestLL_Constructor);

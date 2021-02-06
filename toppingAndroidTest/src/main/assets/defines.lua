@@ -22,24 +22,9 @@ MainUI = "testbed.xml";
 -- Startup Form
 MainForm = "Main";
 
--- Debug
-LuaDebug = 1;
-
---if LuaDebug is 0 lines after this line will not work
-
---require("mobdebug").start()
-
---Debugger configuration 
---Default 8192
---SocketBufferSize = 524288
-
---Default 1024
---LuaBufferSize = 1024
-
---Default 8192
---PBufferSize = 65536
-
---initconnection = require "debugger"
---initconnection("192.168.56.1", "10000", "luaidekey")
---initconnection("192.168.1.25", "10000", "luaidekey")
+-- Enable this for debug
+--package.cpath = package.cpath .. ';lib?.so'
+--local dbg = require('emmy_core')
+--dbg.tcpConnect('pc ip address', 9966)
+--dbg.waitIDE(5000)
 

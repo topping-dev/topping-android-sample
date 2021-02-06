@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 
----@class LuaThread
+---@class LuaThread:LuaInterface
 local LuaThread = Class()
 
 -------------------------------------------------------------------------------
@@ -19,13 +19,7 @@ end
 ---@function Create new thread
 ---@param lt fun(thread: LuaThread):void
 ---@return LuaThread
-function LuaThread.NewThread(lt)
-end
-
--------------------------------------------------------------------------------
----@function Sleep thread
----@param milliseconds long
-function LuaThread.Sleep(milliseconds)
+function LuaThread.New(lt)
 end
 
 -------------------------------------------------------------------------------
@@ -41,13 +35,18 @@ end
 
 -------------------------------------------------------------------------------
 ---@function Notify thread
----@param milliseconds number
-function LuaThread:Notify(milliseconds)
+function LuaThread:Notify()
 end
 
 -------------------------------------------------------------------------------
 ---@function Interrupt thread
 function LuaThread:Interrupt()
+end
+
+-------------------------------------------------------------------------------
+---@function Sleep thread
+---@param milliseconds long
+function LuaThread:Sleep(milliseconds)
 end
 
 _G['LuaThread'] = LuaThread

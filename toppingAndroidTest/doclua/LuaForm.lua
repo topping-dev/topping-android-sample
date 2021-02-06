@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 
----@class LuaForm
+---@class LuaForm:FragmentActivity
 local LuaForm = Class()
 
 -------------------------------------------------------------------------------
@@ -47,10 +47,16 @@ function LuaForm:GetContext()
 end
 
 -------------------------------------------------------------------------------
----@function Gets the view of fragment.
+---@function Gets the view of form.
 ---@param lId string
 ---@return LGView
 function LuaForm:GetViewById(lId)
+end
+
+-------------------------------------------------------------------------------
+---@function Gets the view bindings
+---@return table<string,LGView>
+function LuaForm:GetBindings()
 end
 
 -------------------------------------------------------------------------------

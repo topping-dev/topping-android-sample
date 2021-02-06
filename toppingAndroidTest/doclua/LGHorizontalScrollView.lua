@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 
----@class LGHorizontalScrollView
+---@class LGHorizontalScrollView:LGFrameLayout
 local LGHorizontalScrollView = Class()
 
 -------------------------------------------------------------------------------
