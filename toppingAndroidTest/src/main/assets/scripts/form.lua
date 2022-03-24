@@ -12,15 +12,26 @@ end
 
 
 function FormTestLL_Constructor(pGUI, luacontext)
+    local autocompletetextview = pGUI:GetViewById("formTestAutoCompTV");
+    print("xxxxxxxxx");
+    local autoCompleteAdapter = LGAdapterView.Create(luacontext, "AutoCompleteAdapter");
+    print("yyyyyyyy");
+    autoCompleteAdapter:AddValue("AutoComplete 1");
+    autoCompleteAdapter:AddValue("AutoComplete 2");
+    print("zzzzzzz");
+    print(autocompletetextview)
+    autocompletetextview:SetAdapter(autoCompleteAdapter);
+    autoCompleteAdapter:Notify();
+    print("ttttttt");
 	local button = pGUI:GetViewById("formTestButton");
 	button:SetOnClickListener(TestButton_Click);
 	local checkbox = pGUI:GetViewById("formTestCheckBox");
 	checkbox:SetOnCheckedChangedListener(TestCheckBox_CheckedChanged);
 	local combobox = pGUI:GetViewById("formTestComboBox");
-	combobox:AddComboItem("Item 1", 1);
-	combobox:AddComboItem("Item 2", 2);
-	combobox:AddComboItem("Item 3", 3);
-	combobox:AddComboItem("Item 4", 4);
+	combobox:AddItem("Item 1", 1);
+	combobox:AddItem("Item 2", 2);
+	combobox:AddItem("Item 3", 3);
+	combobox:AddItem("Item 4", 4);
 	combobox:SetOnComboChangedListener(TestComboBox_Changed);
 	local edittext = pGUI:GetViewById("formTestEt");
 	local pb = pGUI:GetViewById("formTestProgressBar");

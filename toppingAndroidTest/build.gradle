@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 apply from: 'luaprocessor.gradle'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion '29.0.3'
+    compileSdkVersion 31
+    buildToolsVersion '31.0.0'
+    ndkVersion "16.1.4479499"
 
     defaultConfig {
         applicationId "dev.topping.androidtest"
         minSdkVersion 14
-        targetSdkVersion 26
     }
 
     buildTypes {
@@ -24,11 +24,12 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation "androidx.recyclerview:recyclerview:1.1.0"
-    implementation 'com.google.android.gms:play-services-maps:11.0.2'
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.4.10'
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.core:core-ktx:1.6.0"
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.10'
+    implementation 'com.google.android.material:material:1.5.0'
     //implementation files("../../topping-android/toppingAndroid/build/outputs/aar/toppingAndroid-debug.aar")
-    implementation 'dev.topping:toppingandroid:0.1.2'
+    implementation 'dev.topping:toppingandroid:0.1.6'
 }

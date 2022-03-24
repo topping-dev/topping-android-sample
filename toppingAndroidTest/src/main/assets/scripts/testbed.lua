@@ -25,10 +25,8 @@ function ListViewTest_Constructor(pGUI, luacontext)
 		elseif index == 2 then
 			LuaForm.CreateWithUI(form:GetContext(), "svTest", "sv.xml");
 		elseif index == 3 then
-			--Map
-		elseif index == 4 then
 			LuaDialog.MessageBox(form:GetContext(), "Title", "Message");
-		elseif index == 5 then
+		elseif index == 4 then
 			local datePicker = LuaDialog.Create(form:GetContext(), LuaDialog.DIALOG_TYPE_DATEPICKER);
 			datePicker:SetPositiveButton("Ok", LuaTranslator.Register(datePicker, "DatePicker_PositiveButton"));
 			datePicker:SetNegativeButton("Cancel", LuaTranslator.Register(datePicker, "DatePicker_NegativeButton"));
@@ -36,7 +34,7 @@ function ListViewTest_Constructor(pGUI, luacontext)
 			datePicker:SetMessage("Message");
 			datePicker:SetDateManual(17, 7, 1985);
 			datePicker:Show();
-		elseif index == 6 then
+		elseif index == 5 then
 			local timePicker = LuaDialog.Create(form:GetContext(), LuaDialog.DIALOG_TYPE_TIMEPICKER);
 			timePicker:SetPositiveButton("Ok", LuaTranslator.Register(timePicker, "TimePicker_PositiveButton"));
 			timePicker:SetNegativeButton("Cancel", LuaTranslator.Register(timePicker, "TimePicker_NegativeButton"));
@@ -63,11 +61,10 @@ function ListViewTest_Constructor(pGUI, luacontext)
 	pAdapter:AddValue(0, "Form Ui");
 	pAdapter:AddValue(1, "Horizontal Scroll View");
 	pAdapter:AddValue(2, "Vertical Scroll View");
-	pAdapter:AddValue(3, "Map");
-	pAdapter:AddValue(4, "Message Box");
-	pAdapter:AddValue(5, "Date Picker Dialog");
-	pAdapter:AddValue(6, "Time Picker Dialog");
-	pAdapter:AddValue(7, "Toast");
+	pAdapter:AddValue(3, "Message Box");
+	pAdapter:AddValue(4, "Date Picker Dialog");
+	pAdapter:AddValue(5, "Time Picker Dialog");
+	pAdapter:AddValue(6, "Toast");
 	pGUI:SetAdapter(pAdapter);
 	pAdapter:Notify();
 end
