@@ -68,7 +68,15 @@ mtrl_bottom_sheet_slide_in=2130771997,
 ---@type LuaRef
 mtrl_bottom_sheet_slide_out=2130771998,
 ---@type LuaRef
-mtrl_card_lowers_interpolator=2130771999
+mtrl_card_lowers_interpolator=2130771999,
+---@type LuaRef
+nav_default_enter_anim=2130772000,
+---@type LuaRef
+nav_default_exit_anim=2130772001,
+---@type LuaRef
+nav_default_pop_enter_anim=2130772002,
+---@type LuaRef
+nav_default_pop_exit_anim=2130772003
 
 }
 LR.anim = anim
@@ -102,2061 +110,2103 @@ linear_indeterminate_line2_head_interpolator=2130837515,
 ---@type LuaRef
 linear_indeterminate_line2_tail_interpolator=2130837516,
 ---@type LuaRef
-m3_btn_elevated_btn_state_list_anim=2130837517,
+mtrl_btn_state_list_anim=2130837517,
 ---@type LuaRef
-m3_btn_state_list_anim=2130837518,
+mtrl_btn_unelevated_state_list_anim=2130837518,
 ---@type LuaRef
-m3_card_elevated_state_list_anim=2130837519,
+mtrl_card_state_list_anim=2130837519,
 ---@type LuaRef
-m3_card_state_list_anim=2130837520,
+mtrl_chip_state_list_anim=2130837520,
 ---@type LuaRef
-m3_chip_state_list_anim=2130837521,
+mtrl_extended_fab_change_size_collapse_motion_spec=2130837521,
 ---@type LuaRef
-m3_elevated_chip_state_list_anim=2130837522,
+mtrl_extended_fab_change_size_expand_motion_spec=2130837522,
 ---@type LuaRef
-mtrl_btn_state_list_anim=2130837523,
+mtrl_extended_fab_hide_motion_spec=2130837523,
 ---@type LuaRef
-mtrl_btn_unelevated_state_list_anim=2130837524,
+mtrl_extended_fab_show_motion_spec=2130837524,
 ---@type LuaRef
-mtrl_card_state_list_anim=2130837525,
+mtrl_extended_fab_state_list_animator=2130837525,
 ---@type LuaRef
-mtrl_chip_state_list_anim=2130837526,
+mtrl_fab_hide_motion_spec=2130837526,
 ---@type LuaRef
-mtrl_extended_fab_change_size_collapse_motion_spec=2130837527,
+mtrl_fab_show_motion_spec=2130837527,
 ---@type LuaRef
-mtrl_extended_fab_change_size_expand_motion_spec=2130837528,
+mtrl_fab_transformation_sheet_collapse_spec=2130837528,
 ---@type LuaRef
-mtrl_extended_fab_hide_motion_spec=2130837529,
+mtrl_fab_transformation_sheet_expand_spec=2130837529,
 ---@type LuaRef
-mtrl_extended_fab_show_motion_spec=2130837530,
+nav_default_enter_anim=2130837530,
 ---@type LuaRef
-mtrl_extended_fab_state_list_animator=2130837531,
+nav_default_exit_anim=2130837531,
 ---@type LuaRef
-mtrl_fab_hide_motion_spec=2130837532,
+nav_default_pop_enter_anim=2130837532,
 ---@type LuaRef
-mtrl_fab_show_motion_spec=2130837533,
----@type LuaRef
-mtrl_fab_transformation_sheet_collapse_spec=2130837534,
----@type LuaRef
-mtrl_fab_transformation_sheet_expand_spec=2130837535
+nav_default_pop_exit_anim=2130837533
 
 }
 LR.animator = animator
 
+---@class array
+local array = {
+---@type LuaRef
+colors=2130903040,
+---@type LuaRef
+mole=2130903041
+
+}
+LR.array = array
+
 ---@class attr
 local attr = {
 ---@type LuaRef
-actionBarDivider=2130903040,
+SharedValue=2130968576,
 ---@type LuaRef
-actionBarItemBackground=2130903041,
+SharedValueId=2130968577,
 ---@type LuaRef
-actionBarPopupTheme=2130903042,
+action=2130968578,
 ---@type LuaRef
-actionBarSize=2130903043,
+actionBarDivider=2130968579,
 ---@type LuaRef
-actionBarSplitStyle=2130903044,
+actionBarItemBackground=2130968580,
 ---@type LuaRef
-actionBarStyle=2130903045,
+actionBarPopupTheme=2130968581,
 ---@type LuaRef
-actionBarTabBarStyle=2130903046,
+actionBarSize=2130968582,
 ---@type LuaRef
-actionBarTabStyle=2130903047,
+actionBarSplitStyle=2130968583,
 ---@type LuaRef
-actionBarTabTextStyle=2130903048,
+actionBarStyle=2130968584,
 ---@type LuaRef
-actionBarTheme=2130903049,
+actionBarTabBarStyle=2130968585,
 ---@type LuaRef
-actionBarWidgetTheme=2130903050,
+actionBarTabStyle=2130968586,
 ---@type LuaRef
-actionButtonStyle=2130903051,
+actionBarTabTextStyle=2130968587,
 ---@type LuaRef
-actionDropDownStyle=2130903052,
+actionBarTheme=2130968588,
 ---@type LuaRef
-actionLayout=2130903053,
+actionBarWidgetTheme=2130968589,
 ---@type LuaRef
-actionMenuTextAppearance=2130903054,
+actionButtonStyle=2130968590,
 ---@type LuaRef
-actionMenuTextColor=2130903055,
+actionDropDownStyle=2130968591,
 ---@type LuaRef
-actionModeBackground=2130903056,
+actionLayout=2130968592,
 ---@type LuaRef
-actionModeCloseButtonStyle=2130903057,
+actionMenuTextAppearance=2130968593,
 ---@type LuaRef
-actionModeCloseContentDescription=2130903058,
+actionMenuTextColor=2130968594,
 ---@type LuaRef
-actionModeCloseDrawable=2130903059,
+actionModeBackground=2130968595,
 ---@type LuaRef
-actionModeCopyDrawable=2130903060,
+actionModeCloseButtonStyle=2130968596,
 ---@type LuaRef
-actionModeCutDrawable=2130903061,
+actionModeCloseContentDescription=2130968597,
 ---@type LuaRef
-actionModeFindDrawable=2130903062,
+actionModeCloseDrawable=2130968598,
 ---@type LuaRef
-actionModePasteDrawable=2130903063,
+actionModeCopyDrawable=2130968599,
 ---@type LuaRef
-actionModePopupWindowStyle=2130903064,
+actionModeCutDrawable=2130968600,
 ---@type LuaRef
-actionModeSelectAllDrawable=2130903065,
+actionModeFindDrawable=2130968601,
 ---@type LuaRef
-actionModeShareDrawable=2130903066,
+actionModePasteDrawable=2130968602,
 ---@type LuaRef
-actionModeSplitBackground=2130903067,
+actionModePopupWindowStyle=2130968603,
 ---@type LuaRef
-actionModeStyle=2130903068,
+actionModeSelectAllDrawable=2130968604,
 ---@type LuaRef
-actionModeTheme=2130903069,
+actionModeShareDrawable=2130968605,
 ---@type LuaRef
-actionModeWebSearchDrawable=2130903070,
+actionModeSplitBackground=2130968606,
 ---@type LuaRef
-actionOverflowButtonStyle=2130903071,
+actionModeStyle=2130968607,
 ---@type LuaRef
-actionOverflowMenuStyle=2130903072,
+actionModeTheme=2130968608,
 ---@type LuaRef
-actionProviderClass=2130903073,
+actionModeWebSearchDrawable=2130968609,
 ---@type LuaRef
-actionTextColorAlpha=2130903074,
+actionOverflowButtonStyle=2130968610,
 ---@type LuaRef
-actionViewClass=2130903075,
+actionOverflowMenuStyle=2130968611,
 ---@type LuaRef
-activityChooserViewStyle=2130903076,
+actionProviderClass=2130968612,
 ---@type LuaRef
-alertDialogButtonGroupStyle=2130903077,
+actionTextColorAlpha=2130968613,
 ---@type LuaRef
-alertDialogCenterButtons=2130903078,
+actionViewClass=2130968614,
 ---@type LuaRef
-alertDialogStyle=2130903079,
+activityChooserViewStyle=2130968615,
 ---@type LuaRef
-alertDialogTheme=2130903080,
+alertDialogButtonGroupStyle=2130968616,
 ---@type LuaRef
-allowStacking=2130903081,
+alertDialogCenterButtons=2130968617,
 ---@type LuaRef
-alpha=2130903082,
+alertDialogStyle=2130968618,
 ---@type LuaRef
-alphabeticModifiers=2130903083,
+alertDialogTheme=2130968619,
 ---@type LuaRef
-altSrc=2130903084,
+allowStacking=2130968620,
 ---@type LuaRef
-animate_relativeTo=2130903085,
+alpha=2130968621,
 ---@type LuaRef
-animationMode=2130903086,
+alphabeticModifiers=2130968622,
 ---@type LuaRef
-appBarLayoutStyle=2130903087,
+altSrc=2130968623,
 ---@type LuaRef
-applyMotionScene=2130903088,
+animateCircleAngleTo=2130968624,
 ---@type LuaRef
-arcMode=2130903089,
+animateRelativeTo=2130968625,
 ---@type LuaRef
-arrowHeadLength=2130903090,
+animationMode=2130968626,
 ---@type LuaRef
-arrowShaftLength=2130903091,
+appBarLayoutStyle=2130968627,
 ---@type LuaRef
-attributeName=2130903092,
+applyMotionScene=2130968628,
 ---@type LuaRef
-autoCompleteTextViewStyle=2130903093,
+arcMode=2130968629,
 ---@type LuaRef
-autoSizeMaxTextSize=2130903094,
+argType=2130968630,
 ---@type LuaRef
-autoSizeMinTextSize=2130903095,
+arrowHeadLength=2130968631,
 ---@type LuaRef
-autoSizePresetSizes=2130903096,
+arrowShaftLength=2130968632,
 ---@type LuaRef
-autoSizeStepGranularity=2130903097,
+attributeName=2130968633,
 ---@type LuaRef
-autoSizeTextType=2130903098,
+autoCompleteMode=2130968634,
 ---@type LuaRef
-autoTransition=2130903099,
+autoCompleteTextViewStyle=2130968635,
 ---@type LuaRef
-background=2130903100,
+autoSizeMaxTextSize=2130968636,
 ---@type LuaRef
-backgroundColor=2130903101,
+autoSizeMinTextSize=2130968637,
 ---@type LuaRef
-backgroundInsetBottom=2130903102,
+autoSizePresetSizes=2130968638,
 ---@type LuaRef
-backgroundInsetEnd=2130903103,
+autoSizeStepGranularity=2130968639,
 ---@type LuaRef
-backgroundInsetStart=2130903104,
+autoSizeTextType=2130968640,
 ---@type LuaRef
-backgroundInsetTop=2130903105,
+autoTransition=2130968641,
 ---@type LuaRef
-backgroundOverlayColorAlpha=2130903106,
+background=2130968642,
 ---@type LuaRef
-backgroundSplit=2130903107,
+backgroundColor=2130968643,
 ---@type LuaRef
-backgroundStacked=2130903108,
+backgroundInsetBottom=2130968644,
 ---@type LuaRef
-backgroundTint=2130903109,
+backgroundInsetEnd=2130968645,
 ---@type LuaRef
-backgroundTintMode=2130903110,
+backgroundInsetStart=2130968646,
 ---@type LuaRef
-badgeGravity=2130903111,
+backgroundInsetTop=2130968647,
 ---@type LuaRef
-badgeRadius=2130903112,
+backgroundOverlayColorAlpha=2130968648,
 ---@type LuaRef
-badgeStyle=2130903113,
+backgroundSplit=2130968649,
 ---@type LuaRef
-badgeTextColor=2130903114,
+backgroundStacked=2130968650,
 ---@type LuaRef
-badgeWidePadding=2130903115,
+backgroundTint=2130968651,
 ---@type LuaRef
-badgeWithTextRadius=2130903116,
+backgroundTintMode=2130968652,
 ---@type LuaRef
-barLength=2130903117,
+badgeGravity=2130968653,
 ---@type LuaRef
-barrierAllowsGoneWidgets=2130903118,
+badgeStyle=2130968654,
 ---@type LuaRef
-barrierDirection=2130903119,
+badgeTextColor=2130968655,
 ---@type LuaRef
-barrierMargin=2130903120,
+barLength=2130968656,
 ---@type LuaRef
-behavior_autoHide=2130903121,
+barrierAllowsGoneWidgets=2130968657,
 ---@type LuaRef
-behavior_autoShrink=2130903122,
+barrierDirection=2130968658,
 ---@type LuaRef
-behavior_draggable=2130903123,
+barrierMargin=2130968659,
 ---@type LuaRef
-behavior_expandedOffset=2130903124,
+behavior_autoHide=2130968660,
 ---@type LuaRef
-behavior_fitToContents=2130903125,
+behavior_autoShrink=2130968661,
 ---@type LuaRef
-behavior_halfExpandedRatio=2130903126,
+behavior_draggable=2130968662,
 ---@type LuaRef
-behavior_hideable=2130903127,
+behavior_expandedOffset=2130968663,
 ---@type LuaRef
-behavior_overlapTop=2130903128,
+behavior_fitToContents=2130968664,
 ---@type LuaRef
-behavior_peekHeight=2130903129,
+behavior_halfExpandedRatio=2130968665,
 ---@type LuaRef
-behavior_saveFlags=2130903130,
+behavior_hideable=2130968666,
 ---@type LuaRef
-behavior_skipCollapsed=2130903131,
+behavior_overlapTop=2130968667,
 ---@type LuaRef
-borderWidth=2130903132,
+behavior_peekHeight=2130968668,
 ---@type LuaRef
-borderlessButtonStyle=2130903133,
+behavior_saveFlags=2130968669,
 ---@type LuaRef
-bottomAppBarStyle=2130903134,
+behavior_skipCollapsed=2130968670,
 ---@type LuaRef
-bottomInsetScrimEnabled=2130903135,
+blendSrc=2130968671,
 ---@type LuaRef
-bottomNavigationStyle=2130903136,
+borderRound=2130968672,
 ---@type LuaRef
-bottomSheetDialogTheme=2130903137,
+borderRoundPercent=2130968673,
 ---@type LuaRef
-bottomSheetStyle=2130903138,
+borderWidth=2130968674,
 ---@type LuaRef
-boxBackgroundColor=2130903139,
+borderlessButtonStyle=2130968675,
 ---@type LuaRef
-boxBackgroundMode=2130903140,
+bottomAppBarStyle=2130968676,
 ---@type LuaRef
-boxCollapsedPaddingTop=2130903141,
+bottomNavigationStyle=2130968677,
 ---@type LuaRef
-boxCornerRadiusBottomEnd=2130903142,
+bottomSheetDialogTheme=2130968678,
 ---@type LuaRef
-boxCornerRadiusBottomStart=2130903143,
+bottomSheetStyle=2130968679,
 ---@type LuaRef
-boxCornerRadiusTopEnd=2130903144,
+boxBackgroundColor=2130968680,
 ---@type LuaRef
-boxCornerRadiusTopStart=2130903145,
+boxBackgroundMode=2130968681,
 ---@type LuaRef
-boxStrokeColor=2130903146,
+boxCollapsedPaddingTop=2130968682,
 ---@type LuaRef
-boxStrokeErrorColor=2130903147,
+boxCornerRadiusBottomEnd=2130968683,
 ---@type LuaRef
-boxStrokeWidth=2130903148,
+boxCornerRadiusBottomStart=2130968684,
 ---@type LuaRef
-boxStrokeWidthFocused=2130903149,
+boxCornerRadiusTopEnd=2130968685,
 ---@type LuaRef
-brightness=2130903150,
+boxCornerRadiusTopStart=2130968686,
 ---@type LuaRef
-buttonBarButtonStyle=2130903151,
+boxStrokeColor=2130968687,
 ---@type LuaRef
-buttonBarNegativeButtonStyle=2130903152,
+boxStrokeErrorColor=2130968688,
 ---@type LuaRef
-buttonBarNeutralButtonStyle=2130903153,
+boxStrokeWidth=2130968689,
 ---@type LuaRef
-buttonBarPositiveButtonStyle=2130903154,
+boxStrokeWidthFocused=2130968690,
 ---@type LuaRef
-buttonBarStyle=2130903155,
+brightness=2130968691,
 ---@type LuaRef
-buttonCompat=2130903156,
+buttonBarButtonStyle=2130968692,
 ---@type LuaRef
-buttonGravity=2130903157,
+buttonBarNegativeButtonStyle=2130968693,
 ---@type LuaRef
-buttonIconDimen=2130903158,
+buttonBarNeutralButtonStyle=2130968694,
 ---@type LuaRef
-buttonPanelSideLayout=2130903159,
+buttonBarPositiveButtonStyle=2130968695,
 ---@type LuaRef
-buttonStyle=2130903160,
+buttonBarStyle=2130968696,
 ---@type LuaRef
-buttonStyleSmall=2130903161,
+buttonCompat=2130968697,
 ---@type LuaRef
-buttonTint=2130903162,
+buttonGravity=2130968698,
 ---@type LuaRef
-buttonTintMode=2130903163,
+buttonIconDimen=2130968699,
 ---@type LuaRef
-cardBackgroundColor=2130903164,
+buttonPanelSideLayout=2130968700,
 ---@type LuaRef
-cardCornerRadius=2130903165,
+buttonStyle=2130968701,
 ---@type LuaRef
-cardElevation=2130903166,
+buttonStyleSmall=2130968702,
 ---@type LuaRef
-cardForegroundColor=2130903167,
+buttonTint=2130968703,
 ---@type LuaRef
-cardMaxElevation=2130903168,
+buttonTintMode=2130968704,
 ---@type LuaRef
-cardPreventCornerOverlap=2130903169,
+cardBackgroundColor=2130968705,
 ---@type LuaRef
-cardUseCompatPadding=2130903170,
+cardCornerRadius=2130968706,
 ---@type LuaRef
-cardViewStyle=2130903171,
+cardElevation=2130968707,
 ---@type LuaRef
-chainUseRtl=2130903172,
+cardForegroundColor=2130968708,
 ---@type LuaRef
-checkboxStyle=2130903173,
+cardMaxElevation=2130968709,
 ---@type LuaRef
-checkedButton=2130903174,
+cardPreventCornerOverlap=2130968710,
 ---@type LuaRef
-checkedChip=2130903175,
+cardUseCompatPadding=2130968711,
 ---@type LuaRef
-checkedIcon=2130903176,
+cardViewStyle=2130968712,
 ---@type LuaRef
-checkedIconEnabled=2130903177,
+carousel_backwardTransition=2130968713,
 ---@type LuaRef
-checkedIconMargin=2130903178,
+carousel_emptyViewsBehavior=2130968714,
 ---@type LuaRef
-checkedIconSize=2130903179,
+carousel_firstView=2130968715,
 ---@type LuaRef
-checkedIconTint=2130903180,
+carousel_forwardTransition=2130968716,
 ---@type LuaRef
-checkedIconVisible=2130903181,
+carousel_infinite=2130968717,
 ---@type LuaRef
-checkedTextViewStyle=2130903182,
+carousel_nextState=2130968718,
 ---@type LuaRef
-chipBackgroundColor=2130903183,
+carousel_previousState=2130968719,
 ---@type LuaRef
-chipCornerRadius=2130903184,
+carousel_touchUpMode=2130968720,
 ---@type LuaRef
-chipEndPadding=2130903185,
+carousel_touchUp_dampeningFactor=2130968721,
 ---@type LuaRef
-chipGroupStyle=2130903186,
+carousel_touchUp_velocityThreshold=2130968722,
 ---@type LuaRef
-chipIcon=2130903187,
+chainUseRtl=2130968723,
 ---@type LuaRef
-chipIconEnabled=2130903188,
+checkboxStyle=2130968724,
 ---@type LuaRef
-chipIconSize=2130903189,
+checkedButton=2130968725,
 ---@type LuaRef
-chipIconTint=2130903190,
+checkedChip=2130968726,
 ---@type LuaRef
-chipIconVisible=2130903191,
+checkedIcon=2130968727,
 ---@type LuaRef
-chipMinHeight=2130903192,
+checkedIconEnabled=2130968728,
 ---@type LuaRef
-chipMinTouchTargetSize=2130903193,
+checkedIconMargin=2130968729,
 ---@type LuaRef
-chipSpacing=2130903194,
+checkedIconSize=2130968730,
 ---@type LuaRef
-chipSpacingHorizontal=2130903195,
+checkedIconTint=2130968731,
 ---@type LuaRef
-chipSpacingVertical=2130903196,
+checkedIconVisible=2130968732,
 ---@type LuaRef
-chipStandaloneStyle=2130903197,
+checkedTextViewStyle=2130968733,
 ---@type LuaRef
-chipStartPadding=2130903198,
+chipBackgroundColor=2130968734,
 ---@type LuaRef
-chipStrokeColor=2130903199,
+chipCornerRadius=2130968735,
 ---@type LuaRef
-chipStrokeWidth=2130903200,
+chipEndPadding=2130968736,
 ---@type LuaRef
-chipStyle=2130903201,
+chipGroupStyle=2130968737,
 ---@type LuaRef
-chipSurfaceColor=2130903202,
+chipIcon=2130968738,
 ---@type LuaRef
-circleRadius=2130903203,
+chipIconEnabled=2130968739,
 ---@type LuaRef
-circularProgressIndicatorStyle=2130903204,
+chipIconSize=2130968740,
 ---@type LuaRef
-clickAction=2130903205,
+chipIconTint=2130968741,
 ---@type LuaRef
-clockFaceBackgroundColor=2130903206,
+chipIconVisible=2130968742,
 ---@type LuaRef
-clockHandColor=2130903207,
+chipMinHeight=2130968743,
 ---@type LuaRef
-clockIcon=2130903208,
+chipMinTouchTargetSize=2130968744,
 ---@type LuaRef
-clockNumberTextColor=2130903209,
+chipSpacing=2130968745,
 ---@type LuaRef
-closeIcon=2130903210,
+chipSpacingHorizontal=2130968746,
 ---@type LuaRef
-closeIconEnabled=2130903211,
+chipSpacingVertical=2130968747,
 ---@type LuaRef
-closeIconEndPadding=2130903212,
+chipStandaloneStyle=2130968748,
 ---@type LuaRef
-closeIconSize=2130903213,
+chipStartPadding=2130968749,
 ---@type LuaRef
-closeIconStartPadding=2130903214,
+chipStrokeColor=2130968750,
 ---@type LuaRef
-closeIconTint=2130903215,
+chipStrokeWidth=2130968751,
 ---@type LuaRef
-closeIconVisible=2130903216,
+chipStyle=2130968752,
 ---@type LuaRef
-closeItemLayout=2130903217,
+chipSurfaceColor=2130968753,
 ---@type LuaRef
-collapseContentDescription=2130903218,
+circleRadius=2130968754,
 ---@type LuaRef
-collapseIcon=2130903219,
+circularProgressIndicatorStyle=2130968755,
 ---@type LuaRef
-collapsedSize=2130903220,
+circularflow_angles=2130968756,
 ---@type LuaRef
-collapsedTitleGravity=2130903221,
+circularflow_defaultAngle=2130968757,
 ---@type LuaRef
-collapsedTitleTextAppearance=2130903222,
+circularflow_defaultRadius=2130968758,
 ---@type LuaRef
-collapsedTitleTextColor=2130903223,
+circularflow_radiusInDP=2130968759,
 ---@type LuaRef
-collapsingToolbarLayoutLargeSize=2130903224,
+circularflow_viewCenter=2130968760,
 ---@type LuaRef
-collapsingToolbarLayoutLargeStyle=2130903225,
+clearsTag=2130968761,
 ---@type LuaRef
-collapsingToolbarLayoutMediumSize=2130903226,
+clickAction=2130968762,
 ---@type LuaRef
-collapsingToolbarLayoutMediumStyle=2130903227,
+clockFaceBackgroundColor=2130968763,
 ---@type LuaRef
-collapsingToolbarLayoutStyle=2130903228,
+clockHandColor=2130968764,
 ---@type LuaRef
-color=2130903229,
+clockIcon=2130968765,
 ---@type LuaRef
-colorAccent=2130903230,
+clockNumberTextColor=2130968766,
 ---@type LuaRef
-colorBackgroundFloating=2130903231,
+closeIcon=2130968767,
 ---@type LuaRef
-colorButtonNormal=2130903232,
+closeIconEnabled=2130968768,
 ---@type LuaRef
-colorContainer=2130903233,
+closeIconEndPadding=2130968769,
 ---@type LuaRef
-colorControlActivated=2130903234,
+closeIconSize=2130968770,
 ---@type LuaRef
-colorControlHighlight=2130903235,
+closeIconStartPadding=2130968771,
 ---@type LuaRef
-colorControlNormal=2130903236,
+closeIconTint=2130968772,
 ---@type LuaRef
-colorError=2130903237,
+closeIconVisible=2130968773,
 ---@type LuaRef
-colorErrorContainer=2130903238,
+closeItemLayout=2130968774,
 ---@type LuaRef
-colorOnBackground=2130903239,
+collapseContentDescription=2130968775,
 ---@type LuaRef
-colorOnContainer=2130903240,
+collapseIcon=2130968776,
 ---@type LuaRef
-colorOnError=2130903241,
+collapsedSize=2130968777,
 ---@type LuaRef
-colorOnErrorContainer=2130903242,
+collapsedTitleGravity=2130968778,
 ---@type LuaRef
-colorOnPrimary=2130903243,
+collapsedTitleTextAppearance=2130968779,
 ---@type LuaRef
-colorOnPrimaryContainer=2130903244,
+collapsingToolbarLayoutStyle=2130968780,
 ---@type LuaRef
-colorOnPrimarySurface=2130903245,
+color=2130968781,
 ---@type LuaRef
-colorOnSecondary=2130903246,
+colorAccent=2130968782,
 ---@type LuaRef
-colorOnSecondaryContainer=2130903247,
+colorBackgroundFloating=2130968783,
 ---@type LuaRef
-colorOnSurface=2130903248,
+colorButtonNormal=2130968784,
 ---@type LuaRef
-colorOnSurfaceInverse=2130903249,
+colorControlActivated=2130968785,
 ---@type LuaRef
-colorOnSurfaceVariant=2130903250,
+colorControlHighlight=2130968786,
 ---@type LuaRef
-colorOnTertiary=2130903251,
+colorControlNormal=2130968787,
 ---@type LuaRef
-colorOnTertiaryContainer=2130903252,
+colorError=2130968788,
 ---@type LuaRef
-colorOutline=2130903253,
+colorOnBackground=2130968789,
 ---@type LuaRef
-colorPrimary=2130903254,
+colorOnError=2130968790,
 ---@type LuaRef
-colorPrimaryContainer=2130903255,
+colorOnPrimary=2130968791,
 ---@type LuaRef
-colorPrimaryDark=2130903256,
+colorOnPrimarySurface=2130968792,
 ---@type LuaRef
-colorPrimaryInverse=2130903257,
+colorOnSecondary=2130968793,
 ---@type LuaRef
-colorPrimarySurface=2130903258,
+colorOnSurface=2130968794,
 ---@type LuaRef
-colorPrimaryVariant=2130903259,
+colorPrimary=2130968795,
 ---@type LuaRef
-colorSecondary=2130903260,
+colorPrimaryDark=2130968796,
 ---@type LuaRef
-colorSecondaryContainer=2130903261,
+colorPrimarySurface=2130968797,
 ---@type LuaRef
-colorSecondaryVariant=2130903262,
+colorPrimaryVariant=2130968798,
 ---@type LuaRef
-colorSurface=2130903263,
+colorSecondary=2130968799,
 ---@type LuaRef
-colorSurfaceInverse=2130903264,
+colorSecondaryVariant=2130968800,
 ---@type LuaRef
-colorSurfaceVariant=2130903265,
+colorSurface=2130968801,
 ---@type LuaRef
-colorSwitchThumbNormal=2130903266,
+colorSwitchThumbNormal=2130968802,
 ---@type LuaRef
-colorTertiary=2130903267,
+commitIcon=2130968803,
 ---@type LuaRef
-colorTertiaryContainer=2130903268,
+constraintRotate=2130968804,
 ---@type LuaRef
-commitIcon=2130903269,
+constraintSet=2130968805,
 ---@type LuaRef
-constraintSet=2130903270,
+constraintSetEnd=2130968806,
 ---@type LuaRef
-constraintSetEnd=2130903271,
+constraintSetStart=2130968807,
 ---@type LuaRef
-constraintSetStart=2130903272,
+constraint_referenced_ids=2130968808,
 ---@type LuaRef
-constraint_referenced_ids=2130903273,
+constraint_referenced_tags=2130968809,
 ---@type LuaRef
-constraints=2130903274,
+constraints=2130968810,
 ---@type LuaRef
-content=2130903275,
+content=2130968811,
 ---@type LuaRef
-contentDescription=2130903276,
+contentDescription=2130968812,
 ---@type LuaRef
-contentInsetEnd=2130903277,
+contentInsetEnd=2130968813,
 ---@type LuaRef
-contentInsetEndWithActions=2130903278,
+contentInsetEndWithActions=2130968814,
 ---@type LuaRef
-contentInsetLeft=2130903279,
+contentInsetLeft=2130968815,
 ---@type LuaRef
-contentInsetRight=2130903280,
+contentInsetRight=2130968816,
 ---@type LuaRef
-contentInsetStart=2130903281,
+contentInsetStart=2130968817,
 ---@type LuaRef
-contentInsetStartWithNavigation=2130903282,
+contentInsetStartWithNavigation=2130968818,
 ---@type LuaRef
-contentPadding=2130903283,
+contentPadding=2130968819,
 ---@type LuaRef
-contentPaddingBottom=2130903284,
+contentPaddingBottom=2130968820,
 ---@type LuaRef
-contentPaddingEnd=2130903285,
+contentPaddingEnd=2130968821,
 ---@type LuaRef
-contentPaddingLeft=2130903286,
+contentPaddingLeft=2130968822,
 ---@type LuaRef
-contentPaddingRight=2130903287,
+contentPaddingRight=2130968823,
 ---@type LuaRef
-contentPaddingStart=2130903288,
+contentPaddingStart=2130968824,
 ---@type LuaRef
-contentPaddingTop=2130903289,
+contentPaddingTop=2130968825,
 ---@type LuaRef
-contentScrim=2130903290,
+contentScrim=2130968826,
 ---@type LuaRef
-contrast=2130903291,
+contrast=2130968827,
 ---@type LuaRef
-controlBackground=2130903292,
+controlBackground=2130968828,
 ---@type LuaRef
-coordinatorLayoutStyle=2130903293,
+coordinatorLayoutStyle=2130968829,
 ---@type LuaRef
-cornerFamily=2130903294,
+cornerFamily=2130968830,
 ---@type LuaRef
-cornerFamilyBottomLeft=2130903295,
+cornerFamilyBottomLeft=2130968831,
 ---@type LuaRef
-cornerFamilyBottomRight=2130903296,
+cornerFamilyBottomRight=2130968832,
 ---@type LuaRef
-cornerFamilyTopLeft=2130903297,
+cornerFamilyTopLeft=2130968833,
 ---@type LuaRef
-cornerFamilyTopRight=2130903298,
+cornerFamilyTopRight=2130968834,
 ---@type LuaRef
-cornerRadius=2130903299,
+cornerRadius=2130968835,
 ---@type LuaRef
-cornerSize=2130903300,
+cornerSize=2130968836,
 ---@type LuaRef
-cornerSizeBottomLeft=2130903301,
+cornerSizeBottomLeft=2130968837,
 ---@type LuaRef
-cornerSizeBottomRight=2130903302,
+cornerSizeBottomRight=2130968838,
 ---@type LuaRef
-cornerSizeTopLeft=2130903303,
+cornerSizeTopLeft=2130968839,
 ---@type LuaRef
-cornerSizeTopRight=2130903304,
+cornerSizeTopRight=2130968840,
 ---@type LuaRef
-counterEnabled=2130903305,
+counterEnabled=2130968841,
 ---@type LuaRef
-counterMaxLength=2130903306,
+counterMaxLength=2130968842,
 ---@type LuaRef
-counterOverflowTextAppearance=2130903307,
+counterOverflowTextAppearance=2130968843,
 ---@type LuaRef
-counterOverflowTextColor=2130903308,
+counterOverflowTextColor=2130968844,
 ---@type LuaRef
-counterTextAppearance=2130903309,
+counterTextAppearance=2130968845,
 ---@type LuaRef
-counterTextColor=2130903310,
+counterTextColor=2130968846,
 ---@type LuaRef
-crossfade=2130903311,
+crossfade=2130968847,
 ---@type LuaRef
-currentState=2130903312,
+currentState=2130968848,
 ---@type LuaRef
-curveFit=2130903313,
+curveFit=2130968849,
 ---@type LuaRef
-customBoolean=2130903314,
+customBoolean=2130968850,
 ---@type LuaRef
-customColorDrawableValue=2130903315,
+customColorDrawableValue=2130968851,
 ---@type LuaRef
-customColorValue=2130903316,
+customColorValue=2130968852,
 ---@type LuaRef
-customDimension=2130903317,
+customDimension=2130968853,
 ---@type LuaRef
-customFloatValue=2130903318,
+customFloatValue=2130968854,
 ---@type LuaRef
-customIntegerValue=2130903319,
+customIntegerValue=2130968855,
 ---@type LuaRef
-customNavigationLayout=2130903320,
+customNavigationLayout=2130968856,
 ---@type LuaRef
-customPixelDimension=2130903321,
+customPixelDimension=2130968857,
 ---@type LuaRef
-customStringValue=2130903322,
+customReference=2130968858,
 ---@type LuaRef
-dayInvalidStyle=2130903323,
+customStringValue=2130968859,
 ---@type LuaRef
-daySelectedStyle=2130903324,
+data=2130968860,
 ---@type LuaRef
-dayStyle=2130903325,
+dataPattern=2130968861,
 ---@type LuaRef
-dayTodayStyle=2130903326,
+dayInvalidStyle=2130968862,
 ---@type LuaRef
-defaultDuration=2130903327,
+daySelectedStyle=2130968863,
 ---@type LuaRef
-defaultQueryHint=2130903328,
+dayStyle=2130968864,
 ---@type LuaRef
-defaultState=2130903329,
+dayTodayStyle=2130968865,
 ---@type LuaRef
-deltaPolarAngle=2130903330,
+defaultDuration=2130968866,
 ---@type LuaRef
-deltaPolarRadius=2130903331,
+defaultNavHost=2130968867,
 ---@type LuaRef
-deriveConstraintsFrom=2130903332,
+defaultQueryHint=2130968868,
 ---@type LuaRef
-dialogCornerRadius=2130903333,
+defaultState=2130968869,
 ---@type LuaRef
-dialogPreferredPadding=2130903334,
+deltaPolarAngle=2130968870,
 ---@type LuaRef
-dialogTheme=2130903335,
+deltaPolarRadius=2130968871,
 ---@type LuaRef
-displayOptions=2130903336,
+deriveConstraintsFrom=2130968872,
 ---@type LuaRef
-divider=2130903337,
+destination=2130968873,
 ---@type LuaRef
-dividerColor=2130903338,
+dialogCornerRadius=2130968874,
 ---@type LuaRef
-dividerHorizontal=2130903339,
+dialogPreferredPadding=2130968875,
 ---@type LuaRef
-dividerInsetEnd=2130903340,
+dialogTheme=2130968876,
 ---@type LuaRef
-dividerInsetStart=2130903341,
+displayOptions=2130968877,
 ---@type LuaRef
-dividerPadding=2130903342,
+divider=2130968878,
 ---@type LuaRef
-dividerThickness=2130903343,
+dividerHorizontal=2130968879,
 ---@type LuaRef
-dividerVertical=2130903344,
+dividerPadding=2130968880,
 ---@type LuaRef
-dragDirection=2130903345,
+dividerVertical=2130968881,
 ---@type LuaRef
-dragScale=2130903346,
+dragDirection=2130968882,
 ---@type LuaRef
-dragThreshold=2130903347,
+dragScale=2130968883,
 ---@type LuaRef
-drawPath=2130903348,
+dragThreshold=2130968884,
 ---@type LuaRef
-drawableBottomCompat=2130903349,
+drawPath=2130968885,
 ---@type LuaRef
-drawableEndCompat=2130903350,
+drawableBottomCompat=2130968886,
 ---@type LuaRef
-drawableLeftCompat=2130903351,
+drawableEndCompat=2130968887,
 ---@type LuaRef
-drawableRightCompat=2130903352,
+drawableLeftCompat=2130968888,
 ---@type LuaRef
-drawableSize=2130903353,
+drawableRightCompat=2130968889,
 ---@type LuaRef
-drawableStartCompat=2130903354,
+drawableSize=2130968890,
 ---@type LuaRef
-drawableTint=2130903355,
+drawableStartCompat=2130968891,
 ---@type LuaRef
-drawableTintMode=2130903356,
+drawableTint=2130968892,
 ---@type LuaRef
-drawableTopCompat=2130903357,
+drawableTintMode=2130968893,
 ---@type LuaRef
-drawerArrowStyle=2130903358,
+drawableTopCompat=2130968894,
 ---@type LuaRef
-drawerLayoutCornerSize=2130903359,
+drawerArrowStyle=2130968895,
 ---@type LuaRef
-drawerLayoutStyle=2130903360,
+drawerLayoutStyle=2130968896,
 ---@type LuaRef
-dropDownListViewStyle=2130903361,
+dropDownListViewStyle=2130968897,
 ---@type LuaRef
-dropdownListPreferredItemHeight=2130903362,
+dropdownListPreferredItemHeight=2130968898,
 ---@type LuaRef
-duration=2130903363,
+duration=2130968899,
 ---@type LuaRef
-dynamicColorThemeOverlay=2130903364,
+editTextBackground=2130968900,
 ---@type LuaRef
-editTextBackground=2130903365,
+editTextColor=2130968901,
 ---@type LuaRef
-editTextColor=2130903366,
+editTextStyle=2130968902,
 ---@type LuaRef
-editTextStyle=2130903367,
+elevation=2130968903,
 ---@type LuaRef
-elevation=2130903368,
+elevationOverlayColor=2130968904,
 ---@type LuaRef
-elevationOverlayAccentColor=2130903369,
+elevationOverlayEnabled=2130968905,
 ---@type LuaRef
-elevationOverlayColor=2130903370,
+enableEdgeToEdge=2130968906,
 ---@type LuaRef
-elevationOverlayEnabled=2130903371,
+endIconCheckable=2130968907,
 ---@type LuaRef
-enableEdgeToEdge=2130903372,
+endIconContentDescription=2130968908,
 ---@type LuaRef
-endIconCheckable=2130903373,
+endIconDrawable=2130968909,
 ---@type LuaRef
-endIconContentDescription=2130903374,
+endIconMode=2130968910,
 ---@type LuaRef
-endIconDrawable=2130903375,
+endIconTint=2130968911,
 ---@type LuaRef
-endIconMode=2130903376,
+endIconTintMode=2130968912,
 ---@type LuaRef
-endIconTint=2130903377,
+enforceMaterialTheme=2130968913,
 ---@type LuaRef
-endIconTintMode=2130903378,
+enforceTextAppearance=2130968914,
 ---@type LuaRef
-enforceMaterialTheme=2130903379,
+ensureMinTouchTargetSize=2130968915,
 ---@type LuaRef
-enforceTextAppearance=2130903380,
+enterAnim=2130968916,
 ---@type LuaRef
-ensureMinTouchTargetSize=2130903381,
+errorContentDescription=2130968917,
 ---@type LuaRef
-errorContentDescription=2130903382,
+errorEnabled=2130968918,
 ---@type LuaRef
-errorEnabled=2130903383,
+errorIconDrawable=2130968919,
 ---@type LuaRef
-errorIconDrawable=2130903384,
+errorIconTint=2130968920,
 ---@type LuaRef
-errorIconTint=2130903385,
+errorIconTintMode=2130968921,
 ---@type LuaRef
-errorIconTintMode=2130903386,
+errorTextAppearance=2130968922,
 ---@type LuaRef
-errorTextAppearance=2130903387,
+errorTextColor=2130968923,
 ---@type LuaRef
-errorTextColor=2130903388,
+exitAnim=2130968924,
 ---@type LuaRef
-expandActivityOverflowButtonDrawable=2130903389,
+expandActivityOverflowButtonDrawable=2130968925,
 ---@type LuaRef
-expanded=2130903390,
+expanded=2130968926,
 ---@type LuaRef
-expandedHintEnabled=2130903391,
+expandedHintEnabled=2130968927,
 ---@type LuaRef
-expandedTitleGravity=2130903392,
+expandedTitleGravity=2130968928,
 ---@type LuaRef
-expandedTitleMargin=2130903393,
+expandedTitleMargin=2130968929,
 ---@type LuaRef
-expandedTitleMarginBottom=2130903394,
+expandedTitleMarginBottom=2130968930,
 ---@type LuaRef
-expandedTitleMarginEnd=2130903395,
+expandedTitleMarginEnd=2130968931,
 ---@type LuaRef
-expandedTitleMarginStart=2130903396,
+expandedTitleMarginStart=2130968932,
 ---@type LuaRef
-expandedTitleMarginTop=2130903397,
+expandedTitleMarginTop=2130968933,
 ---@type LuaRef
-expandedTitleTextAppearance=2130903398,
+expandedTitleTextAppearance=2130968934,
 ---@type LuaRef
-expandedTitleTextColor=2130903399,
+extendMotionSpec=2130968935,
 ---@type LuaRef
-extendMotionSpec=2130903400,
+extendedFloatingActionButtonStyle=2130968936,
 ---@type LuaRef
-extendedFloatingActionButtonPrimaryStyle=2130903401,
+extraMultilineHeightEnabled=2130968937,
 ---@type LuaRef
-extendedFloatingActionButtonSecondaryStyle=2130903402,
+fabAlignmentMode=2130968938,
 ---@type LuaRef
-extendedFloatingActionButtonStyle=2130903403,
+fabAnimationMode=2130968939,
 ---@type LuaRef
-extendedFloatingActionButtonSurfaceStyle=2130903404,
+fabCradleMargin=2130968940,
 ---@type LuaRef
-extendedFloatingActionButtonTertiaryStyle=2130903405,
+fabCradleRoundedCornerRadius=2130968941,
 ---@type LuaRef
-extraMultilineHeightEnabled=2130903406,
+fabCradleVerticalOffset=2130968942,
 ---@type LuaRef
-fabAlignmentMode=2130903407,
+fabCustomSize=2130968943,
 ---@type LuaRef
-fabAnimationMode=2130903408,
+fabSize=2130968944,
 ---@type LuaRef
-fabCradleMargin=2130903409,
+fastScrollEnabled=2130968945,
 ---@type LuaRef
-fabCradleRoundedCornerRadius=2130903410,
+fastScrollHorizontalThumbDrawable=2130968946,
 ---@type LuaRef
-fabCradleVerticalOffset=2130903411,
+fastScrollHorizontalTrackDrawable=2130968947,
 ---@type LuaRef
-fabCustomSize=2130903412,
+fastScrollVerticalThumbDrawable=2130968948,
 ---@type LuaRef
-fabSize=2130903413,
+fastScrollVerticalTrackDrawable=2130968949,
 ---@type LuaRef
-fastScrollEnabled=2130903414,
+firstBaselineToTopHeight=2130968950,
 ---@type LuaRef
-fastScrollHorizontalThumbDrawable=2130903415,
+floatingActionButtonStyle=2130968951,
 ---@type LuaRef
-fastScrollHorizontalTrackDrawable=2130903416,
+flow_firstHorizontalBias=2130968952,
 ---@type LuaRef
-fastScrollVerticalThumbDrawable=2130903417,
+flow_firstHorizontalStyle=2130968953,
 ---@type LuaRef
-fastScrollVerticalTrackDrawable=2130903418,
+flow_firstVerticalBias=2130968954,
 ---@type LuaRef
-firstBaselineToTopHeight=2130903419,
+flow_firstVerticalStyle=2130968955,
 ---@type LuaRef
-floatingActionButtonLargePrimaryStyle=2130903420,
+flow_horizontalAlign=2130968956,
 ---@type LuaRef
-floatingActionButtonLargeSecondaryStyle=2130903421,
+flow_horizontalBias=2130968957,
 ---@type LuaRef
-floatingActionButtonLargeStyle=2130903422,
+flow_horizontalGap=2130968958,
 ---@type LuaRef
-floatingActionButtonLargeSurfaceStyle=2130903423,
+flow_horizontalStyle=2130968959,
 ---@type LuaRef
-floatingActionButtonLargeTertiaryStyle=2130903424,
+flow_lastHorizontalBias=2130968960,
 ---@type LuaRef
-floatingActionButtonPrimaryStyle=2130903425,
+flow_lastHorizontalStyle=2130968961,
 ---@type LuaRef
-floatingActionButtonSecondaryStyle=2130903426,
+flow_lastVerticalBias=2130968962,
 ---@type LuaRef
-floatingActionButtonStyle=2130903427,
+flow_lastVerticalStyle=2130968963,
 ---@type LuaRef
-floatingActionButtonSurfaceStyle=2130903428,
+flow_maxElementsWrap=2130968964,
 ---@type LuaRef
-floatingActionButtonTertiaryStyle=2130903429,
+flow_padding=2130968965,
 ---@type LuaRef
-flow_firstHorizontalBias=2130903430,
+flow_verticalAlign=2130968966,
 ---@type LuaRef
-flow_firstHorizontalStyle=2130903431,
+flow_verticalBias=2130968967,
 ---@type LuaRef
-flow_firstVerticalBias=2130903432,
+flow_verticalGap=2130968968,
 ---@type LuaRef
-flow_firstVerticalStyle=2130903433,
+flow_verticalStyle=2130968969,
 ---@type LuaRef
-flow_horizontalAlign=2130903434,
+flow_wrapMode=2130968970,
 ---@type LuaRef
-flow_horizontalBias=2130903435,
+font=2130968971,
 ---@type LuaRef
-flow_horizontalGap=2130903436,
+fontFamily=2130968972,
 ---@type LuaRef
-flow_horizontalStyle=2130903437,
+fontProviderAuthority=2130968973,
 ---@type LuaRef
-flow_lastHorizontalBias=2130903438,
+fontProviderCerts=2130968974,
 ---@type LuaRef
-flow_lastHorizontalStyle=2130903439,
+fontProviderFetchStrategy=2130968975,
 ---@type LuaRef
-flow_lastVerticalBias=2130903440,
+fontProviderFetchTimeout=2130968976,
 ---@type LuaRef
-flow_lastVerticalStyle=2130903441,
+fontProviderPackage=2130968977,
 ---@type LuaRef
-flow_maxElementsWrap=2130903442,
+fontProviderQuery=2130968978,
 ---@type LuaRef
-flow_padding=2130903443,
+fontProviderSystemFontFamily=2130968979,
 ---@type LuaRef
-flow_verticalAlign=2130903444,
+fontStyle=2130968980,
 ---@type LuaRef
-flow_verticalBias=2130903445,
+fontVariationSettings=2130968981,
 ---@type LuaRef
-flow_verticalGap=2130903446,
+fontWeight=2130968982,
 ---@type LuaRef
-flow_verticalStyle=2130903447,
+forceApplySystemWindowInsetTop=2130968983,
 ---@type LuaRef
-flow_wrapMode=2130903448,
+foregroundInsidePadding=2130968984,
 ---@type LuaRef
-font=2130903449,
+framePosition=2130968985,
 ---@type LuaRef
-fontFamily=2130903450,
+gapBetweenBars=2130968986,
 ---@type LuaRef
-fontProviderAuthority=2130903451,
+gestureInsetBottomIgnored=2130968987,
 ---@type LuaRef
-fontProviderCerts=2130903452,
+goIcon=2130968988,
 ---@type LuaRef
-fontProviderFetchStrategy=2130903453,
+graph=2130968989,
 ---@type LuaRef
-fontProviderFetchTimeout=2130903454,
+graphPackage=2130968990,
 ---@type LuaRef
-fontProviderPackage=2130903455,
+graphResName=2130968991,
 ---@type LuaRef
-fontProviderQuery=2130903456,
+guidelineUseRtl=2130968992,
 ---@type LuaRef
-fontProviderSystemFontFamily=2130903457,
+haloColor=2130968993,
 ---@type LuaRef
-fontStyle=2130903458,
+haloRadius=2130968994,
 ---@type LuaRef
-fontVariationSettings=2130903459,
+headerLayout=2130968995,
 ---@type LuaRef
-fontWeight=2130903460,
+height=2130968996,
 ---@type LuaRef
-forceApplySystemWindowInsetTop=2130903461,
+helperText=2130968997,
 ---@type LuaRef
-foregroundInsidePadding=2130903462,
+helperTextEnabled=2130968998,
 ---@type LuaRef
-framePosition=2130903463,
+helperTextTextAppearance=2130968999,
 ---@type LuaRef
-gapBetweenBars=2130903464,
+helperTextTextColor=2130969000,
 ---@type LuaRef
-gestureInsetBottomIgnored=2130903465,
+hideAnimationBehavior=2130969001,
 ---@type LuaRef
-goIcon=2130903466,
+hideMotionSpec=2130969002,
 ---@type LuaRef
-haloColor=2130903467,
+hideOnContentScroll=2130969003,
 ---@type LuaRef
-haloRadius=2130903468,
+hideOnScroll=2130969004,
 ---@type LuaRef
-headerLayout=2130903469,
+hintAnimationEnabled=2130969005,
 ---@type LuaRef
-height=2130903470,
+hintEnabled=2130969006,
 ---@type LuaRef
-helperText=2130903471,
+hintTextAppearance=2130969007,
 ---@type LuaRef
-helperTextEnabled=2130903472,
+hintTextColor=2130969008,
 ---@type LuaRef
-helperTextTextAppearance=2130903473,
+homeAsUpIndicator=2130969009,
 ---@type LuaRef
-helperTextTextColor=2130903474,
+homeLayout=2130969010,
 ---@type LuaRef
-hideAnimationBehavior=2130903475,
+horizontalOffset=2130969011,
 ---@type LuaRef
-hideMotionSpec=2130903476,
+hoveredFocusedTranslationZ=2130969012,
 ---@type LuaRef
-hideOnContentScroll=2130903477,
+icon=2130969013,
 ---@type LuaRef
-hideOnScroll=2130903478,
+iconEndPadding=2130969014,
 ---@type LuaRef
-hintAnimationEnabled=2130903479,
+iconGravity=2130969015,
 ---@type LuaRef
-hintEnabled=2130903480,
+iconPadding=2130969016,
 ---@type LuaRef
-hintTextAppearance=2130903481,
+iconSize=2130969017,
 ---@type LuaRef
-hintTextColor=2130903482,
+iconStartPadding=2130969018,
 ---@type LuaRef
-homeAsUpIndicator=2130903483,
+iconTint=2130969019,
 ---@type LuaRef
-homeLayout=2130903484,
+iconTintMode=2130969020,
 ---@type LuaRef
-horizontalOffset=2130903485,
+iconifiedByDefault=2130969021,
 ---@type LuaRef
-horizontalOffsetWithText=2130903486,
+id=2130969022,
 ---@type LuaRef
-hoveredFocusedTranslationZ=2130903487,
+ifTagNotSet=2130969023,
 ---@type LuaRef
-icon=2130903488,
+ifTagSet=2130969024,
 ---@type LuaRef
-iconEndPadding=2130903489,
+imageButtonStyle=2130969025,
 ---@type LuaRef
-iconGravity=2130903490,
+imagePanX=2130969026,
 ---@type LuaRef
-iconPadding=2130903491,
+imagePanY=2130969027,
 ---@type LuaRef
-iconSize=2130903492,
+imageRotate=2130969028,
 ---@type LuaRef
-iconStartPadding=2130903493,
+imageZoom=2130969029,
 ---@type LuaRef
-iconTint=2130903494,
+indeterminateAnimationType=2130969030,
 ---@type LuaRef
-iconTintMode=2130903495,
+indeterminateProgressStyle=2130969031,
 ---@type LuaRef
-iconifiedByDefault=2130903496,
+indicatorColor=2130969032,
 ---@type LuaRef
-id=2130903497,
+indicatorDirectionCircular=2130969033,
 ---@type LuaRef
-imageButtonStyle=2130903498,
+indicatorDirectionLinear=2130969034,
 ---@type LuaRef
-indeterminateAnimationType=2130903499,
+indicatorInset=2130969035,
 ---@type LuaRef
-indeterminateProgressStyle=2130903500,
+indicatorSize=2130969036,
 ---@type LuaRef
-indicatorColor=2130903501,
+initialActivityCount=2130969037,
 ---@type LuaRef
-indicatorDirectionCircular=2130903502,
+insetForeground=2130969038,
 ---@type LuaRef
-indicatorDirectionLinear=2130903503,
+iosBottomSafeArea=2130969039,
 ---@type LuaRef
-indicatorInset=2130903504,
+iosDarkProgress=2130969040,
 ---@type LuaRef
-indicatorSize=2130903505,
+iosHorizontalProgress=2130969041,
 ---@type LuaRef
-initialActivityCount=2130903506,
+iosSmallProgress=2130969042,
 ---@type LuaRef
-insetForeground=2130903507,
+iosTheme=2130969043,
 ---@type LuaRef
-isLightTheme=2130903508,
+iosToolbarTextColor=2130969044,
 ---@type LuaRef
-isMaterial3Theme=2130903509,
+isLightTheme=2130969045,
 ---@type LuaRef
-isMaterialTheme=2130903510,
+isMaterialTheme=2130969046,
 ---@type LuaRef
-itemActiveIndicatorStyle=2130903511,
+itemBackground=2130969047,
 ---@type LuaRef
-itemBackground=2130903512,
+itemFillColor=2130969048,
 ---@type LuaRef
-itemFillColor=2130903513,
+itemHorizontalPadding=2130969049,
 ---@type LuaRef
-itemHorizontalPadding=2130903514,
+itemHorizontalTranslationEnabled=2130969050,
 ---@type LuaRef
-itemHorizontalTranslationEnabled=2130903515,
+itemIconPadding=2130969051,
 ---@type LuaRef
-itemIconPadding=2130903516,
+itemIconSize=2130969052,
 ---@type LuaRef
-itemIconSize=2130903517,
+itemIconTint=2130969053,
 ---@type LuaRef
-itemIconTint=2130903518,
+itemMaxLines=2130969054,
 ---@type LuaRef
-itemMaxLines=2130903519,
+itemPadding=2130969055,
 ---@type LuaRef
-itemMinHeight=2130903520,
+itemRippleColor=2130969056,
 ---@type LuaRef
-itemPadding=2130903521,
+itemShapeAppearance=2130969057,
 ---@type LuaRef
-itemPaddingBottom=2130903522,
+itemShapeAppearanceOverlay=2130969058,
 ---@type LuaRef
-itemPaddingTop=2130903523,
+itemShapeFillColor=2130969059,
 ---@type LuaRef
-itemRippleColor=2130903524,
+itemShapeInsetBottom=2130969060,
 ---@type LuaRef
-itemShapeAppearance=2130903525,
+itemShapeInsetEnd=2130969061,
 ---@type LuaRef
-itemShapeAppearanceOverlay=2130903526,
+itemShapeInsetStart=2130969062,
 ---@type LuaRef
-itemShapeFillColor=2130903527,
+itemShapeInsetTop=2130969063,
 ---@type LuaRef
-itemShapeInsetBottom=2130903528,
+itemSpacing=2130969064,
 ---@type LuaRef
-itemShapeInsetEnd=2130903529,
+itemStrokeColor=2130969065,
 ---@type LuaRef
-itemShapeInsetStart=2130903530,
+itemStrokeWidth=2130969066,
 ---@type LuaRef
-itemShapeInsetTop=2130903531,
+itemTextAppearance=2130969067,
 ---@type LuaRef
-itemSpacing=2130903532,
+itemTextAppearanceActive=2130969068,
 ---@type LuaRef
-itemStrokeColor=2130903533,
+itemTextAppearanceInactive=2130969069,
 ---@type LuaRef
-itemStrokeWidth=2130903534,
+itemTextColor=2130969070,
 ---@type LuaRef
-itemTextAppearance=2130903535,
+keyPositionType=2130969071,
 ---@type LuaRef
-itemTextAppearanceActive=2130903536,
+keyboardIcon=2130969072,
 ---@type LuaRef
-itemTextAppearanceInactive=2130903537,
+keylines=2130969073,
 ---@type LuaRef
-itemTextColor=2130903538,
+labelBehavior=2130969074,
 ---@type LuaRef
-itemVerticalPadding=2130903539,
+labelStyle=2130969075,
 ---@type LuaRef
-keyPositionType=2130903540,
+labelVisibilityMode=2130969076,
 ---@type LuaRef
-keyboardIcon=2130903541,
+lastBaselineToBottomHeight=2130969077,
 ---@type LuaRef
-keylines=2130903542,
+launchSingleTop=2130969078,
 ---@type LuaRef
-labelBehavior=2130903543,
+layout=2130969079,
 ---@type LuaRef
-labelStyle=2130903544,
+layoutDescription=2130969080,
 ---@type LuaRef
-labelVisibilityMode=2130903545,
+layoutDuringTransition=2130969081,
 ---@type LuaRef
-lastBaselineToBottomHeight=2130903546,
+layoutManager=2130969082,
 ---@type LuaRef
-layout=2130903547,
+layout_anchor=2130969083,
 ---@type LuaRef
-layoutDescription=2130903548,
+layout_anchorGravity=2130969084,
 ---@type LuaRef
-layoutDuringTransition=2130903549,
+layout_behavior=2130969085,
 ---@type LuaRef
-layoutManager=2130903550,
+layout_collapseMode=2130969086,
 ---@type LuaRef
-layout_anchor=2130903551,
+layout_collapseParallaxMultiplier=2130969087,
 ---@type LuaRef
-layout_anchorGravity=2130903552,
+layout_constrainedHeight=2130969088,
 ---@type LuaRef
-layout_behavior=2130903553,
+layout_constrainedWidth=2130969089,
 ---@type LuaRef
-layout_collapseMode=2130903554,
+layout_constraintBaseline_creator=2130969090,
 ---@type LuaRef
-layout_collapseParallaxMultiplier=2130903555,
+layout_constraintBaseline_toBaselineOf=2130969091,
 ---@type LuaRef
-layout_constrainedHeight=2130903556,
+layout_constraintBaseline_toBottomOf=2130969092,
 ---@type LuaRef
-layout_constrainedWidth=2130903557,
+layout_constraintBaseline_toTopOf=2130969093,
 ---@type LuaRef
-layout_constraintBaseline_creator=2130903558,
+layout_constraintBottom_creator=2130969094,
 ---@type LuaRef
-layout_constraintBaseline_toBaselineOf=2130903559,
+layout_constraintBottom_toBottomOf=2130969095,
 ---@type LuaRef
-layout_constraintBottom_creator=2130903560,
+layout_constraintBottom_toTopOf=2130969096,
 ---@type LuaRef
-layout_constraintBottom_toBottomOf=2130903561,
+layout_constraintCircle=2130969097,
 ---@type LuaRef
-layout_constraintBottom_toTopOf=2130903562,
+layout_constraintCircleAngle=2130969098,
 ---@type LuaRef
-layout_constraintCircle=2130903563,
+layout_constraintCircleRadius=2130969099,
 ---@type LuaRef
-layout_constraintCircleAngle=2130903564,
+layout_constraintDimensionRatio=2130969100,
 ---@type LuaRef
-layout_constraintCircleRadius=2130903565,
+layout_constraintEnd_toEndOf=2130969101,
 ---@type LuaRef
-layout_constraintDimensionRatio=2130903566,
+layout_constraintEnd_toStartOf=2130969102,
 ---@type LuaRef
-layout_constraintEnd_toEndOf=2130903567,
+layout_constraintGuide_begin=2130969103,
 ---@type LuaRef
-layout_constraintEnd_toStartOf=2130903568,
+layout_constraintGuide_end=2130969104,
 ---@type LuaRef
-layout_constraintGuide_begin=2130903569,
+layout_constraintGuide_percent=2130969105,
 ---@type LuaRef
-layout_constraintGuide_end=2130903570,
+layout_constraintHeight=2130969106,
 ---@type LuaRef
-layout_constraintGuide_percent=2130903571,
+layout_constraintHeight_default=2130969107,
 ---@type LuaRef
-layout_constraintHeight_default=2130903572,
+layout_constraintHeight_max=2130969108,
 ---@type LuaRef
-layout_constraintHeight_max=2130903573,
+layout_constraintHeight_min=2130969109,
 ---@type LuaRef
-layout_constraintHeight_min=2130903574,
+layout_constraintHeight_percent=2130969110,
 ---@type LuaRef
-layout_constraintHeight_percent=2130903575,
+layout_constraintHorizontal_bias=2130969111,
 ---@type LuaRef
-layout_constraintHorizontal_bias=2130903576,
+layout_constraintHorizontal_chainStyle=2130969112,
 ---@type LuaRef
-layout_constraintHorizontal_chainStyle=2130903577,
+layout_constraintHorizontal_weight=2130969113,
 ---@type LuaRef
-layout_constraintHorizontal_weight=2130903578,
+layout_constraintLeft_creator=2130969114,
 ---@type LuaRef
-layout_constraintLeft_creator=2130903579,
+layout_constraintLeft_toLeftOf=2130969115,
 ---@type LuaRef
-layout_constraintLeft_toLeftOf=2130903580,
+layout_constraintLeft_toRightOf=2130969116,
 ---@type LuaRef
-layout_constraintLeft_toRightOf=2130903581,
+layout_constraintRight_creator=2130969117,
 ---@type LuaRef
-layout_constraintRight_creator=2130903582,
+layout_constraintRight_toLeftOf=2130969118,
 ---@type LuaRef
-layout_constraintRight_toLeftOf=2130903583,
+layout_constraintRight_toRightOf=2130969119,
 ---@type LuaRef
-layout_constraintRight_toRightOf=2130903584,
+layout_constraintStart_toEndOf=2130969120,
 ---@type LuaRef
-layout_constraintStart_toEndOf=2130903585,
+layout_constraintStart_toStartOf=2130969121,
 ---@type LuaRef
-layout_constraintStart_toStartOf=2130903586,
+layout_constraintTag=2130969122,
 ---@type LuaRef
-layout_constraintTag=2130903587,
+layout_constraintTop_creator=2130969123,
 ---@type LuaRef
-layout_constraintTop_creator=2130903588,
+layout_constraintTop_toBottomOf=2130969124,
 ---@type LuaRef
-layout_constraintTop_toBottomOf=2130903589,
+layout_constraintTop_toTopOf=2130969125,
 ---@type LuaRef
-layout_constraintTop_toTopOf=2130903590,
+layout_constraintVertical_bias=2130969126,
 ---@type LuaRef
-layout_constraintVertical_bias=2130903591,
+layout_constraintVertical_chainStyle=2130969127,
 ---@type LuaRef
-layout_constraintVertical_chainStyle=2130903592,
+layout_constraintVertical_weight=2130969128,
 ---@type LuaRef
-layout_constraintVertical_weight=2130903593,
+layout_constraintWidth=2130969129,
 ---@type LuaRef
-layout_constraintWidth_default=2130903594,
+layout_constraintWidth_default=2130969130,
 ---@type LuaRef
-layout_constraintWidth_max=2130903595,
+layout_constraintWidth_max=2130969131,
 ---@type LuaRef
-layout_constraintWidth_min=2130903596,
+layout_constraintWidth_min=2130969132,
 ---@type LuaRef
-layout_constraintWidth_percent=2130903597,
+layout_constraintWidth_percent=2130969133,
 ---@type LuaRef
-layout_dodgeInsetEdges=2130903598,
+layout_dodgeInsetEdges=2130969134,
 ---@type LuaRef
-layout_editor_absoluteX=2130903599,
+layout_editor_absoluteX=2130969135,
 ---@type LuaRef
-layout_editor_absoluteY=2130903600,
+layout_editor_absoluteY=2130969136,
 ---@type LuaRef
-layout_goneMarginBottom=2130903601,
+layout_goneMarginBaseline=2130969137,
 ---@type LuaRef
-layout_goneMarginEnd=2130903602,
+layout_goneMarginBottom=2130969138,
 ---@type LuaRef
-layout_goneMarginLeft=2130903603,
+layout_goneMarginEnd=2130969139,
 ---@type LuaRef
-layout_goneMarginRight=2130903604,
+layout_goneMarginLeft=2130969140,
 ---@type LuaRef
-layout_goneMarginStart=2130903605,
+layout_goneMarginRight=2130969141,
 ---@type LuaRef
-layout_goneMarginTop=2130903606,
+layout_goneMarginStart=2130969142,
 ---@type LuaRef
-layout_insetEdge=2130903607,
+layout_goneMarginTop=2130969143,
 ---@type LuaRef
-layout_keyline=2130903608,
+layout_insetEdge=2130969144,
 ---@type LuaRef
-layout_optimizationLevel=2130903609,
+layout_keyline=2130969145,
 ---@type LuaRef
-layout_scrollEffect=2130903610,
+layout_marginBaseline=2130969146,
 ---@type LuaRef
-layout_scrollFlags=2130903611,
+layout_optimizationLevel=2130969147,
 ---@type LuaRef
-layout_scrollInterpolator=2130903612,
+layout_scrollFlags=2130969148,
 ---@type LuaRef
-liftOnScroll=2130903613,
+layout_scrollInterpolator=2130969149,
 ---@type LuaRef
-liftOnScrollTargetViewId=2130903614,
+layout_wrapBehaviorInParent=2130969150,
 ---@type LuaRef
-limitBoundsTo=2130903615,
+liftOnScroll=2130969151,
 ---@type LuaRef
-lineHeight=2130903616,
+liftOnScrollTargetViewId=2130969152,
 ---@type LuaRef
-lineSpacing=2130903617,
+limitBoundsTo=2130969153,
 ---@type LuaRef
-linearProgressIndicatorStyle=2130903618,
+lineHeight=2130969154,
 ---@type LuaRef
-listChoiceBackgroundIndicator=2130903619,
+lineSpacing=2130969155,
 ---@type LuaRef
-listChoiceIndicatorMultipleAnimated=2130903620,
+linearProgressIndicatorStyle=2130969156,
 ---@type LuaRef
-listChoiceIndicatorSingleAnimated=2130903621,
+listChoiceBackgroundIndicator=2130969157,
 ---@type LuaRef
-listDividerAlertDialog=2130903622,
+listChoiceIndicatorMultipleAnimated=2130969158,
 ---@type LuaRef
-listItemLayout=2130903623,
+listChoiceIndicatorSingleAnimated=2130969159,
 ---@type LuaRef
-listLayout=2130903624,
+listDividerAlertDialog=2130969160,
 ---@type LuaRef
-listMenuViewStyle=2130903625,
+listItemLayout=2130969161,
 ---@type LuaRef
-listPopupWindowStyle=2130903626,
+listLayout=2130969162,
 ---@type LuaRef
-listPreferredItemHeight=2130903627,
+listMenuViewStyle=2130969163,
 ---@type LuaRef
-listPreferredItemHeightLarge=2130903628,
+listPopupWindowStyle=2130969164,
 ---@type LuaRef
-listPreferredItemHeightSmall=2130903629,
+listPreferredItemHeight=2130969165,
 ---@type LuaRef
-listPreferredItemPaddingEnd=2130903630,
+listPreferredItemHeightLarge=2130969166,
 ---@type LuaRef
-listPreferredItemPaddingLeft=2130903631,
+listPreferredItemHeightSmall=2130969167,
 ---@type LuaRef
-listPreferredItemPaddingRight=2130903632,
+listPreferredItemPaddingEnd=2130969168,
 ---@type LuaRef
-listPreferredItemPaddingStart=2130903633,
+listPreferredItemPaddingLeft=2130969169,
 ---@type LuaRef
-logo=2130903634,
+listPreferredItemPaddingRight=2130969170,
 ---@type LuaRef
-logoDescription=2130903635,
+listPreferredItemPaddingStart=2130969171,
 ---@type LuaRef
-marginHorizontal=2130903636,
+logo=2130969172,
 ---@type LuaRef
-materialAlertDialogBodyTextStyle=2130903637,
+logoDescription=2130969173,
 ---@type LuaRef
-materialAlertDialogButtonSpacerVisibility=2130903638,
+materialAlertDialogBodyTextStyle=2130969174,
 ---@type LuaRef
-materialAlertDialogTheme=2130903639,
+materialAlertDialogTheme=2130969175,
 ---@type LuaRef
-materialAlertDialogTitleIconStyle=2130903640,
+materialAlertDialogTitleIconStyle=2130969176,
 ---@type LuaRef
-materialAlertDialogTitlePanelStyle=2130903641,
+materialAlertDialogTitlePanelStyle=2130969177,
 ---@type LuaRef
-materialAlertDialogTitleTextStyle=2130903642,
+materialAlertDialogTitleTextStyle=2130969178,
 ---@type LuaRef
-materialButtonOutlinedStyle=2130903643,
+materialButtonOutlinedStyle=2130969179,
 ---@type LuaRef
-materialButtonStyle=2130903644,
+materialButtonStyle=2130969180,
 ---@type LuaRef
-materialButtonToggleGroupStyle=2130903645,
+materialButtonToggleGroupStyle=2130969181,
 ---@type LuaRef
-materialCalendarDay=2130903646,
+materialCalendarDay=2130969182,
 ---@type LuaRef
-materialCalendarDayOfWeekLabel=2130903647,
+materialCalendarFullscreenTheme=2130969183,
 ---@type LuaRef
-materialCalendarFullscreenTheme=2130903648,
+materialCalendarHeaderCancelButton=2130969184,
 ---@type LuaRef
-materialCalendarHeaderCancelButton=2130903649,
+materialCalendarHeaderConfirmButton=2130969185,
 ---@type LuaRef
-materialCalendarHeaderConfirmButton=2130903650,
+materialCalendarHeaderDivider=2130969186,
 ---@type LuaRef
-materialCalendarHeaderDivider=2130903651,
+materialCalendarHeaderLayout=2130969187,
 ---@type LuaRef
-materialCalendarHeaderLayout=2130903652,
+materialCalendarHeaderSelection=2130969188,
 ---@type LuaRef
-materialCalendarHeaderSelection=2130903653,
+materialCalendarHeaderTitle=2130969189,
 ---@type LuaRef
-materialCalendarHeaderTitle=2130903654,
+materialCalendarHeaderToggleButton=2130969190,
 ---@type LuaRef
-materialCalendarHeaderToggleButton=2130903655,
+materialCalendarMonth=2130969191,
 ---@type LuaRef
-materialCalendarMonth=2130903656,
+materialCalendarMonthNavigationButton=2130969192,
 ---@type LuaRef
-materialCalendarMonthNavigationButton=2130903657,
+materialCalendarStyle=2130969193,
 ---@type LuaRef
-materialCalendarStyle=2130903658,
+materialCalendarTheme=2130969194,
 ---@type LuaRef
-materialCalendarTheme=2130903659,
+materialCalendarYearNavigationButton=2130969195,
 ---@type LuaRef
-materialCalendarYearNavigationButton=2130903660,
+materialCardViewStyle=2130969196,
 ---@type LuaRef
-materialCardViewElevatedStyle=2130903661,
+materialCircleRadius=2130969197,
 ---@type LuaRef
-materialCardViewFilledStyle=2130903662,
+materialClockStyle=2130969198,
 ---@type LuaRef
-materialCardViewOutlinedStyle=2130903663,
+materialThemeOverlay=2130969199,
 ---@type LuaRef
-materialCardViewStyle=2130903664,
+materialTimePickerStyle=2130969200,
 ---@type LuaRef
-materialCircleRadius=2130903665,
+materialTimePickerTheme=2130969201,
 ---@type LuaRef
-materialClockStyle=2130903666,
+maxAcceleration=2130969202,
 ---@type LuaRef
-materialDisplayDividerStyle=2130903667,
+maxActionInlineWidth=2130969203,
 ---@type LuaRef
-materialDividerHeavyStyle=2130903668,
+maxButtonHeight=2130969204,
 ---@type LuaRef
-materialDividerStyle=2130903669,
+maxCharacterCount=2130969205,
 ---@type LuaRef
-materialThemeOverlay=2130903670,
+maxHeight=2130969206,
 ---@type LuaRef
-materialTimePickerStyle=2130903671,
+maxImageSize=2130969207,
 ---@type LuaRef
-materialTimePickerTheme=2130903672,
+maxLines=2130969208,
 ---@type LuaRef
-materialTimePickerTitleStyle=2130903673,
+maxVelocity=2130969209,
 ---@type LuaRef
-maxAcceleration=2130903674,
+maxWidth=2130969210,
 ---@type LuaRef
-maxActionInlineWidth=2130903675,
+measureWithLargestChild=2130969211,
 ---@type LuaRef
-maxButtonHeight=2130903676,
+menu=2130969212,
 ---@type LuaRef
-maxCharacterCount=2130903677,
+menuGravity=2130969213,
 ---@type LuaRef
-maxHeight=2130903678,
+methodName=2130969214,
 ---@type LuaRef
-maxImageSize=2130903679,
+mimeType=2130969215,
 ---@type LuaRef
-maxLines=2130903680,
+minHeight=2130969216,
 ---@type LuaRef
-maxVelocity=2130903681,
+minHideDelay=2130969217,
 ---@type LuaRef
-maxWidth=2130903682,
+minSeparation=2130969218,
 ---@type LuaRef
-measureWithLargestChild=2130903683,
+minTouchTargetSize=2130969219,
 ---@type LuaRef
-menu=2130903684,
+minWidth=2130969220,
 ---@type LuaRef
-menuGravity=2130903685,
+mock_diagonalsColor=2130969221,
 ---@type LuaRef
-minHeight=2130903686,
+mock_label=2130969222,
 ---@type LuaRef
-minHideDelay=2130903687,
+mock_labelBackgroundColor=2130969223,
 ---@type LuaRef
-minSeparation=2130903688,
+mock_labelColor=2130969224,
 ---@type LuaRef
-minTouchTargetSize=2130903689,
+mock_showDiagonals=2130969225,
 ---@type LuaRef
-minWidth=2130903690,
+mock_showLabel=2130969226,
 ---@type LuaRef
-mock_diagonalsColor=2130903691,
+moduleName=2130969227,
 ---@type LuaRef
-mock_label=2130903692,
+motionDebug=2130969228,
 ---@type LuaRef
-mock_labelBackgroundColor=2130903693,
+motionDurationLong1=2130969229,
 ---@type LuaRef
-mock_labelColor=2130903694,
+motionDurationLong2=2130969230,
 ---@type LuaRef
-mock_showDiagonals=2130903695,
+motionDurationMedium1=2130969231,
 ---@type LuaRef
-mock_showLabel=2130903696,
+motionDurationMedium2=2130969232,
 ---@type LuaRef
-motionDebug=2130903697,
+motionDurationShort1=2130969233,
 ---@type LuaRef
-motionDurationLong1=2130903698,
+motionDurationShort2=2130969234,
 ---@type LuaRef
-motionDurationLong2=2130903699,
+motionEasingAccelerated=2130969235,
 ---@type LuaRef
-motionDurationMedium1=2130903700,
+motionEasingDecelerated=2130969236,
 ---@type LuaRef
-motionDurationMedium2=2130903701,
+motionEasingEmphasized=2130969237,
 ---@type LuaRef
-motionDurationShort1=2130903702,
+motionEasingLinear=2130969238,
 ---@type LuaRef
-motionDurationShort2=2130903703,
+motionEasingStandard=2130969239,
 ---@type LuaRef
-motionEasingAccelerated=2130903704,
+motionEffect_alpha=2130969240,
 ---@type LuaRef
-motionEasingDecelerated=2130903705,
+motionEffect_end=2130969241,
 ---@type LuaRef
-motionEasingEmphasized=2130903706,
+motionEffect_move=2130969242,
 ---@type LuaRef
-motionEasingLinear=2130903707,
+motionEffect_start=2130969243,
 ---@type LuaRef
-motionEasingStandard=2130903708,
+motionEffect_strict=2130969244,
 ---@type LuaRef
-motionInterpolator=2130903709,
+motionEffect_translationX=2130969245,
 ---@type LuaRef
-motionPath=2130903710,
+motionEffect_translationY=2130969246,
 ---@type LuaRef
-motionPathRotate=2130903711,
+motionEffect_viewTransition=2130969247,
 ---@type LuaRef
-motionProgress=2130903712,
+motionInterpolator=2130969248,
 ---@type LuaRef
-motionStagger=2130903713,
+motionPath=2130969249,
 ---@type LuaRef
-motionTarget=2130903714,
+motionPathRotate=2130969250,
 ---@type LuaRef
-motion_postLayoutCollision=2130903715,
+motionProgress=2130969251,
 ---@type LuaRef
-motion_triggerOnCollision=2130903716,
+motionStagger=2130969252,
 ---@type LuaRef
-moveWhenScrollAtTop=2130903717,
+motionTarget=2130969253,
 ---@type LuaRef
-multiChoiceItemLayout=2130903718,
+motion_postLayoutCollision=2130969254,
 ---@type LuaRef
-navigationContentDescription=2130903719,
+motion_triggerOnCollision=2130969255,
 ---@type LuaRef
-navigationIcon=2130903720,
+moveWhenScrollAtTop=2130969256,
 ---@type LuaRef
-navigationIconTint=2130903721,
+multiChoiceItemLayout=2130969257,
 ---@type LuaRef
-navigationMode=2130903722,
+navGraph=2130969258,
 ---@type LuaRef
-navigationRailStyle=2130903723,
+navigationContentDescription=2130969259,
 ---@type LuaRef
-navigationViewStyle=2130903724,
+navigationIcon=2130969260,
 ---@type LuaRef
-nestedScrollFlags=2130903725,
+navigationIconTint=2130969261,
 ---@type LuaRef
-nestedScrollViewStyle=2130903726,
+navigationMode=2130969262,
 ---@type LuaRef
-nestedScrollable=2130903727,
+navigationRailStyle=2130969263,
 ---@type LuaRef
-number=2130903728,
+navigationViewStyle=2130969264,
 ---@type LuaRef
-numericModifiers=2130903729,
+nestedScrollFlags=2130969265,
 ---@type LuaRef
-onCross=2130903730,
+nestedScrollable=2130969266,
 ---@type LuaRef
-onHide=2130903731,
+nullable=2130969267,
 ---@type LuaRef
-onNegativeCross=2130903732,
+number=2130969268,
 ---@type LuaRef
-onPositiveCross=2130903733,
+numericModifiers=2130969269,
 ---@type LuaRef
-onShow=2130903734,
+onCross=2130969270,
 ---@type LuaRef
-onTouchUp=2130903735,
+onHide=2130969271,
 ---@type LuaRef
-overlapAnchor=2130903736,
+onNegativeCross=2130969272,
 ---@type LuaRef
-overlay=2130903737,
+onPositiveCross=2130969273,
 ---@type LuaRef
-paddingBottomNoButtons=2130903738,
+onShow=2130969274,
 ---@type LuaRef
-paddingBottomSystemWindowInsets=2130903739,
+onStateTransition=2130969275,
 ---@type LuaRef
-paddingEnd=2130903740,
+onTouchUp=2130969276,
 ---@type LuaRef
-paddingLeftSystemWindowInsets=2130903741,
+overlapAnchor=2130969277,
 ---@type LuaRef
-paddingRightSystemWindowInsets=2130903742,
+overlay=2130969278,
 ---@type LuaRef
-paddingStart=2130903743,
+paddingBottomNoButtons=2130969279,
 ---@type LuaRef
-paddingTopNoTitle=2130903744,
+paddingBottomSystemWindowInsets=2130969280,
 ---@type LuaRef
-paddingTopSystemWindowInsets=2130903745,
+paddingEnd=2130969281,
 ---@type LuaRef
-panelBackground=2130903746,
+paddingLeftSystemWindowInsets=2130969282,
 ---@type LuaRef
-panelMenuListTheme=2130903747,
+paddingRightSystemWindowInsets=2130969283,
 ---@type LuaRef
-panelMenuListWidth=2130903748,
+paddingStart=2130969284,
 ---@type LuaRef
-passwordToggleContentDescription=2130903749,
+paddingTopNoTitle=2130969285,
 ---@type LuaRef
-passwordToggleDrawable=2130903750,
+paddingTopSystemWindowInsets=2130969286,
 ---@type LuaRef
-passwordToggleEnabled=2130903751,
+panelBackground=2130969287,
 ---@type LuaRef
-passwordToggleTint=2130903752,
+panelMenuListTheme=2130969288,
 ---@type LuaRef
-passwordToggleTintMode=2130903753,
+panelMenuListWidth=2130969289,
 ---@type LuaRef
-pathMotionArc=2130903754,
+passwordToggleContentDescription=2130969290,
 ---@type LuaRef
-path_percent=2130903755,
+passwordToggleDrawable=2130969291,
 ---@type LuaRef
-percentHeight=2130903756,
+passwordToggleEnabled=2130969292,
 ---@type LuaRef
-percentWidth=2130903757,
+passwordToggleTint=2130969293,
 ---@type LuaRef
-percentX=2130903758,
+passwordToggleTintMode=2130969294,
 ---@type LuaRef
-percentY=2130903759,
+pathMotionArc=2130969295,
 ---@type LuaRef
-perpendicularPath_percent=2130903760,
+path_percent=2130969296,
 ---@type LuaRef
-pivotAnchor=2130903761,
+percentHeight=2130969297,
 ---@type LuaRef
-placeholderText=2130903762,
+percentWidth=2130969298,
 ---@type LuaRef
-placeholderTextAppearance=2130903763,
+percentX=2130969299,
 ---@type LuaRef
-placeholderTextColor=2130903764,
+percentY=2130969300,
 ---@type LuaRef
-placeholder_emptyVisibility=2130903765,
+perpendicularPath_percent=2130969301,
 ---@type LuaRef
-popupMenuBackground=2130903766,
+pivotAnchor=2130969302,
 ---@type LuaRef
-popupMenuStyle=2130903767,
+placeholderText=2130969303,
 ---@type LuaRef
-popupTheme=2130903768,
+placeholderTextAppearance=2130969304,
 ---@type LuaRef
-popupWindowStyle=2130903769,
+placeholderTextColor=2130969305,
 ---@type LuaRef
-prefixText=2130903770,
+placeholder_emptyVisibility=2130969306,
 ---@type LuaRef
-prefixTextAppearance=2130903771,
+polarRelativeTo=2130969307,
 ---@type LuaRef
-prefixTextColor=2130903772,
+popEnterAnim=2130969308,
 ---@type LuaRef
-preserveIconSpacing=2130903773,
+popExitAnim=2130969309,
 ---@type LuaRef
-pressedTranslationZ=2130903774,
+popUpTo=2130969310,
 ---@type LuaRef
-progressBarPadding=2130903775,
+popUpToInclusive=2130969311,
 ---@type LuaRef
-progressBarStyle=2130903776,
+popupMenuBackground=2130969312,
 ---@type LuaRef
-queryBackground=2130903777,
+popupMenuStyle=2130969313,
 ---@type LuaRef
-queryHint=2130903778,
+popupTheme=2130969314,
 ---@type LuaRef
-queryPatterns=2130903779,
+popupWindowStyle=2130969315,
 ---@type LuaRef
-radioButtonStyle=2130903780,
+prefixText=2130969316,
 ---@type LuaRef
-rangeFillColor=2130903781,
+prefixTextAppearance=2130969317,
 ---@type LuaRef
-ratingBarStyle=2130903782,
+prefixTextColor=2130969318,
 ---@type LuaRef
-ratingBarStyleIndicator=2130903783,
+preserveIconSpacing=2130969319,
 ---@type LuaRef
-ratingBarStyleSmall=2130903784,
+pressedTranslationZ=2130969320,
 ---@type LuaRef
-recyclerViewStyle=2130903785,
+progressBarPadding=2130969321,
 ---@type LuaRef
-region_heightLessThan=2130903786,
+progressBarStyle=2130969322,
 ---@type LuaRef
-region_heightMoreThan=2130903787,
+progressDestination=2130969323,
 ---@type LuaRef
-region_widthLessThan=2130903788,
+quantizeMotionInterpolator=2130969324,
 ---@type LuaRef
-region_widthMoreThan=2130903789,
+quantizeMotionPhase=2130969325,
 ---@type LuaRef
-reverseLayout=2130903790,
+quantizeMotionSteps=2130969326,
 ---@type LuaRef
-rippleColor=2130903791,
+queryBackground=2130969327,
 ---@type LuaRef
-round=2130903792,
+queryHint=2130969328,
 ---@type LuaRef
-roundPercent=2130903793,
+radioButtonStyle=2130969329,
 ---@type LuaRef
-saturation=2130903794,
+rangeFillColor=2130969330,
 ---@type LuaRef
-scrimAnimationDuration=2130903795,
+ratingBarStyle=2130969331,
 ---@type LuaRef
-scrimBackground=2130903796,
+ratingBarStyleIndicator=2130969332,
 ---@type LuaRef
-scrimVisibleHeightTrigger=2130903797,
+ratingBarStyleSmall=2130969333,
 ---@type LuaRef
-searchHintIcon=2130903798,
+reactiveGuide_animateChange=2130969334,
 ---@type LuaRef
-searchIcon=2130903799,
+reactiveGuide_applyToAllConstraintSets=2130969335,
 ---@type LuaRef
-searchViewStyle=2130903800,
+reactiveGuide_applyToConstraintSet=2130969336,
 ---@type LuaRef
-seekBarStyle=2130903801,
+reactiveGuide_valueId=2130969337,
 ---@type LuaRef
-selectableItemBackground=2130903802,
+recyclerViewStyle=2130969338,
 ---@type LuaRef
-selectableItemBackgroundBorderless=2130903803,
+region_heightLessThan=2130969339,
 ---@type LuaRef
-selectionRequired=2130903804,
+region_heightMoreThan=2130969340,
 ---@type LuaRef
-selectorSize=2130903805,
+region_widthLessThan=2130969341,
 ---@type LuaRef
-shapeAppearance=2130903806,
+region_widthMoreThan=2130969342,
 ---@type LuaRef
-shapeAppearanceLargeComponent=2130903807,
+reverseLayout=2130969343,
 ---@type LuaRef
-shapeAppearanceMediumComponent=2130903808,
+rippleColor=2130969344,
 ---@type LuaRef
-shapeAppearanceOverlay=2130903809,
+rotationCenterId=2130969345,
 ---@type LuaRef
-shapeAppearanceSmallComponent=2130903810,
+round=2130969346,
 ---@type LuaRef
-shortcutMatchRequired=2130903811,
+roundPercent=2130969347,
 ---@type LuaRef
-showAnimationBehavior=2130903812,
+saturation=2130969348,
 ---@type LuaRef
-showAsAction=2130903813,
+scaleFromTextSize=2130969349,
 ---@type LuaRef
-showDelay=2130903814,
+scrimAnimationDuration=2130969350,
 ---@type LuaRef
-showDividers=2130903815,
+scrimBackground=2130969351,
 ---@type LuaRef
-showMotionSpec=2130903816,
+scrimVisibleHeightTrigger=2130969352,
 ---@type LuaRef
-showPaths=2130903817,
+searchHintIcon=2130969353,
 ---@type LuaRef
-showText=2130903818,
+searchIcon=2130969354,
 ---@type LuaRef
-showTitle=2130903819,
+searchViewStyle=2130969355,
 ---@type LuaRef
-shrinkMotionSpec=2130903820,
+seekBarStyle=2130969356,
 ---@type LuaRef
-singleChoiceItemLayout=2130903821,
+selectableItemBackground=2130969357,
 ---@type LuaRef
-singleLine=2130903822,
+selectableItemBackgroundBorderless=2130969358,
 ---@type LuaRef
-singleSelection=2130903823,
+selectionRequired=2130969359,
 ---@type LuaRef
-sizePercent=2130903824,
+selectorSize=2130969360,
 ---@type LuaRef
-sliderStyle=2130903825,
+setsTag=2130969361,
 ---@type LuaRef
-snackbarButtonStyle=2130903826,
+shapeAppearance=2130969362,
 ---@type LuaRef
-snackbarStyle=2130903827,
+shapeAppearanceLargeComponent=2130969363,
 ---@type LuaRef
-snackbarTextViewStyle=2130903828,
+shapeAppearanceMediumComponent=2130969364,
 ---@type LuaRef
-spanCount=2130903829,
+shapeAppearanceOverlay=2130969365,
 ---@type LuaRef
-spinBars=2130903830,
+shapeAppearanceSmallComponent=2130969366,
 ---@type LuaRef
-spinnerDropDownItemStyle=2130903831,
+showAnimationBehavior=2130969367,
 ---@type LuaRef
-spinnerStyle=2130903832,
+showAsAction=2130969368,
 ---@type LuaRef
-splitTrack=2130903833,
+showDelay=2130969369,
 ---@type LuaRef
-srcCompat=2130903834,
+showDividers=2130969370,
 ---@type LuaRef
-stackFromEnd=2130903835,
+showMotionSpec=2130969371,
 ---@type LuaRef
-staggered=2130903836,
+showPaths=2130969372,
 ---@type LuaRef
-startIconCheckable=2130903837,
+showText=2130969373,
 ---@type LuaRef
-startIconContentDescription=2130903838,
+showTitle=2130969374,
 ---@type LuaRef
-startIconDrawable=2130903839,
+shrinkMotionSpec=2130969375,
 ---@type LuaRef
-startIconTint=2130903840,
+singleChoiceItemLayout=2130969376,
 ---@type LuaRef
-startIconTintMode=2130903841,
+singleLine=2130969377,
 ---@type LuaRef
-state_above_anchor=2130903842,
+singleSelection=2130969378,
 ---@type LuaRef
-state_collapsed=2130903843,
+sizePercent=2130969379,
 ---@type LuaRef
-state_collapsible=2130903844,
+sliderStyle=2130969380,
 ---@type LuaRef
-state_dragged=2130903845,
+snackbarButtonStyle=2130969381,
 ---@type LuaRef
-state_liftable=2130903846,
+snackbarStyle=2130969382,
 ---@type LuaRef
-state_lifted=2130903847,
+snackbarTextViewStyle=2130969383,
 ---@type LuaRef
-statusBarBackground=2130903848,
+spanCount=2130969384,
 ---@type LuaRef
-statusBarForeground=2130903849,
+spinBars=2130969385,
 ---@type LuaRef
-statusBarScrim=2130903850,
+spinnerDropDownItemStyle=2130969386,
 ---@type LuaRef
-strokeColor=2130903851,
+spinnerStyle=2130969387,
 ---@type LuaRef
-strokeWidth=2130903852,
+splitTrack=2130969388,
 ---@type LuaRef
-subMenuArrow=2130903853,
+springBoundary=2130969389,
 ---@type LuaRef
-subheaderColor=2130903854,
+springDamping=2130969390,
 ---@type LuaRef
-subheaderInsetEnd=2130903855,
+springMass=2130969391,
 ---@type LuaRef
-subheaderInsetStart=2130903856,
+springStiffness=2130969392,
 ---@type LuaRef
-subheaderTextAppearance=2130903857,
+springStopThreshold=2130969393,
 ---@type LuaRef
-submitBackground=2130903858,
+srcCompat=2130969394,
 ---@type LuaRef
-subtitle=2130903859,
+stackFromEnd=2130969395,
 ---@type LuaRef
-subtitleCentered=2130903860,
+staggered=2130969396,
 ---@type LuaRef
-subtitleTextAppearance=2130903861,
+startDestination=2130969397,
 ---@type LuaRef
-subtitleTextColor=2130903862,
+startIconCheckable=2130969398,
 ---@type LuaRef
-subtitleTextStyle=2130903863,
+startIconContentDescription=2130969399,
 ---@type LuaRef
-suffixText=2130903864,
+startIconDrawable=2130969400,
 ---@type LuaRef
-suffixTextAppearance=2130903865,
+startIconTint=2130969401,
 ---@type LuaRef
-suffixTextColor=2130903866,
+startIconTintMode=2130969402,
 ---@type LuaRef
-suggestionRowLayout=2130903867,
+state_above_anchor=2130969403,
 ---@type LuaRef
-switchMinWidth=2130903868,
+state_collapsed=2130969404,
 ---@type LuaRef
-switchPadding=2130903869,
+state_collapsible=2130969405,
 ---@type LuaRef
-switchStyle=2130903870,
+state_dragged=2130969406,
 ---@type LuaRef
-switchTextAppearance=2130903871,
+state_liftable=2130969407,
 ---@type LuaRef
-tabBackground=2130903872,
+state_lifted=2130969408,
 ---@type LuaRef
-tabContentStart=2130903873,
+statusBarBackground=2130969409,
 ---@type LuaRef
-tabGravity=2130903874,
+statusBarForeground=2130969410,
 ---@type LuaRef
-tabIconTint=2130903875,
+statusBarScrim=2130969411,
 ---@type LuaRef
-tabIconTintMode=2130903876,
+strokeColor=2130969412,
 ---@type LuaRef
-tabIndicator=2130903877,
+strokeWidth=2130969413,
 ---@type LuaRef
-tabIndicatorAnimationDuration=2130903878,
+subMenuArrow=2130969414,
 ---@type LuaRef
-tabIndicatorAnimationMode=2130903879,
+submitBackground=2130969415,
 ---@type LuaRef
-tabIndicatorColor=2130903880,
+subtitle=2130969416,
 ---@type LuaRef
-tabIndicatorFullWidth=2130903881,
+subtitleCentered=2130969417,
 ---@type LuaRef
-tabIndicatorGravity=2130903882,
+subtitleTextAppearance=2130969418,
 ---@type LuaRef
-tabIndicatorHeight=2130903883,
+subtitleTextColor=2130969419,
 ---@type LuaRef
-tabInlineLabel=2130903884,
+subtitleTextStyle=2130969420,
 ---@type LuaRef
-tabMaxWidth=2130903885,
+suffixText=2130969421,
 ---@type LuaRef
-tabMinWidth=2130903886,
+suffixTextAppearance=2130969422,
 ---@type LuaRef
-tabMode=2130903887,
+suffixTextColor=2130969423,
 ---@type LuaRef
-tabPadding=2130903888,
+suggestionRowLayout=2130969424,
 ---@type LuaRef
-tabPaddingBottom=2130903889,
+switchMinWidth=2130969425,
 ---@type LuaRef
-tabPaddingEnd=2130903890,
+switchPadding=2130969426,
 ---@type LuaRef
-tabPaddingStart=2130903891,
+switchStyle=2130969427,
 ---@type LuaRef
-tabPaddingTop=2130903892,
+switchTextAppearance=2130969428,
 ---@type LuaRef
-tabRippleColor=2130903893,
+tabBackground=2130969429,
 ---@type LuaRef
-tabSecondaryStyle=2130903894,
+tabContentStart=2130969430,
 ---@type LuaRef
-tabSelectedTextColor=2130903895,
+tabGravity=2130969431,
 ---@type LuaRef
-tabStyle=2130903896,
+tabIconTint=2130969432,
 ---@type LuaRef
-tabTextAppearance=2130903897,
+tabIconTintMode=2130969433,
 ---@type LuaRef
-tabTextColor=2130903898,
+tabIndicator=2130969434,
 ---@type LuaRef
-tabUnboundedRipple=2130903899,
+tabIndicatorAnimationDuration=2130969435,
 ---@type LuaRef
-targetId=2130903900,
+tabIndicatorAnimationMode=2130969436,
 ---@type LuaRef
-telltales_tailColor=2130903901,
+tabIndicatorColor=2130969437,
 ---@type LuaRef
-telltales_tailScale=2130903902,
+tabIndicatorFullWidth=2130969438,
 ---@type LuaRef
-telltales_velocityMode=2130903903,
+tabIndicatorGravity=2130969439,
 ---@type LuaRef
-textAllCaps=2130903904,
+tabIndicatorHeight=2130969440,
 ---@type LuaRef
-textAppearanceBody1=2130903905,
+tabInlineLabel=2130969441,
 ---@type LuaRef
-textAppearanceBody2=2130903906,
+tabMaxWidth=2130969442,
 ---@type LuaRef
-textAppearanceBodyLarge=2130903907,
+tabMinWidth=2130969443,
 ---@type LuaRef
-textAppearanceBodyMedium=2130903908,
+tabMode=2130969444,
 ---@type LuaRef
-textAppearanceBodySmall=2130903909,
+tabPadding=2130969445,
 ---@type LuaRef
-textAppearanceButton=2130903910,
+tabPaddingBottom=2130969446,
 ---@type LuaRef
-textAppearanceCaption=2130903911,
+tabPaddingEnd=2130969447,
 ---@type LuaRef
-textAppearanceDisplayLarge=2130903912,
+tabPaddingStart=2130969448,
 ---@type LuaRef
-textAppearanceDisplayMedium=2130903913,
+tabPaddingTop=2130969449,
 ---@type LuaRef
-textAppearanceDisplaySmall=2130903914,
+tabRippleColor=2130969450,
 ---@type LuaRef
-textAppearanceHeadline1=2130903915,
+tabSelectedTextColor=2130969451,
 ---@type LuaRef
-textAppearanceHeadline2=2130903916,
+tabStyle=2130969452,
 ---@type LuaRef
-textAppearanceHeadline3=2130903917,
+tabTextAppearance=2130969453,
 ---@type LuaRef
-textAppearanceHeadline4=2130903918,
+tabTextColor=2130969454,
 ---@type LuaRef
-textAppearanceHeadline5=2130903919,
+tabUnboundedRipple=2130969455,
 ---@type LuaRef
-textAppearanceHeadline6=2130903920,
+targetId=2130969456,
 ---@type LuaRef
-textAppearanceHeadlineLarge=2130903921,
+targetPackage=2130969457,
 ---@type LuaRef
-textAppearanceHeadlineMedium=2130903922,
+telltales_tailColor=2130969458,
 ---@type LuaRef
-textAppearanceHeadlineSmall=2130903923,
+telltales_tailScale=2130969459,
 ---@type LuaRef
-textAppearanceLabelLarge=2130903924,
+telltales_velocityMode=2130969460,
 ---@type LuaRef
-textAppearanceLabelMedium=2130903925,
+textAllCaps=2130969461,
 ---@type LuaRef
-textAppearanceLabelSmall=2130903926,
+textAppearanceBody1=2130969462,
 ---@type LuaRef
-textAppearanceLargePopupMenu=2130903927,
+textAppearanceBody2=2130969463,
 ---@type LuaRef
-textAppearanceLineHeightEnabled=2130903928,
+textAppearanceButton=2130969464,
 ---@type LuaRef
-textAppearanceListItem=2130903929,
+textAppearanceCaption=2130969465,
 ---@type LuaRef
-textAppearanceListItemSecondary=2130903930,
+textAppearanceHeadline1=2130969466,
 ---@type LuaRef
-textAppearanceListItemSmall=2130903931,
+textAppearanceHeadline2=2130969467,
 ---@type LuaRef
-textAppearanceOverline=2130903932,
+textAppearanceHeadline3=2130969468,
 ---@type LuaRef
-textAppearancePopupMenuHeader=2130903933,
+textAppearanceHeadline4=2130969469,
 ---@type LuaRef
-textAppearanceSearchResultSubtitle=2130903934,
+textAppearanceHeadline5=2130969470,
 ---@type LuaRef
-textAppearanceSearchResultTitle=2130903935,
+textAppearanceHeadline6=2130969471,
 ---@type LuaRef
-textAppearanceSmallPopupMenu=2130903936,
+textAppearanceLargePopupMenu=2130969472,
 ---@type LuaRef
-textAppearanceSubtitle1=2130903937,
+textAppearanceLineHeightEnabled=2130969473,
 ---@type LuaRef
-textAppearanceSubtitle2=2130903938,
+textAppearanceListItem=2130969474,
 ---@type LuaRef
-textAppearanceTitleLarge=2130903939,
+textAppearanceListItemSecondary=2130969475,
 ---@type LuaRef
-textAppearanceTitleMedium=2130903940,
+textAppearanceListItemSmall=2130969476,
 ---@type LuaRef
-textAppearanceTitleSmall=2130903941,
+textAppearanceOverline=2130969477,
 ---@type LuaRef
-textColorAlertDialogListItem=2130903942,
+textAppearancePopupMenuHeader=2130969478,
 ---@type LuaRef
-textColorSearchUrl=2130903943,
+textAppearanceSearchResultSubtitle=2130969479,
 ---@type LuaRef
-textEndPadding=2130903944,
+textAppearanceSearchResultTitle=2130969480,
 ---@type LuaRef
-textInputFilledDenseStyle=2130903945,
+textAppearanceSmallPopupMenu=2130969481,
 ---@type LuaRef
-textInputFilledExposedDropdownMenuStyle=2130903946,
+textAppearanceSubtitle1=2130969482,
 ---@type LuaRef
-textInputFilledStyle=2130903947,
+textAppearanceSubtitle2=2130969483,
 ---@type LuaRef
-textInputLayoutFocusedRectEnabled=2130903948,
+textBackground=2130969484,
 ---@type LuaRef
-textInputOutlinedDenseStyle=2130903949,
+textBackgroundPanX=2130969485,
 ---@type LuaRef
-textInputOutlinedExposedDropdownMenuStyle=2130903950,
+textBackgroundPanY=2130969486,
 ---@type LuaRef
-textInputOutlinedStyle=2130903951,
+textBackgroundRotate=2130969487,
 ---@type LuaRef
-textInputStyle=2130903952,
+textBackgroundZoom=2130969488,
 ---@type LuaRef
-textLocale=2130903953,
+textColorAlertDialogListItem=2130969489,
 ---@type LuaRef
-textStartPadding=2130903954,
+textColorSearchUrl=2130969490,
 ---@type LuaRef
-theme=2130903955,
+textEndPadding=2130969491,
 ---@type LuaRef
-themeLineHeight=2130903956,
+textFillColor=2130969492,
 ---@type LuaRef
-thickness=2130903957,
+textInputLayoutFocusedRectEnabled=2130969493,
 ---@type LuaRef
-thumbColor=2130903958,
+textInputStyle=2130969494,
 ---@type LuaRef
-thumbElevation=2130903959,
+textLocale=2130969495,
 ---@type LuaRef
-thumbRadius=2130903960,
+textOutlineColor=2130969496,
 ---@type LuaRef
-thumbStrokeColor=2130903961,
+textOutlineThickness=2130969497,
 ---@type LuaRef
-thumbStrokeWidth=2130903962,
+textPanX=2130969498,
 ---@type LuaRef
-thumbTextPadding=2130903963,
+textPanY=2130969499,
 ---@type LuaRef
-thumbTint=2130903964,
+textStartPadding=2130969500,
 ---@type LuaRef
-thumbTintMode=2130903965,
+textureBlurFactor=2130969501,
 ---@type LuaRef
-tickColor=2130903966,
+textureEffect=2130969502,
 ---@type LuaRef
-tickColorActive=2130903967,
+textureHeight=2130969503,
 ---@type LuaRef
-tickColorInactive=2130903968,
+textureWidth=2130969504,
 ---@type LuaRef
-tickMark=2130903969,
+theme=2130969505,
 ---@type LuaRef
-tickMarkTint=2130903970,
+themeLineHeight=2130969506,
 ---@type LuaRef
-tickMarkTintMode=2130903971,
+thickness=2130969507,
 ---@type LuaRef
-tickVisible=2130903972,
+thumbColor=2130969508,
 ---@type LuaRef
-tint=2130903973,
+thumbElevation=2130969509,
 ---@type LuaRef
-tintMode=2130903974,
+thumbRadius=2130969510,
 ---@type LuaRef
-title=2130903975,
+thumbStrokeColor=2130969511,
 ---@type LuaRef
-titleCentered=2130903976,
+thumbStrokeWidth=2130969512,
 ---@type LuaRef
-titleCollapseMode=2130903977,
+thumbTextPadding=2130969513,
 ---@type LuaRef
-titleEnabled=2130903978,
+thumbTint=2130969514,
 ---@type LuaRef
-titleMargin=2130903979,
+thumbTintMode=2130969515,
 ---@type LuaRef
-titleMarginBottom=2130903980,
+tickColor=2130969516,
 ---@type LuaRef
-titleMarginEnd=2130903981,
+tickColorActive=2130969517,
 ---@type LuaRef
-titleMarginStart=2130903982,
+tickColorInactive=2130969518,
 ---@type LuaRef
-titleMarginTop=2130903983,
+tickMark=2130969519,
 ---@type LuaRef
-titleMargins=2130903984,
+tickMarkTint=2130969520,
 ---@type LuaRef
-titlePositionInterpolator=2130903985,
+tickMarkTintMode=2130969521,
 ---@type LuaRef
-titleTextAppearance=2130903986,
+tickVisible=2130969522,
 ---@type LuaRef
-titleTextColor=2130903987,
+tint=2130969523,
 ---@type LuaRef
-titleTextStyle=2130903988,
+tintMode=2130969524,
 ---@type LuaRef
-toolbarId=2130903989,
+title=2130969525,
 ---@type LuaRef
-toolbarNavigationButtonStyle=2130903990,
+titleCentered=2130969526,
 ---@type LuaRef
-toolbarStyle=2130903991,
+titleCollapseMode=2130969527,
 ---@type LuaRef
-toolbarSurfaceStyle=2130903992,
+titleEnabled=2130969528,
 ---@type LuaRef
-tooltipForegroundColor=2130903993,
+titleMargin=2130969529,
 ---@type LuaRef
-tooltipFrameBackground=2130903994,
+titleMarginBottom=2130969530,
 ---@type LuaRef
-tooltipStyle=2130903995,
+titleMarginEnd=2130969531,
 ---@type LuaRef
-tooltipText=2130903996,
+titleMarginStart=2130969532,
 ---@type LuaRef
-topInsetScrimEnabled=2130903997,
+titleMarginTop=2130969533,
 ---@type LuaRef
-touchAnchorId=2130903998,
+titleMargins=2130969534,
 ---@type LuaRef
-touchAnchorSide=2130903999,
+titleTextAppearance=2130969535,
 ---@type LuaRef
-touchRegionId=2130904000,
+titleTextColor=2130969536,
 ---@type LuaRef
-track=2130904001,
+titleTextStyle=2130969537,
 ---@type LuaRef
-trackColor=2130904002,
+toolbarId=2130969538,
 ---@type LuaRef
-trackColorActive=2130904003,
+toolbarNavigationButtonStyle=2130969539,
 ---@type LuaRef
-trackColorInactive=2130904004,
+toolbarStyle=2130969540,
 ---@type LuaRef
-trackCornerRadius=2130904005,
+tooltipForegroundColor=2130969541,
 ---@type LuaRef
-trackHeight=2130904006,
+tooltipFrameBackground=2130969542,
 ---@type LuaRef
-trackThickness=2130904007,
+tooltipStyle=2130969543,
 ---@type LuaRef
-trackTint=2130904008,
+tooltipText=2130969544,
 ---@type LuaRef
-trackTintMode=2130904009,
+touchAnchorId=2130969545,
 ---@type LuaRef
-transitionDisable=2130904010,
+touchAnchorSide=2130969546,
 ---@type LuaRef
-transitionEasing=2130904011,
+touchRegionId=2130969547,
 ---@type LuaRef
-transitionFlags=2130904012,
+track=2130969548,
 ---@type LuaRef
-transitionPathRotate=2130904013,
+trackColor=2130969549,
 ---@type LuaRef
-transitionShapeAppearance=2130904014,
+trackColorActive=2130969550,
 ---@type LuaRef
-triggerId=2130904015,
+trackColorInactive=2130969551,
 ---@type LuaRef
-triggerReceiver=2130904016,
+trackCornerRadius=2130969552,
 ---@type LuaRef
-triggerSlack=2130904017,
+trackHeight=2130969553,
 ---@type LuaRef
-ttcIndex=2130904018,
+trackThickness=2130969554,
 ---@type LuaRef
-useCompatPadding=2130904019,
+trackTint=2130969555,
 ---@type LuaRef
-useMaterialThemeColors=2130904020,
+trackTintMode=2130969556,
 ---@type LuaRef
-values=2130904021,
+transformPivotTarget=2130969557,
 ---@type LuaRef
-verticalOffset=2130904022,
+transitionDisable=2130969558,
 ---@type LuaRef
-verticalOffsetWithText=2130904023,
+transitionEasing=2130969559,
 ---@type LuaRef
-viewInflaterClass=2130904024,
+transitionFlags=2130969560,
 ---@type LuaRef
-visibilityMode=2130904025,
+transitionPathRotate=2130969561,
 ---@type LuaRef
-voiceIcon=2130904026,
+transitionShapeAppearance=2130969562,
 ---@type LuaRef
-warmth=2130904027,
+triggerId=2130969563,
 ---@type LuaRef
-waveDecay=2130904028,
+triggerReceiver=2130969564,
 ---@type LuaRef
-waveOffset=2130904029,
+triggerSlack=2130969565,
 ---@type LuaRef
-wavePeriod=2130904030,
+ttcIndex=2130969566,
 ---@type LuaRef
-waveShape=2130904031,
+upDuration=2130969567,
 ---@type LuaRef
-waveVariesBy=2130904032,
+uri=2130969568,
 ---@type LuaRef
-windowActionBar=2130904033,
+useCompatPadding=2130969569,
 ---@type LuaRef
-windowActionBarOverlay=2130904034,
+useMaterialThemeColors=2130969570,
 ---@type LuaRef
-windowActionModeOverlay=2130904035,
+values=2130969571,
 ---@type LuaRef
-windowFixedHeightMajor=2130904036,
+verticalOffset=2130969572,
 ---@type LuaRef
-windowFixedHeightMinor=2130904037,
+viewInflaterClass=2130969573,
 ---@type LuaRef
-windowFixedWidthMajor=2130904038,
+viewTransitionMode=2130969574,
 ---@type LuaRef
-windowFixedWidthMinor=2130904039,
+viewTransitionOnCross=2130969575,
 ---@type LuaRef
-windowMinWidthMajor=2130904040,
+viewTransitionOnNegativeCross=2130969576,
 ---@type LuaRef
-windowMinWidthMinor=2130904041,
+viewTransitionOnPositiveCross=2130969577,
 ---@type LuaRef
-windowNoTitle=2130904042,
+visibilityMode=2130969578,
 ---@type LuaRef
-yearSelectedStyle=2130904043,
+voiceIcon=2130969579,
 ---@type LuaRef
-yearStyle=2130904044,
+warmth=2130969580,
 ---@type LuaRef
-yearTodayStyle=2130904045
+waveDecay=2130969581,
+---@type LuaRef
+waveOffset=2130969582,
+---@type LuaRef
+wavePeriod=2130969583,
+---@type LuaRef
+wavePhase=2130969584,
+---@type LuaRef
+waveShape=2130969585,
+---@type LuaRef
+waveVariesBy=2130969586,
+---@type LuaRef
+windowActionBar=2130969587,
+---@type LuaRef
+windowActionBarOverlay=2130969588,
+---@type LuaRef
+windowActionModeOverlay=2130969589,
+---@type LuaRef
+windowFixedHeightMajor=2130969590,
+---@type LuaRef
+windowFixedHeightMinor=2130969591,
+---@type LuaRef
+windowFixedWidthMajor=2130969592,
+---@type LuaRef
+windowFixedWidthMinor=2130969593,
+---@type LuaRef
+windowMinWidthMajor=2130969594,
+---@type LuaRef
+windowMinWidthMinor=2130969595,
+---@type LuaRef
+windowNoTitle=2130969596,
+---@type LuaRef
+yearSelectedStyle=2130969597,
+---@type LuaRef
+yearStyle=2130969598,
+---@type LuaRef
+yearTodayStyle=2130969599
 
 }
 LR.attr = attr
@@ -2164,41 +2214,13 @@ LR.attr = attr
 ---@class bool
 local bool = {
 ---@type LuaRef
-abc_action_bar_embed_tabs=2130968576,
+abc_action_bar_embed_tabs=2131034112,
 ---@type LuaRef
-abc_config_actionMenuItemAllCaps=2130968577,
+abc_config_actionMenuItemAllCaps=2131034113,
 ---@type LuaRef
-m3_sys_typescale_body_large_text_all_caps=2130968578,
+checkbox_checked=2131034114,
 ---@type LuaRef
-m3_sys_typescale_body_medium_text_all_caps=2130968579,
----@type LuaRef
-m3_sys_typescale_body_small_text_all_caps=2130968580,
----@type LuaRef
-m3_sys_typescale_display_large_text_all_caps=2130968581,
----@type LuaRef
-m3_sys_typescale_display_medium_text_all_caps=2130968582,
----@type LuaRef
-m3_sys_typescale_display_small_text_all_caps=2130968583,
----@type LuaRef
-m3_sys_typescale_headline_large_text_all_caps=2130968584,
----@type LuaRef
-m3_sys_typescale_headline_medium_text_all_caps=2130968585,
----@type LuaRef
-m3_sys_typescale_headline_small_text_all_caps=2130968586,
----@type LuaRef
-m3_sys_typescale_label_large_text_all_caps=2130968587,
----@type LuaRef
-m3_sys_typescale_label_medium_text_all_caps=2130968588,
----@type LuaRef
-m3_sys_typescale_label_small_text_all_caps=2130968589,
----@type LuaRef
-m3_sys_typescale_title_large_text_all_caps=2130968590,
----@type LuaRef
-m3_sys_typescale_title_medium_text_all_caps=2130968591,
----@type LuaRef
-m3_sys_typescale_title_small_text_all_caps=2130968592,
----@type LuaRef
-mtrl_btn_textappearance_all_caps=2130968593
+mtrl_btn_textappearance_all_caps=2131034115
 
 }
 LR.bool = bool
@@ -2206,1183 +2228,431 @@ LR.bool = bool
 ---@class color
 local color = {
 ---@type LuaRef
-abc_background_cache_hint_selector_material_dark=2131034112,
+abc_background_cache_hint_selector_material_dark=2131099648,
 ---@type LuaRef
-abc_background_cache_hint_selector_material_light=2131034113,
+abc_background_cache_hint_selector_material_light=2131099649,
 ---@type LuaRef
-abc_btn_colored_borderless_text_material=2131034114,
+abc_btn_colored_borderless_text_material=2131099650,
 ---@type LuaRef
-abc_btn_colored_text_material=2131034115,
+abc_btn_colored_text_material=2131099651,
 ---@type LuaRef
-abc_color_highlight_material=2131034116,
+abc_color_highlight_material=2131099652,
 ---@type LuaRef
-abc_decor_view_status_guard=2131034117,
+abc_decor_view_status_guard=2131099653,
 ---@type LuaRef
-abc_decor_view_status_guard_light=2131034118,
+abc_decor_view_status_guard_light=2131099654,
 ---@type LuaRef
-abc_hint_foreground_material_dark=2131034119,
+abc_hint_foreground_material_dark=2131099655,
 ---@type LuaRef
-abc_hint_foreground_material_light=2131034120,
+abc_hint_foreground_material_light=2131099656,
 ---@type LuaRef
-abc_primary_text_disable_only_material_dark=2131034121,
+abc_primary_text_disable_only_material_dark=2131099657,
 ---@type LuaRef
-abc_primary_text_disable_only_material_light=2131034122,
+abc_primary_text_disable_only_material_light=2131099658,
 ---@type LuaRef
-abc_primary_text_material_dark=2131034123,
+abc_primary_text_material_dark=2131099659,
 ---@type LuaRef
-abc_primary_text_material_light=2131034124,
+abc_primary_text_material_light=2131099660,
 ---@type LuaRef
-abc_search_url_text=2131034125,
+abc_search_url_text=2131099661,
 ---@type LuaRef
-abc_search_url_text_normal=2131034126,
+abc_search_url_text_normal=2131099662,
 ---@type LuaRef
-abc_search_url_text_pressed=2131034127,
+abc_search_url_text_pressed=2131099663,
 ---@type LuaRef
-abc_search_url_text_selected=2131034128,
+abc_search_url_text_selected=2131099664,
 ---@type LuaRef
-abc_secondary_text_material_dark=2131034129,
+abc_secondary_text_material_dark=2131099665,
 ---@type LuaRef
-abc_secondary_text_material_light=2131034130,
+abc_secondary_text_material_light=2131099666,
 ---@type LuaRef
-abc_tint_btn_checkable=2131034131,
+abc_tint_btn_checkable=2131099667,
 ---@type LuaRef
-abc_tint_default=2131034132,
+abc_tint_default=2131099668,
 ---@type LuaRef
-abc_tint_edittext=2131034133,
+abc_tint_edittext=2131099669,
 ---@type LuaRef
-abc_tint_seek_thumb=2131034134,
+abc_tint_seek_thumb=2131099670,
 ---@type LuaRef
-abc_tint_spinner=2131034135,
+abc_tint_spinner=2131099671,
 ---@type LuaRef
-abc_tint_switch_track=2131034136,
+abc_tint_switch_track=2131099672,
 ---@type LuaRef
-accent_material_dark=2131034137,
+accent_material_dark=2131099673,
 ---@type LuaRef
-accent_material_light=2131034138,
+accent_material_light=2131099674,
 ---@type LuaRef
-androidx_core_ripple_material_light=2131034139,
+androidx_core_ripple_material_light=2131099675,
 ---@type LuaRef
-androidx_core_secondary_text_default_material_light=2131034140,
+androidx_core_secondary_text_default_material_light=2131099676,
 ---@type LuaRef
-background_floating_material_dark=2131034141,
+background_floating_material_dark=2131099677,
 ---@type LuaRef
-background_floating_material_light=2131034142,
+background_floating_material_light=2131099678,
 ---@type LuaRef
-background_material_dark=2131034143,
+background_material_dark=2131099679,
 ---@type LuaRef
-background_material_light=2131034144,
+background_material_light=2131099680,
 ---@type LuaRef
-bright_foreground_disabled_material_dark=2131034145,
+bright_foreground_disabled_material_dark=2131099681,
 ---@type LuaRef
-bright_foreground_disabled_material_light=2131034146,
+bright_foreground_disabled_material_light=2131099682,
 ---@type LuaRef
-bright_foreground_inverse_material_dark=2131034147,
+bright_foreground_inverse_material_dark=2131099683,
 ---@type LuaRef
-bright_foreground_inverse_material_light=2131034148,
+bright_foreground_inverse_material_light=2131099684,
 ---@type LuaRef
-bright_foreground_material_dark=2131034149,
+bright_foreground_material_dark=2131099685,
 ---@type LuaRef
-bright_foreground_material_light=2131034150,
+bright_foreground_material_light=2131099686,
 ---@type LuaRef
-button_material_dark=2131034151,
+button_material_dark=2131099687,
 ---@type LuaRef
-button_material_light=2131034152,
+button_material_light=2131099688,
 ---@type LuaRef
-cardview_dark_background=2131034153,
+cardview_dark_background=2131099689,
 ---@type LuaRef
-cardview_light_background=2131034154,
+cardview_light_background=2131099690,
 ---@type LuaRef
-cardview_shadow_end_color=2131034155,
+cardview_shadow_end_color=2131099691,
 ---@type LuaRef
-cardview_shadow_start_color=2131034156,
+cardview_shadow_start_color=2131099692,
 ---@type LuaRef
-checkbox_themeable_attribute_color=2131034157,
+checkbox_themeable_attribute_color=2131099693,
 ---@type LuaRef
-design_bottom_navigation_shadow_color=2131034158,
+colorAccent=2131099694,
 ---@type LuaRef
-design_box_stroke_color=2131034159,
+colorPrimary=2131099695,
 ---@type LuaRef
-design_dark_default_color_background=2131034160,
+colorPrimaryDark=2131099696,
 ---@type LuaRef
-design_dark_default_color_error=2131034161,
+colorPrimaryLight=2131099697,
 ---@type LuaRef
-design_dark_default_color_on_background=2131034162,
+design_bottom_navigation_shadow_color=2131099698,
 ---@type LuaRef
-design_dark_default_color_on_error=2131034163,
+design_box_stroke_color=2131099699,
 ---@type LuaRef
-design_dark_default_color_on_primary=2131034164,
+design_dark_default_color_background=2131099700,
 ---@type LuaRef
-design_dark_default_color_on_secondary=2131034165,
+design_dark_default_color_error=2131099701,
 ---@type LuaRef
-design_dark_default_color_on_surface=2131034166,
+design_dark_default_color_on_background=2131099702,
 ---@type LuaRef
-design_dark_default_color_primary=2131034167,
+design_dark_default_color_on_error=2131099703,
 ---@type LuaRef
-design_dark_default_color_primary_dark=2131034168,
+design_dark_default_color_on_primary=2131099704,
 ---@type LuaRef
-design_dark_default_color_primary_variant=2131034169,
+design_dark_default_color_on_secondary=2131099705,
 ---@type LuaRef
-design_dark_default_color_secondary=2131034170,
+design_dark_default_color_on_surface=2131099706,
 ---@type LuaRef
-design_dark_default_color_secondary_variant=2131034171,
+design_dark_default_color_primary=2131099707,
 ---@type LuaRef
-design_dark_default_color_surface=2131034172,
+design_dark_default_color_primary_dark=2131099708,
 ---@type LuaRef
-design_default_color_background=2131034173,
+design_dark_default_color_primary_variant=2131099709,
 ---@type LuaRef
-design_default_color_error=2131034174,
+design_dark_default_color_secondary=2131099710,
 ---@type LuaRef
-design_default_color_on_background=2131034175,
+design_dark_default_color_secondary_variant=2131099711,
 ---@type LuaRef
-design_default_color_on_error=2131034176,
+design_dark_default_color_surface=2131099712,
 ---@type LuaRef
-design_default_color_on_primary=2131034177,
+design_default_color_background=2131099713,
 ---@type LuaRef
-design_default_color_on_secondary=2131034178,
+design_default_color_error=2131099714,
 ---@type LuaRef
-design_default_color_on_surface=2131034179,
+design_default_color_on_background=2131099715,
 ---@type LuaRef
-design_default_color_primary=2131034180,
+design_default_color_on_error=2131099716,
 ---@type LuaRef
-design_default_color_primary_dark=2131034181,
+design_default_color_on_primary=2131099717,
 ---@type LuaRef
-design_default_color_primary_variant=2131034182,
+design_default_color_on_secondary=2131099718,
 ---@type LuaRef
-design_default_color_secondary=2131034183,
+design_default_color_on_surface=2131099719,
 ---@type LuaRef
-design_default_color_secondary_variant=2131034184,
+design_default_color_primary=2131099720,
 ---@type LuaRef
-design_default_color_surface=2131034185,
+design_default_color_primary_dark=2131099721,
 ---@type LuaRef
-design_error=2131034186,
+design_default_color_primary_variant=2131099722,
 ---@type LuaRef
-design_fab_shadow_end_color=2131034187,
+design_default_color_secondary=2131099723,
 ---@type LuaRef
-design_fab_shadow_mid_color=2131034188,
+design_default_color_secondary_variant=2131099724,
 ---@type LuaRef
-design_fab_shadow_start_color=2131034189,
+design_default_color_surface=2131099725,
 ---@type LuaRef
-design_fab_stroke_end_inner_color=2131034190,
+design_error=2131099726,
 ---@type LuaRef
-design_fab_stroke_end_outer_color=2131034191,
+design_fab_shadow_end_color=2131099727,
 ---@type LuaRef
-design_fab_stroke_top_inner_color=2131034192,
+design_fab_shadow_mid_color=2131099728,
 ---@type LuaRef
-design_fab_stroke_top_outer_color=2131034193,
+design_fab_shadow_start_color=2131099729,
 ---@type LuaRef
-design_icon_tint=2131034194,
+design_fab_stroke_end_inner_color=2131099730,
 ---@type LuaRef
-design_snackbar_background_color=2131034195,
+design_fab_stroke_end_outer_color=2131099731,
 ---@type LuaRef
-dim_foreground_disabled_material_dark=2131034196,
+design_fab_stroke_top_inner_color=2131099732,
 ---@type LuaRef
-dim_foreground_disabled_material_light=2131034197,
+design_fab_stroke_top_outer_color=2131099733,
 ---@type LuaRef
-dim_foreground_material_dark=2131034198,
+design_icon_tint=2131099734,
 ---@type LuaRef
-dim_foreground_material_light=2131034199,
+design_snackbar_background_color=2131099735,
 ---@type LuaRef
-error_color_material_dark=2131034200,
+dim_foreground_disabled_material_dark=2131099736,
 ---@type LuaRef
-error_color_material_light=2131034201,
+dim_foreground_disabled_material_light=2131099737,
 ---@type LuaRef
-foreground_material_dark=2131034202,
+dim_foreground_material_dark=2131099738,
 ---@type LuaRef
-foreground_material_light=2131034203,
+dim_foreground_material_light=2131099739,
 ---@type LuaRef
-highlighted_text_material_dark=2131034204,
+error_color_material_dark=2131099740,
 ---@type LuaRef
-highlighted_text_material_light=2131034205,
+error_color_material_light=2131099741,
 ---@type LuaRef
-m3_appbar_overlay_color=2131034206,
+foreground_material_dark=2131099742,
 ---@type LuaRef
-m3_assist_chip_icon_tint_color=2131034207,
+foreground_material_light=2131099743,
 ---@type LuaRef
-m3_assist_chip_stroke_color=2131034208,
+highlighted_text_material_dark=2131099744,
 ---@type LuaRef
-m3_button_background_color_selector=2131034209,
+highlighted_text_material_light=2131099745,
 ---@type LuaRef
-m3_button_foreground_color_selector=2131034210,
+material_blue_grey_800=2131099746,
 ---@type LuaRef
-m3_button_outline_color_selector=2131034211,
+material_blue_grey_900=2131099747,
 ---@type LuaRef
-m3_button_ripple_color=2131034212,
+material_blue_grey_950=2131099748,
 ---@type LuaRef
-m3_button_ripple_color_selector=2131034213,
+material_cursor_color=2131099749,
 ---@type LuaRef
-m3_calendar_item_disabled_text=2131034214,
+material_deep_teal_200=2131099750,
 ---@type LuaRef
-m3_calendar_item_stroke_color=2131034215,
+material_deep_teal_500=2131099751,
 ---@type LuaRef
-m3_card_foreground_color=2131034216,
+material_grey_100=2131099752,
 ---@type LuaRef
-m3_card_ripple_color=2131034217,
+material_grey_300=2131099753,
 ---@type LuaRef
-m3_card_stroke_color=2131034218,
+material_grey_50=2131099754,
 ---@type LuaRef
-m3_chip_assist_text_color=2131034219,
+material_grey_600=2131099755,
 ---@type LuaRef
-m3_chip_background_color=2131034220,
+material_grey_800=2131099756,
 ---@type LuaRef
-m3_chip_ripple_color=2131034221,
+material_grey_850=2131099757,
 ---@type LuaRef
-m3_chip_stroke_color=2131034222,
+material_grey_900=2131099758,
 ---@type LuaRef
-m3_chip_text_color=2131034223,
+material_on_background_disabled=2131099759,
 ---@type LuaRef
-m3_dark_default_color_primary_text=2131034224,
+material_on_background_emphasis_high_type=2131099760,
 ---@type LuaRef
-m3_dark_default_color_secondary_text=2131034225,
+material_on_background_emphasis_medium=2131099761,
 ---@type LuaRef
-m3_dark_highlighted_text=2131034226,
+material_on_primary_disabled=2131099762,
 ---@type LuaRef
-m3_dark_hint_foreground=2131034227,
+material_on_primary_emphasis_high_type=2131099763,
 ---@type LuaRef
-m3_dark_primary_text_disable_only=2131034228,
+material_on_primary_emphasis_medium=2131099764,
 ---@type LuaRef
-m3_default_color_primary_text=2131034229,
+material_on_surface_disabled=2131099765,
 ---@type LuaRef
-m3_default_color_secondary_text=2131034230,
+material_on_surface_emphasis_high_type=2131099766,
 ---@type LuaRef
-m3_dynamic_dark_default_color_primary_text=2131034231,
+material_on_surface_emphasis_medium=2131099767,
 ---@type LuaRef
-m3_dynamic_dark_default_color_secondary_text=2131034232,
+material_on_surface_stroke=2131099768,
 ---@type LuaRef
-m3_dynamic_dark_highlighted_text=2131034233,
+material_slider_active_tick_marks_color=2131099769,
 ---@type LuaRef
-m3_dynamic_dark_hint_foreground=2131034234,
+material_slider_active_track_color=2131099770,
 ---@type LuaRef
-m3_dynamic_dark_primary_text_disable_only=2131034235,
+material_slider_halo_color=2131099771,
 ---@type LuaRef
-m3_dynamic_default_color_primary_text=2131034236,
+material_slider_inactive_tick_marks_color=2131099772,
 ---@type LuaRef
-m3_dynamic_default_color_secondary_text=2131034237,
+material_slider_inactive_track_color=2131099773,
 ---@type LuaRef
-m3_dynamic_highlighted_text=2131034238,
+material_slider_thumb_color=2131099774,
 ---@type LuaRef
-m3_dynamic_hint_foreground=2131034239,
+material_timepicker_button_background=2131099775,
 ---@type LuaRef
-m3_dynamic_primary_text_disable_only=2131034240,
+material_timepicker_button_stroke=2131099776,
 ---@type LuaRef
-m3_elevated_chip_background_color=2131034241,
+material_timepicker_clock_text_color=2131099777,
 ---@type LuaRef
-m3_highlighted_text=2131034242,
+material_timepicker_clockface=2131099778,
 ---@type LuaRef
-m3_hint_foreground=2131034243,
+material_timepicker_modebutton_tint=2131099779,
 ---@type LuaRef
-m3_navigation_bar_item_with_indicator_icon_tint=2131034244,
+mtrl_btn_bg_color_selector=2131099780,
 ---@type LuaRef
-m3_navigation_bar_item_with_indicator_label_tint=2131034245,
+mtrl_btn_ripple_color=2131099781,
 ---@type LuaRef
-m3_navigation_bar_ripple_color_selector=2131034246,
+mtrl_btn_stroke_color_selector=2131099782,
 ---@type LuaRef
-m3_navigation_item_background_color=2131034247,
+mtrl_btn_text_btn_bg_color_selector=2131099783,
 ---@type LuaRef
-m3_navigation_item_icon_tint=2131034248,
+mtrl_btn_text_btn_ripple_color=2131099784,
 ---@type LuaRef
-m3_navigation_item_text_color=2131034249,
+mtrl_btn_text_color_disabled=2131099785,
 ---@type LuaRef
-m3_popupmenu_overlay_color=2131034250,
+mtrl_btn_text_color_selector=2131099786,
 ---@type LuaRef
-m3_primary_text_disable_only=2131034251,
+mtrl_btn_transparent_bg_color=2131099787,
 ---@type LuaRef
-m3_radiobutton_ripple_tint=2131034252,
+mtrl_calendar_item_stroke_color=2131099788,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral0=2131034253,
+mtrl_calendar_selected_range=2131099789,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral10=2131034254,
+mtrl_card_view_foreground=2131099790,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral100=2131034255,
+mtrl_card_view_ripple=2131099791,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral20=2131034256,
+mtrl_chip_background_color=2131099792,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral30=2131034257,
+mtrl_chip_close_icon_tint=2131099793,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral40=2131034258,
+mtrl_chip_surface_color=2131099794,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral50=2131034259,
+mtrl_chip_text_color=2131099795,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral60=2131034260,
+mtrl_choice_chip_background_color=2131099796,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral70=2131034261,
+mtrl_choice_chip_ripple_color=2131099797,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral80=2131034262,
+mtrl_choice_chip_text_color=2131099798,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral90=2131034263,
+mtrl_error=2131099799,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral95=2131034264,
+mtrl_fab_bg_color_selector=2131099800,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral99=2131034265,
+mtrl_fab_icon_text_color_selector=2131099801,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant0=2131034266,
+mtrl_fab_ripple_color=2131099802,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant10=2131034267,
+mtrl_filled_background_color=2131099803,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant100=2131034268,
+mtrl_filled_icon_tint=2131099804,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant20=2131034269,
+mtrl_filled_stroke_color=2131099805,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant30=2131034270,
+mtrl_indicator_text_color=2131099806,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant40=2131034271,
+mtrl_navigation_bar_colored_item_tint=2131099807,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant50=2131034272,
+mtrl_navigation_bar_colored_ripple_color=2131099808,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant60=2131034273,
+mtrl_navigation_bar_item_tint=2131099809,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant70=2131034274,
+mtrl_navigation_bar_ripple_color=2131099810,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant80=2131034275,
+mtrl_navigation_item_background_color=2131099811,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant90=2131034276,
+mtrl_navigation_item_icon_tint=2131099812,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant95=2131034277,
+mtrl_navigation_item_text_color=2131099813,
 ---@type LuaRef
-m3_ref_palette_dynamic_neutral_variant99=2131034278,
+mtrl_on_primary_text_btn_text_color_selector=2131099814,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary0=2131034279,
+mtrl_on_surface_ripple_color=2131099815,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary10=2131034280,
+mtrl_outlined_icon_tint=2131099816,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary100=2131034281,
+mtrl_outlined_stroke_color=2131099817,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary20=2131034282,
+mtrl_popupmenu_overlay_color=2131099818,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary30=2131034283,
+mtrl_scrim_color=2131099819,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary40=2131034284,
+mtrl_tabs_colored_ripple_color=2131099820,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary50=2131034285,
+mtrl_tabs_icon_color_selector=2131099821,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary60=2131034286,
+mtrl_tabs_icon_color_selector_colored=2131099822,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary70=2131034287,
+mtrl_tabs_legacy_text_color_selector=2131099823,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary80=2131034288,
+mtrl_tabs_ripple_color=2131099824,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary90=2131034289,
+mtrl_text_btn_text_color_selector=2131099825,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary95=2131034290,
+mtrl_textinput_default_box_stroke_color=2131099826,
 ---@type LuaRef
-m3_ref_palette_dynamic_primary99=2131034291,
+mtrl_textinput_disabled_color=2131099827,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary0=2131034292,
+mtrl_textinput_filled_box_default_background_color=2131099828,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary10=2131034293,
+mtrl_textinput_focused_box_stroke_color=2131099829,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary100=2131034294,
+mtrl_textinput_hovered_box_stroke_color=2131099830,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary20=2131034295,
+notification_action_color_filter=2131099831,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary30=2131034296,
+notification_icon_bg_color=2131099832,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary40=2131034297,
+notification_material_background_media_default_color=2131099833,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary50=2131034298,
+primary_dark_material_dark=2131099834,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary60=2131034299,
+primary_dark_material_light=2131099835,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary70=2131034300,
+primary_material_dark=2131099836,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary80=2131034301,
+primary_material_light=2131099837,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary90=2131034302,
+primary_text_default_material_dark=2131099838,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary95=2131034303,
+primary_text_default_material_light=2131099839,
 ---@type LuaRef
-m3_ref_palette_dynamic_secondary99=2131034304,
+primary_text_disabled_material_dark=2131099840,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary0=2131034305,
+primary_text_disabled_material_light=2131099841,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary10=2131034306,
+radiobutton_themeable_attribute_color=2131099842,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary100=2131034307,
+ripple_material_dark=2131099843,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary20=2131034308,
+ripple_material_light=2131099844,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary30=2131034309,
+secondary_text_default_material_dark=2131099845,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary40=2131034310,
+secondary_text_default_material_light=2131099846,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary50=2131034311,
+secondary_text_disabled_material_dark=2131099847,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary60=2131034312,
+secondary_text_disabled_material_light=2131099848,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary70=2131034313,
+statelist=2131099849,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary80=2131034314,
+switch_thumb_disabled_material_dark=2131099850,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary90=2131034315,
+switch_thumb_disabled_material_light=2131099851,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary95=2131034316,
+switch_thumb_material_dark=2131099852,
 ---@type LuaRef
-m3_ref_palette_dynamic_tertiary99=2131034317,
+switch_thumb_material_light=2131099853,
 ---@type LuaRef
-m3_ref_palette_error0=2131034318,
+switch_thumb_normal_material_dark=2131099854,
 ---@type LuaRef
-m3_ref_palette_error10=2131034319,
+switch_thumb_normal_material_light=2131099855,
 ---@type LuaRef
-m3_ref_palette_error100=2131034320,
+test_mtrl_calendar_day=2131099856,
 ---@type LuaRef
-m3_ref_palette_error20=2131034321,
+test_mtrl_calendar_day_selected=2131099857,
 ---@type LuaRef
-m3_ref_palette_error30=2131034322,
+testcolor=2131099858,
 ---@type LuaRef
-m3_ref_palette_error40=2131034323,
+tooltip_background_dark=2131099859,
 ---@type LuaRef
-m3_ref_palette_error50=2131034324,
----@type LuaRef
-m3_ref_palette_error60=2131034325,
----@type LuaRef
-m3_ref_palette_error70=2131034326,
----@type LuaRef
-m3_ref_palette_error80=2131034327,
----@type LuaRef
-m3_ref_palette_error90=2131034328,
----@type LuaRef
-m3_ref_palette_error95=2131034329,
----@type LuaRef
-m3_ref_palette_error99=2131034330,
----@type LuaRef
-m3_ref_palette_neutral0=2131034331,
----@type LuaRef
-m3_ref_palette_neutral10=2131034332,
----@type LuaRef
-m3_ref_palette_neutral100=2131034333,
----@type LuaRef
-m3_ref_palette_neutral20=2131034334,
----@type LuaRef
-m3_ref_palette_neutral30=2131034335,
----@type LuaRef
-m3_ref_palette_neutral40=2131034336,
----@type LuaRef
-m3_ref_palette_neutral50=2131034337,
----@type LuaRef
-m3_ref_palette_neutral60=2131034338,
----@type LuaRef
-m3_ref_palette_neutral70=2131034339,
----@type LuaRef
-m3_ref_palette_neutral80=2131034340,
----@type LuaRef
-m3_ref_palette_neutral90=2131034341,
----@type LuaRef
-m3_ref_palette_neutral95=2131034342,
----@type LuaRef
-m3_ref_palette_neutral99=2131034343,
----@type LuaRef
-m3_ref_palette_neutral_variant0=2131034344,
----@type LuaRef
-m3_ref_palette_neutral_variant10=2131034345,
----@type LuaRef
-m3_ref_palette_neutral_variant100=2131034346,
----@type LuaRef
-m3_ref_palette_neutral_variant20=2131034347,
----@type LuaRef
-m3_ref_palette_neutral_variant30=2131034348,
----@type LuaRef
-m3_ref_palette_neutral_variant40=2131034349,
----@type LuaRef
-m3_ref_palette_neutral_variant50=2131034350,
----@type LuaRef
-m3_ref_palette_neutral_variant60=2131034351,
----@type LuaRef
-m3_ref_palette_neutral_variant70=2131034352,
----@type LuaRef
-m3_ref_palette_neutral_variant80=2131034353,
----@type LuaRef
-m3_ref_palette_neutral_variant90=2131034354,
----@type LuaRef
-m3_ref_palette_neutral_variant95=2131034355,
----@type LuaRef
-m3_ref_palette_neutral_variant99=2131034356,
----@type LuaRef
-m3_ref_palette_primary0=2131034357,
----@type LuaRef
-m3_ref_palette_primary10=2131034358,
----@type LuaRef
-m3_ref_palette_primary100=2131034359,
----@type LuaRef
-m3_ref_palette_primary20=2131034360,
----@type LuaRef
-m3_ref_palette_primary30=2131034361,
----@type LuaRef
-m3_ref_palette_primary40=2131034362,
----@type LuaRef
-m3_ref_palette_primary50=2131034363,
----@type LuaRef
-m3_ref_palette_primary60=2131034364,
----@type LuaRef
-m3_ref_palette_primary70=2131034365,
----@type LuaRef
-m3_ref_palette_primary80=2131034366,
----@type LuaRef
-m3_ref_palette_primary90=2131034367,
----@type LuaRef
-m3_ref_palette_primary95=2131034368,
----@type LuaRef
-m3_ref_palette_primary99=2131034369,
----@type LuaRef
-m3_ref_palette_secondary0=2131034370,
----@type LuaRef
-m3_ref_palette_secondary10=2131034371,
----@type LuaRef
-m3_ref_palette_secondary100=2131034372,
----@type LuaRef
-m3_ref_palette_secondary20=2131034373,
----@type LuaRef
-m3_ref_palette_secondary30=2131034374,
----@type LuaRef
-m3_ref_palette_secondary40=2131034375,
----@type LuaRef
-m3_ref_palette_secondary50=2131034376,
----@type LuaRef
-m3_ref_palette_secondary60=2131034377,
----@type LuaRef
-m3_ref_palette_secondary70=2131034378,
----@type LuaRef
-m3_ref_palette_secondary80=2131034379,
----@type LuaRef
-m3_ref_palette_secondary90=2131034380,
----@type LuaRef
-m3_ref_palette_secondary95=2131034381,
----@type LuaRef
-m3_ref_palette_secondary99=2131034382,
----@type LuaRef
-m3_ref_palette_tertiary0=2131034383,
----@type LuaRef
-m3_ref_palette_tertiary10=2131034384,
----@type LuaRef
-m3_ref_palette_tertiary100=2131034385,
----@type LuaRef
-m3_ref_palette_tertiary20=2131034386,
----@type LuaRef
-m3_ref_palette_tertiary30=2131034387,
----@type LuaRef
-m3_ref_palette_tertiary40=2131034388,
----@type LuaRef
-m3_ref_palette_tertiary50=2131034389,
----@type LuaRef
-m3_ref_palette_tertiary60=2131034390,
----@type LuaRef
-m3_ref_palette_tertiary70=2131034391,
----@type LuaRef
-m3_ref_palette_tertiary80=2131034392,
----@type LuaRef
-m3_ref_palette_tertiary90=2131034393,
----@type LuaRef
-m3_ref_palette_tertiary95=2131034394,
----@type LuaRef
-m3_ref_palette_tertiary99=2131034395,
----@type LuaRef
-m3_selection_control_button_tint=2131034396,
----@type LuaRef
-m3_selection_control_ripple_color_selector=2131034397,
----@type LuaRef
-m3_slider_active_track_color=2131034398,
----@type LuaRef
-m3_slider_halo_color=2131034399,
----@type LuaRef
-m3_slider_inactive_track_color=2131034400,
----@type LuaRef
-m3_slider_thumb_color=2131034401,
----@type LuaRef
-m3_switch_thumb_tint=2131034402,
----@type LuaRef
-m3_switch_track_tint=2131034403,
----@type LuaRef
-m3_sys_color_dark_background=2131034404,
----@type LuaRef
-m3_sys_color_dark_error=2131034405,
----@type LuaRef
-m3_sys_color_dark_error_container=2131034406,
----@type LuaRef
-m3_sys_color_dark_inverse_on_surface=2131034407,
----@type LuaRef
-m3_sys_color_dark_inverse_primary=2131034408,
----@type LuaRef
-m3_sys_color_dark_inverse_surface=2131034409,
----@type LuaRef
-m3_sys_color_dark_on_background=2131034410,
----@type LuaRef
-m3_sys_color_dark_on_error=2131034411,
----@type LuaRef
-m3_sys_color_dark_on_error_container=2131034412,
----@type LuaRef
-m3_sys_color_dark_on_primary=2131034413,
----@type LuaRef
-m3_sys_color_dark_on_primary_container=2131034414,
----@type LuaRef
-m3_sys_color_dark_on_secondary=2131034415,
----@type LuaRef
-m3_sys_color_dark_on_secondary_container=2131034416,
----@type LuaRef
-m3_sys_color_dark_on_surface=2131034417,
----@type LuaRef
-m3_sys_color_dark_on_surface_variant=2131034418,
----@type LuaRef
-m3_sys_color_dark_on_tertiary=2131034419,
----@type LuaRef
-m3_sys_color_dark_on_tertiary_container=2131034420,
----@type LuaRef
-m3_sys_color_dark_outline=2131034421,
----@type LuaRef
-m3_sys_color_dark_primary=2131034422,
----@type LuaRef
-m3_sys_color_dark_primary_container=2131034423,
----@type LuaRef
-m3_sys_color_dark_secondary=2131034424,
----@type LuaRef
-m3_sys_color_dark_secondary_container=2131034425,
----@type LuaRef
-m3_sys_color_dark_surface=2131034426,
----@type LuaRef
-m3_sys_color_dark_surface_variant=2131034427,
----@type LuaRef
-m3_sys_color_dark_tertiary=2131034428,
----@type LuaRef
-m3_sys_color_dark_tertiary_container=2131034429,
----@type LuaRef
-m3_sys_color_dynamic_dark_background=2131034430,
----@type LuaRef
-m3_sys_color_dynamic_dark_inverse_on_surface=2131034431,
----@type LuaRef
-m3_sys_color_dynamic_dark_inverse_primary=2131034432,
----@type LuaRef
-m3_sys_color_dynamic_dark_inverse_surface=2131034433,
----@type LuaRef
-m3_sys_color_dynamic_dark_on_background=2131034434,
----@type LuaRef
-m3_sys_color_dynamic_dark_on_primary=2131034435,
----@type LuaRef
-m3_sys_color_dynamic_dark_on_primary_container=2131034436,
----@type LuaRef
-m3_sys_color_dynamic_dark_on_secondary=2131034437,
----@type LuaRef
-m3_sys_color_dynamic_dark_on_secondary_container=2131034438,
----@type LuaRef
-m3_sys_color_dynamic_dark_on_surface=2131034439,
----@type LuaRef
-m3_sys_color_dynamic_dark_on_surface_variant=2131034440,
----@type LuaRef
-m3_sys_color_dynamic_dark_on_tertiary=2131034441,
----@type LuaRef
-m3_sys_color_dynamic_dark_on_tertiary_container=2131034442,
----@type LuaRef
-m3_sys_color_dynamic_dark_outline=2131034443,
----@type LuaRef
-m3_sys_color_dynamic_dark_primary=2131034444,
----@type LuaRef
-m3_sys_color_dynamic_dark_primary_container=2131034445,
----@type LuaRef
-m3_sys_color_dynamic_dark_secondary=2131034446,
----@type LuaRef
-m3_sys_color_dynamic_dark_secondary_container=2131034447,
----@type LuaRef
-m3_sys_color_dynamic_dark_surface=2131034448,
----@type LuaRef
-m3_sys_color_dynamic_dark_surface_variant=2131034449,
----@type LuaRef
-m3_sys_color_dynamic_dark_tertiary=2131034450,
----@type LuaRef
-m3_sys_color_dynamic_dark_tertiary_container=2131034451,
----@type LuaRef
-m3_sys_color_dynamic_light_background=2131034452,
----@type LuaRef
-m3_sys_color_dynamic_light_inverse_on_surface=2131034453,
----@type LuaRef
-m3_sys_color_dynamic_light_inverse_primary=2131034454,
----@type LuaRef
-m3_sys_color_dynamic_light_inverse_surface=2131034455,
----@type LuaRef
-m3_sys_color_dynamic_light_on_background=2131034456,
----@type LuaRef
-m3_sys_color_dynamic_light_on_primary=2131034457,
----@type LuaRef
-m3_sys_color_dynamic_light_on_primary_container=2131034458,
----@type LuaRef
-m3_sys_color_dynamic_light_on_secondary=2131034459,
----@type LuaRef
-m3_sys_color_dynamic_light_on_secondary_container=2131034460,
----@type LuaRef
-m3_sys_color_dynamic_light_on_surface=2131034461,
----@type LuaRef
-m3_sys_color_dynamic_light_on_surface_variant=2131034462,
----@type LuaRef
-m3_sys_color_dynamic_light_on_tertiary=2131034463,
----@type LuaRef
-m3_sys_color_dynamic_light_on_tertiary_container=2131034464,
----@type LuaRef
-m3_sys_color_dynamic_light_outline=2131034465,
----@type LuaRef
-m3_sys_color_dynamic_light_primary=2131034466,
----@type LuaRef
-m3_sys_color_dynamic_light_primary_container=2131034467,
----@type LuaRef
-m3_sys_color_dynamic_light_secondary=2131034468,
----@type LuaRef
-m3_sys_color_dynamic_light_secondary_container=2131034469,
----@type LuaRef
-m3_sys_color_dynamic_light_surface=2131034470,
----@type LuaRef
-m3_sys_color_dynamic_light_surface_variant=2131034471,
----@type LuaRef
-m3_sys_color_dynamic_light_tertiary=2131034472,
----@type LuaRef
-m3_sys_color_dynamic_light_tertiary_container=2131034473,
----@type LuaRef
-m3_sys_color_light_background=2131034474,
----@type LuaRef
-m3_sys_color_light_error=2131034475,
----@type LuaRef
-m3_sys_color_light_error_container=2131034476,
----@type LuaRef
-m3_sys_color_light_inverse_on_surface=2131034477,
----@type LuaRef
-m3_sys_color_light_inverse_primary=2131034478,
----@type LuaRef
-m3_sys_color_light_inverse_surface=2131034479,
----@type LuaRef
-m3_sys_color_light_on_background=2131034480,
----@type LuaRef
-m3_sys_color_light_on_error=2131034481,
----@type LuaRef
-m3_sys_color_light_on_error_container=2131034482,
----@type LuaRef
-m3_sys_color_light_on_primary=2131034483,
----@type LuaRef
-m3_sys_color_light_on_primary_container=2131034484,
----@type LuaRef
-m3_sys_color_light_on_secondary=2131034485,
----@type LuaRef
-m3_sys_color_light_on_secondary_container=2131034486,
----@type LuaRef
-m3_sys_color_light_on_surface=2131034487,
----@type LuaRef
-m3_sys_color_light_on_surface_variant=2131034488,
----@type LuaRef
-m3_sys_color_light_on_tertiary=2131034489,
----@type LuaRef
-m3_sys_color_light_on_tertiary_container=2131034490,
----@type LuaRef
-m3_sys_color_light_outline=2131034491,
----@type LuaRef
-m3_sys_color_light_primary=2131034492,
----@type LuaRef
-m3_sys_color_light_primary_container=2131034493,
----@type LuaRef
-m3_sys_color_light_secondary=2131034494,
----@type LuaRef
-m3_sys_color_light_secondary_container=2131034495,
----@type LuaRef
-m3_sys_color_light_surface=2131034496,
----@type LuaRef
-m3_sys_color_light_surface_variant=2131034497,
----@type LuaRef
-m3_sys_color_light_tertiary=2131034498,
----@type LuaRef
-m3_sys_color_light_tertiary_container=2131034499,
----@type LuaRef
-m3_tabs_icon_color=2131034500,
----@type LuaRef
-m3_tabs_ripple_color=2131034501,
----@type LuaRef
-m3_text_button_background_color_selector=2131034502,
----@type LuaRef
-m3_text_button_foreground_color_selector=2131034503,
----@type LuaRef
-m3_text_button_ripple_color_selector=2131034504,
----@type LuaRef
-m3_textfield_filled_background_color=2131034505,
----@type LuaRef
-m3_textfield_indicator_text_color=2131034506,
----@type LuaRef
-m3_textfield_input_text_color=2131034507,
----@type LuaRef
-m3_textfield_label_color=2131034508,
----@type LuaRef
-m3_textfield_stroke_color=2131034509,
----@type LuaRef
-m3_timepicker_button_background_color=2131034510,
----@type LuaRef
-m3_timepicker_button_ripple_color=2131034511,
----@type LuaRef
-m3_timepicker_button_text_color=2131034512,
----@type LuaRef
-m3_timepicker_clock_text_color=2131034513,
----@type LuaRef
-m3_timepicker_display_background_color=2131034514,
----@type LuaRef
-m3_timepicker_display_ripple_color=2131034515,
----@type LuaRef
-m3_timepicker_display_stroke_color=2131034516,
----@type LuaRef
-m3_timepicker_display_text_color=2131034517,
----@type LuaRef
-m3_timepicker_secondary_text_button_ripple_color=2131034518,
----@type LuaRef
-m3_timepicker_secondary_text_button_text_color=2131034519,
----@type LuaRef
-m3_tonal_button_ripple_color_selector=2131034520,
----@type LuaRef
-material_blue_grey_800=2131034521,
----@type LuaRef
-material_blue_grey_900=2131034522,
----@type LuaRef
-material_blue_grey_950=2131034523,
----@type LuaRef
-material_cursor_color=2131034524,
----@type LuaRef
-material_deep_teal_200=2131034525,
----@type LuaRef
-material_deep_teal_500=2131034526,
----@type LuaRef
-material_divider_color=2131034527,
----@type LuaRef
-material_dynamic_neutral0=2131034528,
----@type LuaRef
-material_dynamic_neutral10=2131034529,
----@type LuaRef
-material_dynamic_neutral100=2131034530,
----@type LuaRef
-material_dynamic_neutral20=2131034531,
----@type LuaRef
-material_dynamic_neutral30=2131034532,
----@type LuaRef
-material_dynamic_neutral40=2131034533,
----@type LuaRef
-material_dynamic_neutral50=2131034534,
----@type LuaRef
-material_dynamic_neutral60=2131034535,
----@type LuaRef
-material_dynamic_neutral70=2131034536,
----@type LuaRef
-material_dynamic_neutral80=2131034537,
----@type LuaRef
-material_dynamic_neutral90=2131034538,
----@type LuaRef
-material_dynamic_neutral95=2131034539,
----@type LuaRef
-material_dynamic_neutral99=2131034540,
----@type LuaRef
-material_dynamic_neutral_variant0=2131034541,
----@type LuaRef
-material_dynamic_neutral_variant10=2131034542,
----@type LuaRef
-material_dynamic_neutral_variant100=2131034543,
----@type LuaRef
-material_dynamic_neutral_variant20=2131034544,
----@type LuaRef
-material_dynamic_neutral_variant30=2131034545,
----@type LuaRef
-material_dynamic_neutral_variant40=2131034546,
----@type LuaRef
-material_dynamic_neutral_variant50=2131034547,
----@type LuaRef
-material_dynamic_neutral_variant60=2131034548,
----@type LuaRef
-material_dynamic_neutral_variant70=2131034549,
----@type LuaRef
-material_dynamic_neutral_variant80=2131034550,
----@type LuaRef
-material_dynamic_neutral_variant90=2131034551,
----@type LuaRef
-material_dynamic_neutral_variant95=2131034552,
----@type LuaRef
-material_dynamic_neutral_variant99=2131034553,
----@type LuaRef
-material_dynamic_primary0=2131034554,
----@type LuaRef
-material_dynamic_primary10=2131034555,
----@type LuaRef
-material_dynamic_primary100=2131034556,
----@type LuaRef
-material_dynamic_primary20=2131034557,
----@type LuaRef
-material_dynamic_primary30=2131034558,
----@type LuaRef
-material_dynamic_primary40=2131034559,
----@type LuaRef
-material_dynamic_primary50=2131034560,
----@type LuaRef
-material_dynamic_primary60=2131034561,
----@type LuaRef
-material_dynamic_primary70=2131034562,
----@type LuaRef
-material_dynamic_primary80=2131034563,
----@type LuaRef
-material_dynamic_primary90=2131034564,
----@type LuaRef
-material_dynamic_primary95=2131034565,
----@type LuaRef
-material_dynamic_primary99=2131034566,
----@type LuaRef
-material_dynamic_secondary0=2131034567,
----@type LuaRef
-material_dynamic_secondary10=2131034568,
----@type LuaRef
-material_dynamic_secondary100=2131034569,
----@type LuaRef
-material_dynamic_secondary20=2131034570,
----@type LuaRef
-material_dynamic_secondary30=2131034571,
----@type LuaRef
-material_dynamic_secondary40=2131034572,
----@type LuaRef
-material_dynamic_secondary50=2131034573,
----@type LuaRef
-material_dynamic_secondary60=2131034574,
----@type LuaRef
-material_dynamic_secondary70=2131034575,
----@type LuaRef
-material_dynamic_secondary80=2131034576,
----@type LuaRef
-material_dynamic_secondary90=2131034577,
----@type LuaRef
-material_dynamic_secondary95=2131034578,
----@type LuaRef
-material_dynamic_secondary99=2131034579,
----@type LuaRef
-material_dynamic_tertiary0=2131034580,
----@type LuaRef
-material_dynamic_tertiary10=2131034581,
----@type LuaRef
-material_dynamic_tertiary100=2131034582,
----@type LuaRef
-material_dynamic_tertiary20=2131034583,
----@type LuaRef
-material_dynamic_tertiary30=2131034584,
----@type LuaRef
-material_dynamic_tertiary40=2131034585,
----@type LuaRef
-material_dynamic_tertiary50=2131034586,
----@type LuaRef
-material_dynamic_tertiary60=2131034587,
----@type LuaRef
-material_dynamic_tertiary70=2131034588,
----@type LuaRef
-material_dynamic_tertiary80=2131034589,
----@type LuaRef
-material_dynamic_tertiary90=2131034590,
----@type LuaRef
-material_dynamic_tertiary95=2131034591,
----@type LuaRef
-material_dynamic_tertiary99=2131034592,
----@type LuaRef
-material_grey_100=2131034593,
----@type LuaRef
-material_grey_300=2131034594,
----@type LuaRef
-material_grey_50=2131034595,
----@type LuaRef
-material_grey_600=2131034596,
----@type LuaRef
-material_grey_800=2131034597,
----@type LuaRef
-material_grey_850=2131034598,
----@type LuaRef
-material_grey_900=2131034599,
----@type LuaRef
-material_on_background_disabled=2131034600,
----@type LuaRef
-material_on_background_emphasis_high_type=2131034601,
----@type LuaRef
-material_on_background_emphasis_medium=2131034602,
----@type LuaRef
-material_on_primary_disabled=2131034603,
----@type LuaRef
-material_on_primary_emphasis_high_type=2131034604,
----@type LuaRef
-material_on_primary_emphasis_medium=2131034605,
----@type LuaRef
-material_on_surface_disabled=2131034606,
----@type LuaRef
-material_on_surface_emphasis_high_type=2131034607,
----@type LuaRef
-material_on_surface_emphasis_medium=2131034608,
----@type LuaRef
-material_on_surface_stroke=2131034609,
----@type LuaRef
-material_slider_active_tick_marks_color=2131034610,
----@type LuaRef
-material_slider_active_track_color=2131034611,
----@type LuaRef
-material_slider_halo_color=2131034612,
----@type LuaRef
-material_slider_inactive_tick_marks_color=2131034613,
----@type LuaRef
-material_slider_inactive_track_color=2131034614,
----@type LuaRef
-material_slider_thumb_color=2131034615,
----@type LuaRef
-material_timepicker_button_background=2131034616,
----@type LuaRef
-material_timepicker_button_stroke=2131034617,
----@type LuaRef
-material_timepicker_clock_text_color=2131034618,
----@type LuaRef
-material_timepicker_clockface=2131034619,
----@type LuaRef
-material_timepicker_modebutton_tint=2131034620,
----@type LuaRef
-mtrl_btn_bg_color_selector=2131034621,
----@type LuaRef
-mtrl_btn_ripple_color=2131034622,
----@type LuaRef
-mtrl_btn_stroke_color_selector=2131034623,
----@type LuaRef
-mtrl_btn_text_btn_bg_color_selector=2131034624,
----@type LuaRef
-mtrl_btn_text_btn_ripple_color=2131034625,
----@type LuaRef
-mtrl_btn_text_color_disabled=2131034626,
----@type LuaRef
-mtrl_btn_text_color_selector=2131034627,
----@type LuaRef
-mtrl_btn_transparent_bg_color=2131034628,
----@type LuaRef
-mtrl_calendar_item_stroke_color=2131034629,
----@type LuaRef
-mtrl_calendar_selected_range=2131034630,
----@type LuaRef
-mtrl_card_view_foreground=2131034631,
----@type LuaRef
-mtrl_card_view_ripple=2131034632,
----@type LuaRef
-mtrl_chip_background_color=2131034633,
----@type LuaRef
-mtrl_chip_close_icon_tint=2131034634,
----@type LuaRef
-mtrl_chip_surface_color=2131034635,
----@type LuaRef
-mtrl_chip_text_color=2131034636,
----@type LuaRef
-mtrl_choice_chip_background_color=2131034637,
----@type LuaRef
-mtrl_choice_chip_ripple_color=2131034638,
----@type LuaRef
-mtrl_choice_chip_text_color=2131034639,
----@type LuaRef
-mtrl_error=2131034640,
----@type LuaRef
-mtrl_fab_bg_color_selector=2131034641,
----@type LuaRef
-mtrl_fab_icon_text_color_selector=2131034642,
----@type LuaRef
-mtrl_fab_ripple_color=2131034643,
----@type LuaRef
-mtrl_filled_background_color=2131034644,
----@type LuaRef
-mtrl_filled_icon_tint=2131034645,
----@type LuaRef
-mtrl_filled_stroke_color=2131034646,
----@type LuaRef
-mtrl_indicator_text_color=2131034647,
----@type LuaRef
-mtrl_navigation_bar_colored_item_tint=2131034648,
----@type LuaRef
-mtrl_navigation_bar_colored_ripple_color=2131034649,
----@type LuaRef
-mtrl_navigation_bar_item_tint=2131034650,
----@type LuaRef
-mtrl_navigation_bar_ripple_color=2131034651,
----@type LuaRef
-mtrl_navigation_item_background_color=2131034652,
----@type LuaRef
-mtrl_navigation_item_icon_tint=2131034653,
----@type LuaRef
-mtrl_navigation_item_text_color=2131034654,
----@type LuaRef
-mtrl_on_primary_text_btn_text_color_selector=2131034655,
----@type LuaRef
-mtrl_on_surface_ripple_color=2131034656,
----@type LuaRef
-mtrl_outlined_icon_tint=2131034657,
----@type LuaRef
-mtrl_outlined_stroke_color=2131034658,
----@type LuaRef
-mtrl_popupmenu_overlay_color=2131034659,
----@type LuaRef
-mtrl_scrim_color=2131034660,
----@type LuaRef
-mtrl_tabs_colored_ripple_color=2131034661,
----@type LuaRef
-mtrl_tabs_icon_color_selector=2131034662,
----@type LuaRef
-mtrl_tabs_icon_color_selector_colored=2131034663,
----@type LuaRef
-mtrl_tabs_legacy_text_color_selector=2131034664,
----@type LuaRef
-mtrl_tabs_ripple_color=2131034665,
----@type LuaRef
-mtrl_text_btn_text_color_selector=2131034666,
----@type LuaRef
-mtrl_textinput_default_box_stroke_color=2131034667,
----@type LuaRef
-mtrl_textinput_disabled_color=2131034668,
----@type LuaRef
-mtrl_textinput_filled_box_default_background_color=2131034669,
----@type LuaRef
-mtrl_textinput_focused_box_stroke_color=2131034670,
----@type LuaRef
-mtrl_textinput_hovered_box_stroke_color=2131034671,
----@type LuaRef
-notification_action_color_filter=2131034672,
----@type LuaRef
-notification_icon_bg_color=2131034673,
----@type LuaRef
-notification_material_background_media_default_color=2131034674,
----@type LuaRef
-primary_dark_material_dark=2131034675,
----@type LuaRef
-primary_dark_material_light=2131034676,
----@type LuaRef
-primary_material_dark=2131034677,
----@type LuaRef
-primary_material_light=2131034678,
----@type LuaRef
-primary_text_default_material_dark=2131034679,
----@type LuaRef
-primary_text_default_material_light=2131034680,
----@type LuaRef
-primary_text_disabled_material_dark=2131034681,
----@type LuaRef
-primary_text_disabled_material_light=2131034682,
----@type LuaRef
-radiobutton_themeable_attribute_color=2131034683,
----@type LuaRef
-ripple_material_dark=2131034684,
----@type LuaRef
-ripple_material_light=2131034685,
----@type LuaRef
-secondary_text_default_material_dark=2131034686,
----@type LuaRef
-secondary_text_default_material_light=2131034687,
----@type LuaRef
-secondary_text_disabled_material_dark=2131034688,
----@type LuaRef
-secondary_text_disabled_material_light=2131034689,
----@type LuaRef
-switch_thumb_disabled_material_dark=2131034690,
----@type LuaRef
-switch_thumb_disabled_material_light=2131034691,
----@type LuaRef
-switch_thumb_material_dark=2131034692,
----@type LuaRef
-switch_thumb_material_light=2131034693,
----@type LuaRef
-switch_thumb_normal_material_dark=2131034694,
----@type LuaRef
-switch_thumb_normal_material_light=2131034695,
----@type LuaRef
-test_color=2131034696,
----@type LuaRef
-test_mtrl_calendar_day=2131034697,
----@type LuaRef
-test_mtrl_calendar_day_selected=2131034698,
----@type LuaRef
-tooltip_background_dark=2131034699,
----@type LuaRef
-tooltip_background_light=2131034700
+tooltip_background_light=2131099860
 
 }
 LR.color = color
@@ -3390,1183 +2660,865 @@ LR.color = color
 ---@class dimen
 local dimen = {
 ---@type LuaRef
-abc_action_bar_content_inset_material=2131099648,
+abc_action_bar_content_inset_material=2131165184,
 ---@type LuaRef
-abc_action_bar_content_inset_with_nav=2131099649,
+abc_action_bar_content_inset_with_nav=2131165185,
 ---@type LuaRef
-abc_action_bar_default_height_material=2131099650,
+abc_action_bar_default_height_material=2131165186,
 ---@type LuaRef
-abc_action_bar_default_padding_end_material=2131099651,
+abc_action_bar_default_padding_end_material=2131165187,
 ---@type LuaRef
-abc_action_bar_default_padding_start_material=2131099652,
+abc_action_bar_default_padding_start_material=2131165188,
 ---@type LuaRef
-abc_action_bar_elevation_material=2131099653,
+abc_action_bar_elevation_material=2131165189,
 ---@type LuaRef
-abc_action_bar_icon_vertical_padding_material=2131099654,
+abc_action_bar_icon_vertical_padding_material=2131165190,
 ---@type LuaRef
-abc_action_bar_overflow_padding_end_material=2131099655,
+abc_action_bar_overflow_padding_end_material=2131165191,
 ---@type LuaRef
-abc_action_bar_overflow_padding_start_material=2131099656,
+abc_action_bar_overflow_padding_start_material=2131165192,
 ---@type LuaRef
-abc_action_bar_stacked_max_height=2131099657,
+abc_action_bar_stacked_max_height=2131165193,
 ---@type LuaRef
-abc_action_bar_stacked_tab_max_width=2131099658,
+abc_action_bar_stacked_tab_max_width=2131165194,
 ---@type LuaRef
-abc_action_bar_subtitle_bottom_margin_material=2131099659,
+abc_action_bar_subtitle_bottom_margin_material=2131165195,
 ---@type LuaRef
-abc_action_bar_subtitle_top_margin_material=2131099660,
+abc_action_bar_subtitle_top_margin_material=2131165196,
 ---@type LuaRef
-abc_action_button_min_height_material=2131099661,
+abc_action_button_min_height_material=2131165197,
 ---@type LuaRef
-abc_action_button_min_width_material=2131099662,
+abc_action_button_min_width_material=2131165198,
 ---@type LuaRef
-abc_action_button_min_width_overflow_material=2131099663,
+abc_action_button_min_width_overflow_material=2131165199,
 ---@type LuaRef
-abc_alert_dialog_button_bar_height=2131099664,
+abc_alert_dialog_button_bar_height=2131165200,
 ---@type LuaRef
-abc_alert_dialog_button_dimen=2131099665,
+abc_alert_dialog_button_dimen=2131165201,
 ---@type LuaRef
-abc_button_inset_horizontal_material=2131099666,
+abc_button_inset_horizontal_material=2131165202,
 ---@type LuaRef
-abc_button_inset_vertical_material=2131099667,
+abc_button_inset_vertical_material=2131165203,
 ---@type LuaRef
-abc_button_padding_horizontal_material=2131099668,
+abc_button_padding_horizontal_material=2131165204,
 ---@type LuaRef
-abc_button_padding_vertical_material=2131099669,
+abc_button_padding_vertical_material=2131165205,
 ---@type LuaRef
-abc_cascading_menus_min_smallest_width=2131099670,
+abc_cascading_menus_min_smallest_width=2131165206,
 ---@type LuaRef
-abc_config_prefDialogWidth=2131099671,
+abc_config_prefDialogWidth=2131165207,
 ---@type LuaRef
-abc_control_corner_material=2131099672,
+abc_control_corner_material=2131165208,
 ---@type LuaRef
-abc_control_inset_material=2131099673,
+abc_control_inset_material=2131165209,
 ---@type LuaRef
-abc_control_padding_material=2131099674,
+abc_control_padding_material=2131165210,
 ---@type LuaRef
-abc_dialog_corner_radius_material=2131099675,
+abc_dialog_corner_radius_material=2131165211,
 ---@type LuaRef
-abc_dialog_fixed_height_major=2131099676,
+abc_dialog_fixed_height_major=2131165212,
 ---@type LuaRef
-abc_dialog_fixed_height_minor=2131099677,
+abc_dialog_fixed_height_minor=2131165213,
 ---@type LuaRef
-abc_dialog_fixed_width_major=2131099678,
+abc_dialog_fixed_width_major=2131165214,
 ---@type LuaRef
-abc_dialog_fixed_width_minor=2131099679,
+abc_dialog_fixed_width_minor=2131165215,
 ---@type LuaRef
-abc_dialog_list_padding_bottom_no_buttons=2131099680,
+abc_dialog_list_padding_bottom_no_buttons=2131165216,
 ---@type LuaRef
-abc_dialog_list_padding_top_no_title=2131099681,
+abc_dialog_list_padding_top_no_title=2131165217,
 ---@type LuaRef
-abc_dialog_min_width_major=2131099682,
+abc_dialog_min_width_major=2131165218,
 ---@type LuaRef
-abc_dialog_min_width_minor=2131099683,
+abc_dialog_min_width_minor=2131165219,
 ---@type LuaRef
-abc_dialog_padding_material=2131099684,
+abc_dialog_padding_material=2131165220,
 ---@type LuaRef
-abc_dialog_padding_top_material=2131099685,
+abc_dialog_padding_top_material=2131165221,
 ---@type LuaRef
-abc_dialog_title_divider_material=2131099686,
+abc_dialog_title_divider_material=2131165222,
 ---@type LuaRef
-abc_disabled_alpha_material_dark=2131099687,
+abc_disabled_alpha_material_dark=2131165223,
 ---@type LuaRef
-abc_disabled_alpha_material_light=2131099688,
+abc_disabled_alpha_material_light=2131165224,
 ---@type LuaRef
-abc_dropdownitem_icon_width=2131099689,
+abc_dropdownitem_icon_width=2131165225,
 ---@type LuaRef
-abc_dropdownitem_text_padding_left=2131099690,
+abc_dropdownitem_text_padding_left=2131165226,
 ---@type LuaRef
-abc_dropdownitem_text_padding_right=2131099691,
+abc_dropdownitem_text_padding_right=2131165227,
 ---@type LuaRef
-abc_edit_text_inset_bottom_material=2131099692,
+abc_edit_text_inset_bottom_material=2131165228,
 ---@type LuaRef
-abc_edit_text_inset_horizontal_material=2131099693,
+abc_edit_text_inset_horizontal_material=2131165229,
 ---@type LuaRef
-abc_edit_text_inset_top_material=2131099694,
+abc_edit_text_inset_top_material=2131165230,
 ---@type LuaRef
-abc_floating_window_z=2131099695,
+abc_floating_window_z=2131165231,
 ---@type LuaRef
-abc_list_item_height_large_material=2131099696,
+abc_list_item_height_large_material=2131165232,
 ---@type LuaRef
-abc_list_item_height_material=2131099697,
+abc_list_item_height_material=2131165233,
 ---@type LuaRef
-abc_list_item_height_small_material=2131099698,
+abc_list_item_height_small_material=2131165234,
 ---@type LuaRef
-abc_list_item_padding_horizontal_material=2131099699,
+abc_list_item_padding_horizontal_material=2131165235,
 ---@type LuaRef
-abc_panel_menu_list_width=2131099700,
+abc_panel_menu_list_width=2131165236,
 ---@type LuaRef
-abc_progress_bar_height_material=2131099701,
+abc_progress_bar_height_material=2131165237,
 ---@type LuaRef
-abc_search_view_preferred_height=2131099702,
+abc_search_view_preferred_height=2131165238,
 ---@type LuaRef
-abc_search_view_preferred_width=2131099703,
+abc_search_view_preferred_width=2131165239,
 ---@type LuaRef
-abc_seekbar_track_background_height_material=2131099704,
+abc_seekbar_track_background_height_material=2131165240,
 ---@type LuaRef
-abc_seekbar_track_progress_height_material=2131099705,
+abc_seekbar_track_progress_height_material=2131165241,
 ---@type LuaRef
-abc_select_dialog_padding_start_material=2131099706,
+abc_select_dialog_padding_start_material=2131165242,
 ---@type LuaRef
-abc_star_big=2131099707,
+abc_star_big=2131165243,
 ---@type LuaRef
-abc_star_medium=2131099708,
+abc_star_medium=2131165244,
 ---@type LuaRef
-abc_star_small=2131099709,
+abc_star_small=2131165245,
 ---@type LuaRef
-abc_switch_padding=2131099710,
+abc_switch_padding=2131165246,
 ---@type LuaRef
-abc_text_size_body_1_material=2131099711,
+abc_text_size_body_1_material=2131165247,
 ---@type LuaRef
-abc_text_size_body_2_material=2131099712,
+abc_text_size_body_2_material=2131165248,
 ---@type LuaRef
-abc_text_size_button_material=2131099713,
+abc_text_size_button_material=2131165249,
 ---@type LuaRef
-abc_text_size_caption_material=2131099714,
+abc_text_size_caption_material=2131165250,
 ---@type LuaRef
-abc_text_size_display_1_material=2131099715,
+abc_text_size_display_1_material=2131165251,
 ---@type LuaRef
-abc_text_size_display_2_material=2131099716,
+abc_text_size_display_2_material=2131165252,
 ---@type LuaRef
-abc_text_size_display_3_material=2131099717,
+abc_text_size_display_3_material=2131165253,
 ---@type LuaRef
-abc_text_size_display_4_material=2131099718,
+abc_text_size_display_4_material=2131165254,
 ---@type LuaRef
-abc_text_size_headline_material=2131099719,
+abc_text_size_headline_material=2131165255,
 ---@type LuaRef
-abc_text_size_large_material=2131099720,
+abc_text_size_large_material=2131165256,
 ---@type LuaRef
-abc_text_size_medium_material=2131099721,
+abc_text_size_medium_material=2131165257,
 ---@type LuaRef
-abc_text_size_menu_header_material=2131099722,
+abc_text_size_menu_header_material=2131165258,
 ---@type LuaRef
-abc_text_size_menu_material=2131099723,
+abc_text_size_menu_material=2131165259,
 ---@type LuaRef
-abc_text_size_small_material=2131099724,
+abc_text_size_small_material=2131165260,
 ---@type LuaRef
-abc_text_size_subhead_material=2131099725,
+abc_text_size_subhead_material=2131165261,
 ---@type LuaRef
-abc_text_size_subtitle_material_toolbar=2131099726,
+abc_text_size_subtitle_material_toolbar=2131165262,
 ---@type LuaRef
-abc_text_size_title_material=2131099727,
+abc_text_size_title_material=2131165263,
 ---@type LuaRef
-abc_text_size_title_material_toolbar=2131099728,
+abc_text_size_title_material_toolbar=2131165264,
 ---@type LuaRef
-action_bar_size=2131099729,
+action_bar_size=2131165265,
 ---@type LuaRef
-activity_horizontal_margin=2131099730,
+activity_horizontal_margin=2131165266,
 ---@type LuaRef
-activity_vertical_margin=2131099731,
+activity_vertical_margin=2131165267,
 ---@type LuaRef
-appcompat_dialog_background_inset=2131099732,
+appcompat_dialog_background_inset=2131165268,
 ---@type LuaRef
-cardview_compat_inset_shadow=2131099733,
+cardview_compat_inset_shadow=2131165269,
 ---@type LuaRef
-cardview_default_elevation=2131099734,
+cardview_default_elevation=2131165270,
 ---@type LuaRef
-cardview_default_radius=2131099735,
+cardview_default_radius=2131165271,
 ---@type LuaRef
-clock_face_margin_start=2131099736,
+clock_face_margin_start=2131165272,
 ---@type LuaRef
-compat_button_inset_horizontal_material=2131099737,
+compat_button_inset_horizontal_material=2131165273,
 ---@type LuaRef
-compat_button_inset_vertical_material=2131099738,
+compat_button_inset_vertical_material=2131165274,
 ---@type LuaRef
-compat_button_padding_horizontal_material=2131099739,
+compat_button_padding_horizontal_material=2131165275,
 ---@type LuaRef
-compat_button_padding_vertical_material=2131099740,
+compat_button_padding_vertical_material=2131165276,
 ---@type LuaRef
-compat_control_corner_material=2131099741,
+compat_control_corner_material=2131165277,
 ---@type LuaRef
-compat_notification_large_icon_max_height=2131099742,
+compat_notification_large_icon_max_height=2131165278,
 ---@type LuaRef
-compat_notification_large_icon_max_width=2131099743,
+compat_notification_large_icon_max_width=2131165279,
 ---@type LuaRef
-def_drawer_elevation=2131099744,
+def_drawer_elevation=2131165280,
 ---@type LuaRef
-default_dimension=2131099745,
+default_dimension=2131165281,
 ---@type LuaRef
-design_appbar_elevation=2131099746,
+design_appbar_elevation=2131165282,
 ---@type LuaRef
-design_bottom_navigation_active_item_max_width=2131099747,
+design_bottom_navigation_active_item_max_width=2131165283,
 ---@type LuaRef
-design_bottom_navigation_active_item_min_width=2131099748,
+design_bottom_navigation_active_item_min_width=2131165284,
 ---@type LuaRef
-design_bottom_navigation_active_text_size=2131099749,
+design_bottom_navigation_active_text_size=2131165285,
 ---@type LuaRef
-design_bottom_navigation_elevation=2131099750,
+design_bottom_navigation_elevation=2131165286,
 ---@type LuaRef
-design_bottom_navigation_height=2131099751,
+design_bottom_navigation_height=2131165287,
 ---@type LuaRef
-design_bottom_navigation_icon_size=2131099752,
+design_bottom_navigation_icon_size=2131165288,
 ---@type LuaRef
-design_bottom_navigation_item_max_width=2131099753,
+design_bottom_navigation_item_max_width=2131165289,
 ---@type LuaRef
-design_bottom_navigation_item_min_width=2131099754,
+design_bottom_navigation_item_min_width=2131165290,
 ---@type LuaRef
-design_bottom_navigation_label_padding=2131099755,
+design_bottom_navigation_label_padding=2131165291,
 ---@type LuaRef
-design_bottom_navigation_margin=2131099756,
+design_bottom_navigation_margin=2131165292,
 ---@type LuaRef
-design_bottom_navigation_shadow_height=2131099757,
+design_bottom_navigation_shadow_height=2131165293,
 ---@type LuaRef
-design_bottom_navigation_text_size=2131099758,
+design_bottom_navigation_text_size=2131165294,
 ---@type LuaRef
-design_bottom_sheet_elevation=2131099759,
+design_bottom_sheet_elevation=2131165295,
 ---@type LuaRef
-design_bottom_sheet_modal_elevation=2131099760,
+design_bottom_sheet_modal_elevation=2131165296,
 ---@type LuaRef
-design_bottom_sheet_peek_height_min=2131099761,
+design_bottom_sheet_peek_height_min=2131165297,
 ---@type LuaRef
-design_fab_border_width=2131099762,
+design_fab_border_width=2131165298,
 ---@type LuaRef
-design_fab_elevation=2131099763,
+design_fab_elevation=2131165299,
 ---@type LuaRef
-design_fab_image_size=2131099764,
+design_fab_image_size=2131165300,
 ---@type LuaRef
-design_fab_size_mini=2131099765,
+design_fab_size_mini=2131165301,
 ---@type LuaRef
-design_fab_size_normal=2131099766,
+design_fab_size_normal=2131165302,
 ---@type LuaRef
-design_fab_translation_z_hovered_focused=2131099767,
+design_fab_translation_z_hovered_focused=2131165303,
 ---@type LuaRef
-design_fab_translation_z_pressed=2131099768,
+design_fab_translation_z_pressed=2131165304,
 ---@type LuaRef
-design_navigation_elevation=2131099769,
+design_navigation_elevation=2131165305,
 ---@type LuaRef
-design_navigation_icon_padding=2131099770,
+design_navigation_icon_padding=2131165306,
 ---@type LuaRef
-design_navigation_icon_size=2131099771,
+design_navigation_icon_size=2131165307,
 ---@type LuaRef
-design_navigation_item_horizontal_padding=2131099772,
+design_navigation_item_horizontal_padding=2131165308,
 ---@type LuaRef
-design_navigation_item_icon_padding=2131099773,
+design_navigation_item_icon_padding=2131165309,
 ---@type LuaRef
-design_navigation_item_vertical_padding=2131099774,
+design_navigation_max_width=2131165310,
 ---@type LuaRef
-design_navigation_max_width=2131099775,
+design_navigation_padding_bottom=2131165311,
 ---@type LuaRef
-design_navigation_padding_bottom=2131099776,
+design_navigation_separator_vertical_padding=2131165312,
 ---@type LuaRef
-design_navigation_separator_vertical_padding=2131099777,
+design_snackbar_action_inline_max_width=2131165313,
 ---@type LuaRef
-design_snackbar_action_inline_max_width=2131099778,
+design_snackbar_action_text_color_alpha=2131165314,
 ---@type LuaRef
-design_snackbar_action_text_color_alpha=2131099779,
+design_snackbar_background_corner_radius=2131165315,
 ---@type LuaRef
-design_snackbar_background_corner_radius=2131099780,
+design_snackbar_elevation=2131165316,
 ---@type LuaRef
-design_snackbar_elevation=2131099781,
+design_snackbar_extra_spacing_horizontal=2131165317,
 ---@type LuaRef
-design_snackbar_extra_spacing_horizontal=2131099782,
+design_snackbar_max_width=2131165318,
 ---@type LuaRef
-design_snackbar_max_width=2131099783,
+design_snackbar_min_width=2131165319,
 ---@type LuaRef
-design_snackbar_min_width=2131099784,
+design_snackbar_padding_horizontal=2131165320,
 ---@type LuaRef
-design_snackbar_padding_horizontal=2131099785,
+design_snackbar_padding_vertical=2131165321,
 ---@type LuaRef
-design_snackbar_padding_vertical=2131099786,
+design_snackbar_padding_vertical_2lines=2131165322,
 ---@type LuaRef
-design_snackbar_padding_vertical_2lines=2131099787,
+design_snackbar_text_size=2131165323,
 ---@type LuaRef
-design_snackbar_text_size=2131099788,
+design_tab_max_width=2131165324,
 ---@type LuaRef
-design_tab_max_width=2131099789,
+design_tab_scrollable_min_width=2131165325,
 ---@type LuaRef
-design_tab_scrollable_min_width=2131099790,
+design_tab_text_size=2131165326,
 ---@type LuaRef
-design_tab_text_size=2131099791,
+design_tab_text_size_2line=2131165327,
 ---@type LuaRef
-design_tab_text_size_2line=2131099792,
+design_textinput_caption_translate_y=2131165328,
 ---@type LuaRef
-design_textinput_caption_translate_y=2131099793,
+disabled_alpha_material_dark=2131165329,
 ---@type LuaRef
-disabled_alpha_material_dark=2131099794,
+disabled_alpha_material_light=2131165330,
 ---@type LuaRef
-disabled_alpha_material_light=2131099795,
+fastscroll_default_thickness=2131165331,
 ---@type LuaRef
-fastscroll_default_thickness=2131099796,
+fastscroll_margin=2131165332,
 ---@type LuaRef
-fastscroll_margin=2131099797,
+fastscroll_minimum_range=2131165333,
 ---@type LuaRef
-fastscroll_minimum_range=2131099798,
+highlight_alpha_material_colored=2131165334,
 ---@type LuaRef
-highlight_alpha_material_colored=2131099799,
+highlight_alpha_material_dark=2131165335,
 ---@type LuaRef
-highlight_alpha_material_dark=2131099800,
+highlight_alpha_material_light=2131165336,
 ---@type LuaRef
-highlight_alpha_material_light=2131099801,
+hint_alpha_material_dark=2131165337,
 ---@type LuaRef
-hint_alpha_material_dark=2131099802,
+hint_alpha_material_light=2131165338,
 ---@type LuaRef
-hint_alpha_material_light=2131099803,
+hint_pressed_alpha_material_dark=2131165339,
 ---@type LuaRef
-hint_pressed_alpha_material_dark=2131099804,
+hint_pressed_alpha_material_light=2131165340,
 ---@type LuaRef
-hint_pressed_alpha_material_light=2131099805,
+item_touch_helper_max_drag_scroll_per_frame=2131165341,
 ---@type LuaRef
-item_touch_helper_max_drag_scroll_per_frame=2131099806,
+item_touch_helper_swipe_escape_max_velocity=2131165342,
 ---@type LuaRef
-item_touch_helper_swipe_escape_max_velocity=2131099807,
+item_touch_helper_swipe_escape_velocity=2131165343,
 ---@type LuaRef
-item_touch_helper_swipe_escape_velocity=2131099808,
+material_bottom_sheet_max_width=2131165344,
 ---@type LuaRef
-m3_alert_dialog_action_bottom_padding=2131099809,
+material_clock_display_padding=2131165345,
 ---@type LuaRef
-m3_alert_dialog_action_top_padding=2131099810,
+material_clock_face_margin_top=2131165346,
 ---@type LuaRef
-m3_alert_dialog_corner_size=2131099811,
+material_clock_hand_center_dot_radius=2131165347,
 ---@type LuaRef
-m3_alert_dialog_elevation=2131099812,
+material_clock_hand_padding=2131165348,
 ---@type LuaRef
-m3_alert_dialog_icon_margin=2131099813,
+material_clock_hand_stroke_width=2131165349,
 ---@type LuaRef
-m3_alert_dialog_icon_size=2131099814,
+material_clock_number_text_size=2131165350,
 ---@type LuaRef
-m3_alert_dialog_title_bottom_margin=2131099815,
+material_clock_period_toggle_height=2131165351,
 ---@type LuaRef
-m3_appbar_expanded_title_margin_bottom=2131099816,
+material_clock_period_toggle_margin_left=2131165352,
 ---@type LuaRef
-m3_appbar_expanded_title_margin_horizontal=2131099817,
+material_clock_period_toggle_width=2131165353,
 ---@type LuaRef
-m3_appbar_scrim_height_trigger=2131099818,
+material_clock_size=2131165354,
 ---@type LuaRef
-m3_appbar_scrim_height_trigger_large=2131099819,
+material_cursor_inset_bottom=2131165355,
 ---@type LuaRef
-m3_appbar_scrim_height_trigger_medium=2131099820,
+material_cursor_inset_top=2131165356,
 ---@type LuaRef
-m3_appbar_size_compact=2131099821,
+material_cursor_width=2131165357,
 ---@type LuaRef
-m3_appbar_size_large=2131099822,
+material_emphasis_disabled=2131165358,
 ---@type LuaRef
-m3_appbar_size_medium=2131099823,
+material_emphasis_high_type=2131165359,
 ---@type LuaRef
-m3_badge_horizontal_offset=2131099824,
+material_emphasis_medium=2131165360,
 ---@type LuaRef
-m3_badge_radius=2131099825,
+material_filled_edittext_font_1_3_padding_bottom=2131165361,
 ---@type LuaRef
-m3_badge_vertical_offset=2131099826,
+material_filled_edittext_font_1_3_padding_top=2131165362,
 ---@type LuaRef
-m3_badge_with_text_horizontal_offset=2131099827,
+material_filled_edittext_font_2_0_padding_bottom=2131165363,
 ---@type LuaRef
-m3_badge_with_text_radius=2131099828,
+material_filled_edittext_font_2_0_padding_top=2131165364,
 ---@type LuaRef
-m3_badge_with_text_vertical_offset=2131099829,
+material_font_1_3_box_collapsed_padding_top=2131165365,
 ---@type LuaRef
-m3_bottom_nav_item_active_indicator_height=2131099830,
+material_font_2_0_box_collapsed_padding_top=2131165366,
 ---@type LuaRef
-m3_bottom_nav_item_active_indicator_margin_horizontal=2131099831,
+material_helper_text_default_padding_top=2131165367,
 ---@type LuaRef
-m3_bottom_nav_item_active_indicator_width=2131099832,
+material_helper_text_font_1_3_padding_horizontal=2131165368,
 ---@type LuaRef
-m3_bottom_nav_item_padding_bottom=2131099833,
+material_helper_text_font_1_3_padding_top=2131165369,
 ---@type LuaRef
-m3_bottom_nav_item_padding_top=2131099834,
+material_input_text_to_prefix_suffix_padding=2131165370,
 ---@type LuaRef
-m3_bottom_nav_min_height=2131099835,
+material_text_view_test_line_height=2131165371,
 ---@type LuaRef
-m3_bottom_sheet_elevation=2131099836,
+material_text_view_test_line_height_override=2131165372,
 ---@type LuaRef
-m3_bottom_sheet_modal_elevation=2131099837,
+material_textinput_default_width=2131165373,
 ---@type LuaRef
-m3_bottomappbar_fab_cradle_margin=2131099838,
+material_textinput_max_width=2131165374,
 ---@type LuaRef
-m3_bottomappbar_fab_cradle_rounded_corner_radius=2131099839,
+material_textinput_min_width=2131165375,
 ---@type LuaRef
-m3_bottomappbar_fab_cradle_vertical_offset=2131099840,
+material_time_picker_minimum_screen_height=2131165376,
 ---@type LuaRef
-m3_btn_dialog_btn_min_width=2131099841,
+material_time_picker_minimum_screen_width=2131165377,
 ---@type LuaRef
-m3_btn_dialog_btn_spacing=2131099842,
+material_timepicker_dialog_buttons_margin_top=2131165378,
 ---@type LuaRef
-m3_btn_disabled_elevation=2131099843,
+mtrl_alert_dialog_background_inset_bottom=2131165379,
 ---@type LuaRef
-m3_btn_disabled_translation_z=2131099844,
+mtrl_alert_dialog_background_inset_end=2131165380,
 ---@type LuaRef
-m3_btn_elevated_btn_elevation=2131099845,
+mtrl_alert_dialog_background_inset_start=2131165381,
 ---@type LuaRef
-m3_btn_elevation=2131099846,
+mtrl_alert_dialog_background_inset_top=2131165382,
 ---@type LuaRef
-m3_btn_icon_btn_padding_left=2131099847,
+mtrl_alert_dialog_picker_background_inset=2131165383,
 ---@type LuaRef
-m3_btn_icon_btn_padding_right=2131099848,
+mtrl_badge_horizontal_edge_offset=2131165384,
 ---@type LuaRef
-m3_btn_icon_only_default_padding=2131099849,
+mtrl_badge_long_text_horizontal_padding=2131165385,
 ---@type LuaRef
-m3_btn_icon_only_default_size=2131099850,
+mtrl_badge_radius=2131165386,
 ---@type LuaRef
-m3_btn_icon_only_icon_padding=2131099851,
+mtrl_badge_text_horizontal_edge_offset=2131165387,
 ---@type LuaRef
-m3_btn_icon_only_min_width=2131099852,
+mtrl_badge_text_size=2131165388,
 ---@type LuaRef
-m3_btn_inset=2131099853,
+mtrl_badge_toolbar_action_menu_item_horizontal_offset=2131165389,
 ---@type LuaRef
-m3_btn_max_width=2131099854,
+mtrl_badge_toolbar_action_menu_item_vertical_offset=2131165390,
 ---@type LuaRef
-m3_btn_padding_bottom=2131099855,
+mtrl_badge_with_text_radius=2131165391,
 ---@type LuaRef
-m3_btn_padding_left=2131099856,
+mtrl_bottomappbar_fabOffsetEndMode=2131165392,
 ---@type LuaRef
-m3_btn_padding_right=2131099857,
+mtrl_bottomappbar_fab_bottom_margin=2131165393,
 ---@type LuaRef
-m3_btn_padding_top=2131099858,
+mtrl_bottomappbar_fab_cradle_margin=2131165394,
 ---@type LuaRef
-m3_btn_stroke_size=2131099859,
+mtrl_bottomappbar_fab_cradle_rounded_corner_radius=2131165395,
 ---@type LuaRef
-m3_btn_text_btn_icon_padding_left=2131099860,
+mtrl_bottomappbar_fab_cradle_vertical_offset=2131165396,
 ---@type LuaRef
-m3_btn_text_btn_icon_padding_right=2131099861,
+mtrl_bottomappbar_height=2131165397,
 ---@type LuaRef
-m3_btn_text_btn_padding_left=2131099862,
+mtrl_btn_corner_radius=2131165398,
 ---@type LuaRef
-m3_btn_text_btn_padding_right=2131099863,
+mtrl_btn_dialog_btn_min_width=2131165399,
 ---@type LuaRef
-m3_btn_translation_z_base=2131099864,
+mtrl_btn_disabled_elevation=2131165400,
 ---@type LuaRef
-m3_btn_translation_z_hovered=2131099865,
+mtrl_btn_disabled_z=2131165401,
 ---@type LuaRef
-m3_card_dragged_z=2131099866,
+mtrl_btn_elevation=2131165402,
 ---@type LuaRef
-m3_card_elevated_dragged_z=2131099867,
+mtrl_btn_focused_z=2131165403,
 ---@type LuaRef
-m3_card_elevated_elevation=2131099868,
+mtrl_btn_hovered_z=2131165404,
 ---@type LuaRef
-m3_card_elevated_hovered_z=2131099869,
+mtrl_btn_icon_btn_padding_left=2131165405,
 ---@type LuaRef
-m3_card_elevation=2131099870,
+mtrl_btn_icon_padding=2131165406,
 ---@type LuaRef
-m3_card_hovered_z=2131099871,
+mtrl_btn_inset=2131165407,
 ---@type LuaRef
-m3_card_stroke_width=2131099872,
+mtrl_btn_letter_spacing=2131165408,
 ---@type LuaRef
-m3_chip_checked_hovered_translation_z=2131099873,
+mtrl_btn_max_width=2131165409,
 ---@type LuaRef
-m3_chip_corner_size=2131099874,
+mtrl_btn_padding_bottom=2131165410,
 ---@type LuaRef
-m3_chip_disabled_translation_z=2131099875,
+mtrl_btn_padding_left=2131165411,
 ---@type LuaRef
-m3_chip_dragged_translation_z=2131099876,
+mtrl_btn_padding_right=2131165412,
 ---@type LuaRef
-m3_chip_elevated_elevation=2131099877,
+mtrl_btn_padding_top=2131165413,
 ---@type LuaRef
-m3_chip_hovered_translation_z=2131099878,
+mtrl_btn_pressed_z=2131165414,
 ---@type LuaRef
-m3_chip_icon_size=2131099879,
+mtrl_btn_snackbar_margin_horizontal=2131165415,
 ---@type LuaRef
-m3_datepicker_elevation=2131099880,
+mtrl_btn_stroke_size=2131165416,
 ---@type LuaRef
-m3_divider_heavy_thickness=2131099881,
+mtrl_btn_text_btn_icon_padding=2131165417,
 ---@type LuaRef
-m3_extended_fab_bottom_padding=2131099882,
+mtrl_btn_text_btn_padding_left=2131165418,
 ---@type LuaRef
-m3_extended_fab_end_padding=2131099883,
+mtrl_btn_text_btn_padding_right=2131165419,
 ---@type LuaRef
-m3_extended_fab_icon_padding=2131099884,
+mtrl_btn_text_size=2131165420,
 ---@type LuaRef
-m3_extended_fab_min_height=2131099885,
+mtrl_btn_z=2131165421,
 ---@type LuaRef
-m3_extended_fab_start_padding=2131099886,
+mtrl_calendar_action_confirm_button_min_width=2131165422,
 ---@type LuaRef
-m3_extended_fab_top_padding=2131099887,
+mtrl_calendar_action_height=2131165423,
 ---@type LuaRef
-m3_fab_border_width=2131099888,
+mtrl_calendar_action_padding=2131165424,
 ---@type LuaRef
-m3_fab_corner_size=2131099889,
+mtrl_calendar_bottom_padding=2131165425,
 ---@type LuaRef
-m3_fab_translation_z_hovered_focused=2131099890,
+mtrl_calendar_content_padding=2131165426,
 ---@type LuaRef
-m3_fab_translation_z_pressed=2131099891,
+mtrl_calendar_day_corner=2131165427,
 ---@type LuaRef
-m3_large_fab_max_image_size=2131099892,
+mtrl_calendar_day_height=2131165428,
 ---@type LuaRef
-m3_large_fab_size=2131099893,
+mtrl_calendar_day_horizontal_padding=2131165429,
 ---@type LuaRef
-m3_menu_elevation=2131099894,
+mtrl_calendar_day_today_stroke=2131165430,
 ---@type LuaRef
-m3_navigation_drawer_layout_corner_size=2131099895,
+mtrl_calendar_day_vertical_padding=2131165431,
 ---@type LuaRef
-m3_navigation_item_horizontal_padding=2131099896,
+mtrl_calendar_day_width=2131165432,
 ---@type LuaRef
-m3_navigation_item_icon_padding=2131099897,
+mtrl_calendar_days_of_week_height=2131165433,
 ---@type LuaRef
-m3_navigation_item_shape_inset_bottom=2131099898,
+mtrl_calendar_dialog_background_inset=2131165434,
 ---@type LuaRef
-m3_navigation_item_shape_inset_end=2131099899,
+mtrl_calendar_header_content_padding=2131165435,
 ---@type LuaRef
-m3_navigation_item_shape_inset_start=2131099900,
+mtrl_calendar_header_content_padding_fullscreen=2131165436,
 ---@type LuaRef
-m3_navigation_item_shape_inset_top=2131099901,
+mtrl_calendar_header_divider_thickness=2131165437,
 ---@type LuaRef
-m3_navigation_item_vertical_padding=2131099902,
+mtrl_calendar_header_height=2131165438,
 ---@type LuaRef
-m3_navigation_menu_divider_horizontal_padding=2131099903,
+mtrl_calendar_header_height_fullscreen=2131165439,
 ---@type LuaRef
-m3_navigation_menu_headline_horizontal_padding=2131099904,
+mtrl_calendar_header_selection_line_height=2131165440,
 ---@type LuaRef
-m3_navigation_rail_default_width=2131099905,
+mtrl_calendar_header_text_padding=2131165441,
 ---@type LuaRef
-m3_navigation_rail_item_active_indicator_height=2131099906,
+mtrl_calendar_header_toggle_margin_bottom=2131165442,
 ---@type LuaRef
-m3_navigation_rail_item_active_indicator_margin_horizontal=2131099907,
+mtrl_calendar_header_toggle_margin_top=2131165443,
 ---@type LuaRef
-m3_navigation_rail_item_active_indicator_width=2131099908,
+mtrl_calendar_landscape_header_width=2131165444,
 ---@type LuaRef
-m3_navigation_rail_item_min_height=2131099909,
+mtrl_calendar_maximum_default_fullscreen_minor_axis=2131165445,
 ---@type LuaRef
-m3_navigation_rail_item_padding_bottom=2131099910,
+mtrl_calendar_month_horizontal_padding=2131165446,
 ---@type LuaRef
-m3_navigation_rail_item_padding_top=2131099911,
+mtrl_calendar_month_vertical_padding=2131165447,
 ---@type LuaRef
-m3_ripple_default_alpha=2131099912,
+mtrl_calendar_navigation_bottom_padding=2131165448,
 ---@type LuaRef
-m3_ripple_focused_alpha=2131099913,
+mtrl_calendar_navigation_height=2131165449,
 ---@type LuaRef
-m3_ripple_hovered_alpha=2131099914,
+mtrl_calendar_navigation_top_padding=2131165450,
 ---@type LuaRef
-m3_ripple_pressed_alpha=2131099915,
+mtrl_calendar_pre_l_text_clip_padding=2131165451,
 ---@type LuaRef
-m3_ripple_selectable_pressed_alpha=2131099916,
+mtrl_calendar_selection_baseline_to_top_fullscreen=2131165452,
 ---@type LuaRef
-m3_slider_thumb_elevation=2131099917,
+mtrl_calendar_selection_text_baseline_to_bottom=2131165453,
 ---@type LuaRef
-m3_snackbar_action_text_color_alpha=2131099918,
+mtrl_calendar_selection_text_baseline_to_bottom_fullscreen=2131165454,
 ---@type LuaRef
-m3_snackbar_margin=2131099919,
+mtrl_calendar_selection_text_baseline_to_top=2131165455,
 ---@type LuaRef
-m3_sys_elevation_level0=2131099920,
+mtrl_calendar_text_input_padding_top=2131165456,
 ---@type LuaRef
-m3_sys_elevation_level1=2131099921,
+mtrl_calendar_title_baseline_to_top=2131165457,
 ---@type LuaRef
-m3_sys_elevation_level2=2131099922,
+mtrl_calendar_title_baseline_to_top_fullscreen=2131165458,
 ---@type LuaRef
-m3_sys_elevation_level3=2131099923,
+mtrl_calendar_year_corner=2131165459,
 ---@type LuaRef
-m3_sys_elevation_level4=2131099924,
+mtrl_calendar_year_height=2131165460,
 ---@type LuaRef
-m3_sys_elevation_level5=2131099925,
+mtrl_calendar_year_horizontal_padding=2131165461,
 ---@type LuaRef
-m3_sys_shape_large_corner_size=2131099926,
+mtrl_calendar_year_vertical_padding=2131165462,
 ---@type LuaRef
-m3_sys_shape_medium_corner_size=2131099927,
+mtrl_calendar_year_width=2131165463,
 ---@type LuaRef
-m3_sys_shape_small_corner_size=2131099928,
+mtrl_card_checked_icon_margin=2131165464,
 ---@type LuaRef
-m3_sys_state_dragged_state_layer_opacity=2131099929,
+mtrl_card_checked_icon_size=2131165465,
 ---@type LuaRef
-m3_sys_state_focus_state_layer_opacity=2131099930,
+mtrl_card_corner_radius=2131165466,
 ---@type LuaRef
-m3_sys_state_hover_state_layer_opacity=2131099931,
+mtrl_card_dragged_z=2131165467,
 ---@type LuaRef
-m3_sys_state_pressed_state_layer_opacity=2131099932,
+mtrl_card_elevation=2131165468,
 ---@type LuaRef
-m3_sys_typescale_body_large_letter_spacing=2131099933,
+mtrl_card_spacing=2131165469,
 ---@type LuaRef
-m3_sys_typescale_body_large_text_size=2131099934,
+mtrl_chip_pressed_translation_z=2131165470,
 ---@type LuaRef
-m3_sys_typescale_body_medium_letter_spacing=2131099935,
+mtrl_chip_text_size=2131165471,
 ---@type LuaRef
-m3_sys_typescale_body_medium_text_size=2131099936,
+mtrl_edittext_rectangle_top_offset=2131165472,
 ---@type LuaRef
-m3_sys_typescale_body_small_letter_spacing=2131099937,
+mtrl_exposed_dropdown_menu_popup_elevation=2131165473,
 ---@type LuaRef
-m3_sys_typescale_body_small_text_size=2131099938,
+mtrl_exposed_dropdown_menu_popup_vertical_offset=2131165474,
 ---@type LuaRef
-m3_sys_typescale_display_large_letter_spacing=2131099939,
+mtrl_exposed_dropdown_menu_popup_vertical_padding=2131165475,
 ---@type LuaRef
-m3_sys_typescale_display_large_text_size=2131099940,
+mtrl_extended_fab_bottom_padding=2131165476,
 ---@type LuaRef
-m3_sys_typescale_display_medium_letter_spacing=2131099941,
+mtrl_extended_fab_corner_radius=2131165477,
 ---@type LuaRef
-m3_sys_typescale_display_medium_text_size=2131099942,
+mtrl_extended_fab_disabled_elevation=2131165478,
 ---@type LuaRef
-m3_sys_typescale_display_small_letter_spacing=2131099943,
+mtrl_extended_fab_disabled_translation_z=2131165479,
 ---@type LuaRef
-m3_sys_typescale_display_small_text_size=2131099944,
+mtrl_extended_fab_elevation=2131165480,
 ---@type LuaRef
-m3_sys_typescale_headline_large_letter_spacing=2131099945,
+mtrl_extended_fab_end_padding=2131165481,
 ---@type LuaRef
-m3_sys_typescale_headline_large_text_size=2131099946,
+mtrl_extended_fab_end_padding_icon=2131165482,
 ---@type LuaRef
-m3_sys_typescale_headline_medium_letter_spacing=2131099947,
+mtrl_extended_fab_icon_size=2131165483,
 ---@type LuaRef
-m3_sys_typescale_headline_medium_text_size=2131099948,
+mtrl_extended_fab_icon_text_spacing=2131165484,
 ---@type LuaRef
-m3_sys_typescale_headline_small_letter_spacing=2131099949,
+mtrl_extended_fab_min_height=2131165485,
 ---@type LuaRef
-m3_sys_typescale_headline_small_text_size=2131099950,
+mtrl_extended_fab_min_width=2131165486,
 ---@type LuaRef
-m3_sys_typescale_label_large_letter_spacing=2131099951,
+mtrl_extended_fab_start_padding=2131165487,
 ---@type LuaRef
-m3_sys_typescale_label_large_text_size=2131099952,
+mtrl_extended_fab_start_padding_icon=2131165488,
 ---@type LuaRef
-m3_sys_typescale_label_medium_letter_spacing=2131099953,
+mtrl_extended_fab_top_padding=2131165489,
 ---@type LuaRef
-m3_sys_typescale_label_medium_text_size=2131099954,
+mtrl_extended_fab_translation_z_base=2131165490,
 ---@type LuaRef
-m3_sys_typescale_label_small_letter_spacing=2131099955,
+mtrl_extended_fab_translation_z_hovered_focused=2131165491,
 ---@type LuaRef
-m3_sys_typescale_label_small_text_size=2131099956,
+mtrl_extended_fab_translation_z_pressed=2131165492,
 ---@type LuaRef
-m3_sys_typescale_title_large_letter_spacing=2131099957,
+mtrl_fab_elevation=2131165493,
 ---@type LuaRef
-m3_sys_typescale_title_large_text_size=2131099958,
+mtrl_fab_min_touch_target=2131165494,
 ---@type LuaRef
-m3_sys_typescale_title_medium_letter_spacing=2131099959,
+mtrl_fab_translation_z_hovered_focused=2131165495,
 ---@type LuaRef
-m3_sys_typescale_title_medium_text_size=2131099960,
+mtrl_fab_translation_z_pressed=2131165496,
 ---@type LuaRef
-m3_sys_typescale_title_small_letter_spacing=2131099961,
+mtrl_high_ripple_default_alpha=2131165497,
 ---@type LuaRef
-m3_sys_typescale_title_small_text_size=2131099962,
+mtrl_high_ripple_focused_alpha=2131165498,
 ---@type LuaRef
-m3_timepicker_display_stroke_width=2131099963,
+mtrl_high_ripple_hovered_alpha=2131165499,
 ---@type LuaRef
-m3_timepicker_window_elevation=2131099964,
+mtrl_high_ripple_pressed_alpha=2131165500,
 ---@type LuaRef
-material_bottom_sheet_max_width=2131099965,
+mtrl_large_touch_target=2131165501,
 ---@type LuaRef
-material_clock_display_padding=2131099966,
+mtrl_low_ripple_default_alpha=2131165502,
 ---@type LuaRef
-material_clock_face_margin_top=2131099967,
+mtrl_low_ripple_focused_alpha=2131165503,
 ---@type LuaRef
-material_clock_hand_center_dot_radius=2131099968,
+mtrl_low_ripple_hovered_alpha=2131165504,
 ---@type LuaRef
-material_clock_hand_padding=2131099969,
+mtrl_low_ripple_pressed_alpha=2131165505,
 ---@type LuaRef
-material_clock_hand_stroke_width=2131099970,
+mtrl_min_touch_target_size=2131165506,
 ---@type LuaRef
-material_clock_number_text_size=2131099971,
+mtrl_navigation_bar_item_default_icon_size=2131165507,
 ---@type LuaRef
-material_clock_period_toggle_height=2131099972,
+mtrl_navigation_bar_item_default_margin=2131165508,
 ---@type LuaRef
-material_clock_period_toggle_margin_left=2131099973,
+mtrl_navigation_elevation=2131165509,
 ---@type LuaRef
-material_clock_period_toggle_width=2131099974,
+mtrl_navigation_item_horizontal_padding=2131165510,
 ---@type LuaRef
-material_clock_size=2131099975,
+mtrl_navigation_item_icon_padding=2131165511,
 ---@type LuaRef
-material_cursor_inset_bottom=2131099976,
+mtrl_navigation_item_icon_size=2131165512,
 ---@type LuaRef
-material_cursor_inset_top=2131099977,
+mtrl_navigation_item_shape_horizontal_margin=2131165513,
 ---@type LuaRef
-material_cursor_width=2131099978,
+mtrl_navigation_item_shape_vertical_margin=2131165514,
 ---@type LuaRef
-material_divider_thickness=2131099979,
+mtrl_navigation_rail_active_text_size=2131165515,
 ---@type LuaRef
-material_emphasis_disabled=2131099980,
+mtrl_navigation_rail_compact_width=2131165516,
 ---@type LuaRef
-material_emphasis_disabled_background=2131099981,
+mtrl_navigation_rail_default_width=2131165517,
 ---@type LuaRef
-material_emphasis_high_type=2131099982,
+mtrl_navigation_rail_elevation=2131165518,
 ---@type LuaRef
-material_emphasis_medium=2131099983,
+mtrl_navigation_rail_icon_margin=2131165519,
 ---@type LuaRef
-material_filled_edittext_font_1_3_padding_bottom=2131099984,
+mtrl_navigation_rail_icon_size=2131165520,
 ---@type LuaRef
-material_filled_edittext_font_1_3_padding_top=2131099985,
+mtrl_navigation_rail_margin=2131165521,
 ---@type LuaRef
-material_filled_edittext_font_2_0_padding_bottom=2131099986,
+mtrl_navigation_rail_text_bottom_margin=2131165522,
 ---@type LuaRef
-material_filled_edittext_font_2_0_padding_top=2131099987,
+mtrl_navigation_rail_text_size=2131165523,
 ---@type LuaRef
-material_font_1_3_box_collapsed_padding_top=2131099988,
+mtrl_progress_circular_inset=2131165524,
 ---@type LuaRef
-material_font_2_0_box_collapsed_padding_top=2131099989,
+mtrl_progress_circular_inset_extra_small=2131165525,
 ---@type LuaRef
-material_helper_text_default_padding_top=2131099990,
+mtrl_progress_circular_inset_medium=2131165526,
 ---@type LuaRef
-material_helper_text_font_1_3_padding_horizontal=2131099991,
+mtrl_progress_circular_inset_small=2131165527,
 ---@type LuaRef
-material_helper_text_font_1_3_padding_top=2131099992,
+mtrl_progress_circular_radius=2131165528,
 ---@type LuaRef
-material_input_text_to_prefix_suffix_padding=2131099993,
+mtrl_progress_circular_size=2131165529,
 ---@type LuaRef
-material_text_view_test_line_height=2131099994,
+mtrl_progress_circular_size_extra_small=2131165530,
 ---@type LuaRef
-material_text_view_test_line_height_override=2131099995,
+mtrl_progress_circular_size_medium=2131165531,
 ---@type LuaRef
-material_textinput_default_width=2131099996,
+mtrl_progress_circular_size_small=2131165532,
 ---@type LuaRef
-material_textinput_max_width=2131099997,
+mtrl_progress_circular_track_thickness_extra_small=2131165533,
 ---@type LuaRef
-material_textinput_min_width=2131099998,
+mtrl_progress_circular_track_thickness_medium=2131165534,
 ---@type LuaRef
-material_time_picker_minimum_screen_height=2131099999,
+mtrl_progress_circular_track_thickness_small=2131165535,
 ---@type LuaRef
-material_time_picker_minimum_screen_width=2131100000,
+mtrl_progress_indicator_full_rounded_corner_radius=2131165536,
 ---@type LuaRef
-material_timepicker_dialog_buttons_margin_top=2131100001,
+mtrl_progress_track_thickness=2131165537,
 ---@type LuaRef
-mtrl_alert_dialog_background_inset_bottom=2131100002,
+mtrl_shape_corner_size_large_component=2131165538,
 ---@type LuaRef
-mtrl_alert_dialog_background_inset_end=2131100003,
+mtrl_shape_corner_size_medium_component=2131165539,
 ---@type LuaRef
-mtrl_alert_dialog_background_inset_start=2131100004,
+mtrl_shape_corner_size_small_component=2131165540,
 ---@type LuaRef
-mtrl_alert_dialog_background_inset_top=2131100005,
+mtrl_slider_halo_radius=2131165541,
 ---@type LuaRef
-mtrl_alert_dialog_picker_background_inset=2131100006,
+mtrl_slider_label_padding=2131165542,
 ---@type LuaRef
-mtrl_badge_horizontal_edge_offset=2131100007,
+mtrl_slider_label_radius=2131165543,
 ---@type LuaRef
-mtrl_badge_long_text_horizontal_padding=2131100008,
+mtrl_slider_label_square_side=2131165544,
 ---@type LuaRef
-mtrl_badge_radius=2131100009,
+mtrl_slider_thumb_elevation=2131165545,
 ---@type LuaRef
-mtrl_badge_text_horizontal_edge_offset=2131100010,
+mtrl_slider_thumb_radius=2131165546,
 ---@type LuaRef
-mtrl_badge_text_size=2131100011,
+mtrl_slider_track_height=2131165547,
 ---@type LuaRef
-mtrl_badge_toolbar_action_menu_item_horizontal_offset=2131100012,
+mtrl_slider_track_side_padding=2131165548,
 ---@type LuaRef
-mtrl_badge_toolbar_action_menu_item_vertical_offset=2131100013,
+mtrl_slider_track_top=2131165549,
 ---@type LuaRef
-mtrl_badge_with_text_radius=2131100014,
+mtrl_slider_widget_height=2131165550,
 ---@type LuaRef
-mtrl_bottomappbar_fabOffsetEndMode=2131100015,
+mtrl_snackbar_action_text_color_alpha=2131165551,
 ---@type LuaRef
-mtrl_bottomappbar_fab_bottom_margin=2131100016,
+mtrl_snackbar_background_corner_radius=2131165552,
 ---@type LuaRef
-mtrl_bottomappbar_fab_cradle_margin=2131100017,
+mtrl_snackbar_background_overlay_color_alpha=2131165553,
 ---@type LuaRef
-mtrl_bottomappbar_fab_cradle_rounded_corner_radius=2131100018,
+mtrl_snackbar_margin=2131165554,
 ---@type LuaRef
-mtrl_bottomappbar_fab_cradle_vertical_offset=2131100019,
+mtrl_snackbar_message_margin_horizontal=2131165555,
 ---@type LuaRef
-mtrl_bottomappbar_height=2131100020,
+mtrl_snackbar_padding_horizontal=2131165556,
 ---@type LuaRef
-mtrl_btn_corner_radius=2131100021,
+mtrl_switch_thumb_elevation=2131165557,
 ---@type LuaRef
-mtrl_btn_dialog_btn_min_width=2131100022,
+mtrl_textinput_box_corner_radius_medium=2131165558,
 ---@type LuaRef
-mtrl_btn_disabled_elevation=2131100023,
+mtrl_textinput_box_corner_radius_small=2131165559,
 ---@type LuaRef
-mtrl_btn_disabled_z=2131100024,
+mtrl_textinput_box_label_cutout_padding=2131165560,
 ---@type LuaRef
-mtrl_btn_elevation=2131100025,
+mtrl_textinput_box_stroke_width_default=2131165561,
 ---@type LuaRef
-mtrl_btn_focused_z=2131100026,
+mtrl_textinput_box_stroke_width_focused=2131165562,
 ---@type LuaRef
-mtrl_btn_hovered_z=2131100027,
+mtrl_textinput_counter_margin_start=2131165563,
 ---@type LuaRef
-mtrl_btn_icon_btn_padding_left=2131100028,
+mtrl_textinput_end_icon_margin_start=2131165564,
 ---@type LuaRef
-mtrl_btn_icon_padding=2131100029,
+mtrl_textinput_outline_box_expanded_padding=2131165565,
 ---@type LuaRef
-mtrl_btn_inset=2131100030,
+mtrl_textinput_start_icon_margin_end=2131165566,
 ---@type LuaRef
-mtrl_btn_letter_spacing=2131100031,
+mtrl_toolbar_default_height=2131165567,
 ---@type LuaRef
-mtrl_btn_max_width=2131100032,
+mtrl_tooltip_arrowSize=2131165568,
 ---@type LuaRef
-mtrl_btn_padding_bottom=2131100033,
+mtrl_tooltip_cornerSize=2131165569,
 ---@type LuaRef
-mtrl_btn_padding_left=2131100034,
+mtrl_tooltip_minHeight=2131165570,
 ---@type LuaRef
-mtrl_btn_padding_right=2131100035,
+mtrl_tooltip_minWidth=2131165571,
 ---@type LuaRef
-mtrl_btn_padding_top=2131100036,
+mtrl_tooltip_padding=2131165572,
 ---@type LuaRef
-mtrl_btn_pressed_z=2131100037,
+mtrl_transition_shared_axis_slide_distance=2131165573,
 ---@type LuaRef
-mtrl_btn_snackbar_margin_horizontal=2131100038,
+notification_action_icon_size=2131165574,
 ---@type LuaRef
-mtrl_btn_stroke_size=2131100039,
+notification_action_text_size=2131165575,
 ---@type LuaRef
-mtrl_btn_text_btn_icon_padding=2131100040,
+notification_big_circle_margin=2131165576,
 ---@type LuaRef
-mtrl_btn_text_btn_padding_left=2131100041,
+notification_content_margin_start=2131165577,
 ---@type LuaRef
-mtrl_btn_text_btn_padding_right=2131100042,
+notification_large_icon_height=2131165578,
 ---@type LuaRef
-mtrl_btn_text_size=2131100043,
+notification_large_icon_width=2131165579,
 ---@type LuaRef
-mtrl_btn_z=2131100044,
+notification_main_column_padding_top=2131165580,
 ---@type LuaRef
-mtrl_calendar_action_confirm_button_min_width=2131100045,
+notification_media_narrow_margin=2131165581,
 ---@type LuaRef
-mtrl_calendar_action_height=2131100046,
+notification_right_icon_size=2131165582,
 ---@type LuaRef
-mtrl_calendar_action_padding=2131100047,
+notification_right_side_padding_top=2131165583,
 ---@type LuaRef
-mtrl_calendar_bottom_padding=2131100048,
+notification_small_icon_background_padding=2131165584,
 ---@type LuaRef
-mtrl_calendar_content_padding=2131100049,
+notification_small_icon_size_as_large=2131165585,
 ---@type LuaRef
-mtrl_calendar_day_corner=2131100050,
+notification_subtext_size=2131165586,
 ---@type LuaRef
-mtrl_calendar_day_height=2131100051,
+notification_top_pad=2131165587,
 ---@type LuaRef
-mtrl_calendar_day_horizontal_padding=2131100052,
+notification_top_pad_large_text=2131165588,
 ---@type LuaRef
-mtrl_calendar_day_today_stroke=2131100053,
+subtitle_corner_radius=2131165589,
 ---@type LuaRef
-mtrl_calendar_day_vertical_padding=2131100054,
+subtitle_outline_width=2131165590,
 ---@type LuaRef
-mtrl_calendar_day_width=2131100055,
+subtitle_shadow_offset=2131165591,
 ---@type LuaRef
-mtrl_calendar_days_of_week_height=2131100056,
+subtitle_shadow_radius=2131165592,
 ---@type LuaRef
-mtrl_calendar_dialog_background_inset=2131100057,
+test_mtrl_calendar_day_cornerSize=2131165593,
 ---@type LuaRef
-mtrl_calendar_header_content_padding=2131100058,
+test_navigation_bar_active_item_max_width=2131165594,
 ---@type LuaRef
-mtrl_calendar_header_content_padding_fullscreen=2131100059,
+test_navigation_bar_active_item_min_width=2131165595,
 ---@type LuaRef
-mtrl_calendar_header_divider_thickness=2131100060,
+test_navigation_bar_active_text_size=2131165596,
 ---@type LuaRef
-mtrl_calendar_header_height=2131100061,
+test_navigation_bar_elevation=2131165597,
 ---@type LuaRef
-mtrl_calendar_header_height_fullscreen=2131100062,
+test_navigation_bar_height=2131165598,
 ---@type LuaRef
-mtrl_calendar_header_selection_line_height=2131100063,
+test_navigation_bar_icon_size=2131165599,
 ---@type LuaRef
-mtrl_calendar_header_text_padding=2131100064,
+test_navigation_bar_item_max_width=2131165600,
 ---@type LuaRef
-mtrl_calendar_header_toggle_margin_bottom=2131100065,
+test_navigation_bar_item_min_width=2131165601,
 ---@type LuaRef
-mtrl_calendar_header_toggle_margin_top=2131100066,
+test_navigation_bar_label_padding=2131165602,
 ---@type LuaRef
-mtrl_calendar_landscape_header_width=2131100067,
+test_navigation_bar_shadow_height=2131165603,
 ---@type LuaRef
-mtrl_calendar_maximum_default_fullscreen_minor_axis=2131100068,
+test_navigation_bar_text_size=2131165604,
 ---@type LuaRef
-mtrl_calendar_month_horizontal_padding=2131100069,
+testdimen=2131165605,
 ---@type LuaRef
-mtrl_calendar_month_vertical_padding=2131100070,
+tooltip_corner_radius=2131165606,
 ---@type LuaRef
-mtrl_calendar_navigation_bottom_padding=2131100071,
+tooltip_horizontal_padding=2131165607,
 ---@type LuaRef
-mtrl_calendar_navigation_height=2131100072,
+tooltip_margin=2131165608,
 ---@type LuaRef
-mtrl_calendar_navigation_top_padding=2131100073,
+tooltip_precise_anchor_extra_offset=2131165609,
 ---@type LuaRef
-mtrl_calendar_pre_l_text_clip_padding=2131100074,
+tooltip_precise_anchor_threshold=2131165610,
 ---@type LuaRef
-mtrl_calendar_selection_baseline_to_top_fullscreen=2131100075,
+tooltip_vertical_padding=2131165611,
 ---@type LuaRef
-mtrl_calendar_selection_text_baseline_to_bottom=2131100076,
+tooltip_y_offset_non_touch=2131165612,
 ---@type LuaRef
-mtrl_calendar_selection_text_baseline_to_bottom_fullscreen=2131100077,
----@type LuaRef
-mtrl_calendar_selection_text_baseline_to_top=2131100078,
----@type LuaRef
-mtrl_calendar_text_input_padding_top=2131100079,
----@type LuaRef
-mtrl_calendar_title_baseline_to_top=2131100080,
----@type LuaRef
-mtrl_calendar_title_baseline_to_top_fullscreen=2131100081,
----@type LuaRef
-mtrl_calendar_year_corner=2131100082,
----@type LuaRef
-mtrl_calendar_year_height=2131100083,
----@type LuaRef
-mtrl_calendar_year_horizontal_padding=2131100084,
----@type LuaRef
-mtrl_calendar_year_vertical_padding=2131100085,
----@type LuaRef
-mtrl_calendar_year_width=2131100086,
----@type LuaRef
-mtrl_card_checked_icon_margin=2131100087,
----@type LuaRef
-mtrl_card_checked_icon_size=2131100088,
----@type LuaRef
-mtrl_card_corner_radius=2131100089,
----@type LuaRef
-mtrl_card_dragged_z=2131100090,
----@type LuaRef
-mtrl_card_elevation=2131100091,
----@type LuaRef
-mtrl_card_spacing=2131100092,
----@type LuaRef
-mtrl_chip_pressed_translation_z=2131100093,
----@type LuaRef
-mtrl_chip_text_size=2131100094,
----@type LuaRef
-mtrl_edittext_rectangle_top_offset=2131100095,
----@type LuaRef
-mtrl_exposed_dropdown_menu_popup_elevation=2131100096,
----@type LuaRef
-mtrl_exposed_dropdown_menu_popup_vertical_offset=2131100097,
----@type LuaRef
-mtrl_exposed_dropdown_menu_popup_vertical_padding=2131100098,
----@type LuaRef
-mtrl_extended_fab_bottom_padding=2131100099,
----@type LuaRef
-mtrl_extended_fab_corner_radius=2131100100,
----@type LuaRef
-mtrl_extended_fab_disabled_elevation=2131100101,
----@type LuaRef
-mtrl_extended_fab_disabled_translation_z=2131100102,
----@type LuaRef
-mtrl_extended_fab_elevation=2131100103,
----@type LuaRef
-mtrl_extended_fab_end_padding=2131100104,
----@type LuaRef
-mtrl_extended_fab_end_padding_icon=2131100105,
----@type LuaRef
-mtrl_extended_fab_icon_size=2131100106,
----@type LuaRef
-mtrl_extended_fab_icon_text_spacing=2131100107,
----@type LuaRef
-mtrl_extended_fab_min_height=2131100108,
----@type LuaRef
-mtrl_extended_fab_min_width=2131100109,
----@type LuaRef
-mtrl_extended_fab_start_padding=2131100110,
----@type LuaRef
-mtrl_extended_fab_start_padding_icon=2131100111,
----@type LuaRef
-mtrl_extended_fab_top_padding=2131100112,
----@type LuaRef
-mtrl_extended_fab_translation_z_base=2131100113,
----@type LuaRef
-mtrl_extended_fab_translation_z_hovered_focused=2131100114,
----@type LuaRef
-mtrl_extended_fab_translation_z_pressed=2131100115,
----@type LuaRef
-mtrl_fab_elevation=2131100116,
----@type LuaRef
-mtrl_fab_min_touch_target=2131100117,
----@type LuaRef
-mtrl_fab_translation_z_hovered_focused=2131100118,
----@type LuaRef
-mtrl_fab_translation_z_pressed=2131100119,
----@type LuaRef
-mtrl_high_ripple_default_alpha=2131100120,
----@type LuaRef
-mtrl_high_ripple_focused_alpha=2131100121,
----@type LuaRef
-mtrl_high_ripple_hovered_alpha=2131100122,
----@type LuaRef
-mtrl_high_ripple_pressed_alpha=2131100123,
----@type LuaRef
-mtrl_large_touch_target=2131100124,
----@type LuaRef
-mtrl_low_ripple_default_alpha=2131100125,
----@type LuaRef
-mtrl_low_ripple_focused_alpha=2131100126,
----@type LuaRef
-mtrl_low_ripple_hovered_alpha=2131100127,
----@type LuaRef
-mtrl_low_ripple_pressed_alpha=2131100128,
----@type LuaRef
-mtrl_min_touch_target_size=2131100129,
----@type LuaRef
-mtrl_navigation_bar_item_default_icon_size=2131100130,
----@type LuaRef
-mtrl_navigation_bar_item_default_margin=2131100131,
----@type LuaRef
-mtrl_navigation_elevation=2131100132,
----@type LuaRef
-mtrl_navigation_item_horizontal_padding=2131100133,
----@type LuaRef
-mtrl_navigation_item_icon_padding=2131100134,
----@type LuaRef
-mtrl_navigation_item_icon_size=2131100135,
----@type LuaRef
-mtrl_navigation_item_shape_horizontal_margin=2131100136,
----@type LuaRef
-mtrl_navigation_item_shape_vertical_margin=2131100137,
----@type LuaRef
-mtrl_navigation_rail_active_text_size=2131100138,
----@type LuaRef
-mtrl_navigation_rail_compact_width=2131100139,
----@type LuaRef
-mtrl_navigation_rail_default_width=2131100140,
----@type LuaRef
-mtrl_navigation_rail_elevation=2131100141,
----@type LuaRef
-mtrl_navigation_rail_icon_margin=2131100142,
----@type LuaRef
-mtrl_navigation_rail_icon_size=2131100143,
----@type LuaRef
-mtrl_navigation_rail_margin=2131100144,
----@type LuaRef
-mtrl_navigation_rail_text_bottom_margin=2131100145,
----@type LuaRef
-mtrl_navigation_rail_text_size=2131100146,
----@type LuaRef
-mtrl_progress_circular_inset=2131100147,
----@type LuaRef
-mtrl_progress_circular_inset_extra_small=2131100148,
----@type LuaRef
-mtrl_progress_circular_inset_medium=2131100149,
----@type LuaRef
-mtrl_progress_circular_inset_small=2131100150,
----@type LuaRef
-mtrl_progress_circular_radius=2131100151,
----@type LuaRef
-mtrl_progress_circular_size=2131100152,
----@type LuaRef
-mtrl_progress_circular_size_extra_small=2131100153,
----@type LuaRef
-mtrl_progress_circular_size_medium=2131100154,
----@type LuaRef
-mtrl_progress_circular_size_small=2131100155,
----@type LuaRef
-mtrl_progress_circular_track_thickness_extra_small=2131100156,
----@type LuaRef
-mtrl_progress_circular_track_thickness_medium=2131100157,
----@type LuaRef
-mtrl_progress_circular_track_thickness_small=2131100158,
----@type LuaRef
-mtrl_progress_indicator_full_rounded_corner_radius=2131100159,
----@type LuaRef
-mtrl_progress_track_thickness=2131100160,
----@type LuaRef
-mtrl_shape_corner_size_large_component=2131100161,
----@type LuaRef
-mtrl_shape_corner_size_medium_component=2131100162,
----@type LuaRef
-mtrl_shape_corner_size_small_component=2131100163,
----@type LuaRef
-mtrl_slider_halo_radius=2131100164,
----@type LuaRef
-mtrl_slider_label_padding=2131100165,
----@type LuaRef
-mtrl_slider_label_radius=2131100166,
----@type LuaRef
-mtrl_slider_label_square_side=2131100167,
----@type LuaRef
-mtrl_slider_thumb_elevation=2131100168,
----@type LuaRef
-mtrl_slider_thumb_radius=2131100169,
----@type LuaRef
-mtrl_slider_track_height=2131100170,
----@type LuaRef
-mtrl_slider_track_side_padding=2131100171,
----@type LuaRef
-mtrl_slider_track_top=2131100172,
----@type LuaRef
-mtrl_slider_widget_height=2131100173,
----@type LuaRef
-mtrl_snackbar_action_text_color_alpha=2131100174,
----@type LuaRef
-mtrl_snackbar_background_corner_radius=2131100175,
----@type LuaRef
-mtrl_snackbar_background_overlay_color_alpha=2131100176,
----@type LuaRef
-mtrl_snackbar_margin=2131100177,
----@type LuaRef
-mtrl_snackbar_message_margin_horizontal=2131100178,
----@type LuaRef
-mtrl_snackbar_padding_horizontal=2131100179,
----@type LuaRef
-mtrl_switch_thumb_elevation=2131100180,
----@type LuaRef
-mtrl_textinput_box_corner_radius_medium=2131100181,
----@type LuaRef
-mtrl_textinput_box_corner_radius_small=2131100182,
----@type LuaRef
-mtrl_textinput_box_label_cutout_padding=2131100183,
----@type LuaRef
-mtrl_textinput_box_stroke_width_default=2131100184,
----@type LuaRef
-mtrl_textinput_box_stroke_width_focused=2131100185,
----@type LuaRef
-mtrl_textinput_counter_margin_start=2131100186,
----@type LuaRef
-mtrl_textinput_end_icon_margin_start=2131100187,
----@type LuaRef
-mtrl_textinput_outline_box_expanded_padding=2131100188,
----@type LuaRef
-mtrl_textinput_start_icon_margin_end=2131100189,
----@type LuaRef
-mtrl_toolbar_default_height=2131100190,
----@type LuaRef
-mtrl_tooltip_arrowSize=2131100191,
----@type LuaRef
-mtrl_tooltip_cornerSize=2131100192,
----@type LuaRef
-mtrl_tooltip_minHeight=2131100193,
----@type LuaRef
-mtrl_tooltip_minWidth=2131100194,
----@type LuaRef
-mtrl_tooltip_padding=2131100195,
----@type LuaRef
-mtrl_transition_shared_axis_slide_distance=2131100196,
----@type LuaRef
-notification_action_icon_size=2131100197,
----@type LuaRef
-notification_action_text_size=2131100198,
----@type LuaRef
-notification_big_circle_margin=2131100199,
----@type LuaRef
-notification_content_margin_start=2131100200,
----@type LuaRef
-notification_large_icon_height=2131100201,
----@type LuaRef
-notification_large_icon_width=2131100202,
----@type LuaRef
-notification_main_column_padding_top=2131100203,
----@type LuaRef
-notification_media_narrow_margin=2131100204,
----@type LuaRef
-notification_right_icon_size=2131100205,
----@type LuaRef
-notification_right_side_padding_top=2131100206,
----@type LuaRef
-notification_small_icon_background_padding=2131100207,
----@type LuaRef
-notification_small_icon_size_as_large=2131100208,
----@type LuaRef
-notification_subtext_size=2131100209,
----@type LuaRef
-notification_top_pad=2131100210,
----@type LuaRef
-notification_top_pad_large_text=2131100211,
----@type LuaRef
-subtitle_corner_radius=2131100212,
----@type LuaRef
-subtitle_outline_width=2131100213,
----@type LuaRef
-subtitle_shadow_offset=2131100214,
----@type LuaRef
-subtitle_shadow_radius=2131100215,
----@type LuaRef
-test_dimen=2131100216,
----@type LuaRef
-test_mtrl_calendar_day_cornerSize=2131100217,
----@type LuaRef
-test_navigation_bar_active_item_max_width=2131100218,
----@type LuaRef
-test_navigation_bar_active_item_min_width=2131100219,
----@type LuaRef
-test_navigation_bar_active_text_size=2131100220,
----@type LuaRef
-test_navigation_bar_elevation=2131100221,
----@type LuaRef
-test_navigation_bar_height=2131100222,
----@type LuaRef
-test_navigation_bar_icon_size=2131100223,
----@type LuaRef
-test_navigation_bar_item_max_width=2131100224,
----@type LuaRef
-test_navigation_bar_item_min_width=2131100225,
----@type LuaRef
-test_navigation_bar_label_padding=2131100226,
----@type LuaRef
-test_navigation_bar_shadow_height=2131100227,
----@type LuaRef
-test_navigation_bar_text_size=2131100228,
----@type LuaRef
-tooltip_corner_radius=2131100229,
----@type LuaRef
-tooltip_horizontal_padding=2131100230,
----@type LuaRef
-tooltip_margin=2131100231,
----@type LuaRef
-tooltip_precise_anchor_extra_offset=2131100232,
----@type LuaRef
-tooltip_precise_anchor_threshold=2131100233,
----@type LuaRef
-tooltip_vertical_padding=2131100234,
----@type LuaRef
-tooltip_y_offset_non_touch=2131100235,
----@type LuaRef
-tooltip_y_offset_touch=2131100236
+tooltip_y_offset_touch=2131165613
 
 }
 LR.dimen = dimen
@@ -4574,1159 +3526,1337 @@ LR.dimen = dimen
 ---@class drawable
 local drawable = {
 ---@type LuaRef
-abc_ab_share_pack_mtrl_alpha=2131165190,
+abc_ab_share_pack_mtrl_alpha=2131230726,
 ---@type LuaRef
-abc_action_bar_item_background_material=2131165191,
+abc_action_bar_item_background_material=2131230727,
 ---@type LuaRef
-abc_btn_borderless_material=2131165192,
+abc_btn_borderless_material=2131230728,
 ---@type LuaRef
-abc_btn_check_material=2131165193,
+abc_btn_check_material=2131230729,
 ---@type LuaRef
-abc_btn_check_material_anim=2131165194,
+abc_btn_check_material_anim=2131230730,
 ---@type LuaRef
-abc_btn_check_to_on_mtrl_000=2131165195,
+abc_btn_check_to_on_mtrl_000=2131230731,
 ---@type LuaRef
-abc_btn_check_to_on_mtrl_015=2131165196,
+abc_btn_check_to_on_mtrl_015=2131230732,
 ---@type LuaRef
-abc_btn_colored_material=2131165197,
+abc_btn_colored_material=2131230733,
 ---@type LuaRef
-abc_btn_default_mtrl_shape=2131165198,
+abc_btn_default_mtrl_shape=2131230734,
 ---@type LuaRef
-abc_btn_radio_material=2131165199,
+abc_btn_radio_material=2131230735,
 ---@type LuaRef
-abc_btn_radio_material_anim=2131165200,
+abc_btn_radio_material_anim=2131230736,
 ---@type LuaRef
-abc_btn_radio_to_on_mtrl_000=2131165201,
+abc_btn_radio_to_on_mtrl_000=2131230737,
 ---@type LuaRef
-abc_btn_radio_to_on_mtrl_015=2131165202,
+abc_btn_radio_to_on_mtrl_015=2131230738,
 ---@type LuaRef
-abc_btn_switch_to_on_mtrl_00001=2131165203,
+abc_btn_switch_to_on_mtrl_00001=2131230739,
 ---@type LuaRef
-abc_btn_switch_to_on_mtrl_00012=2131165204,
+abc_btn_switch_to_on_mtrl_00012=2131230740,
 ---@type LuaRef
-abc_cab_background_internal_bg=2131165205,
+abc_cab_background_internal_bg=2131230741,
 ---@type LuaRef
-abc_cab_background_top_material=2131165206,
+abc_cab_background_top_material=2131230742,
 ---@type LuaRef
-abc_cab_background_top_mtrl_alpha=2131165207,
+abc_cab_background_top_mtrl_alpha=2131230743,
 ---@type LuaRef
-abc_control_background_material=2131165208,
+abc_control_background_material=2131230744,
 ---@type LuaRef
-abc_dialog_material_background=2131165209,
+abc_dialog_material_background=2131230745,
 ---@type LuaRef
-abc_edit_text_material=2131165210,
+abc_edit_text_material=2131230746,
 ---@type LuaRef
-abc_ic_ab_back_material=2131165211,
+abc_ic_ab_back_material=2131230747,
 ---@type LuaRef
-abc_ic_arrow_drop_right_black_24dp=2131165212,
+abc_ic_arrow_drop_right_black_24dp=2131230748,
 ---@type LuaRef
-abc_ic_clear_material=2131165213,
+abc_ic_clear_material=2131230749,
 ---@type LuaRef
-abc_ic_commit_search_api_mtrl_alpha=2131165214,
+abc_ic_commit_search_api_mtrl_alpha=2131230750,
 ---@type LuaRef
-abc_ic_go_search_api_material=2131165215,
+abc_ic_go_search_api_material=2131230751,
 ---@type LuaRef
-abc_ic_menu_copy_mtrl_am_alpha=2131165216,
+abc_ic_menu_copy_mtrl_am_alpha=2131230752,
 ---@type LuaRef
-abc_ic_menu_cut_mtrl_alpha=2131165217,
+abc_ic_menu_cut_mtrl_alpha=2131230753,
 ---@type LuaRef
-abc_ic_menu_overflow_material=2131165218,
+abc_ic_menu_overflow_material=2131230754,
 ---@type LuaRef
-abc_ic_menu_paste_mtrl_am_alpha=2131165219,
+abc_ic_menu_paste_mtrl_am_alpha=2131230755,
 ---@type LuaRef
-abc_ic_menu_selectall_mtrl_alpha=2131165220,
+abc_ic_menu_selectall_mtrl_alpha=2131230756,
 ---@type LuaRef
-abc_ic_menu_share_mtrl_alpha=2131165221,
+abc_ic_menu_share_mtrl_alpha=2131230757,
 ---@type LuaRef
-abc_ic_search_api_material=2131165222,
+abc_ic_search_api_material=2131230758,
 ---@type LuaRef
-abc_ic_voice_search_api_material=2131165223,
+abc_ic_voice_search_api_material=2131230759,
 ---@type LuaRef
-abc_item_background_holo_dark=2131165224,
+abc_item_background_holo_dark=2131230760,
 ---@type LuaRef
-abc_item_background_holo_light=2131165225,
+abc_item_background_holo_light=2131230761,
 ---@type LuaRef
-abc_list_divider_material=2131165226,
+abc_list_divider_material=2131230762,
 ---@type LuaRef
-abc_list_divider_mtrl_alpha=2131165227,
+abc_list_divider_mtrl_alpha=2131230763,
 ---@type LuaRef
-abc_list_focused_holo=2131165228,
+abc_list_focused_holo=2131230764,
 ---@type LuaRef
-abc_list_longpressed_holo=2131165229,
+abc_list_longpressed_holo=2131230765,
 ---@type LuaRef
-abc_list_pressed_holo_dark=2131165230,
+abc_list_pressed_holo_dark=2131230766,
 ---@type LuaRef
-abc_list_pressed_holo_light=2131165231,
+abc_list_pressed_holo_light=2131230767,
 ---@type LuaRef
-abc_list_selector_background_transition_holo_dark=2131165232,
+abc_list_selector_background_transition_holo_dark=2131230768,
 ---@type LuaRef
-abc_list_selector_background_transition_holo_light=2131165233,
+abc_list_selector_background_transition_holo_light=2131230769,
 ---@type LuaRef
-abc_list_selector_disabled_holo_dark=2131165234,
+abc_list_selector_disabled_holo_dark=2131230770,
 ---@type LuaRef
-abc_list_selector_disabled_holo_light=2131165235,
+abc_list_selector_disabled_holo_light=2131230771,
 ---@type LuaRef
-abc_list_selector_holo_dark=2131165236,
+abc_list_selector_holo_dark=2131230772,
 ---@type LuaRef
-abc_list_selector_holo_light=2131165237,
+abc_list_selector_holo_light=2131230773,
 ---@type LuaRef
-abc_menu_hardkey_panel_mtrl_mult=2131165238,
+abc_menu_hardkey_panel_mtrl_mult=2131230774,
 ---@type LuaRef
-abc_popup_background_mtrl_mult=2131165239,
+abc_popup_background_mtrl_mult=2131230775,
 ---@type LuaRef
-abc_ratingbar_indicator_material=2131165240,
+abc_ratingbar_indicator_material=2131230776,
 ---@type LuaRef
-abc_ratingbar_material=2131165241,
+abc_ratingbar_material=2131230777,
 ---@type LuaRef
-abc_ratingbar_small_material=2131165242,
+abc_ratingbar_small_material=2131230778,
 ---@type LuaRef
-abc_scrubber_control_off_mtrl_alpha=2131165243,
+abc_scrubber_control_off_mtrl_alpha=2131230779,
 ---@type LuaRef
-abc_scrubber_control_to_pressed_mtrl_000=2131165244,
+abc_scrubber_control_to_pressed_mtrl_000=2131230780,
 ---@type LuaRef
-abc_scrubber_control_to_pressed_mtrl_005=2131165245,
+abc_scrubber_control_to_pressed_mtrl_005=2131230781,
 ---@type LuaRef
-abc_scrubber_primary_mtrl_alpha=2131165246,
+abc_scrubber_primary_mtrl_alpha=2131230782,
 ---@type LuaRef
-abc_scrubber_track_mtrl_alpha=2131165247,
+abc_scrubber_track_mtrl_alpha=2131230783,
 ---@type LuaRef
-abc_seekbar_thumb_material=2131165248,
+abc_seekbar_thumb_material=2131230784,
 ---@type LuaRef
-abc_seekbar_tick_mark_material=2131165249,
+abc_seekbar_tick_mark_material=2131230785,
 ---@type LuaRef
-abc_seekbar_track_material=2131165250,
+abc_seekbar_track_material=2131230786,
 ---@type LuaRef
-abc_spinner_mtrl_am_alpha=2131165251,
+abc_spinner_mtrl_am_alpha=2131230787,
 ---@type LuaRef
-abc_spinner_textfield_background_material=2131165252,
+abc_spinner_textfield_background_material=2131230788,
 ---@type LuaRef
-abc_star_black_48dp=2131165253,
+abc_star_black_48dp=2131230789,
 ---@type LuaRef
-abc_star_half_black_48dp=2131165254,
+abc_star_half_black_48dp=2131230790,
 ---@type LuaRef
-abc_switch_thumb_material=2131165255,
+abc_switch_thumb_material=2131230791,
 ---@type LuaRef
-abc_switch_track_mtrl_alpha=2131165256,
+abc_switch_track_mtrl_alpha=2131230792,
 ---@type LuaRef
-abc_tab_indicator_material=2131165257,
+abc_tab_indicator_material=2131230793,
 ---@type LuaRef
-abc_tab_indicator_mtrl_alpha=2131165258,
+abc_tab_indicator_mtrl_alpha=2131230794,
 ---@type LuaRef
-abc_text_cursor_material=2131165259,
+abc_text_cursor_material=2131230795,
 ---@type LuaRef
-abc_text_select_handle_left_mtrl=2131165260,
+abc_text_select_handle_left_mtrl=2131230796,
 ---@type LuaRef
-abc_text_select_handle_middle_mtrl=2131165261,
+abc_text_select_handle_middle_mtrl=2131230797,
 ---@type LuaRef
-abc_text_select_handle_right_mtrl=2131165262,
+abc_text_select_handle_right_mtrl=2131230798,
 ---@type LuaRef
-abc_textfield_activated_mtrl_alpha=2131165263,
+abc_textfield_activated_mtrl_alpha=2131230799,
 ---@type LuaRef
-abc_textfield_default_mtrl_alpha=2131165264,
+abc_textfield_default_mtrl_alpha=2131230800,
 ---@type LuaRef
-abc_textfield_search_activated_mtrl_alpha=2131165265,
+abc_textfield_search_activated_mtrl_alpha=2131230801,
 ---@type LuaRef
-abc_textfield_search_default_mtrl_alpha=2131165266,
+abc_textfield_search_default_mtrl_alpha=2131230802,
 ---@type LuaRef
-abc_textfield_search_material=2131165267,
+abc_textfield_search_material=2131230803,
 ---@type LuaRef
-abc_vector_test=2131165268,
+abc_vector_test=2131230804,
 ---@type LuaRef
-avd_hide_password=2131165269,
+account_box_outline=2131230805,
 ---@type LuaRef
-avd_show_password=2131165270,
+avd_hide_password=2131230806,
 ---@type LuaRef
-btn_checkbox_checked_mtrl=2131165271,
+avd_show_password=2131230807,
 ---@type LuaRef
-btn_checkbox_checked_to_unchecked_mtrl_animation=2131165272,
+blueback=2131230808,
 ---@type LuaRef
-btn_checkbox_unchecked_mtrl=2131165273,
+btn_checkbox_checked_mtrl=2131230809,
 ---@type LuaRef
-btn_checkbox_unchecked_to_checked_mtrl_animation=2131165274,
+btn_checkbox_checked_to_unchecked_mtrl_animation=2131230810,
 ---@type LuaRef
-btn_radio_off_mtrl=2131165275,
+btn_checkbox_unchecked_mtrl=2131230811,
 ---@type LuaRef
-btn_radio_off_to_on_mtrl_animation=2131165276,
+btn_checkbox_unchecked_to_checked_mtrl_animation=2131230812,
 ---@type LuaRef
-btn_radio_on_mtrl=2131165277,
+btn_radio_off_mtrl=2131230813,
 ---@type LuaRef
-btn_radio_on_to_off_mtrl_animation=2131165278,
+btn_radio_off_to_on_mtrl_animation=2131230814,
 ---@type LuaRef
-design_fab_background=2131165279,
+btn_radio_on_mtrl=2131230815,
 ---@type LuaRef
-design_ic_visibility=2131165280,
+btn_radio_on_to_off_mtrl_animation=2131230816,
 ---@type LuaRef
-design_ic_visibility_off=2131165281,
+design_fab_background=2131230817,
 ---@type LuaRef
-design_password_eye=2131165282,
+design_ic_visibility=2131230818,
 ---@type LuaRef
-design_snackbar_background=2131165283,
+design_ic_visibility_off=2131230819,
 ---@type LuaRef
-ic_clock_black_24dp=2131165284,
+design_password_eye=2131230820,
 ---@type LuaRef
-ic_keyboard_black_24dp=2131165285,
+design_snackbar_background=2131230821,
 ---@type LuaRef
-ic_launcher=2131165286,
+gradienttest=2131230822,
 ---@type LuaRef
-ic_m3_chip_check=2131165287,
+ic_clock_black_24dp=2131230823,
 ---@type LuaRef
-ic_m3_chip_checked_circle=2131165288,
+ic_keyboard_black_24dp=2131230824,
 ---@type LuaRef
-ic_m3_chip_close=2131165289,
+ic_launcher=2131230825,
 ---@type LuaRef
-ic_mtrl_checked_circle=2131165290,
+ic_mtrl_checked_circle=2131230826,
 ---@type LuaRef
-ic_mtrl_chip_checked_black=2131165291,
+ic_mtrl_chip_checked_black=2131230827,
 ---@type LuaRef
-ic_mtrl_chip_checked_circle=2131165292,
+ic_mtrl_chip_checked_circle=2131230828,
 ---@type LuaRef
-ic_mtrl_chip_close_circle=2131165293,
+ic_mtrl_chip_close_circle=2131230829,
 ---@type LuaRef
-m3_appbar_background=2131165294,
+indexbutleft=2131230830,
 ---@type LuaRef
-m3_popupmenu_background_overlay=2131165295,
+indexbutright=2131230831,
 ---@type LuaRef
-m3_radiobutton_ripple=2131165296,
+layerlisttest=2131230832,
 ---@type LuaRef
-m3_selection_control_ripple=2131165297,
+material_cursor_drawable=2131230833,
 ---@type LuaRef
-m3_tabs_background=2131165298,
+material_ic_calendar_black_24dp=2131230834,
 ---@type LuaRef
-m3_tabs_line_indicator=2131165299,
+material_ic_clear_black_24dp=2131230835,
 ---@type LuaRef
-m3_tabs_rounded_line_indicator=2131165300,
+material_ic_edit_black_24dp=2131230836,
 ---@type LuaRef
-m3_tabs_transparent_background=2131165301,
+material_ic_keyboard_arrow_left_black_24dp=2131230837,
 ---@type LuaRef
-material_cursor_drawable=2131165302,
+material_ic_keyboard_arrow_next_black_24dp=2131230838,
 ---@type LuaRef
-material_ic_calendar_black_24dp=2131165303,
+material_ic_keyboard_arrow_previous_black_24dp=2131230839,
 ---@type LuaRef
-material_ic_clear_black_24dp=2131165304,
+material_ic_keyboard_arrow_right_black_24dp=2131230840,
 ---@type LuaRef
-material_ic_edit_black_24dp=2131165305,
+material_ic_menu_arrow_down_black_24dp=2131230841,
 ---@type LuaRef
-material_ic_keyboard_arrow_left_black_24dp=2131165306,
+material_ic_menu_arrow_up_black_24dp=2131230842,
 ---@type LuaRef
-material_ic_keyboard_arrow_next_black_24dp=2131165307,
+mtrl_dialog_background=2131230843,
 ---@type LuaRef
-material_ic_keyboard_arrow_previous_black_24dp=2131165308,
+mtrl_dropdown_arrow=2131230844,
 ---@type LuaRef
-material_ic_keyboard_arrow_right_black_24dp=2131165309,
+mtrl_ic_arrow_drop_down=2131230845,
 ---@type LuaRef
-material_ic_menu_arrow_down_black_24dp=2131165310,
+mtrl_ic_arrow_drop_up=2131230846,
 ---@type LuaRef
-material_ic_menu_arrow_up_black_24dp=2131165311,
+mtrl_ic_cancel=2131230847,
 ---@type LuaRef
-mtrl_dialog_background=2131165312,
+mtrl_ic_error=2131230848,
 ---@type LuaRef
-mtrl_dropdown_arrow=2131165313,
+mtrl_navigation_bar_item_background=2131230849,
 ---@type LuaRef
-mtrl_ic_arrow_drop_down=2131165314,
+mtrl_popupmenu_background=2131230850,
 ---@type LuaRef
-mtrl_ic_arrow_drop_up=2131165315,
+mtrl_popupmenu_background_dark=2131230851,
 ---@type LuaRef
-mtrl_ic_cancel=2131165316,
+mtrl_tabs_default_indicator=2131230852,
 ---@type LuaRef
-mtrl_ic_error=2131165317,
+navigation_empty_icon=2131230853,
 ---@type LuaRef
-mtrl_navigation_bar_item_background=2131165318,
+notification_action_background=2131230854,
 ---@type LuaRef
-mtrl_popupmenu_background=2131165319,
+notification_bg=2131230855,
 ---@type LuaRef
-mtrl_popupmenu_background_overlay=2131165320,
+notification_bg_low=2131230856,
 ---@type LuaRef
-mtrl_tabs_default_indicator=2131165321,
+notification_bg_low_normal=2131230857,
 ---@type LuaRef
-navigation_empty_icon=2131165322,
+notification_bg_low_pressed=2131230858,
 ---@type LuaRef
-notification_action_background=2131165323,
+notification_bg_normal=2131230859,
 ---@type LuaRef
-notification_bg=2131165324,
+notification_bg_normal_pressed=2131230860,
 ---@type LuaRef
-notification_bg_low=2131165325,
+notification_icon_background=2131230861,
 ---@type LuaRef
-notification_bg_low_normal=2131165326,
+notification_template_icon_bg=2131230862,
 ---@type LuaRef
-notification_bg_low_pressed=2131165327,
+notification_template_icon_low_bg=2131230863,
 ---@type LuaRef
-notification_bg_normal=2131165328,
+notification_tile_bg=2131230864,
 ---@type LuaRef
-notification_bg_normal_pressed=2131165329,
+notify_panel_notification_icon_bg=2131230865,
 ---@type LuaRef
-notification_icon_background=2131165330,
+redback=2131230866,
 ---@type LuaRef
-notification_template_icon_bg=2131165331,
+test_custom_background=2131230867,
 ---@type LuaRef
-notification_template_icon_low_bg=2131165332,
+tooltip_frame_dark=2131230868,
 ---@type LuaRef
-notification_tile_bg=2131165333,
----@type LuaRef
-notify_panel_notification_icon_bg=2131165334,
----@type LuaRef
-test_custom_background=2131165335,
----@type LuaRef
-tooltip_frame_dark=2131165336,
----@type LuaRef
-tooltip_frame_light=2131165337
+tooltip_frame_light=2131230869
 
 }
 LR.drawable = drawable
 
+---@class font
+local font = {
+---@type LuaRef
+roboto=2131296256,
+---@type LuaRef
+roboto_italic=2131296257,
+---@type LuaRef
+roboto_regular=2131296258
+
+}
+LR.font = font
+
 ---@class id
 local id = {
 ---@type LuaRef
-BOTTOM_END=2131230721,
+BOTTOM_END=2131361793,
 ---@type LuaRef
-BOTTOM_START=2131230722,
+BOTTOM_START=2131361794,
 ---@type LuaRef
-NO_DEBUG=2131230726,
+ListViewTest=2131361797,
 ---@type LuaRef
-SHOW_ALL=2131230728,
+Main=2131361799,
 ---@type LuaRef
-SHOW_PATH=2131230729,
+NO_DEBUG=2131361800,
 ---@type LuaRef
-SHOW_PROGRESS=2131230730,
+SHOW_ALL=2131361802,
 ---@type LuaRef
-TOP_END=2131230732,
+SHOW_PATH=2131361803,
 ---@type LuaRef
-TOP_START=2131230733,
+SHOW_PROGRESS=2131361804,
 ---@type LuaRef
-accelerate=2131230734,
+TOP_END=2131361806,
 ---@type LuaRef
-accessibility_action_clickable_span=2131230735,
+TOP_START=2131361807,
 ---@type LuaRef
-accessibility_custom_action_0=2131230736,
+ToolbarTest=2131361808,
 ---@type LuaRef
-accessibility_custom_action_1=2131230737,
+accelerate=2131361809,
 ---@type LuaRef
-accessibility_custom_action_10=2131230738,
+accessibility_action_clickable_span=2131361810,
 ---@type LuaRef
-accessibility_custom_action_11=2131230739,
+accessibility_custom_action_0=2131361811,
 ---@type LuaRef
-accessibility_custom_action_12=2131230740,
+accessibility_custom_action_1=2131361812,
 ---@type LuaRef
-accessibility_custom_action_13=2131230741,
+accessibility_custom_action_10=2131361813,
 ---@type LuaRef
-accessibility_custom_action_14=2131230742,
+accessibility_custom_action_11=2131361814,
 ---@type LuaRef
-accessibility_custom_action_15=2131230743,
+accessibility_custom_action_12=2131361815,
 ---@type LuaRef
-accessibility_custom_action_16=2131230744,
+accessibility_custom_action_13=2131361816,
 ---@type LuaRef
-accessibility_custom_action_17=2131230745,
+accessibility_custom_action_14=2131361817,
 ---@type LuaRef
-accessibility_custom_action_18=2131230746,
+accessibility_custom_action_15=2131361818,
 ---@type LuaRef
-accessibility_custom_action_19=2131230747,
+accessibility_custom_action_16=2131361819,
 ---@type LuaRef
-accessibility_custom_action_2=2131230748,
+accessibility_custom_action_17=2131361820,
 ---@type LuaRef
-accessibility_custom_action_20=2131230749,
+accessibility_custom_action_18=2131361821,
 ---@type LuaRef
-accessibility_custom_action_21=2131230750,
+accessibility_custom_action_19=2131361822,
 ---@type LuaRef
-accessibility_custom_action_22=2131230751,
+accessibility_custom_action_2=2131361823,
 ---@type LuaRef
-accessibility_custom_action_23=2131230752,
+accessibility_custom_action_20=2131361824,
 ---@type LuaRef
-accessibility_custom_action_24=2131230753,
+accessibility_custom_action_21=2131361825,
 ---@type LuaRef
-accessibility_custom_action_25=2131230754,
+accessibility_custom_action_22=2131361826,
 ---@type LuaRef
-accessibility_custom_action_26=2131230755,
+accessibility_custom_action_23=2131361827,
 ---@type LuaRef
-accessibility_custom_action_27=2131230756,
+accessibility_custom_action_24=2131361828,
 ---@type LuaRef
-accessibility_custom_action_28=2131230757,
+accessibility_custom_action_25=2131361829,
 ---@type LuaRef
-accessibility_custom_action_29=2131230758,
+accessibility_custom_action_26=2131361830,
 ---@type LuaRef
-accessibility_custom_action_3=2131230759,
+accessibility_custom_action_27=2131361831,
 ---@type LuaRef
-accessibility_custom_action_30=2131230760,
+accessibility_custom_action_28=2131361832,
 ---@type LuaRef
-accessibility_custom_action_31=2131230761,
+accessibility_custom_action_29=2131361833,
 ---@type LuaRef
-accessibility_custom_action_4=2131230762,
+accessibility_custom_action_3=2131361834,
 ---@type LuaRef
-accessibility_custom_action_5=2131230763,
+accessibility_custom_action_30=2131361835,
 ---@type LuaRef
-accessibility_custom_action_6=2131230764,
+accessibility_custom_action_31=2131361836,
 ---@type LuaRef
-accessibility_custom_action_7=2131230765,
+accessibility_custom_action_4=2131361837,
 ---@type LuaRef
-accessibility_custom_action_8=2131230766,
+accessibility_custom_action_5=2131361838,
 ---@type LuaRef
-accessibility_custom_action_9=2131230767,
+accessibility_custom_action_6=2131361839,
 ---@type LuaRef
-action0=2131230768,
+accessibility_custom_action_7=2131361840,
 ---@type LuaRef
-action_bar=2131230769,
+accessibility_custom_action_8=2131361841,
 ---@type LuaRef
-action_bar_activity_content=2131230770,
+accessibility_custom_action_9=2131361842,
 ---@type LuaRef
-action_bar_container=2131230771,
+action0=2131361843,
 ---@type LuaRef
-action_bar_root=2131230772,
+actionDown=2131361844,
 ---@type LuaRef
-action_bar_spinner=2131230773,
+actionDownUp=2131361845,
 ---@type LuaRef
-action_bar_subtitle=2131230774,
+actionUp=2131361846,
 ---@type LuaRef
-action_bar_title=2131230775,
+action_bar=2131361847,
 ---@type LuaRef
-action_container=2131230776,
+action_bar_activity_content=2131361848,
 ---@type LuaRef
-action_context_bar=2131230777,
+action_bar_container=2131361849,
 ---@type LuaRef
-action_divider=2131230778,
+action_bar_root=2131361850,
 ---@type LuaRef
-action_image=2131230779,
+action_bar_spinner=2131361851,
 ---@type LuaRef
-action_menu_divider=2131230780,
+action_bar_subtitle=2131361852,
 ---@type LuaRef
-action_menu_presenter=2131230781,
+action_bar_title=2131361853,
 ---@type LuaRef
-action_mode_bar=2131230782,
+action_container=2131361854,
 ---@type LuaRef
-action_mode_bar_stub=2131230783,
+action_context_bar=2131361855,
 ---@type LuaRef
-action_mode_close_button=2131230784,
+action_divider=2131361856,
 ---@type LuaRef
-action_settings=2131230785,
+action_image=2131361857,
 ---@type LuaRef
-action_text=2131230786,
+action_menuFragment_to_receiveFragment=2131361858,
 ---@type LuaRef
-actions=2131230787,
+action_menu_divider=2131361859,
 ---@type LuaRef
-activity_chooser_view_content=2131230788,
+action_menu_presenter=2131361860,
 ---@type LuaRef
-add=2131230789,
+action_mode_bar=2131361861,
 ---@type LuaRef
-alertTitle=2131230790,
+action_mode_bar_stub=2131361862,
 ---@type LuaRef
-aligned=2131230791,
+action_mode_close_button=2131361863,
 ---@type LuaRef
-all=2131230792,
+action_settings=2131361864,
 ---@type LuaRef
-always=2131230793,
+action_text=2131361865,
 ---@type LuaRef
-animateToEnd=2131230794,
+actions=2131361866,
 ---@type LuaRef
-animateToStart=2131230795,
+activity_chooser_view_content=2131361867,
 ---@type LuaRef
-arc=2131230796,
+add=2131361868,
 ---@type LuaRef
-asConfigured=2131230797,
+alertTitle=2131361869,
 ---@type LuaRef
-async=2131230798,
+aligned=2131361870,
 ---@type LuaRef
-auto=2131230799,
+all=2131361871,
 ---@type LuaRef
-autoComplete=2131230800,
+allStates=2131361872,
 ---@type LuaRef
-autoCompleteToEnd=2131230801,
+always=2131361873,
 ---@type LuaRef
-autoCompleteToStart=2131230802,
+animateToEnd=2131361874,
 ---@type LuaRef
-barrier=2131230803,
+animateToStart=2131361875,
 ---@type LuaRef
-baseline=2131230804,
+antiClockwise=2131361876,
 ---@type LuaRef
-beginOnFirstDraw=2131230805,
+anticipate=2131361877,
 ---@type LuaRef
-beginning=2131230806,
+arc=2131361878,
 ---@type LuaRef
-blocking=2131230807,
+asConfigured=2131361879,
 ---@type LuaRef
-bottom=2131230808,
+async=2131361880,
 ---@type LuaRef
-bounce=2131230809,
+auto=2131361881,
 ---@type LuaRef
-buttonPanel=2131230810,
+autoComplete=2131361882,
 ---@type LuaRef
-cancel_action=2131230811,
+autoCompleteToEnd=2131361883,
 ---@type LuaRef
-cancel_button=2131230812,
+autoCompleteToStart=2131361884,
 ---@type LuaRef
-center=2131230813,
+barrier=2131361885,
 ---@type LuaRef
-center_horizontal=2131230814,
+baseline=2131361886,
 ---@type LuaRef
-center_vertical=2131230815,
+beginOnFirstDraw=2131361887,
 ---@type LuaRef
-chain=2131230816,
+beginning=2131361888,
 ---@type LuaRef
-chains=2131230817,
+bestChoice=2131361889,
 ---@type LuaRef
-checkbox=2131230818,
+blocking=2131361890,
 ---@type LuaRef
-checked=2131230819,
+bottom=2131361891,
 ---@type LuaRef
-chip=2131230820,
+bounce=2131361892,
 ---@type LuaRef
-chip1=2131230821,
+bounceBoth=2131361893,
 ---@type LuaRef
-chip2=2131230822,
+bounceEnd=2131361894,
 ---@type LuaRef
-chip3=2131230823,
+bounceStart=2131361895,
 ---@type LuaRef
-chip_group=2131230824,
+buttonPanel=2131361896,
 ---@type LuaRef
-chronometer=2131230825,
+cache_measures=2131361897,
 ---@type LuaRef
-circle_center=2131230826,
+callMeasure=2131361898,
 ---@type LuaRef
-clear_text=2131230827,
+cancel_action=2131361899,
 ---@type LuaRef
-clip_horizontal=2131230828,
+cancel_button=2131361900,
 ---@type LuaRef
-clip_vertical=2131230829,
+carryVelocity=2131361901,
 ---@type LuaRef
-clockwise=2131230830,
+center=2131361902,
 ---@type LuaRef
-collapseActionView=2131230831,
+center_horizontal=2131361903,
 ---@type LuaRef
-compress=2131230832,
+center_vertical=2131361904,
 ---@type LuaRef
-confirm_button=2131230833,
+chain=2131361905,
 ---@type LuaRef
-container=2131230834,
+chain2=2131361906,
 ---@type LuaRef
-content=2131230835,
+chains=2131361907,
 ---@type LuaRef
-contentPanel=2131230836,
+checkbox=2131361908,
 ---@type LuaRef
-contiguous=2131230837,
+checked=2131361909,
 ---@type LuaRef
-coordinator=2131230838,
+chip=2131361910,
 ---@type LuaRef
-cos=2131230839,
+chip1=2131361911,
 ---@type LuaRef
-counterclockwise=2131230840,
+chip2=2131361912,
 ---@type LuaRef
-custom=2131230841,
+chip3=2131361913,
 ---@type LuaRef
-customPanel=2131230842,
+chip_group=2131361914,
 ---@type LuaRef
-cut=2131230843,
+chronometer=2131361915,
 ---@type LuaRef
-date_picker_actions=2131230844,
+circle_center=2131361916,
 ---@type LuaRef
-decelerate=2131230845,
+clear_text=2131361917,
 ---@type LuaRef
-decelerateAndComplete=2131230846,
+clip_horizontal=2131361918,
 ---@type LuaRef
-decor_content_parent=2131230847,
+clip_vertical=2131361919,
 ---@type LuaRef
-default_activity_button=2131230848,
+clockwise=2131361920,
 ---@type LuaRef
-deltaRelative=2131230849,
+closest=2131361921,
 ---@type LuaRef
-design_bottom_sheet=2131230850,
+collapseActionView=2131361922,
 ---@type LuaRef
-design_menu_item_action_area=2131230851,
+confirm_button=2131361923,
 ---@type LuaRef
-design_menu_item_action_area_stub=2131230852,
+constraint=2131361924,
 ---@type LuaRef
-design_menu_item_text=2131230853,
+constraintTest=2131361925,
 ---@type LuaRef
-design_navigation_view=2131230854,
+container=2131361926,
 ---@type LuaRef
-dialog_button=2131230855,
+content=2131361927,
 ---@type LuaRef
-dimensions=2131230856,
+contentPanel=2131361928,
 ---@type LuaRef
-direct=2131230857,
+contiguous=2131361929,
 ---@type LuaRef
-disableHome=2131230858,
+continuousVelocity=2131361930,
 ---@type LuaRef
-disablePostScroll=2131230859,
+coordinator=2131361931,
 ---@type LuaRef
-disableScroll=2131230860,
+cos=2131361932,
 ---@type LuaRef
-disjoint=2131230861,
+counterclockwise=2131361933,
 ---@type LuaRef
-dragDown=2131230862,
+currentState=2131361934,
 ---@type LuaRef
-dragEnd=2131230863,
+custom=2131361935,
 ---@type LuaRef
-dragLeft=2131230864,
+customPanel=2131361936,
 ---@type LuaRef
-dragRight=2131230865,
+cut=2131361937,
 ---@type LuaRef
-dragStart=2131230866,
+date_picker_actions=2131361938,
 ---@type LuaRef
-dragUp=2131230867,
+decelerate=2131361939,
 ---@type LuaRef
-dropdown_menu=2131230868,
+decelerateAndComplete=2131361940,
 ---@type LuaRef
-easeIn=2131230869,
+decor_content_parent=2131361941,
 ---@type LuaRef
-easeInOut=2131230870,
+default_activity_button=2131361942,
 ---@type LuaRef
-easeOut=2131230871,
+deltaRelative=2131361943,
 ---@type LuaRef
-edit_query=2131230872,
+dependency_ordering=2131361944,
 ---@type LuaRef
-elastic=2131230873,
+design_bottom_sheet=2131361945,
 ---@type LuaRef
-END=2131230874,
+design_menu_item_action_area=2131361946,
 ---@type LuaRef
-endToStart=2131230875,
+design_menu_item_action_area_stub=2131361947,
 ---@type LuaRef
-end_padder=2131230876,
+design_menu_item_text=2131361948,
 ---@type LuaRef
-enterAlways=2131230877,
+design_navigation_view=2131361949,
 ---@type LuaRef
-enterAlwaysCollapsed=2131230878,
+dfn_progress_fragment=2131361950,
 ---@type LuaRef
-exitUntilCollapsed=2131230879,
+dialog_button=2131361951,
 ---@type LuaRef
-expand_activities_button=2131230880,
+dialog_exit=2131361952,
 ---@type LuaRef
-expanded_menu=2131230881,
+dimensions=2131361953,
 ---@type LuaRef
-fade=2131230882,
+direct=2131361954,
 ---@type LuaRef
-fill=2131230883,
+disableHome=2131361955,
 ---@type LuaRef
-fill_horizontal=2131230884,
+disableIntraAutoTransition=2131361956,
 ---@type LuaRef
-fill_vertical=2131230885,
+disablePostScroll=2131361957,
 ---@type LuaRef
-filled=2131230886,
+disableScroll=2131361958,
 ---@type LuaRef
-fitToContents=2131230887,
+disjoint=2131361959,
 ---@type LuaRef
-fixed=2131230888,
+dragAnticlockwise=2131361960,
 ---@type LuaRef
-flip=2131230889,
+dragClockwise=2131361961,
 ---@type LuaRef
-floating=2131230890,
+dragDown=2131361962,
 ---@type LuaRef
-forever=2131230891,
+dragEnd=2131361963,
 ---@type LuaRef
-formTestAutoCompTV=2131230892,
+dragLeft=2131361964,
 ---@type LuaRef
-formTestLL=2131230893,
+dragRight=2131361965,
 ---@type LuaRef
-fragment_container_view_tag=2131230894,
+dragStart=2131361966,
 ---@type LuaRef
-ghost_view=2131230895,
+dragUp=2131361967,
 ---@type LuaRef
-ghost_view_holder=2131230896,
+drawer_layout=2131361968,
 ---@type LuaRef
-gone=2131230897,
+dropdown_menu=2131361969,
 ---@type LuaRef
-graph=2131230898,
+easeIn=2131361970,
 ---@type LuaRef
-graph_wrap=2131230899,
+easeInOut=2131361971,
 ---@type LuaRef
-group_divider=2131230900,
+easeOut=2131361972,
 ---@type LuaRef
-groups=2131230901,
+east=2131361973,
 ---@type LuaRef
-guideline=2131230902,
+edit_query=2131361974,
 ---@type LuaRef
-header_title=2131230903,
+elastic=2131361975,
 ---@type LuaRef
-hideable=2131230904,
+END=2131361976,
 ---@type LuaRef
-home=2131230905,
+endToStart=2131361977,
 ---@type LuaRef
-homeAsUp=2131230906,
+end_padder=2131361978,
 ---@type LuaRef
-honorRequest=2131230907,
+enterAlways=2131361979,
 ---@type LuaRef
-icon=2131230908,
+enterAlwaysCollapsed=2131361980,
 ---@type LuaRef
-icon_group=2131230909,
+exitUntilCollapsed=2131361981,
 ---@type LuaRef
-ifRoom=2131230910,
+expand_activities_button=2131361982,
 ---@type LuaRef
-ignore=2131230911,
+expanded_menu=2131361983,
 ---@type LuaRef
-ignoreRequest=2131230912,
+fade=2131361984,
 ---@type LuaRef
-image=2131230913,
+fill=2131361985,
 ---@type LuaRef
-info=2131230914,
+fill_horizontal=2131361986,
 ---@type LuaRef
-invisible=2131230915,
+fill_vertical=2131361987,
 ---@type LuaRef
-inward=2131230916,
+filled=2131361988,
 ---@type LuaRef
-italic=2131230917,
+filledTextField=2131361989,
 ---@type LuaRef
-item_touch_helper_previous_elevation=2131230918,
+filledTextField2=2131361990,
 ---@type LuaRef
-jumpToEnd=2131230919,
+fitToContents=2131361991,
 ---@type LuaRef
-jumpToStart=2131230920,
+fixed=2131361992,
 ---@type LuaRef
-labeled=2131230921,
+flContent=2131361993,
 ---@type LuaRef
-layout=2131230922,
+flip=2131361994,
 ---@type LuaRef
-left=2131230923,
+floating=2131361995,
 ---@type LuaRef
-leftToRight=2131230924,
+forever=2131361996,
 ---@type LuaRef
-line1=2131230925,
+formTestAutoCompTV=2131361997,
 ---@type LuaRef
-line3=2131230926,
+formTestButton=2131361998,
 ---@type LuaRef
-linear=2131230927,
+formTestCheckBox=2131361999,
 ---@type LuaRef
-listMode=2131230928,
+formTestComboBox=2131362000,
 ---@type LuaRef
-list_item=2131230929,
+formTestEt=2131362001,
 ---@type LuaRef
-mainrootlayout=2131230930,
+formTestIv=2131362002,
 ---@type LuaRef
-masked=2131230931,
+formTestLL=2131362003,
 ---@type LuaRef
-material_clock_display=2131230932,
+formTestProgressBar=2131362004,
 ---@type LuaRef
-material_clock_face=2131230933,
+fragment_container_view_tag=2131362005,
 ---@type LuaRef
-material_clock_hand=2131230934,
+frost=2131362006,
 ---@type LuaRef
-material_clock_period_am_button=2131230935,
+ghost_view=2131362007,
 ---@type LuaRef
-material_clock_period_pm_button=2131230936,
+ghost_view_holder=2131362008,
 ---@type LuaRef
-material_clock_period_toggle=2131230937,
+gone=2131362009,
 ---@type LuaRef
-material_hour_text_input=2131230938,
+graph=2131362010,
 ---@type LuaRef
-material_hour_tv=2131230939,
+graph_wrap=2131362011,
 ---@type LuaRef
-material_label=2131230940,
+group_divider=2131362012,
 ---@type LuaRef
-material_minute_text_input=2131230941,
+grouping=2131362013,
 ---@type LuaRef
-material_minute_tv=2131230942,
+groups=2131362014,
 ---@type LuaRef
-material_textinput_timepicker=2131230943,
+guideline=2131362015,
 ---@type LuaRef
-material_timepicker_cancel_button=2131230944,
+header_title=2131362016,
 ---@type LuaRef
-material_timepicker_container=2131230945,
+hideable=2131362017,
 ---@type LuaRef
-material_timepicker_edit_text=2131230946,
+home=2131362018,
 ---@type LuaRef
-material_timepicker_mode_button=2131230947,
+homeAsUp=2131362019,
 ---@type LuaRef
-material_timepicker_ok_button=2131230948,
+honorRequest=2131362020,
 ---@type LuaRef
-material_timepicker_view=2131230949,
+horizontal_only=2131362021,
 ---@type LuaRef
-material_value_index=2131230950,
+hsvTestLL=2131362022,
 ---@type LuaRef
-media_actions=2131230951,
+icon=2131362023,
 ---@type LuaRef
-message=2131230952,
+icon_group=2131362024,
 ---@type LuaRef
-middle=2131230953,
+ifRoom=2131362025,
 ---@type LuaRef
-mini=2131230954,
+ignore=2131362026,
 ---@type LuaRef
-month_grid=2131230955,
+ignoreRequest=2131362027,
 ---@type LuaRef
-month_navigation_bar=2131230956,
+image=2131362028,
 ---@type LuaRef
-month_navigation_fragment_toggle=2131230957,
+immediateStop=2131362029,
 ---@type LuaRef
-month_navigation_next=2131230958,
+included=2131362030,
 ---@type LuaRef
-month_navigation_previous=2131230959,
+info=2131362031,
 ---@type LuaRef
-month_title=2131230960,
+installation_progress=2131362032,
 ---@type LuaRef
-motion_base=2131230961,
+invisible=2131362033,
 ---@type LuaRef
-mtrl_anchor_parent=2131230962,
+inward=2131362034,
 ---@type LuaRef
-mtrl_calendar_day_selector_frame=2131230963,
+italic=2131362035,
 ---@type LuaRef
-mtrl_calendar_days_of_week=2131230964,
+item_touch_helper_previous_elevation=2131362036,
 ---@type LuaRef
-mtrl_calendar_frame=2131230965,
+jumpToEnd=2131362037,
 ---@type LuaRef
-mtrl_calendar_main_pane=2131230966,
+jumpToStart=2131362038,
 ---@type LuaRef
-mtrl_calendar_months=2131230967,
+labeled=2131362039,
 ---@type LuaRef
-mtrl_calendar_selection_frame=2131230968,
+layout=2131362040,
 ---@type LuaRef
-mtrl_calendar_text_input_frame=2131230969,
+left=2131362041,
 ---@type LuaRef
-mtrl_calendar_year_selector_frame=2131230970,
+leftToRight=2131362042,
 ---@type LuaRef
-mtrl_card_checked_layer_id=2131230971,
+legacy=2131362043,
 ---@type LuaRef
-mtrl_child_content_container=2131230972,
+line1=2131362044,
 ---@type LuaRef
-mtrl_internal_children_alpha_tag=2131230973,
+line3=2131362045,
 ---@type LuaRef
-mtrl_motion_snapshot_view=2131230974,
+linear=2131362046,
 ---@type LuaRef
-mtrl_picker_fullscreen=2131230975,
+listMode=2131362047,
 ---@type LuaRef
-mtrl_picker_header=2131230976,
+list_item=2131362048,
 ---@type LuaRef
-mtrl_picker_header_selection_text=2131230977,
+main_view=2131362049,
 ---@type LuaRef
-mtrl_picker_header_title_and_selection=2131230978,
+mainrootlayout=2131362050,
 ---@type LuaRef
-mtrl_picker_header_toggle=2131230979,
+masked=2131362051,
 ---@type LuaRef
-mtrl_picker_text_input_date=2131230980,
+match_constraint=2131362052,
 ---@type LuaRef
-mtrl_picker_text_input_range_end=2131230981,
+match_parent=2131362053,
 ---@type LuaRef
-mtrl_picker_text_input_range_start=2131230982,
+material_clock_display=2131362054,
 ---@type LuaRef
-mtrl_picker_title_text=2131230983,
+material_clock_face=2131362055,
 ---@type LuaRef
-mtrl_view_tag_bottom_padding=2131230984,
+material_clock_hand=2131362056,
 ---@type LuaRef
-multiply=2131230985,
+material_clock_period_am_button=2131362057,
 ---@type LuaRef
-navigation_bar_item_active_indicator_view=2131230986,
+material_clock_period_pm_button=2131362058,
 ---@type LuaRef
-navigation_bar_item_icon_container=2131230987,
+material_clock_period_toggle=2131362059,
 ---@type LuaRef
-navigation_bar_item_icon_view=2131230988,
+material_hour_text_input=2131362060,
 ---@type LuaRef
-navigation_bar_item_labels_group=2131230989,
+material_hour_tv=2131362061,
 ---@type LuaRef
-navigation_bar_item_large_label_view=2131230990,
+material_label=2131362062,
 ---@type LuaRef
-navigation_bar_item_small_label_view=2131230991,
+material_minute_text_input=2131362063,
 ---@type LuaRef
-navigation_header_container=2131230992,
+material_minute_tv=2131362064,
 ---@type LuaRef
-never=2131230993,
+material_textinput_timepicker=2131362065,
 ---@type LuaRef
-noScroll=2131230994,
+material_timepicker_cancel_button=2131362066,
 ---@type LuaRef
-none=2131230995,
+material_timepicker_container=2131362067,
 ---@type LuaRef
-normal=2131230996,
+material_timepicker_edit_text=2131362068,
 ---@type LuaRef
-notification_background=2131230997,
+material_timepicker_mode_button=2131362069,
 ---@type LuaRef
-notification_main_column=2131230998,
+material_timepicker_ok_button=2131362070,
 ---@type LuaRef
-notification_main_column_container=2131230999,
+material_timepicker_view=2131362071,
 ---@type LuaRef
-off=2131231000,
+material_value_index=2131362072,
 ---@type LuaRef
-on=2131231001,
+media_actions=2131362073,
 ---@type LuaRef
-outline=2131231002,
+menuFragment=2131362074,
 ---@type LuaRef
-outward=2131231003,
+message=2131362075,
 ---@type LuaRef
-packed=2131231004,
+middle=2131362076,
 ---@type LuaRef
-parallax=2131231005,
+mini=2131362077,
 ---@type LuaRef
-parent=2131231006,
+month_grid=2131362078,
 ---@type LuaRef
-parentPanel=2131231007,
+month_navigation_bar=2131362079,
 ---@type LuaRef
-parentRelative=2131231008,
+month_navigation_fragment_toggle=2131362080,
 ---@type LuaRef
-parent_matrix=2131231009,
+month_navigation_next=2131362081,
 ---@type LuaRef
-password_toggle=2131231010,
+month_navigation_previous=2131362082,
 ---@type LuaRef
-path=2131231011,
+month_title=2131362083,
 ---@type LuaRef
-pathRelative=2131231012,
+motion_base=2131362084,
 ---@type LuaRef
-peekHeight=2131231013,
+mtrl_anchor_parent=2131362085,
 ---@type LuaRef
-percent=2131231014,
+mtrl_calendar_day_selector_frame=2131362086,
 ---@type LuaRef
-pin=2131231015,
+mtrl_calendar_days_of_week=2131362087,
 ---@type LuaRef
-position=2131231016,
+mtrl_calendar_frame=2131362088,
 ---@type LuaRef
-postLayout=2131231017,
+mtrl_calendar_main_pane=2131362089,
 ---@type LuaRef
-progress_circular=2131231018,
+mtrl_calendar_months=2131362090,
 ---@type LuaRef
-progress_horizontal=2131231019,
+mtrl_calendar_selection_frame=2131362091,
 ---@type LuaRef
-radio=2131231020,
+mtrl_calendar_text_input_frame=2131362092,
 ---@type LuaRef
-ratio=2131231021,
+mtrl_calendar_year_selector_frame=2131362093,
 ---@type LuaRef
-rectangles=2131231022,
+mtrl_card_checked_layer_id=2131362094,
 ---@type LuaRef
-reverseSawtooth=2131231023,
+mtrl_child_content_container=2131362095,
 ---@type LuaRef
-right=2131231024,
+mtrl_internal_children_alpha_tag=2131362096,
 ---@type LuaRef
-rightToLeft=2131231025,
+mtrl_motion_snapshot_view=2131362097,
 ---@type LuaRef
-right_icon=2131231026,
+mtrl_picker_fullscreen=2131362098,
 ---@type LuaRef
-right_side=2131231027,
+mtrl_picker_header=2131362099,
 ---@type LuaRef
-rounded=2131231028,
+mtrl_picker_header_selection_text=2131362100,
 ---@type LuaRef
-row_index_key=2131231029,
+mtrl_picker_header_title_and_selection=2131362101,
 ---@type LuaRef
-save_non_transition_alpha=2131231030,
+mtrl_picker_header_toggle=2131362102,
 ---@type LuaRef
-save_overlay_view=2131231031,
+mtrl_picker_text_input_date=2131362103,
 ---@type LuaRef
-sawtooth=2131231032,
+mtrl_picker_text_input_range_end=2131362104,
 ---@type LuaRef
-scale=2131231033,
+mtrl_picker_text_input_range_start=2131362105,
 ---@type LuaRef
-screen=2131231034,
+mtrl_picker_title_text=2131362106,
 ---@type LuaRef
-scroll=2131231035,
+mtrl_view_tag_bottom_padding=2131362107,
 ---@type LuaRef
-scrollIndicatorDown=2131231036,
+multiply=2131362108,
 ---@type LuaRef
-scrollIndicatorUp=2131231037,
+nav_controller_view_tag=2131362109,
 ---@type LuaRef
-scrollView=2131231038,
+nav_gallery=2131362110,
 ---@type LuaRef
-scrollable=2131231039,
+nav_graph=2131362111,
 ---@type LuaRef
-search_badge=2131231040,
+nav_home=2131362112,
 ---@type LuaRef
-search_bar=2131231041,
+nav_host_fragment=2131362113,
 ---@type LuaRef
-search_button=2131231042,
+nav_host_fragment_container=2131362114,
 ---@type LuaRef
-search_close_btn=2131231043,
+nav_settings=2131362115,
 ---@type LuaRef
-search_edit_frame=2131231044,
+navigation_bar_item_icon_view=2131362116,
 ---@type LuaRef
-search_go_btn=2131231045,
+navigation_bar_item_labels_group=2131362117,
 ---@type LuaRef
-search_mag_icon=2131231046,
+navigation_bar_item_large_label_view=2131362118,
 ---@type LuaRef
-search_plate=2131231047,
+navigation_bar_item_small_label_view=2131362119,
 ---@type LuaRef
-search_src_text=2131231048,
+navigation_header_container=2131362120,
 ---@type LuaRef
-search_voice_btn=2131231049,
+never=2131362121,
 ---@type LuaRef
-select_dialog_listview=2131231050,
+neverCompleteToEnd=2131362122,
 ---@type LuaRef
-selected=2131231051,
+neverCompleteToStart=2131362123,
 ---@type LuaRef
-selection_type=2131231052,
+noScroll=2131362124,
 ---@type LuaRef
-shortcut=2131231053,
+noState=2131362125,
 ---@type LuaRef
-showCustom=2131231054,
+none=2131362126,
 ---@type LuaRef
-showHome=2131231055,
+normal=2131362127,
 ---@type LuaRef
-showTitle=2131231056,
+north=2131362128,
 ---@type LuaRef
-sin=2131231057,
+notification_background=2131362129,
 ---@type LuaRef
-skipCollapsed=2131231058,
+notification_main_column=2131362130,
 ---@type LuaRef
-slide=2131231059,
+notification_main_column_container=2131362131,
 ---@type LuaRef
-snackbar_action=2131231060,
+nvView=2131362132,
 ---@type LuaRef
-snackbar_text=2131231061,
+off=2131362133,
 ---@type LuaRef
-snap=2131231062,
+on=2131362134,
 ---@type LuaRef
-snapMargins=2131231063,
+onInterceptTouchReturnSwipe=2131362135,
 ---@type LuaRef
-spacer=2131231064,
+outline=2131362136,
 ---@type LuaRef
-special_effects_controller_view_tag=2131231065,
+outward=2131362137,
 ---@type LuaRef
-spline=2131231066,
+overshoot=2131362138,
 ---@type LuaRef
-split_action_bar=2131231067,
+packed=2131362139,
 ---@type LuaRef
-spread=2131231068,
+page_1=2131362140,
 ---@type LuaRef
-spread_inside=2131231069,
+page_2=2131362141,
 ---@type LuaRef
-square=2131231070,
+parallax=2131362142,
 ---@type LuaRef
-src_atop=2131231071,
+parent=2131362143,
 ---@type LuaRef
-src_in=2131231072,
+parentPanel=2131362144,
 ---@type LuaRef
-src_over=2131231073,
+parentRelative=2131362145,
 ---@type LuaRef
-standard=2131231074,
+parent_matrix=2131362146,
 ---@type LuaRef
-start=2131231075,
+password_toggle=2131362147,
 ---@type LuaRef
-startHorizontal=2131231076,
+path=2131362148,
 ---@type LuaRef
-startToEnd=2131231077,
+pathRelative=2131362149,
 ---@type LuaRef
-startVertical=2131231078,
+peekHeight=2131362150,
 ---@type LuaRef
-staticLayout=2131231079,
+percent=2131362151,
 ---@type LuaRef
-staticPostLayout=2131231080,
+pin=2131362152,
 ---@type LuaRef
-status_bar_latest_event_content=2131231081,
+position=2131362153,
 ---@type LuaRef
-stop=2131231082,
+postLayout=2131362154,
 ---@type LuaRef
-stretch=2131231083,
+progress_action=2131362155,
 ---@type LuaRef
-submenuarrow=2131231084,
+progress_circular=2131362156,
 ---@type LuaRef
-submit_area=2131231085,
+progress_horizontal=2131362157,
 ---@type LuaRef
-tabMode=2131231086,
+progress_icon=2131362158,
 ---@type LuaRef
-tag_accessibility_actions=2131231087,
+progress_title=2131362159,
 ---@type LuaRef
-tag_accessibility_clickable_spans=2131231088,
+radio=2131362160,
 ---@type LuaRef
-tag_accessibility_heading=2131231089,
+ratio=2131362161,
 ---@type LuaRef
-tag_accessibility_pane_title=2131231090,
+receiveFragment=2131362162,
 ---@type LuaRef
-tag_on_apply_window_listener=2131231091,
+rectangles=2131362163,
 ---@type LuaRef
-tag_on_receive_content_listener=2131231092,
+reverseSawtooth=2131362164,
 ---@type LuaRef
-tag_on_receive_content_mime_types=2131231093,
+right=2131362165,
 ---@type LuaRef
-tag_screen_reader_focusable=2131231094,
+rightToLeft=2131362166,
 ---@type LuaRef
-tag_state_description=2131231095,
+right_icon=2131362167,
 ---@type LuaRef
-tag_transition_group=2131231096,
+right_side=2131362168,
 ---@type LuaRef
-tag_unhandled_key_event_manager=2131231097,
+rounded=2131362169,
 ---@type LuaRef
-tag_unhandled_key_listeners=2131231098,
+row_index_key=2131362170,
 ---@type LuaRef
-tag_window_insets_animation_callback=2131231099,
+save_non_transition_alpha=2131362171,
 ---@type LuaRef
-test_checkbox_android_button_tint=2131231100,
+save_overlay_view=2131362172,
 ---@type LuaRef
-test_checkbox_app_button_tint=2131231101,
+sawtooth=2131362173,
 ---@type LuaRef
-test_radiobutton_android_button_tint=2131231102,
+scale=2131362174,
 ---@type LuaRef
-test_radiobutton_app_button_tint=2131231103,
+screen=2131362175,
 ---@type LuaRef
-text=2131231104,
+scroll=2131362176,
 ---@type LuaRef
-text2=2131231105,
+scrollIndicatorDown=2131362177,
 ---@type LuaRef
-textEnd=2131231106,
+scrollIndicatorUp=2131362178,
 ---@type LuaRef
-textSpacerNoButtons=2131231107,
+scrollView=2131362179,
 ---@type LuaRef
-textSpacerNoTitle=2131231108,
+scrollable=2131362180,
 ---@type LuaRef
-textStart=2131231109,
+search_badge=2131362181,
 ---@type LuaRef
-textTop=2131231110,
+search_bar=2131362182,
 ---@type LuaRef
-text_input_end_icon=2131231111,
+search_button=2131362183,
 ---@type LuaRef
-text_input_error_icon=2131231112,
+search_close_btn=2131362184,
 ---@type LuaRef
-text_input_start_icon=2131231113,
+search_edit_frame=2131362185,
 ---@type LuaRef
-textinput_counter=2131231114,
+search_go_btn=2131362186,
 ---@type LuaRef
-textinput_error=2131231115,
+search_mag_icon=2131362187,
 ---@type LuaRef
-textinput_helper_text=2131231116,
+search_plate=2131362188,
 ---@type LuaRef
-textinput_placeholder=2131231117,
+search_src_text=2131362189,
 ---@type LuaRef
-textinput_prefix_text=2131231118,
+search_voice_btn=2131362190,
 ---@type LuaRef
-textinput_suffix_text=2131231119,
+select_dialog_listview=2131362191,
 ---@type LuaRef
-time=2131231120,
+selected=2131362192,
 ---@type LuaRef
-title=2131231121,
+selection_type=2131362193,
 ---@type LuaRef
-titleDividerNoCustom=2131231122,
+sharedValueSet=2131362194,
 ---@type LuaRef
-title_template=2131231123,
+sharedValueUnset=2131362195,
 ---@type LuaRef
-toggle=2131231124,
+shortcut=2131362196,
 ---@type LuaRef
-top=2131231125,
+showCustom=2131362197,
 ---@type LuaRef
-topPanel=2131231126,
+showHome=2131362198,
 ---@type LuaRef
-touch_outside=2131231127,
+showTitle=2131362199,
 ---@type LuaRef
-transitionToEnd=2131231128,
+sin=2131362200,
 ---@type LuaRef
-transitionToStart=2131231129,
+skipCollapsed=2131362201,
 ---@type LuaRef
-transition_current_scene=2131231130,
+skipped=2131362202,
 ---@type LuaRef
-transition_layout_save=2131231131,
+slide=2131362203,
 ---@type LuaRef
-transition_position=2131231132,
+snackbar_action=2131362204,
 ---@type LuaRef
-transition_scene_layoutid_cache=2131231133,
+snackbar_text=2131362205,
 ---@type LuaRef
-transition_transform=2131231134,
+snap=2131362206,
 ---@type LuaRef
-triangle=2131231135,
+snapMargins=2131362207,
 ---@type LuaRef
-unchecked=2131231136,
+south=2131362208,
 ---@type LuaRef
-uniform=2131231137,
+spacer=2131362209,
 ---@type LuaRef
-unlabeled=2131231138,
+special_effects_controller_view_tag=2131362210,
 ---@type LuaRef
-up=2131231139,
+spline=2131362211,
 ---@type LuaRef
-useLogo=2131231140,
+split_action_bar=2131362212,
 ---@type LuaRef
-view_offset_helper=2131231141,
+spread=2131362213,
 ---@type LuaRef
-view_tree_lifecycle_owner=2131231142,
+spread_inside=2131362214,
 ---@type LuaRef
-view_tree_saved_state_registry_owner=2131231143,
+spring=2131362215,
 ---@type LuaRef
-view_tree_view_model_store_owner=2131231144,
+square=2131362216,
 ---@type LuaRef
-visible=2131231145,
+src_atop=2131362217,
 ---@type LuaRef
-visible_removing_fragment_view_tag=2131231146,
+src_in=2131362218,
 ---@type LuaRef
-withText=2131231147,
+src_over=2131362219,
 ---@type LuaRef
-withinBounds=2131231148,
+standard=2131362220,
 ---@type LuaRef
-wrap=2131231149,
+start=2131362221,
 ---@type LuaRef
-wrap_content=2131231150,
+startHorizontal=2131362222,
 ---@type LuaRef
-zero_corner_chip=2131231151
+startToEnd=2131362223,
+---@type LuaRef
+startVertical=2131362224,
+---@type LuaRef
+staticLayout=2131362225,
+---@type LuaRef
+staticPostLayout=2131362226,
+---@type LuaRef
+status_bar_latest_event_content=2131362227,
+---@type LuaRef
+stop=2131362228,
+---@type LuaRef
+stretch=2131362229,
+---@type LuaRef
+submenuarrow=2131362230,
+---@type LuaRef
+submit_area=2131362231,
+---@type LuaRef
+supportScrollUp=2131362232,
+---@type LuaRef
+svTestLL=2131362233,
+---@type LuaRef
+tabMode=2131362234,
+---@type LuaRef
+tag_accessibility_actions=2131362235,
+---@type LuaRef
+tag_accessibility_clickable_spans=2131362236,
+---@type LuaRef
+tag_accessibility_heading=2131362237,
+---@type LuaRef
+tag_accessibility_pane_title=2131362238,
+---@type LuaRef
+tag_on_apply_window_listener=2131362239,
+---@type LuaRef
+tag_on_receive_content_listener=2131362240,
+---@type LuaRef
+tag_on_receive_content_mime_types=2131362241,
+---@type LuaRef
+tag_screen_reader_focusable=2131362242,
+---@type LuaRef
+tag_state_description=2131362243,
+---@type LuaRef
+tag_transition_group=2131362244,
+---@type LuaRef
+tag_unhandled_key_event_manager=2131362245,
+---@type LuaRef
+tag_unhandled_key_listeners=2131362246,
+---@type LuaRef
+tag_window_insets_animation_callback=2131362247,
+---@type LuaRef
+test=2131362248,
+---@type LuaRef
+test2=2131362249,
+---@type LuaRef
+test4=2131362250,
+---@type LuaRef
+test5=2131362251,
+---@type LuaRef
+testBedTitle=2131362252,
+---@type LuaRef
+test_checkbox_android_button_tint=2131362253,
+---@type LuaRef
+test_checkbox_app_button_tint=2131362254,
+---@type LuaRef
+test_radiobutton_android_button_tint=2131362255,
+---@type LuaRef
+test_radiobutton_app_button_tint=2131362256,
+---@type LuaRef
+text=2131362257,
+---@type LuaRef
+text2=2131362258,
+---@type LuaRef
+textEnd=2131362259,
+---@type LuaRef
+textSpacerNoButtons=2131362260,
+---@type LuaRef
+textSpacerNoTitle=2131362261,
+---@type LuaRef
+textStart=2131362262,
+---@type LuaRef
+textTop=2131362263,
+---@type LuaRef
+text_input_end_icon=2131362264,
+---@type LuaRef
+text_input_error_icon=2131362265,
+---@type LuaRef
+text_input_start_icon=2131362266,
+---@type LuaRef
+textinput_counter=2131362267,
+---@type LuaRef
+textinput_error=2131362268,
+---@type LuaRef
+textinput_helper_text=2131362269,
+---@type LuaRef
+textinput_placeholder=2131362270,
+---@type LuaRef
+textinput_prefix_text=2131362271,
+---@type LuaRef
+textinput_suffix_text=2131362272,
+---@type LuaRef
+time=2131362273,
+---@type LuaRef
+title=2131362274,
+---@type LuaRef
+titleDividerNoCustom=2131362275,
+---@type LuaRef
+title_template=2131362276,
+---@type LuaRef
+toggle=2131362277,
+---@type LuaRef
+top=2131362278,
+---@type LuaRef
+topPanel=2131362279,
+---@type LuaRef
+touch_outside=2131362280,
+---@type LuaRef
+transitionToEnd=2131362281,
+---@type LuaRef
+transitionToStart=2131362282,
+---@type LuaRef
+transition_current_scene=2131362283,
+---@type LuaRef
+transition_layout_save=2131362284,
+---@type LuaRef
+transition_position=2131362285,
+---@type LuaRef
+transition_scene_layoutid_cache=2131362286,
+---@type LuaRef
+transition_transform=2131362287,
+---@type LuaRef
+triangle=2131362288,
+---@type LuaRef
+unchecked=2131362289,
+---@type LuaRef
+uniform=2131362290,
+---@type LuaRef
+unlabeled=2131362291,
+---@type LuaRef
+up=2131362292,
+---@type LuaRef
+useLogo=2131362293,
+---@type LuaRef
+vertical_only=2131362294,
+---@type LuaRef
+view_offset_helper=2131362295,
+---@type LuaRef
+view_transition=2131362296,
+---@type LuaRef
+view_tree_lifecycle_owner=2131362297,
+---@type LuaRef
+view_tree_saved_state_registry_owner=2131362298,
+---@type LuaRef
+view_tree_view_model_store_owner=2131362299,
+---@type LuaRef
+visible=2131362300,
+---@type LuaRef
+visible_removing_fragment_view_tag=2131362301,
+---@type LuaRef
+west=2131362302,
+---@type LuaRef
+withText=2131362303,
+---@type LuaRef
+withinBounds=2131362304,
+---@type LuaRef
+wrap=2131362305,
+---@type LuaRef
+wrap_content=2131362306,
+---@type LuaRef
+wrap_content_constrained=2131362307,
+---@type LuaRef
+x_left=2131362308,
+---@type LuaRef
+x_right=2131362309,
+---@type LuaRef
+zero_corner_chip=2131362310
 
 }
 LR.id = id
@@ -5734,97 +4864,65 @@ LR.id = id
 ---@class integer
 local integer = {
 ---@type LuaRef
-abc_config_activityDefaultDur=2131296256,
+abc_config_activityDefaultDur=2131427328,
 ---@type LuaRef
-abc_config_activityShortDur=2131296257,
+abc_config_activityShortDur=2131427329,
 ---@type LuaRef
-app_bar_elevation_anim_duration=2131296258,
+app_bar_elevation_anim_duration=2131427330,
 ---@type LuaRef
-bottom_sheet_slide_duration=2131296259,
+bottom_sheet_slide_duration=2131427331,
 ---@type LuaRef
-cancel_button_image_alpha=2131296260,
+cancel_button_image_alpha=2131427332,
 ---@type LuaRef
-config_tooltipAnimTime=2131296261,
+config_navAnimTime=2131427333,
 ---@type LuaRef
-design_snackbar_text_max_lines=2131296262,
+config_tooltipAnimTime=2131427334,
 ---@type LuaRef
-design_tab_indicator_anim_duration_ms=2131296263,
+design_snackbar_text_max_lines=2131427335,
 ---@type LuaRef
-hide_password_duration=2131296264,
+design_tab_indicator_anim_duration_ms=2131427336,
 ---@type LuaRef
-m3_btn_anim_delay_ms=2131296265,
+hide_password_duration=2131427337,
 ---@type LuaRef
-m3_btn_anim_duration_ms=2131296266,
+material_motion_duration_long_1=2131427338,
 ---@type LuaRef
-m3_card_anim_delay_ms=2131296267,
+material_motion_duration_long_2=2131427339,
 ---@type LuaRef
-m3_card_anim_duration_ms=2131296268,
+material_motion_duration_medium_1=2131427340,
 ---@type LuaRef
-m3_chip_anim_duration=2131296269,
+material_motion_duration_medium_2=2131427341,
 ---@type LuaRef
-m3_sys_motion_duration_long1=2131296270,
+material_motion_duration_short_1=2131427342,
 ---@type LuaRef
-m3_sys_motion_duration_long2=2131296271,
+material_motion_duration_short_2=2131427343,
 ---@type LuaRef
-m3_sys_motion_duration_medium1=2131296272,
+material_motion_path=2131427344,
 ---@type LuaRef
-m3_sys_motion_duration_medium2=2131296273,
+min_speed=2131427345,
 ---@type LuaRef
-m3_sys_motion_duration_short1=2131296274,
+mtrl_badge_max_character_count=2131427346,
 ---@type LuaRef
-m3_sys_motion_duration_short2=2131296275,
+mtrl_btn_anim_delay_ms=2131427347,
 ---@type LuaRef
-m3_sys_motion_path=2131296276,
+mtrl_btn_anim_duration_ms=2131427348,
 ---@type LuaRef
-m3_sys_shape_large_corner_family=2131296277,
+mtrl_calendar_header_orientation=2131427349,
 ---@type LuaRef
-m3_sys_shape_medium_corner_family=2131296278,
+mtrl_calendar_selection_text_lines=2131427350,
 ---@type LuaRef
-m3_sys_shape_small_corner_family=2131296279,
+mtrl_calendar_year_selector_span=2131427351,
 ---@type LuaRef
-material_motion_duration_long_1=2131296280,
+mtrl_card_anim_delay_ms=2131427352,
 ---@type LuaRef
-material_motion_duration_long_2=2131296281,
+mtrl_card_anim_duration_ms=2131427353,
 ---@type LuaRef
-material_motion_duration_medium_1=2131296282,
+mtrl_chip_anim_duration=2131427354,
 ---@type LuaRef
-material_motion_duration_medium_2=2131296283,
+mtrl_tab_indicator_anim_duration_ms=2131427355,
 ---@type LuaRef
-material_motion_duration_short_1=2131296284,
+show_password_duration=2131427356,
 ---@type LuaRef
-material_motion_duration_short_2=2131296285,
----@type LuaRef
-material_motion_path=2131296286,
----@type LuaRef
-mtrl_badge_max_character_count=2131296287,
----@type LuaRef
-mtrl_btn_anim_delay_ms=2131296288,
----@type LuaRef
-mtrl_btn_anim_duration_ms=2131296289,
----@type LuaRef
-mtrl_calendar_header_orientation=2131296290,
----@type LuaRef
-mtrl_calendar_selection_text_lines=2131296291,
----@type LuaRef
-mtrl_calendar_year_selector_span=2131296292,
----@type LuaRef
-mtrl_card_anim_delay_ms=2131296293,
----@type LuaRef
-mtrl_card_anim_duration_ms=2131296294,
----@type LuaRef
-mtrl_chip_anim_duration=2131296295,
----@type LuaRef
-mtrl_tab_indicator_anim_duration_ms=2131296296,
----@type LuaRef
-mtrl_view_gone=2131296297,
----@type LuaRef
-mtrl_view_invisible=2131296298,
----@type LuaRef
-mtrl_view_visible=2131296299,
----@type LuaRef
-show_password_duration=2131296300,
----@type LuaRef
-status_bar_notification_info_maxnum=2131296301
+status_bar_notification_info_maxnum=2131427357
 
 }
 LR.integer = integer
@@ -5832,27 +4930,27 @@ LR.integer = integer
 ---@class interpolator
 local interpolator = {
 ---@type LuaRef
-btn_checkbox_checked_mtrl_animation_interpolator_0=2131361792,
+btn_checkbox_checked_mtrl_animation_interpolator_0=2131492864,
 ---@type LuaRef
-btn_checkbox_checked_mtrl_animation_interpolator_1=2131361793,
+btn_checkbox_checked_mtrl_animation_interpolator_1=2131492865,
 ---@type LuaRef
-btn_checkbox_unchecked_mtrl_animation_interpolator_0=2131361794,
+btn_checkbox_unchecked_mtrl_animation_interpolator_0=2131492866,
 ---@type LuaRef
-btn_checkbox_unchecked_mtrl_animation_interpolator_1=2131361795,
+btn_checkbox_unchecked_mtrl_animation_interpolator_1=2131492867,
 ---@type LuaRef
-btn_radio_to_off_mtrl_animation_interpolator_0=2131361796,
+btn_radio_to_off_mtrl_animation_interpolator_0=2131492868,
 ---@type LuaRef
-btn_radio_to_on_mtrl_animation_interpolator_0=2131361797,
+btn_radio_to_on_mtrl_animation_interpolator_0=2131492869,
 ---@type LuaRef
-fast_out_slow_in=2131361798,
+fast_out_slow_in=2131492870,
 ---@type LuaRef
-mtrl_fast_out_linear_in=2131361799,
+mtrl_fast_out_linear_in=2131492871,
 ---@type LuaRef
-mtrl_fast_out_slow_in=2131361800,
+mtrl_fast_out_slow_in=2131492872,
 ---@type LuaRef
-mtrl_linear=2131361801,
+mtrl_linear=2131492873,
 ---@type LuaRef
-mtrl_linear_out_slow_in=2131361802
+mtrl_linear_out_slow_in=2131492874
 
 }
 LR.interpolator = interpolator
@@ -5860,269 +4958,275 @@ LR.interpolator = interpolator
 ---@class layout
 local layout = {
 ---@type LuaRef
-abc_action_bar_title_item=2131427328,
+abc_action_bar_title_item=2131558400,
 ---@type LuaRef
-abc_action_bar_up_container=2131427329,
+abc_action_bar_up_container=2131558401,
 ---@type LuaRef
-abc_action_menu_item_layout=2131427330,
+abc_action_menu_item_layout=2131558402,
 ---@type LuaRef
-abc_action_menu_layout=2131427331,
+abc_action_menu_layout=2131558403,
 ---@type LuaRef
-abc_action_mode_bar=2131427332,
+abc_action_mode_bar=2131558404,
 ---@type LuaRef
-abc_action_mode_close_item_material=2131427333,
+abc_action_mode_close_item_material=2131558405,
 ---@type LuaRef
-abc_activity_chooser_view=2131427334,
+abc_activity_chooser_view=2131558406,
 ---@type LuaRef
-abc_activity_chooser_view_list_item=2131427335,
+abc_activity_chooser_view_list_item=2131558407,
 ---@type LuaRef
-abc_alert_dialog_button_bar_material=2131427336,
+abc_alert_dialog_button_bar_material=2131558408,
 ---@type LuaRef
-abc_alert_dialog_material=2131427337,
+abc_alert_dialog_material=2131558409,
 ---@type LuaRef
-abc_alert_dialog_title_material=2131427338,
+abc_alert_dialog_title_material=2131558410,
 ---@type LuaRef
-abc_cascading_menu_item_layout=2131427339,
+abc_cascading_menu_item_layout=2131558411,
 ---@type LuaRef
-abc_dialog_title_material=2131427340,
+abc_dialog_title_material=2131558412,
 ---@type LuaRef
-abc_expanded_menu_layout=2131427341,
+abc_expanded_menu_layout=2131558413,
 ---@type LuaRef
-abc_list_menu_item_checkbox=2131427342,
+abc_list_menu_item_checkbox=2131558414,
 ---@type LuaRef
-abc_list_menu_item_icon=2131427343,
+abc_list_menu_item_icon=2131558415,
 ---@type LuaRef
-abc_list_menu_item_layout=2131427344,
+abc_list_menu_item_layout=2131558416,
 ---@type LuaRef
-abc_list_menu_item_radio=2131427345,
+abc_list_menu_item_radio=2131558417,
 ---@type LuaRef
-abc_popup_menu_header_item_layout=2131427346,
+abc_popup_menu_header_item_layout=2131558418,
 ---@type LuaRef
-abc_popup_menu_item_layout=2131427347,
+abc_popup_menu_item_layout=2131558419,
 ---@type LuaRef
-abc_screen_content_include=2131427348,
+abc_screen_content_include=2131558420,
 ---@type LuaRef
-abc_screen_simple=2131427349,
+abc_screen_simple=2131558421,
 ---@type LuaRef
-abc_screen_simple_overlay_action_mode=2131427350,
+abc_screen_simple_overlay_action_mode=2131558422,
 ---@type LuaRef
-abc_screen_toolbar=2131427351,
+abc_screen_toolbar=2131558423,
 ---@type LuaRef
-abc_search_dropdown_item_icons_2line=2131427352,
+abc_search_dropdown_item_icons_2line=2131558424,
 ---@type LuaRef
-abc_search_view=2131427353,
+abc_search_view=2131558425,
 ---@type LuaRef
-abc_select_dialog_material=2131427354,
+abc_select_dialog_material=2131558426,
 ---@type LuaRef
-abc_tooltip=2131427355,
+abc_tooltip=2131558427,
 ---@type LuaRef
-backend=2131427356,
+activity_main=2131558428,
 ---@type LuaRef
-custom_dialog=2131427357,
+backend=2131558429,
 ---@type LuaRef
-def=2131427358,
+constraint=2131558430,
 ---@type LuaRef
-design_bottom_navigation_item=2131427359,
+custom_dialog=2131558431,
 ---@type LuaRef
-design_bottom_sheet_dialog=2131427360,
+def=2131558432,
 ---@type LuaRef
-design_layout_snackbar=2131427361,
+design_bottom_navigation_item=2131558433,
 ---@type LuaRef
-design_layout_snackbar_include=2131427362,
+design_bottom_sheet_dialog=2131558434,
 ---@type LuaRef
-design_layout_tab_icon=2131427363,
+design_layout_snackbar=2131558435,
 ---@type LuaRef
-design_layout_tab_text=2131427364,
+design_layout_snackbar_include=2131558436,
 ---@type LuaRef
-design_menu_item_action_area=2131427365,
+design_layout_tab_icon=2131558437,
 ---@type LuaRef
-design_navigation_item=2131427366,
+design_layout_tab_text=2131558438,
 ---@type LuaRef
-design_navigation_item_header=2131427367,
+design_menu_item_action_area=2131558439,
 ---@type LuaRef
-design_navigation_item_separator=2131427368,
+design_navigation_item=2131558440,
 ---@type LuaRef
-design_navigation_item_subheader=2131427369,
+design_navigation_item_header=2131558441,
 ---@type LuaRef
-design_navigation_menu=2131427370,
+design_navigation_item_separator=2131558442,
 ---@type LuaRef
-design_navigation_menu_item=2131427371,
+design_navigation_item_subheader=2131558443,
 ---@type LuaRef
-design_text_input_end_icon=2131427372,
+design_navigation_menu=2131558444,
 ---@type LuaRef
-design_text_input_start_icon=2131427373,
+design_navigation_menu_item=2131558445,
 ---@type LuaRef
-form=2131427374,
+design_text_input_end_icon=2131558446,
 ---@type LuaRef
-hsv=2131427375,
+design_text_input_start_icon=2131558447,
 ---@type LuaRef
-m3_alert_dialog=2131427376,
+drawer=2131558448,
 ---@type LuaRef
-m3_alert_dialog_actions=2131427377,
+dynamic_feature_install_fragment=2131558449,
 ---@type LuaRef
-m3_alert_dialog_title=2131427378,
+form=2131558450,
 ---@type LuaRef
-main=2131427379,
+frame=2131558451,
 ---@type LuaRef
-material_chip_input_combo=2131427380,
+hsv=2131558452,
 ---@type LuaRef
-material_clock_display=2131427381,
+linear_test=2131558453,
 ---@type LuaRef
-material_clock_display_divider=2131427382,
+main=2131558454,
 ---@type LuaRef
-material_clock_period_toggle=2131427383,
+material_chip_input_combo=2131558455,
 ---@type LuaRef
-material_clock_period_toggle_land=2131427384,
+material_clock_display=2131558456,
 ---@type LuaRef
-material_clockface_textview=2131427385,
+material_clock_display_divider=2131558457,
 ---@type LuaRef
-material_clockface_view=2131427386,
+material_clock_period_toggle=2131558458,
 ---@type LuaRef
-material_radial_view_group=2131427387,
+material_clock_period_toggle_land=2131558459,
 ---@type LuaRef
-material_textinput_timepicker=2131427388,
+material_clockface_textview=2131558460,
 ---@type LuaRef
-material_time_chip=2131427389,
+material_clockface_view=2131558461,
 ---@type LuaRef
-material_time_input=2131427390,
+material_radial_view_group=2131558462,
 ---@type LuaRef
-material_timepicker=2131427391,
+material_textinput_timepicker=2131558463,
 ---@type LuaRef
-material_timepicker_dialog=2131427392,
+material_time_chip=2131558464,
 ---@type LuaRef
-material_timepicker_textinput_display=2131427393,
+material_time_input=2131558465,
 ---@type LuaRef
-mtrl_alert_dialog=2131427394,
+material_timepicker=2131558466,
 ---@type LuaRef
-mtrl_alert_dialog_actions=2131427395,
+material_timepicker_dialog=2131558467,
 ---@type LuaRef
-mtrl_alert_dialog_title=2131427396,
+material_timepicker_textinput_display=2131558468,
 ---@type LuaRef
-mtrl_alert_select_dialog_item=2131427397,
+mtrl_alert_dialog=2131558469,
 ---@type LuaRef
-mtrl_alert_select_dialog_multichoice=2131427398,
+mtrl_alert_dialog_actions=2131558470,
 ---@type LuaRef
-mtrl_alert_select_dialog_singlechoice=2131427399,
+mtrl_alert_dialog_title=2131558471,
 ---@type LuaRef
-mtrl_calendar_day=2131427400,
+mtrl_alert_select_dialog_item=2131558472,
 ---@type LuaRef
-mtrl_calendar_day_of_week=2131427401,
+mtrl_alert_select_dialog_multichoice=2131558473,
 ---@type LuaRef
-mtrl_calendar_days_of_week=2131427402,
+mtrl_alert_select_dialog_singlechoice=2131558474,
 ---@type LuaRef
-mtrl_calendar_horizontal=2131427403,
+mtrl_calendar_day=2131558475,
 ---@type LuaRef
-mtrl_calendar_month=2131427404,
+mtrl_calendar_day_of_week=2131558476,
 ---@type LuaRef
-mtrl_calendar_month_labeled=2131427405,
+mtrl_calendar_days_of_week=2131558477,
 ---@type LuaRef
-mtrl_calendar_month_navigation=2131427406,
+mtrl_calendar_horizontal=2131558478,
 ---@type LuaRef
-mtrl_calendar_months=2131427407,
+mtrl_calendar_month=2131558479,
 ---@type LuaRef
-mtrl_calendar_vertical=2131427408,
+mtrl_calendar_month_labeled=2131558480,
 ---@type LuaRef
-mtrl_calendar_year=2131427409,
+mtrl_calendar_month_navigation=2131558481,
 ---@type LuaRef
-mtrl_layout_snackbar=2131427410,
+mtrl_calendar_months=2131558482,
 ---@type LuaRef
-mtrl_layout_snackbar_include=2131427411,
+mtrl_calendar_vertical=2131558483,
 ---@type LuaRef
-mtrl_navigation_rail_item=2131427412,
+mtrl_calendar_year=2131558484,
 ---@type LuaRef
-mtrl_picker_actions=2131427413,
+mtrl_layout_snackbar=2131558485,
 ---@type LuaRef
-mtrl_picker_dialog=2131427414,
+mtrl_layout_snackbar_include=2131558486,
 ---@type LuaRef
-mtrl_picker_fullscreen=2131427415,
+mtrl_navigation_rail_item=2131558487,
 ---@type LuaRef
-mtrl_picker_header_dialog=2131427416,
+mtrl_picker_actions=2131558488,
 ---@type LuaRef
-mtrl_picker_header_fullscreen=2131427417,
+mtrl_picker_dialog=2131558489,
 ---@type LuaRef
-mtrl_picker_header_selection_text=2131427418,
+mtrl_picker_fullscreen=2131558490,
 ---@type LuaRef
-mtrl_picker_header_title_text=2131427419,
+mtrl_picker_header_dialog=2131558491,
 ---@type LuaRef
-mtrl_picker_header_toggle=2131427420,
+mtrl_picker_header_fullscreen=2131558492,
 ---@type LuaRef
-mtrl_picker_text_input_date=2131427421,
+mtrl_picker_header_selection_text=2131558493,
 ---@type LuaRef
-mtrl_picker_text_input_date_range=2131427422,
+mtrl_picker_header_title_text=2131558494,
 ---@type LuaRef
-notification_action=2131427423,
+mtrl_picker_header_toggle=2131558495,
 ---@type LuaRef
-notification_action_tombstone=2131427424,
+mtrl_picker_text_input_date=2131558496,
 ---@type LuaRef
-notification_media_action=2131427425,
+mtrl_picker_text_input_date_range=2131558497,
 ---@type LuaRef
-notification_media_cancel_action=2131427426,
+notification_action=2131558498,
 ---@type LuaRef
-notification_template_big_media=2131427427,
+notification_action_tombstone=2131558499,
 ---@type LuaRef
-notification_template_big_media_custom=2131427428,
+notification_media_action=2131558500,
 ---@type LuaRef
-notification_template_big_media_narrow=2131427429,
+notification_media_cancel_action=2131558501,
 ---@type LuaRef
-notification_template_big_media_narrow_custom=2131427430,
+notification_template_big_media=2131558502,
 ---@type LuaRef
-notification_template_custom_big=2131427431,
+notification_template_big_media_custom=2131558503,
 ---@type LuaRef
-notification_template_icon_group=2131427432,
+notification_template_big_media_narrow=2131558504,
 ---@type LuaRef
-notification_template_lines_media=2131427433,
+notification_template_big_media_narrow_custom=2131558505,
 ---@type LuaRef
-notification_template_media=2131427434,
+notification_template_custom_big=2131558506,
 ---@type LuaRef
-notification_template_media_custom=2131427435,
+notification_template_icon_group=2131558507,
 ---@type LuaRef
-notification_template_part_chronometer=2131427436,
+notification_template_lines_media=2131558508,
 ---@type LuaRef
-notification_template_part_time=2131427437,
+notification_template_media=2131558509,
 ---@type LuaRef
-select_dialog_item_material=2131427438,
+notification_template_media_custom=2131558510,
 ---@type LuaRef
-select_dialog_multichoice_material=2131427439,
+notification_template_part_chronometer=2131558511,
 ---@type LuaRef
-select_dialog_singlechoice_material=2131427440,
+notification_template_part_time=2131558512,
 ---@type LuaRef
-support_simple_spinner_dropdown_item=2131427441,
+select_dialog_item_material=2131558513,
 ---@type LuaRef
-sv=2131427442,
+select_dialog_multichoice_material=2131558514,
 ---@type LuaRef
-test_action_chip=2131427443,
+select_dialog_singlechoice_material=2131558515,
 ---@type LuaRef
-test_chip_zero_corner_radius=2131427444,
+support_simple_spinner_dropdown_item=2131558516,
 ---@type LuaRef
-test_design_checkbox=2131427445,
+sv=2131558517,
 ---@type LuaRef
-test_design_radiobutton=2131427446,
+test_action_chip=2131558518,
 ---@type LuaRef
-test_navigation_bar_item_layout=2131427447,
+test_chip_zero_corner_radius=2131558519,
 ---@type LuaRef
-test_reflow_chipgroup=2131427448,
+test_design_checkbox=2131558520,
 ---@type LuaRef
-test_toolbar=2131427449,
+test_design_radiobutton=2131558521,
 ---@type LuaRef
-test_toolbar_custom_background=2131427450,
+test_navigation_bar_item_layout=2131558522,
 ---@type LuaRef
-test_toolbar_elevation=2131427451,
+test_reflow_chipgroup=2131558523,
 ---@type LuaRef
-test_toolbar_surface=2131427452,
+test_toolbar=2131558524,
 ---@type LuaRef
-testbed=2131427453,
+test_toolbar_custom_background=2131558525,
 ---@type LuaRef
-testbedadapter=2131427454,
+test_toolbar_elevation=2131558526,
 ---@type LuaRef
-text_view_with_line_height_from_appearance=2131427455,
+test_toolbar_surface=2131558527,
 ---@type LuaRef
-text_view_with_line_height_from_layout=2131427456,
+testbed=2131558528,
 ---@type LuaRef
-text_view_with_line_height_from_style=2131427457,
+testbedadapter=2131558529,
 ---@type LuaRef
-text_view_with_theme_line_height=2131427458,
+text_view_with_line_height_from_appearance=2131558530,
 ---@type LuaRef
-text_view_without_line_height=2131427459
+text_view_with_line_height_from_layout=2131558531,
+---@type LuaRef
+text_view_with_line_height_from_style=2131558532,
+---@type LuaRef
+text_view_with_theme_line_height=2131558533,
+---@type LuaRef
+text_view_without_line_height=2131558534
 
 }
 LR.layout = layout
@@ -6130,15 +5234,27 @@ LR.layout = layout
 ---@class menu
 local menu = {
 ---@type LuaRef
-main=2131492864
+bottom_menu=2131623936,
+---@type LuaRef
+drawer_menu=2131623937,
+---@type LuaRef
+main=2131623938
 
 }
 LR.menu = menu
 
+---@class navigation
+local navigation = {
+---@type LuaRef
+nav_graph=2131689472
+
+}
+LR.navigation = navigation
+
 ---@class plurals
 local plurals = {
 ---@type LuaRef
-mtrl_badge_content_description=2131558400
+mtrl_badge_content_description=2131755008
 
 }
 LR.plurals = plurals
@@ -6146,273 +5262,261 @@ LR.plurals = plurals
 ---@class string
 local string = {
 ---@type LuaRef
-abc_action_bar_home_description=2131623936,
+abc_action_bar_home_description=2131820544,
 ---@type LuaRef
-abc_action_bar_up_description=2131623937,
+abc_action_bar_up_description=2131820545,
 ---@type LuaRef
-abc_action_menu_overflow_description=2131623938,
+abc_action_menu_overflow_description=2131820546,
 ---@type LuaRef
-abc_action_mode_done=2131623939,
+abc_action_mode_done=2131820547,
 ---@type LuaRef
-abc_activity_chooser_view_see_all=2131623940,
+abc_activity_chooser_view_see_all=2131820548,
 ---@type LuaRef
-abc_activitychooserview_choose_application=2131623941,
+abc_activitychooserview_choose_application=2131820549,
 ---@type LuaRef
-abc_capital_off=2131623942,
+abc_capital_off=2131820550,
 ---@type LuaRef
-abc_capital_on=2131623943,
+abc_capital_on=2131820551,
 ---@type LuaRef
-abc_menu_alt_shortcut_label=2131623944,
+abc_menu_alt_shortcut_label=2131820552,
 ---@type LuaRef
-abc_menu_ctrl_shortcut_label=2131623945,
+abc_menu_ctrl_shortcut_label=2131820553,
 ---@type LuaRef
-abc_menu_delete_shortcut_label=2131623946,
+abc_menu_delete_shortcut_label=2131820554,
 ---@type LuaRef
-abc_menu_enter_shortcut_label=2131623947,
+abc_menu_enter_shortcut_label=2131820555,
 ---@type LuaRef
-abc_menu_function_shortcut_label=2131623948,
+abc_menu_function_shortcut_label=2131820556,
 ---@type LuaRef
-abc_menu_meta_shortcut_label=2131623949,
+abc_menu_meta_shortcut_label=2131820557,
 ---@type LuaRef
-abc_menu_shift_shortcut_label=2131623950,
+abc_menu_shift_shortcut_label=2131820558,
 ---@type LuaRef
-abc_menu_space_shortcut_label=2131623951,
+abc_menu_space_shortcut_label=2131820559,
 ---@type LuaRef
-abc_menu_sym_shortcut_label=2131623952,
+abc_menu_sym_shortcut_label=2131820560,
 ---@type LuaRef
-abc_prepend_shortcut_label=2131623953,
+abc_prepend_shortcut_label=2131820561,
 ---@type LuaRef
-abc_search_hint=2131623954,
+abc_search_hint=2131820562,
 ---@type LuaRef
-abc_searchview_description_clear=2131623955,
+abc_searchview_description_clear=2131820563,
 ---@type LuaRef
-abc_searchview_description_query=2131623956,
+abc_searchview_description_query=2131820564,
 ---@type LuaRef
-abc_searchview_description_search=2131623957,
+abc_searchview_description_search=2131820565,
 ---@type LuaRef
-abc_searchview_description_submit=2131623958,
+abc_searchview_description_submit=2131820566,
 ---@type LuaRef
-abc_searchview_description_voice=2131623959,
+abc_searchview_description_voice=2131820567,
 ---@type LuaRef
-abc_shareactionprovider_share_with=2131623960,
+abc_shareactionprovider_share_with=2131820568,
 ---@type LuaRef
-abc_shareactionprovider_share_with_application=2131623961,
+abc_shareactionprovider_share_with_application=2131820569,
 ---@type LuaRef
-abc_toolbar_collapse_description=2131623962,
+abc_toolbar_collapse_description=2131820570,
 ---@type LuaRef
-action_settings=2131623963,
+action_settings=2131820571,
 ---@type LuaRef
-app_name=2131623964,
+app_name=2131820572,
 ---@type LuaRef
-appbar_scrolling_view_behavior=2131623965,
+appbar_scrolling_view_behavior=2131820573,
 ---@type LuaRef
-bottom_sheet_behavior=2131623966,
+bottom_sheet_behavior=2131820574,
 ---@type LuaRef
-bottomsheet_action_expand_halfway=2131623967,
+bottomsheet_action_expand_halfway=2131820575,
 ---@type LuaRef
-character_counter_content_description=2131623968,
+cancel=2131820576,
 ---@type LuaRef
-character_counter_overflowed_content_description=2131623969,
+character_counter_content_description=2131820577,
 ---@type LuaRef
-character_counter_pattern=2131623970,
+character_counter_overflowed_content_description=2131820578,
 ---@type LuaRef
-chip_text=2131623971,
+character_counter_pattern=2131820579,
 ---@type LuaRef
-clear_text_end_icon_content_description=2131623972,
+chip_text=2131820580,
 ---@type LuaRef
-deviceType=2131623973,
+clear_text_end_icon_content_description=2131820581,
 ---@type LuaRef
-error_icon_content_description=2131623974,
+deviceType=2131820582,
 ---@type LuaRef
-exposed_dropdown_menu_content_description=2131623975,
+error_icon_content_description=2131820583,
 ---@type LuaRef
-fab_transformation_scrim_behavior=2131623976,
+exposed_dropdown_menu_content_description=2131820584,
 ---@type LuaRef
-fab_transformation_sheet_behavior=2131623977,
+fab_transformation_scrim_behavior=2131820585,
 ---@type LuaRef
-hello_world=2131623978,
+fab_transformation_sheet_behavior=2131820586,
 ---@type LuaRef
-hide_bottom_view_on_scroll_behavior=2131623979,
+hello_world=2131820587,
 ---@type LuaRef
-icon_content_description=2131623980,
+hide_bottom_view_on_scroll_behavior=2131820588,
 ---@type LuaRef
-item_view_role_description=2131623981,
+icon_content_description=2131820589,
 ---@type LuaRef
-m3_ref_typeface_brand_display_regular=2131623982,
+installation_cancelled=2131820590,
 ---@type LuaRef
-m3_ref_typeface_brand_medium=2131623983,
+installation_failed=2131820591,
 ---@type LuaRef
-m3_ref_typeface_brand_regular=2131623984,
+installing_module=2131820592,
 ---@type LuaRef
-m3_ref_typeface_plain_medium=2131623985,
+item_view_role_description=2131820593,
 ---@type LuaRef
-m3_ref_typeface_plain_regular=2131623986,
+label=2131820594,
 ---@type LuaRef
-m3_sys_motion_easing_accelerated=2131623987,
+material_clock_display_divider=2131820595,
 ---@type LuaRef
-m3_sys_motion_easing_decelerated=2131623988,
+material_clock_toggle_content_description=2131820596,
 ---@type LuaRef
-m3_sys_motion_easing_emphasized=2131623989,
+material_hour_selection=2131820597,
 ---@type LuaRef
-m3_sys_motion_easing_linear=2131623990,
+material_hour_suffix=2131820598,
 ---@type LuaRef
-m3_sys_motion_easing_standard=2131623991,
+material_minute_selection=2131820599,
 ---@type LuaRef
-m3_sys_typescale_body_large_font=2131623992,
+material_minute_suffix=2131820600,
 ---@type LuaRef
-m3_sys_typescale_body_medium_font=2131623993,
+material_motion_easing_accelerated=2131820601,
 ---@type LuaRef
-m3_sys_typescale_body_small_font=2131623994,
+material_motion_easing_decelerated=2131820602,
 ---@type LuaRef
-m3_sys_typescale_display_large_font=2131623995,
+material_motion_easing_emphasized=2131820603,
 ---@type LuaRef
-m3_sys_typescale_display_medium_font=2131623996,
+material_motion_easing_linear=2131820604,
 ---@type LuaRef
-m3_sys_typescale_display_small_font=2131623997,
+material_motion_easing_standard=2131820605,
 ---@type LuaRef
-m3_sys_typescale_headline_large_font=2131623998,
+material_slider_range_end=2131820606,
 ---@type LuaRef
-m3_sys_typescale_headline_medium_font=2131623999,
+material_slider_range_start=2131820607,
 ---@type LuaRef
-m3_sys_typescale_headline_small_font=2131624000,
+material_timepicker_am=2131820608,
 ---@type LuaRef
-m3_sys_typescale_label_large_font=2131624001,
+material_timepicker_clock_mode_description=2131820609,
 ---@type LuaRef
-m3_sys_typescale_label_medium_font=2131624002,
+material_timepicker_hour=2131820610,
 ---@type LuaRef
-m3_sys_typescale_label_small_font=2131624003,
+material_timepicker_minute=2131820611,
 ---@type LuaRef
-m3_sys_typescale_title_large_font=2131624004,
+material_timepicker_pm=2131820612,
 ---@type LuaRef
-m3_sys_typescale_title_medium_font=2131624005,
+material_timepicker_select_time=2131820613,
 ---@type LuaRef
-m3_sys_typescale_title_small_font=2131624006,
+material_timepicker_text_input_mode_description=2131820614,
 ---@type LuaRef
-material_clock_display_divider=2131624007,
+menu_gallery=2131820615,
 ---@type LuaRef
-material_clock_toggle_content_description=2131624008,
+menu_home=2131820616,
 ---@type LuaRef
-material_hour_selection=2131624009,
+menu_settings=2131820617,
 ---@type LuaRef
-material_hour_suffix=2131624010,
+message=2131820618,
 ---@type LuaRef
-material_minute_selection=2131624011,
+mtrl_badge_numberless_content_description=2131820619,
 ---@type LuaRef
-material_minute_suffix=2131624012,
+mtrl_chip_close_icon_content_description=2131820620,
 ---@type LuaRef
-material_motion_easing_accelerated=2131624013,
+mtrl_exceed_max_badge_number_content_description=2131820621,
 ---@type LuaRef
-material_motion_easing_decelerated=2131624014,
+mtrl_exceed_max_badge_number_suffix=2131820622,
 ---@type LuaRef
-material_motion_easing_emphasized=2131624015,
+mtrl_picker_a11y_next_month=2131820623,
 ---@type LuaRef
-material_motion_easing_linear=2131624016,
+mtrl_picker_a11y_prev_month=2131820624,
 ---@type LuaRef
-material_motion_easing_standard=2131624017,
+mtrl_picker_announce_current_selection=2131820625,
 ---@type LuaRef
-material_slider_range_end=2131624018,
+mtrl_picker_cancel=2131820626,
 ---@type LuaRef
-material_slider_range_start=2131624019,
+mtrl_picker_confirm=2131820627,
 ---@type LuaRef
-material_timepicker_am=2131624020,
+mtrl_picker_date_header_selected=2131820628,
 ---@type LuaRef
-material_timepicker_clock_mode_description=2131624021,
+mtrl_picker_date_header_title=2131820629,
 ---@type LuaRef
-material_timepicker_hour=2131624022,
+mtrl_picker_date_header_unselected=2131820630,
 ---@type LuaRef
-material_timepicker_minute=2131624023,
+mtrl_picker_day_of_week_column_header=2131820631,
 ---@type LuaRef
-material_timepicker_pm=2131624024,
+mtrl_picker_invalid_format=2131820632,
 ---@type LuaRef
-material_timepicker_select_time=2131624025,
+mtrl_picker_invalid_format_example=2131820633,
 ---@type LuaRef
-material_timepicker_text_input_mode_description=2131624026,
+mtrl_picker_invalid_format_use=2131820634,
 ---@type LuaRef
-mtrl_badge_numberless_content_description=2131624027,
+mtrl_picker_invalid_range=2131820635,
 ---@type LuaRef
-mtrl_chip_close_icon_content_description=2131624028,
+mtrl_picker_navigate_to_year_description=2131820636,
 ---@type LuaRef
-mtrl_exceed_max_badge_number_content_description=2131624029,
+mtrl_picker_out_of_range=2131820637,
 ---@type LuaRef
-mtrl_exceed_max_badge_number_suffix=2131624030,
+mtrl_picker_range_header_only_end_selected=2131820638,
 ---@type LuaRef
-mtrl_picker_a11y_next_month=2131624031,
+mtrl_picker_range_header_only_start_selected=2131820639,
 ---@type LuaRef
-mtrl_picker_a11y_prev_month=2131624032,
+mtrl_picker_range_header_selected=2131820640,
 ---@type LuaRef
-mtrl_picker_announce_current_selection=2131624033,
+mtrl_picker_range_header_title=2131820641,
 ---@type LuaRef
-mtrl_picker_cancel=2131624034,
+mtrl_picker_range_header_unselected=2131820642,
 ---@type LuaRef
-mtrl_picker_confirm=2131624035,
+mtrl_picker_save=2131820643,
 ---@type LuaRef
-mtrl_picker_date_header_selected=2131624036,
+mtrl_picker_text_input_date_hint=2131820644,
 ---@type LuaRef
-mtrl_picker_date_header_title=2131624037,
+mtrl_picker_text_input_date_range_end_hint=2131820645,
 ---@type LuaRef
-mtrl_picker_date_header_unselected=2131624038,
+mtrl_picker_text_input_date_range_start_hint=2131820646,
 ---@type LuaRef
-mtrl_picker_day_of_week_column_header=2131624039,
+mtrl_picker_text_input_day_abbr=2131820647,
 ---@type LuaRef
-mtrl_picker_invalid_format=2131624040,
+mtrl_picker_text_input_month_abbr=2131820648,
 ---@type LuaRef
-mtrl_picker_invalid_format_example=2131624041,
+mtrl_picker_text_input_year_abbr=2131820649,
 ---@type LuaRef
-mtrl_picker_invalid_format_use=2131624042,
+mtrl_picker_toggle_to_calendar_input_mode=2131820650,
 ---@type LuaRef
-mtrl_picker_invalid_range=2131624043,
+mtrl_picker_toggle_to_day_selection=2131820651,
 ---@type LuaRef
-mtrl_picker_navigate_to_year_description=2131624044,
+mtrl_picker_toggle_to_text_input_mode=2131820652,
 ---@type LuaRef
-mtrl_picker_out_of_range=2131624045,
+mtrl_picker_toggle_to_year_selection=2131820653,
 ---@type LuaRef
-mtrl_picker_range_header_only_end_selected=2131624046,
+name=2131820654,
 ---@type LuaRef
-mtrl_picker_range_header_only_start_selected=2131624047,
+nav_app_bar_navigate_up_description=2131820655,
 ---@type LuaRef
-mtrl_picker_range_header_selected=2131624048,
+nav_app_bar_open_drawer_description=2131820656,
 ---@type LuaRef
-mtrl_picker_range_header_title=2131624049,
+ok=2131820657,
 ---@type LuaRef
-mtrl_picker_range_header_unselected=2131624050,
+password_toggle_content_description=2131820658,
 ---@type LuaRef
-mtrl_picker_save=2131624051,
+path_password_eye=2131820659,
 ---@type LuaRef
-mtrl_picker_text_input_date_hint=2131624052,
+path_password_eye_mask_strike_through=2131820660,
 ---@type LuaRef
-mtrl_picker_text_input_date_range_end_hint=2131624053,
+path_password_eye_mask_visible=2131820661,
 ---@type LuaRef
-mtrl_picker_text_input_date_range_start_hint=2131624054,
+path_password_strike_through=2131820662,
 ---@type LuaRef
-mtrl_picker_text_input_day_abbr=2131624055,
+progress=2131820663,
 ---@type LuaRef
-mtrl_picker_text_input_month_abbr=2131624056,
+receive=2131820664,
 ---@type LuaRef
-mtrl_picker_text_input_year_abbr=2131624057,
+retry=2131820665,
 ---@type LuaRef
-mtrl_picker_toggle_to_calendar_input_mode=2131624058,
+search_menu_title=2131820666,
 ---@type LuaRef
-mtrl_picker_toggle_to_day_selection=2131624059,
+status_bar_notification_info_overflow=2131820667,
 ---@type LuaRef
-mtrl_picker_toggle_to_text_input_mode=2131624060,
+test_button_clicked=2131820668,
 ---@type LuaRef
-mtrl_picker_toggle_to_year_selection=2131624061,
+teststring=2131820669,
 ---@type LuaRef
-mtrl_timepicker_confirm=2131624062,
+title=2131820670,
 ---@type LuaRef
-password_toggle_content_description=2131624063,
----@type LuaRef
-path_password_eye=2131624064,
----@type LuaRef
-path_password_eye_mask_strike_through=2131624065,
----@type LuaRef
-path_password_eye_mask_visible=2131624066,
----@type LuaRef
-path_password_strike_through=2131624067,
----@type LuaRef
-search_menu_title=2131624068,
----@type LuaRef
-status_bar_notification_info_overflow=2131624069
+toast_message=2131820671
 
 }
 LR.string = string
@@ -6420,2055 +5524,1463 @@ LR.string = string
 ---@class style
 local style = {
 ---@type LuaRef
-AlertDialog_AppCompat=2131689472,
+AlertDialog_AppCompat=2131886080,
 ---@type LuaRef
-AlertDialog_AppCompat_Light=2131689473,
+AlertDialog_AppCompat_Light=2131886081,
 ---@type LuaRef
-AndroidThemeColorAccentYellow=2131689474,
+AndroidThemeColorAccentYellow=2131886082,
 ---@type LuaRef
-Animation_AppCompat_Dialog=2131689475,
+Animation_AppCompat_Dialog=2131886083,
 ---@type LuaRef
-Animation_AppCompat_DropDownUp=2131689476,
+Animation_AppCompat_DropDownUp=2131886084,
 ---@type LuaRef
-Animation_AppCompat_Tooltip=2131689477,
+Animation_AppCompat_Tooltip=2131886085,
 ---@type LuaRef
-Animation_Design_BottomSheetDialog=2131689478,
+Animation_Design_BottomSheetDialog=2131886086,
 ---@type LuaRef
-Animation_MaterialComponents_BottomSheetDialog=2131689479,
+Animation_MaterialComponents_BottomSheetDialog=2131886087,
 ---@type LuaRef
-AppTheme=2131689480,
+AppTheme=2131886088,
 ---@type LuaRef
-Base_AlertDialog_AppCompat=2131689481,
+Base_AlertDialog_AppCompat=2131886089,
 ---@type LuaRef
-Base_AlertDialog_AppCompat_Light=2131689482,
+Base_AlertDialog_AppCompat_Light=2131886090,
 ---@type LuaRef
-Base_Animation_AppCompat_Dialog=2131689483,
+Base_Animation_AppCompat_Dialog=2131886091,
 ---@type LuaRef
-Base_Animation_AppCompat_DropDownUp=2131689484,
+Base_Animation_AppCompat_DropDownUp=2131886092,
 ---@type LuaRef
-Base_Animation_AppCompat_Tooltip=2131689485,
+Base_Animation_AppCompat_Tooltip=2131886093,
 ---@type LuaRef
-Base_CardView=2131689486,
+Base_CardView=2131886094,
 ---@type LuaRef
-Base_DialogWindowTitleBackground_AppCompat=2131689488,
+Base_DialogWindowTitleBackground_AppCompat=2131886096,
 ---@type LuaRef
-Base_DialogWindowTitle_AppCompat=2131689487,
+Base_DialogWindowTitle_AppCompat=2131886095,
 ---@type LuaRef
-Base_MaterialAlertDialog_MaterialComponents_Title_Icon=2131689489,
+Base_MaterialAlertDialog_MaterialComponents_Title_Icon=2131886097,
 ---@type LuaRef
-Base_MaterialAlertDialog_MaterialComponents_Title_Panel=2131689490,
+Base_MaterialAlertDialog_MaterialComponents_Title_Panel=2131886098,
 ---@type LuaRef
-Base_MaterialAlertDialog_MaterialComponents_Title_Text=2131689491,
+Base_MaterialAlertDialog_MaterialComponents_Title_Text=2131886099,
 ---@type LuaRef
-Base_TextAppearance_AppCompat=2131689492,
+Base_TextAppearance_AppCompat=2131886100,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Body1=2131689493,
+Base_TextAppearance_AppCompat_Body1=2131886101,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Body2=2131689494,
+Base_TextAppearance_AppCompat_Body2=2131886102,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Button=2131689495,
+Base_TextAppearance_AppCompat_Button=2131886103,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Caption=2131689496,
+Base_TextAppearance_AppCompat_Caption=2131886104,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Display1=2131689497,
+Base_TextAppearance_AppCompat_Display1=2131886105,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Display2=2131689498,
+Base_TextAppearance_AppCompat_Display2=2131886106,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Display3=2131689499,
+Base_TextAppearance_AppCompat_Display3=2131886107,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Display4=2131689500,
+Base_TextAppearance_AppCompat_Display4=2131886108,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Headline=2131689501,
+Base_TextAppearance_AppCompat_Headline=2131886109,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Inverse=2131689502,
+Base_TextAppearance_AppCompat_Inverse=2131886110,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Large=2131689503,
+Base_TextAppearance_AppCompat_Large=2131886111,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Large_Inverse=2131689504,
+Base_TextAppearance_AppCompat_Large_Inverse=2131886112,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=2131689505,
+Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=2131886113,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=2131689506,
+Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=2131886114,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Medium=2131689507,
+Base_TextAppearance_AppCompat_Medium=2131886115,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Medium_Inverse=2131689508,
+Base_TextAppearance_AppCompat_Medium_Inverse=2131886116,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Menu=2131689509,
+Base_TextAppearance_AppCompat_Menu=2131886117,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_SearchResult=2131689510,
+Base_TextAppearance_AppCompat_SearchResult=2131886118,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_SearchResult_Subtitle=2131689511,
+Base_TextAppearance_AppCompat_SearchResult_Subtitle=2131886119,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_SearchResult_Title=2131689512,
+Base_TextAppearance_AppCompat_SearchResult_Title=2131886120,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Small=2131689513,
+Base_TextAppearance_AppCompat_Small=2131886121,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Small_Inverse=2131689514,
+Base_TextAppearance_AppCompat_Small_Inverse=2131886122,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Subhead=2131689515,
+Base_TextAppearance_AppCompat_Subhead=2131886123,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Subhead_Inverse=2131689516,
+Base_TextAppearance_AppCompat_Subhead_Inverse=2131886124,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Title=2131689517,
+Base_TextAppearance_AppCompat_Title=2131886125,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Title_Inverse=2131689518,
+Base_TextAppearance_AppCompat_Title_Inverse=2131886126,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Tooltip=2131689519,
+Base_TextAppearance_AppCompat_Tooltip=2131886127,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=2131689520,
+Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=2131886128,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=2131689521,
+Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=2131886129,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=2131689522,
+Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=2131886130,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_ActionBar_Title=2131689523,
+Base_TextAppearance_AppCompat_Widget_ActionBar_Title=2131886131,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=2131689524,
+Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=2131886132,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=2131689525,
+Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=2131886133,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_ActionMode_Title=2131689526,
+Base_TextAppearance_AppCompat_Widget_ActionMode_Title=2131886134,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_Button=2131689527,
+Base_TextAppearance_AppCompat_Widget_Button=2131886135,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=2131689528,
+Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=2131886136,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_Button_Colored=2131689529,
+Base_TextAppearance_AppCompat_Widget_Button_Colored=2131886137,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_Button_Inverse=2131689530,
+Base_TextAppearance_AppCompat_Widget_Button_Inverse=2131886138,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_DropDownItem=2131689531,
+Base_TextAppearance_AppCompat_Widget_DropDownItem=2131886139,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=2131689532,
+Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=2131886140,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=2131689533,
+Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=2131886141,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=2131689534,
+Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=2131886142,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_Switch=2131689535,
+Base_TextAppearance_AppCompat_Widget_Switch=2131886143,
 ---@type LuaRef
-Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=2131689536,
+Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=2131886144,
 ---@type LuaRef
-Base_TextAppearance_Material3_LabelLarge=2131689537,
+Base_TextAppearance_MaterialComponents_Badge=2131886145,
 ---@type LuaRef
-Base_TextAppearance_Material3_LabelMedium=2131689538,
+Base_TextAppearance_MaterialComponents_Button=2131886146,
 ---@type LuaRef
-Base_TextAppearance_Material3_LabelSmall=2131689539,
+Base_TextAppearance_MaterialComponents_Headline6=2131886147,
 ---@type LuaRef
-Base_TextAppearance_Material3_TitleMedium=2131689540,
+Base_TextAppearance_MaterialComponents_Subtitle2=2131886148,
 ---@type LuaRef
-Base_TextAppearance_Material3_TitleSmall=2131689541,
+Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=2131886149,
 ---@type LuaRef
-Base_TextAppearance_MaterialComponents_Badge=2131689542,
+Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=2131886150,
 ---@type LuaRef
-Base_TextAppearance_MaterialComponents_Button=2131689543,
+Base_TextAppearance_Widget_AppCompat_Toolbar_Title=2131886151,
 ---@type LuaRef
-Base_TextAppearance_MaterialComponents_Headline6=2131689544,
+Base_ThemeOverlay_AppCompat=2131886185,
 ---@type LuaRef
-Base_TextAppearance_MaterialComponents_Subtitle2=2131689545,
+Base_ThemeOverlay_AppCompat_ActionBar=2131886186,
 ---@type LuaRef
-Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=2131689546,
+Base_ThemeOverlay_AppCompat_Dark=2131886187,
 ---@type LuaRef
-Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=2131689547,
+Base_ThemeOverlay_AppCompat_Dark_ActionBar=2131886188,
 ---@type LuaRef
-Base_TextAppearance_Widget_AppCompat_Toolbar_Title=2131689548,
+Base_ThemeOverlay_AppCompat_Dialog=2131886189,
 ---@type LuaRef
-Base_ThemeOverlay_AppCompat=2131689588,
+Base_ThemeOverlay_AppCompat_Dialog_Alert=2131886190,
 ---@type LuaRef
-Base_ThemeOverlay_AppCompat_ActionBar=2131689589,
+Base_ThemeOverlay_AppCompat_Light=2131886191,
 ---@type LuaRef
-Base_ThemeOverlay_AppCompat_Dark=2131689590,
+Base_ThemeOverlay_MaterialComponents_Dialog=2131886192,
 ---@type LuaRef
-Base_ThemeOverlay_AppCompat_Dark_ActionBar=2131689591,
+Base_ThemeOverlay_MaterialComponents_Dialog_Alert=2131886193,
 ---@type LuaRef
-Base_ThemeOverlay_AppCompat_Dialog=2131689592,
+Base_ThemeOverlay_MaterialComponents_Dialog_Alert_Framework=2131886194,
 ---@type LuaRef
-Base_ThemeOverlay_AppCompat_Dialog_Alert=2131689593,
+Base_ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework=2131886195,
 ---@type LuaRef
-Base_ThemeOverlay_AppCompat_Light=2131689594,
+Base_ThemeOverlay_MaterialComponents_MaterialAlertDialog=2131886196,
 ---@type LuaRef
-Base_ThemeOverlay_Material3_AutoCompleteTextView=2131689595,
+Base_Theme_AppCompat=2131886152,
 ---@type LuaRef
-Base_ThemeOverlay_Material3_BottomSheetDialog=2131689596,
+Base_Theme_AppCompat_CompactMenu=2131886153,
 ---@type LuaRef
-Base_ThemeOverlay_Material3_Dialog=2131689597,
+Base_Theme_AppCompat_Dialog=2131886154,
 ---@type LuaRef
-Base_ThemeOverlay_Material3_TextInputEditText=2131689598,
+Base_Theme_AppCompat_DialogWhenLarge=2131886158,
 ---@type LuaRef
-Base_ThemeOverlay_MaterialComponents_Dialog=2131689599,
+Base_Theme_AppCompat_Dialog_Alert=2131886155,
 ---@type LuaRef
-Base_ThemeOverlay_MaterialComponents_Dialog_Alert=2131689600,
+Base_Theme_AppCompat_Dialog_FixedSize=2131886156,
 ---@type LuaRef
-Base_ThemeOverlay_MaterialComponents_Dialog_Alert_Framework=2131689601,
+Base_Theme_AppCompat_Dialog_MinWidth=2131886157,
 ---@type LuaRef
-Base_ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework=2131689602,
+Base_Theme_AppCompat_Light=2131886159,
 ---@type LuaRef
-Base_ThemeOverlay_MaterialComponents_MaterialAlertDialog=2131689603,
+Base_Theme_AppCompat_Light_DarkActionBar=2131886160,
 ---@type LuaRef
-Base_Theme_AppCompat=2131689549,
+Base_Theme_AppCompat_Light_Dialog=2131886161,
 ---@type LuaRef
-Base_Theme_AppCompat_CompactMenu=2131689550,
+Base_Theme_AppCompat_Light_DialogWhenLarge=2131886165,
 ---@type LuaRef
-Base_Theme_AppCompat_Dialog=2131689551,
+Base_Theme_AppCompat_Light_Dialog_Alert=2131886162,
 ---@type LuaRef
-Base_Theme_AppCompat_DialogWhenLarge=2131689555,
+Base_Theme_AppCompat_Light_Dialog_FixedSize=2131886163,
 ---@type LuaRef
-Base_Theme_AppCompat_Dialog_Alert=2131689552,
+Base_Theme_AppCompat_Light_Dialog_MinWidth=2131886164,
 ---@type LuaRef
-Base_Theme_AppCompat_Dialog_FixedSize=2131689553,
+Base_Theme_MaterialComponents=2131886166,
 ---@type LuaRef
-Base_Theme_AppCompat_Dialog_MinWidth=2131689554,
+Base_Theme_MaterialComponents_Bridge=2131886167,
 ---@type LuaRef
-Base_Theme_AppCompat_Light=2131689556,
+Base_Theme_MaterialComponents_CompactMenu=2131886168,
 ---@type LuaRef
-Base_Theme_AppCompat_Light_DarkActionBar=2131689557,
+Base_Theme_MaterialComponents_Dialog=2131886169,
 ---@type LuaRef
-Base_Theme_AppCompat_Light_Dialog=2131689558,
+Base_Theme_MaterialComponents_DialogWhenLarge=2131886174,
 ---@type LuaRef
-Base_Theme_AppCompat_Light_DialogWhenLarge=2131689562,
+Base_Theme_MaterialComponents_Dialog_Alert=2131886170,
 ---@type LuaRef
-Base_Theme_AppCompat_Light_Dialog_Alert=2131689559,
+Base_Theme_MaterialComponents_Dialog_Bridge=2131886171,
 ---@type LuaRef
-Base_Theme_AppCompat_Light_Dialog_FixedSize=2131689560,
+Base_Theme_MaterialComponents_Dialog_FixedSize=2131886172,
 ---@type LuaRef
-Base_Theme_AppCompat_Light_Dialog_MinWidth=2131689561,
+Base_Theme_MaterialComponents_Dialog_MinWidth=2131886173,
 ---@type LuaRef
-Base_Theme_Material3_Dark=2131689563,
+Base_Theme_MaterialComponents_Light=2131886175,
 ---@type LuaRef
-Base_Theme_Material3_Dark_BottomSheetDialog=2131689564,
+Base_Theme_MaterialComponents_Light_Bridge=2131886176,
 ---@type LuaRef
-Base_Theme_Material3_Dark_Dialog=2131689565,
+Base_Theme_MaterialComponents_Light_DarkActionBar=2131886177,
 ---@type LuaRef
-Base_Theme_Material3_Light=2131689566,
+Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge=2131886178,
 ---@type LuaRef
-Base_Theme_Material3_Light_BottomSheetDialog=2131689567,
+Base_Theme_MaterialComponents_Light_Dialog=2131886179,
 ---@type LuaRef
-Base_Theme_Material3_Light_Dialog=2131689568,
+Base_Theme_MaterialComponents_Light_DialogWhenLarge=2131886184,
 ---@type LuaRef
-Base_Theme_MaterialComponents=2131689569,
+Base_Theme_MaterialComponents_Light_Dialog_Alert=2131886180,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Bridge=2131689570,
+Base_Theme_MaterialComponents_Light_Dialog_Bridge=2131886181,
 ---@type LuaRef
-Base_Theme_MaterialComponents_CompactMenu=2131689571,
+Base_Theme_MaterialComponents_Light_Dialog_FixedSize=2131886182,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Dialog=2131689572,
+Base_Theme_MaterialComponents_Light_Dialog_MinWidth=2131886183,
 ---@type LuaRef
-Base_Theme_MaterialComponents_DialogWhenLarge=2131689577,
+Base_V14_ThemeOverlay_MaterialComponents_BottomSheetDialog=2131886206,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Dialog_Alert=2131689573,
+Base_V14_ThemeOverlay_MaterialComponents_Dialog=2131886207,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Dialog_Bridge=2131689574,
+Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert=2131886208,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Dialog_FixedSize=2131689575,
+Base_V14_ThemeOverlay_MaterialComponents_MaterialAlertDialog=2131886209,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Dialog_MinWidth=2131689576,
+Base_V14_Theme_MaterialComponents=2131886197,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Light=2131689578,
+Base_V14_Theme_MaterialComponents_Bridge=2131886198,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Light_Bridge=2131689579,
+Base_V14_Theme_MaterialComponents_Dialog=2131886199,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Light_DarkActionBar=2131689580,
+Base_V14_Theme_MaterialComponents_Dialog_Bridge=2131886200,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge=2131689581,
+Base_V14_Theme_MaterialComponents_Light=2131886201,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Light_Dialog=2131689582,
+Base_V14_Theme_MaterialComponents_Light_Bridge=2131886202,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Light_DialogWhenLarge=2131689587,
+Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge=2131886203,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Light_Dialog_Alert=2131689583,
+Base_V14_Theme_MaterialComponents_Light_Dialog=2131886204,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Light_Dialog_Bridge=2131689584,
+Base_V14_Theme_MaterialComponents_Light_Dialog_Bridge=2131886205,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Light_Dialog_FixedSize=2131689585,
+Base_V21_ThemeOverlay_AppCompat_Dialog=2131886218,
 ---@type LuaRef
-Base_Theme_MaterialComponents_Light_Dialog_MinWidth=2131689586,
+Base_V21_ThemeOverlay_MaterialComponents_BottomSheetDialog=2131886219,
 ---@type LuaRef
-Base_V14_ThemeOverlay_Material3_BottomSheetDialog=2131689619,
+Base_V21_Theme_AppCompat=2131886210,
 ---@type LuaRef
-Base_V14_ThemeOverlay_MaterialComponents_BottomSheetDialog=2131689620,
+Base_V21_Theme_AppCompat_Dialog=2131886211,
 ---@type LuaRef
-Base_V14_ThemeOverlay_MaterialComponents_Dialog=2131689621,
+Base_V21_Theme_AppCompat_Light=2131886212,
 ---@type LuaRef
-Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert=2131689622,
+Base_V21_Theme_AppCompat_Light_Dialog=2131886213,
 ---@type LuaRef
-Base_V14_ThemeOverlay_MaterialComponents_MaterialAlertDialog=2131689623,
+Base_V21_Theme_MaterialComponents=2131886214,
 ---@type LuaRef
-Base_V14_Theme_Material3_Dark=2131689604,
+Base_V21_Theme_MaterialComponents_Dialog=2131886215,
 ---@type LuaRef
-Base_V14_Theme_Material3_Dark_BottomSheetDialog=2131689605,
+Base_V21_Theme_MaterialComponents_Light=2131886216,
 ---@type LuaRef
-Base_V14_Theme_Material3_Dark_Dialog=2131689606,
+Base_V21_Theme_MaterialComponents_Light_Dialog=2131886217,
 ---@type LuaRef
-Base_V14_Theme_Material3_Light=2131689607,
+Base_V22_Theme_AppCompat=2131886220,
 ---@type LuaRef
-Base_V14_Theme_Material3_Light_BottomSheetDialog=2131689608,
+Base_V22_Theme_AppCompat_Light=2131886221,
 ---@type LuaRef
-Base_V14_Theme_Material3_Light_Dialog=2131689609,
+Base_V23_Theme_AppCompat=2131886222,
 ---@type LuaRef
-Base_V14_Theme_MaterialComponents=2131689610,
+Base_V23_Theme_AppCompat_Light=2131886223,
 ---@type LuaRef
-Base_V14_Theme_MaterialComponents_Bridge=2131689611,
+Base_V26_Theme_AppCompat=2131886224,
 ---@type LuaRef
-Base_V14_Theme_MaterialComponents_Dialog=2131689612,
+Base_V26_Theme_AppCompat_Light=2131886225,
 ---@type LuaRef
-Base_V14_Theme_MaterialComponents_Dialog_Bridge=2131689613,
+Base_V26_Widget_AppCompat_Toolbar=2131886226,
 ---@type LuaRef
-Base_V14_Theme_MaterialComponents_Light=2131689614,
+Base_V28_Theme_AppCompat=2131886227,
 ---@type LuaRef
-Base_V14_Theme_MaterialComponents_Light_Bridge=2131689615,
+Base_V28_Theme_AppCompat_Light=2131886228,
 ---@type LuaRef
-Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge=2131689616,
+Base_V7_ThemeOverlay_AppCompat_Dialog=2131886233,
 ---@type LuaRef
-Base_V14_Theme_MaterialComponents_Light_Dialog=2131689617,
+Base_V7_Theme_AppCompat=2131886229,
 ---@type LuaRef
-Base_V14_Theme_MaterialComponents_Light_Dialog_Bridge=2131689618,
+Base_V7_Theme_AppCompat_Dialog=2131886230,
 ---@type LuaRef
-Base_V21_ThemeOverlay_AppCompat_Dialog=2131689632,
+Base_V7_Theme_AppCompat_Light=2131886231,
 ---@type LuaRef
-Base_V21_ThemeOverlay_Material3_BottomSheetDialog=2131689633,
+Base_V7_Theme_AppCompat_Light_Dialog=2131886232,
 ---@type LuaRef
-Base_V21_ThemeOverlay_MaterialComponents_BottomSheetDialog=2131689634,
+Base_V7_Widget_AppCompat_AutoCompleteTextView=2131886234,
 ---@type LuaRef
-Base_V21_Theme_AppCompat=2131689624,
+Base_V7_Widget_AppCompat_EditText=2131886235,
 ---@type LuaRef
-Base_V21_Theme_AppCompat_Dialog=2131689625,
+Base_V7_Widget_AppCompat_Toolbar=2131886236,
 ---@type LuaRef
-Base_V21_Theme_AppCompat_Light=2131689626,
+Base_Widget_AppCompat_ActionBar=2131886237,
 ---@type LuaRef
-Base_V21_Theme_AppCompat_Light_Dialog=2131689627,
+Base_Widget_AppCompat_ActionBar_Solid=2131886238,
 ---@type LuaRef
-Base_V21_Theme_MaterialComponents=2131689628,
+Base_Widget_AppCompat_ActionBar_TabBar=2131886239,
 ---@type LuaRef
-Base_V21_Theme_MaterialComponents_Dialog=2131689629,
+Base_Widget_AppCompat_ActionBar_TabText=2131886240,
 ---@type LuaRef
-Base_V21_Theme_MaterialComponents_Light=2131689630,
+Base_Widget_AppCompat_ActionBar_TabView=2131886241,
 ---@type LuaRef
-Base_V21_Theme_MaterialComponents_Light_Dialog=2131689631,
+Base_Widget_AppCompat_ActionButton=2131886242,
 ---@type LuaRef
-Base_V22_Theme_AppCompat=2131689635,
+Base_Widget_AppCompat_ActionButton_CloseMode=2131886243,
 ---@type LuaRef
-Base_V22_Theme_AppCompat_Light=2131689636,
+Base_Widget_AppCompat_ActionButton_Overflow=2131886244,
 ---@type LuaRef
-Base_V23_Theme_AppCompat=2131689637,
+Base_Widget_AppCompat_ActionMode=2131886245,
 ---@type LuaRef
-Base_V23_Theme_AppCompat_Light=2131689638,
+Base_Widget_AppCompat_ActivityChooserView=2131886246,
 ---@type LuaRef
-Base_V24_Theme_Material3_Dark=2131689639,
+Base_Widget_AppCompat_AutoCompleteTextView=2131886247,
 ---@type LuaRef
-Base_V24_Theme_Material3_Dark_Dialog=2131689640,
+Base_Widget_AppCompat_Button=2131886248,
 ---@type LuaRef
-Base_V24_Theme_Material3_Light=2131689641,
+Base_Widget_AppCompat_ButtonBar=2131886254,
 ---@type LuaRef
-Base_V24_Theme_Material3_Light_Dialog=2131689642,
+Base_Widget_AppCompat_ButtonBar_AlertDialog=2131886255,
 ---@type LuaRef
-Base_V26_Theme_AppCompat=2131689643,
+Base_Widget_AppCompat_Button_Borderless=2131886249,
 ---@type LuaRef
-Base_V26_Theme_AppCompat_Light=2131689644,
+Base_Widget_AppCompat_Button_Borderless_Colored=2131886250,
 ---@type LuaRef
-Base_V26_Widget_AppCompat_Toolbar=2131689645,
+Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=2131886251,
 ---@type LuaRef
-Base_V28_Theme_AppCompat=2131689646,
+Base_Widget_AppCompat_Button_Colored=2131886252,
 ---@type LuaRef
-Base_V28_Theme_AppCompat_Light=2131689647,
+Base_Widget_AppCompat_Button_Small=2131886253,
 ---@type LuaRef
-Base_V7_ThemeOverlay_AppCompat_Dialog=2131689652,
+Base_Widget_AppCompat_CompoundButton_CheckBox=2131886256,
 ---@type LuaRef
-Base_V7_Theme_AppCompat=2131689648,
+Base_Widget_AppCompat_CompoundButton_RadioButton=2131886257,
 ---@type LuaRef
-Base_V7_Theme_AppCompat_Dialog=2131689649,
+Base_Widget_AppCompat_CompoundButton_Switch=2131886258,
 ---@type LuaRef
-Base_V7_Theme_AppCompat_Light=2131689650,
+Base_Widget_AppCompat_DrawerArrowToggle=2131886259,
 ---@type LuaRef
-Base_V7_Theme_AppCompat_Light_Dialog=2131689651,
+Base_Widget_AppCompat_DrawerArrowToggle_Common=2131886260,
 ---@type LuaRef
-Base_V7_Widget_AppCompat_AutoCompleteTextView=2131689653,
+Base_Widget_AppCompat_DropDownItem_Spinner=2131886261,
 ---@type LuaRef
-Base_V7_Widget_AppCompat_EditText=2131689654,
+Base_Widget_AppCompat_EditText=2131886262,
 ---@type LuaRef
-Base_V7_Widget_AppCompat_Toolbar=2131689655,
+Base_Widget_AppCompat_ImageButton=2131886263,
 ---@type LuaRef
-Base_Widget_AppCompat_ActionBar=2131689656,
+Base_Widget_AppCompat_Light_ActionBar=2131886264,
 ---@type LuaRef
-Base_Widget_AppCompat_ActionBar_Solid=2131689657,
+Base_Widget_AppCompat_Light_ActionBar_Solid=2131886265,
 ---@type LuaRef
-Base_Widget_AppCompat_ActionBar_TabBar=2131689658,
+Base_Widget_AppCompat_Light_ActionBar_TabBar=2131886266,
 ---@type LuaRef
-Base_Widget_AppCompat_ActionBar_TabText=2131689659,
+Base_Widget_AppCompat_Light_ActionBar_TabText=2131886267,
 ---@type LuaRef
-Base_Widget_AppCompat_ActionBar_TabView=2131689660,
+Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=2131886268,
 ---@type LuaRef
-Base_Widget_AppCompat_ActionButton=2131689661,
+Base_Widget_AppCompat_Light_ActionBar_TabView=2131886269,
 ---@type LuaRef
-Base_Widget_AppCompat_ActionButton_CloseMode=2131689662,
+Base_Widget_AppCompat_Light_PopupMenu=2131886270,
 ---@type LuaRef
-Base_Widget_AppCompat_ActionButton_Overflow=2131689663,
+Base_Widget_AppCompat_Light_PopupMenu_Overflow=2131886271,
 ---@type LuaRef
-Base_Widget_AppCompat_ActionMode=2131689664,
+Base_Widget_AppCompat_ListMenuView=2131886272,
 ---@type LuaRef
-Base_Widget_AppCompat_ActivityChooserView=2131689665,
+Base_Widget_AppCompat_ListPopupWindow=2131886273,
 ---@type LuaRef
-Base_Widget_AppCompat_AutoCompleteTextView=2131689666,
+Base_Widget_AppCompat_ListView=2131886274,
 ---@type LuaRef
-Base_Widget_AppCompat_Button=2131689667,
+Base_Widget_AppCompat_ListView_DropDown=2131886275,
 ---@type LuaRef
-Base_Widget_AppCompat_ButtonBar=2131689673,
+Base_Widget_AppCompat_ListView_Menu=2131886276,
 ---@type LuaRef
-Base_Widget_AppCompat_ButtonBar_AlertDialog=2131689674,
+Base_Widget_AppCompat_PopupMenu=2131886277,
 ---@type LuaRef
-Base_Widget_AppCompat_Button_Borderless=2131689668,
+Base_Widget_AppCompat_PopupMenu_Overflow=2131886278,
 ---@type LuaRef
-Base_Widget_AppCompat_Button_Borderless_Colored=2131689669,
+Base_Widget_AppCompat_PopupWindow=2131886279,
 ---@type LuaRef
-Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=2131689670,
+Base_Widget_AppCompat_ProgressBar=2131886280,
 ---@type LuaRef
-Base_Widget_AppCompat_Button_Colored=2131689671,
+Base_Widget_AppCompat_ProgressBar_Horizontal=2131886281,
 ---@type LuaRef
-Base_Widget_AppCompat_Button_Small=2131689672,
+Base_Widget_AppCompat_RatingBar=2131886282,
 ---@type LuaRef
-Base_Widget_AppCompat_CompoundButton_CheckBox=2131689675,
+Base_Widget_AppCompat_RatingBar_Indicator=2131886283,
 ---@type LuaRef
-Base_Widget_AppCompat_CompoundButton_RadioButton=2131689676,
+Base_Widget_AppCompat_RatingBar_Small=2131886284,
 ---@type LuaRef
-Base_Widget_AppCompat_CompoundButton_Switch=2131689677,
+Base_Widget_AppCompat_SearchView=2131886285,
 ---@type LuaRef
-Base_Widget_AppCompat_DrawerArrowToggle=2131689678,
+Base_Widget_AppCompat_SearchView_ActionBar=2131886286,
 ---@type LuaRef
-Base_Widget_AppCompat_DrawerArrowToggle_Common=2131689679,
+Base_Widget_AppCompat_SeekBar=2131886287,
 ---@type LuaRef
-Base_Widget_AppCompat_DropDownItem_Spinner=2131689680,
+Base_Widget_AppCompat_SeekBar_Discrete=2131886288,
 ---@type LuaRef
-Base_Widget_AppCompat_EditText=2131689681,
+Base_Widget_AppCompat_Spinner=2131886289,
 ---@type LuaRef
-Base_Widget_AppCompat_ImageButton=2131689682,
+Base_Widget_AppCompat_Spinner_Underlined=2131886290,
 ---@type LuaRef
-Base_Widget_AppCompat_Light_ActionBar=2131689683,
+Base_Widget_AppCompat_TextView=2131886291,
 ---@type LuaRef
-Base_Widget_AppCompat_Light_ActionBar_Solid=2131689684,
+Base_Widget_AppCompat_TextView_SpinnerItem=2131886292,
 ---@type LuaRef
-Base_Widget_AppCompat_Light_ActionBar_TabBar=2131689685,
+Base_Widget_AppCompat_Toolbar=2131886293,
 ---@type LuaRef
-Base_Widget_AppCompat_Light_ActionBar_TabText=2131689686,
+Base_Widget_AppCompat_Toolbar_Button_Navigation=2131886294,
 ---@type LuaRef
-Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=2131689687,
+Base_Widget_Design_TabLayout=2131886295,
 ---@type LuaRef
-Base_Widget_AppCompat_Light_ActionBar_TabView=2131689688,
+Base_Widget_MaterialComponents_AutoCompleteTextView=2131886296,
 ---@type LuaRef
-Base_Widget_AppCompat_Light_PopupMenu=2131689689,
+Base_Widget_MaterialComponents_CheckedTextView=2131886297,
 ---@type LuaRef
-Base_Widget_AppCompat_Light_PopupMenu_Overflow=2131689690,
+Base_Widget_MaterialComponents_Chip=2131886298,
 ---@type LuaRef
-Base_Widget_AppCompat_ListMenuView=2131689691,
+Base_Widget_MaterialComponents_MaterialCalendar_NavigationButton=2131886299,
 ---@type LuaRef
-Base_Widget_AppCompat_ListPopupWindow=2131689692,
+Base_Widget_MaterialComponents_PopupMenu=2131886300,
 ---@type LuaRef
-Base_Widget_AppCompat_ListView=2131689693,
+Base_Widget_MaterialComponents_PopupMenu_ContextMenu=2131886301,
 ---@type LuaRef
-Base_Widget_AppCompat_ListView_DropDown=2131689694,
+Base_Widget_MaterialComponents_PopupMenu_ListPopupWindow=2131886302,
 ---@type LuaRef
-Base_Widget_AppCompat_ListView_Menu=2131689695,
+Base_Widget_MaterialComponents_PopupMenu_Overflow=2131886303,
 ---@type LuaRef
-Base_Widget_AppCompat_PopupMenu=2131689696,
+Base_Widget_MaterialComponents_Slider=2131886304,
 ---@type LuaRef
-Base_Widget_AppCompat_PopupMenu_Overflow=2131689697,
+Base_Widget_MaterialComponents_Snackbar=2131886305,
 ---@type LuaRef
-Base_Widget_AppCompat_PopupWindow=2131689698,
+Base_Widget_MaterialComponents_TextInputEditText=2131886306,
 ---@type LuaRef
-Base_Widget_AppCompat_ProgressBar=2131689699,
+Base_Widget_MaterialComponents_TextInputLayout=2131886307,
 ---@type LuaRef
-Base_Widget_AppCompat_ProgressBar_Horizontal=2131689700,
+Base_Widget_MaterialComponents_TextView=2131886308,
 ---@type LuaRef
-Base_Widget_AppCompat_RatingBar=2131689701,
+CardView=2131886309,
 ---@type LuaRef
-Base_Widget_AppCompat_RatingBar_Indicator=2131689702,
+CardView_Dark=2131886310,
 ---@type LuaRef
-Base_Widget_AppCompat_RatingBar_Small=2131689703,
+CardView_Light=2131886311,
 ---@type LuaRef
-Base_Widget_AppCompat_SearchView=2131689704,
+EmptyTheme=2131886312,
 ---@type LuaRef
-Base_Widget_AppCompat_SearchView_ActionBar=2131689705,
+MaterialAlertDialog_MaterialComponents=2131886313,
 ---@type LuaRef
-Base_Widget_AppCompat_SeekBar=2131689706,
+MaterialAlertDialog_MaterialComponents_Body_Text=2131886314,
 ---@type LuaRef
-Base_Widget_AppCompat_SeekBar_Discrete=2131689707,
+MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar=2131886315,
 ---@type LuaRef
-Base_Widget_AppCompat_Spinner=2131689708,
+MaterialAlertDialog_MaterialComponents_Picker_Date_Spinner=2131886316,
 ---@type LuaRef
-Base_Widget_AppCompat_Spinner_Underlined=2131689709,
+MaterialAlertDialog_MaterialComponents_Title_Icon=2131886317,
 ---@type LuaRef
-Base_Widget_AppCompat_TextView=2131689710,
+MaterialAlertDialog_MaterialComponents_Title_Icon_CenterStacked=2131886318,
 ---@type LuaRef
-Base_Widget_AppCompat_TextView_SpinnerItem=2131689711,
+MaterialAlertDialog_MaterialComponents_Title_Panel=2131886319,
 ---@type LuaRef
-Base_Widget_AppCompat_Toolbar=2131689712,
+MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked=2131886320,
 ---@type LuaRef
-Base_Widget_AppCompat_Toolbar_Button_Navigation=2131689713,
+MaterialAlertDialog_MaterialComponents_Title_Text=2131886321,
 ---@type LuaRef
-Base_Widget_Design_TabLayout=2131689714,
+MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked=2131886322,
 ---@type LuaRef
-Base_Widget_Material3_ActionBar_Solid=2131689715,
+Platform_AppCompat=2131886323,
 ---@type LuaRef
-Base_Widget_Material3_ActionMode=2131689716,
+Platform_AppCompat_Light=2131886324,
 ---@type LuaRef
-Base_Widget_Material3_CardView=2131689717,
+Platform_MaterialComponents=2131886325,
 ---@type LuaRef
-Base_Widget_Material3_Chip=2131689718,
+Platform_MaterialComponents_Dialog=2131886326,
 ---@type LuaRef
-Base_Widget_Material3_CollapsingToolbar=2131689719,
+Platform_MaterialComponents_Light=2131886327,
 ---@type LuaRef
-Base_Widget_Material3_CompoundButton_CheckBox=2131689720,
+Platform_MaterialComponents_Light_Dialog=2131886328,
 ---@type LuaRef
-Base_Widget_Material3_CompoundButton_RadioButton=2131689721,
+Platform_ThemeOverlay_AppCompat=2131886329,
 ---@type LuaRef
-Base_Widget_Material3_CompoundButton_Switch=2131689722,
+Platform_ThemeOverlay_AppCompat_Dark=2131886330,
 ---@type LuaRef
-Base_Widget_Material3_ExtendedFloatingActionButton=2131689723,
+Platform_ThemeOverlay_AppCompat_Light=2131886331,
 ---@type LuaRef
-Base_Widget_Material3_ExtendedFloatingActionButton_Icon=2131689724,
+Platform_V21_AppCompat=2131886332,
 ---@type LuaRef
-Base_Widget_Material3_FloatingActionButton=2131689725,
+Platform_V21_AppCompat_Light=2131886333,
 ---@type LuaRef
-Base_Widget_Material3_FloatingActionButton_Large=2131689726,
+Platform_V25_AppCompat=2131886334,
 ---@type LuaRef
-Base_Widget_Material3_Light_ActionBar_Solid=2131689727,
+Platform_V25_AppCompat_Light=2131886335,
 ---@type LuaRef
-Base_Widget_Material3_MaterialCalendar_NavigationButton=2131689728,
+Platform_Widget_AppCompat_Spinner=2131886336,
 ---@type LuaRef
-Base_Widget_Material3_Snackbar=2131689729,
+RtlOverlay_DialogWindowTitle_AppCompat=2131886337,
 ---@type LuaRef
-Base_Widget_Material3_TabLayout=2131689730,
+RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=2131886338,
 ---@type LuaRef
-Base_Widget_Material3_TabLayout_OnSurface=2131689731,
+RtlOverlay_Widget_AppCompat_DialogTitle_Icon=2131886339,
 ---@type LuaRef
-Base_Widget_Material3_TabLayout_Secondary=2131689732,
+RtlOverlay_Widget_AppCompat_PopupMenuItem=2131886340,
 ---@type LuaRef
-Base_Widget_MaterialComponents_AutoCompleteTextView=2131689733,
+RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=2131886341,
 ---@type LuaRef
-Base_Widget_MaterialComponents_CheckedTextView=2131689734,
+RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut=2131886342,
 ---@type LuaRef
-Base_Widget_MaterialComponents_Chip=2131689735,
+RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow=2131886343,
 ---@type LuaRef
-Base_Widget_MaterialComponents_MaterialCalendar_NavigationButton=2131689736,
+RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=2131886344,
 ---@type LuaRef
-Base_Widget_MaterialComponents_PopupMenu=2131689737,
+RtlOverlay_Widget_AppCompat_PopupMenuItem_Title=2131886345,
 ---@type LuaRef
-Base_Widget_MaterialComponents_PopupMenu_ContextMenu=2131689738,
+RtlOverlay_Widget_AppCompat_SearchView_MagIcon=2131886351,
 ---@type LuaRef
-Base_Widget_MaterialComponents_PopupMenu_ListPopupWindow=2131689739,
+RtlOverlay_Widget_AppCompat_Search_DropDown=2131886346,
 ---@type LuaRef
-Base_Widget_MaterialComponents_PopupMenu_Overflow=2131689740,
+RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=2131886347,
 ---@type LuaRef
-Base_Widget_MaterialComponents_Slider=2131689741,
+RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=2131886348,
 ---@type LuaRef
-Base_Widget_MaterialComponents_Snackbar=2131689742,
+RtlOverlay_Widget_AppCompat_Search_DropDown_Query=2131886349,
 ---@type LuaRef
-Base_Widget_MaterialComponents_TextInputEditText=2131689743,
+RtlOverlay_Widget_AppCompat_Search_DropDown_Text=2131886350,
 ---@type LuaRef
-Base_Widget_MaterialComponents_TextInputLayout=2131689744,
+RtlUnderlay_Widget_AppCompat_ActionButton=2131886352,
 ---@type LuaRef
-Base_Widget_MaterialComponents_TextView=2131689745,
+RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=2131886353,
 ---@type LuaRef
-CardView=2131689746,
+ShapeAppearanceOverlay=2131886360,
 ---@type LuaRef
-CardView_Dark=2131689747,
+ShapeAppearanceOverlay_BottomLeftDifferentCornerSize=2131886361,
 ---@type LuaRef
-CardView_Light=2131689748,
+ShapeAppearanceOverlay_BottomRightCut=2131886362,
 ---@type LuaRef
-EmptyTheme=2131689749,
+ShapeAppearanceOverlay_Cut=2131886363,
 ---@type LuaRef
-MaterialAlertDialog_Material3=2131689750,
+ShapeAppearanceOverlay_DifferentCornerSize=2131886364,
 ---@type LuaRef
-MaterialAlertDialog_Material3_Body_Text=2131689751,
+ShapeAppearanceOverlay_MaterialComponents_BottomSheet=2131886365,
 ---@type LuaRef
-MaterialAlertDialog_Material3_Body_Text_CenterStacked=2131689752,
+ShapeAppearanceOverlay_MaterialComponents_Chip=2131886366,
 ---@type LuaRef
-MaterialAlertDialog_Material3_Title_Icon=2131689753,
+ShapeAppearanceOverlay_MaterialComponents_ExtendedFloatingActionButton=2131886367,
 ---@type LuaRef
-MaterialAlertDialog_Material3_Title_Icon_CenterStacked=2131689754,
+ShapeAppearanceOverlay_MaterialComponents_FloatingActionButton=2131886368,
 ---@type LuaRef
-MaterialAlertDialog_Material3_Title_Panel=2131689755,
+ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day=2131886369,
 ---@type LuaRef
-MaterialAlertDialog_Material3_Title_Panel_CenterStacked=2131689756,
+ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Window_Fullscreen=2131886370,
 ---@type LuaRef
-MaterialAlertDialog_Material3_Title_Text=2131689757,
+ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year=2131886371,
 ---@type LuaRef
-MaterialAlertDialog_Material3_Title_Text_CenterStacked=2131689758,
+ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox=2131886372,
 ---@type LuaRef
-MaterialAlertDialog_MaterialComponents=2131689759,
+ShapeAppearanceOverlay_TopLeftCut=2131886373,
 ---@type LuaRef
-MaterialAlertDialog_MaterialComponents_Body_Text=2131689760,
+ShapeAppearanceOverlay_TopRightDifferentCornerSize=2131886374,
 ---@type LuaRef
-MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar=2131689761,
+ShapeAppearance_MaterialComponents=2131886354,
 ---@type LuaRef
-MaterialAlertDialog_MaterialComponents_Picker_Date_Spinner=2131689762,
+ShapeAppearance_MaterialComponents_LargeComponent=2131886355,
 ---@type LuaRef
-MaterialAlertDialog_MaterialComponents_Title_Icon=2131689763,
+ShapeAppearance_MaterialComponents_MediumComponent=2131886356,
 ---@type LuaRef
-MaterialAlertDialog_MaterialComponents_Title_Icon_CenterStacked=2131689764,
+ShapeAppearance_MaterialComponents_SmallComponent=2131886357,
 ---@type LuaRef
-MaterialAlertDialog_MaterialComponents_Title_Panel=2131689765,
+ShapeAppearance_MaterialComponents_Test=2131886358,
 ---@type LuaRef
-MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked=2131689766,
+ShapeAppearance_MaterialComponents_Tooltip=2131886359,
 ---@type LuaRef
-MaterialAlertDialog_MaterialComponents_Title_Text=2131689767,
+TestStyleWithLineHeight=2131886380,
 ---@type LuaRef
-MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked=2131689768,
+TestStyleWithLineHeightAppearance=2131886381,
 ---@type LuaRef
-Platform_AppCompat=2131689769,
+TestStyleWithThemeLineHeightAttribute=2131886382,
 ---@type LuaRef
-Platform_AppCompat_Light=2131689770,
+TestStyleWithoutLineHeight=2131886383,
 ---@type LuaRef
-Platform_MaterialComponents=2131689771,
+TestThemeWithLineHeight=2131886384,
 ---@type LuaRef
-Platform_MaterialComponents_Dialog=2131689772,
+TestThemeWithLineHeightDisabled=2131886385,
 ---@type LuaRef
-Platform_MaterialComponents_Light=2131689773,
+Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day=2131886375,
 ---@type LuaRef
-Platform_MaterialComponents_Light_Dialog=2131689774,
+Test_Theme_MaterialComponents_MaterialCalendar=2131886376,
 ---@type LuaRef
-Platform_ThemeOverlay_AppCompat=2131689775,
+Test_Widget_MaterialComponents_MaterialCalendar=2131886377,
 ---@type LuaRef
-Platform_ThemeOverlay_AppCompat_Dark=2131689776,
+Test_Widget_MaterialComponents_MaterialCalendar_Day=2131886378,
 ---@type LuaRef
-Platform_ThemeOverlay_AppCompat_Light=2131689777,
+Test_Widget_MaterialComponents_MaterialCalendar_Day_Selected=2131886379,
 ---@type LuaRef
-Platform_V21_AppCompat=2131689778,
+TextAppearance_AppCompat=2131886386,
 ---@type LuaRef
-Platform_V21_AppCompat_Light=2131689779,
+TextAppearance_AppCompat_Body1=2131886387,
 ---@type LuaRef
-Platform_V25_AppCompat=2131689780,
+TextAppearance_AppCompat_Body2=2131886388,
 ---@type LuaRef
-Platform_V25_AppCompat_Light=2131689781,
+TextAppearance_AppCompat_Button=2131886389,
 ---@type LuaRef
-Platform_Widget_AppCompat_Spinner=2131689782,
+TextAppearance_AppCompat_Caption=2131886390,
 ---@type LuaRef
-RtlOverlay_DialogWindowTitle_AppCompat=2131689783,
+TextAppearance_AppCompat_Display1=2131886391,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=2131689784,
+TextAppearance_AppCompat_Display2=2131886392,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_DialogTitle_Icon=2131689785,
+TextAppearance_AppCompat_Display3=2131886393,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_PopupMenuItem=2131689786,
+TextAppearance_AppCompat_Display4=2131886394,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=2131689787,
+TextAppearance_AppCompat_Headline=2131886395,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut=2131689788,
+TextAppearance_AppCompat_Inverse=2131886396,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow=2131689789,
+TextAppearance_AppCompat_Large=2131886397,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=2131689790,
+TextAppearance_AppCompat_Large_Inverse=2131886398,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_PopupMenuItem_Title=2131689791,
+TextAppearance_AppCompat_Light_SearchResult_Subtitle=2131886399,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_SearchView_MagIcon=2131689797,
+TextAppearance_AppCompat_Light_SearchResult_Title=2131886400,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_Search_DropDown=2131689792,
+TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=2131886401,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=2131689793,
+TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=2131886402,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=2131689794,
+TextAppearance_AppCompat_Medium=2131886403,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_Search_DropDown_Query=2131689795,
+TextAppearance_AppCompat_Medium_Inverse=2131886404,
 ---@type LuaRef
-RtlOverlay_Widget_AppCompat_Search_DropDown_Text=2131689796,
+TextAppearance_AppCompat_Menu=2131886405,
 ---@type LuaRef
-RtlUnderlay_Widget_AppCompat_ActionButton=2131689798,
+TextAppearance_AppCompat_SearchResult_Subtitle=2131886406,
 ---@type LuaRef
-RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=2131689799,
+TextAppearance_AppCompat_SearchResult_Title=2131886407,
 ---@type LuaRef
-ShapeAppearanceOverlay=2131689811,
+TextAppearance_AppCompat_Small=2131886408,
 ---@type LuaRef
-ShapeAppearanceOverlay_BottomLeftDifferentCornerSize=2131689812,
+TextAppearance_AppCompat_Small_Inverse=2131886409,
 ---@type LuaRef
-ShapeAppearanceOverlay_BottomRightCut=2131689813,
+TextAppearance_AppCompat_Subhead=2131886410,
 ---@type LuaRef
-ShapeAppearanceOverlay_Cut=2131689814,
+TextAppearance_AppCompat_Subhead_Inverse=2131886411,
 ---@type LuaRef
-ShapeAppearanceOverlay_DifferentCornerSize=2131689815,
+TextAppearance_AppCompat_Title=2131886412,
 ---@type LuaRef
-ShapeAppearanceOverlay_Material3_Button=2131689816,
+TextAppearance_AppCompat_Title_Inverse=2131886413,
 ---@type LuaRef
-ShapeAppearanceOverlay_Material3_Chip=2131689817,
+TextAppearance_AppCompat_Tooltip=2131886414,
 ---@type LuaRef
-ShapeAppearanceOverlay_Material3_FloatingActionButton=2131689818,
+TextAppearance_AppCompat_Widget_ActionBar_Menu=2131886415,
 ---@type LuaRef
-ShapeAppearanceOverlay_Material3_NavigationView_Item=2131689819,
+TextAppearance_AppCompat_Widget_ActionBar_Subtitle=2131886416,
 ---@type LuaRef
-ShapeAppearanceOverlay_Material3_TextField_Filled=2131689820,
+TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=2131886417,
 ---@type LuaRef
-ShapeAppearanceOverlay_MaterialAlertDialog_Material3=2131689821,
+TextAppearance_AppCompat_Widget_ActionBar_Title=2131886418,
 ---@type LuaRef
-ShapeAppearanceOverlay_MaterialComponents_BottomSheet=2131689822,
+TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=2131886419,
 ---@type LuaRef
-ShapeAppearanceOverlay_MaterialComponents_Chip=2131689823,
+TextAppearance_AppCompat_Widget_ActionMode_Subtitle=2131886420,
 ---@type LuaRef
-ShapeAppearanceOverlay_MaterialComponents_ExtendedFloatingActionButton=2131689824,
+TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=2131886421,
 ---@type LuaRef
-ShapeAppearanceOverlay_MaterialComponents_FloatingActionButton=2131689825,
+TextAppearance_AppCompat_Widget_ActionMode_Title=2131886422,
 ---@type LuaRef
-ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day=2131689826,
+TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=2131886423,
 ---@type LuaRef
-ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Window_Fullscreen=2131689827,
+TextAppearance_AppCompat_Widget_Button=2131886424,
 ---@type LuaRef
-ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year=2131689828,
+TextAppearance_AppCompat_Widget_Button_Borderless_Colored=2131886425,
 ---@type LuaRef
-ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox=2131689829,
+TextAppearance_AppCompat_Widget_Button_Colored=2131886426,
 ---@type LuaRef
-ShapeAppearanceOverlay_TopLeftCut=2131689830,
+TextAppearance_AppCompat_Widget_Button_Inverse=2131886427,
 ---@type LuaRef
-ShapeAppearanceOverlay_TopRightDifferentCornerSize=2131689831,
+TextAppearance_AppCompat_Widget_DropDownItem=2131886428,
 ---@type LuaRef
-ShapeAppearance_Material3_LargeComponent=2131689800,
+TextAppearance_AppCompat_Widget_PopupMenu_Header=2131886429,
 ---@type LuaRef
-ShapeAppearance_Material3_MediumComponent=2131689801,
+TextAppearance_AppCompat_Widget_PopupMenu_Large=2131886430,
 ---@type LuaRef
-ShapeAppearance_Material3_NavigationBarView_ActiveIndicator=2131689802,
+TextAppearance_AppCompat_Widget_PopupMenu_Small=2131886431,
 ---@type LuaRef
-ShapeAppearance_Material3_SmallComponent=2131689803,
+TextAppearance_AppCompat_Widget_Switch=2131886432,
 ---@type LuaRef
-ShapeAppearance_Material3_Tooltip=2131689804,
+TextAppearance_AppCompat_Widget_TextView_SpinnerItem=2131886433,
 ---@type LuaRef
-ShapeAppearance_MaterialComponents=2131689805,
+TextAppearance_Compat_Notification=2131886434,
 ---@type LuaRef
-ShapeAppearance_MaterialComponents_LargeComponent=2131689806,
+TextAppearance_Compat_Notification_Info=2131886435,
 ---@type LuaRef
-ShapeAppearance_MaterialComponents_MediumComponent=2131689807,
+TextAppearance_Compat_Notification_Info_Media=2131886436,
 ---@type LuaRef
-ShapeAppearance_MaterialComponents_SmallComponent=2131689808,
+TextAppearance_Compat_Notification_Line2=2131886437,
 ---@type LuaRef
-ShapeAppearance_MaterialComponents_Test=2131689809,
+TextAppearance_Compat_Notification_Line2_Media=2131886438,
 ---@type LuaRef
-ShapeAppearance_MaterialComponents_Tooltip=2131689810,
+TextAppearance_Compat_Notification_Media=2131886439,
 ---@type LuaRef
-TestStyleWithLineHeight=2131689837,
+TextAppearance_Compat_Notification_Time=2131886440,
 ---@type LuaRef
-TestStyleWithLineHeightAppearance=2131689838,
+TextAppearance_Compat_Notification_Time_Media=2131886441,
 ---@type LuaRef
-TestStyleWithThemeLineHeightAttribute=2131689839,
+TextAppearance_Compat_Notification_Title=2131886442,
 ---@type LuaRef
-TestStyleWithoutLineHeight=2131689840,
+TextAppearance_Compat_Notification_Title_Media=2131886443,
 ---@type LuaRef
-TestThemeWithLineHeight=2131689841,
+TextAppearance_Design_CollapsingToolbar_Expanded=2131886444,
 ---@type LuaRef
-TestThemeWithLineHeightDisabled=2131689842,
+TextAppearance_Design_Counter=2131886445,
 ---@type LuaRef
-Test_ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day=2131689832,
+TextAppearance_Design_Counter_Overflow=2131886446,
 ---@type LuaRef
-Test_Theme_MaterialComponents_MaterialCalendar=2131689833,
+TextAppearance_Design_Error=2131886447,
 ---@type LuaRef
-Test_Widget_MaterialComponents_MaterialCalendar=2131689834,
+TextAppearance_Design_HelperText=2131886448,
 ---@type LuaRef
-Test_Widget_MaterialComponents_MaterialCalendar_Day=2131689835,
+TextAppearance_Design_Hint=2131886449,
 ---@type LuaRef
-Test_Widget_MaterialComponents_MaterialCalendar_Day_Selected=2131689836,
+TextAppearance_Design_Placeholder=2131886450,
 ---@type LuaRef
-TextAppearance_AppCompat=2131689843,
+TextAppearance_Design_Prefix=2131886451,
 ---@type LuaRef
-TextAppearance_AppCompat_Body1=2131689844,
+TextAppearance_Design_Snackbar_Message=2131886452,
 ---@type LuaRef
-TextAppearance_AppCompat_Body2=2131689845,
+TextAppearance_Design_Suffix=2131886453,
 ---@type LuaRef
-TextAppearance_AppCompat_Button=2131689846,
+TextAppearance_Design_Tab=2131886454,
 ---@type LuaRef
-TextAppearance_AppCompat_Caption=2131689847,
+TextAppearance_MaterialComponents_Badge=2131886455,
 ---@type LuaRef
-TextAppearance_AppCompat_Display1=2131689848,
+TextAppearance_MaterialComponents_Body1=2131886456,
 ---@type LuaRef
-TextAppearance_AppCompat_Display2=2131689849,
+TextAppearance_MaterialComponents_Body2=2131886457,
 ---@type LuaRef
-TextAppearance_AppCompat_Display3=2131689850,
+TextAppearance_MaterialComponents_Button=2131886458,
 ---@type LuaRef
-TextAppearance_AppCompat_Display4=2131689851,
+TextAppearance_MaterialComponents_Caption=2131886459,
 ---@type LuaRef
-TextAppearance_AppCompat_Headline=2131689852,
+TextAppearance_MaterialComponents_Chip=2131886460,
 ---@type LuaRef
-TextAppearance_AppCompat_Inverse=2131689853,
+TextAppearance_MaterialComponents_Headline1=2131886461,
 ---@type LuaRef
-TextAppearance_AppCompat_Large=2131689854,
+TextAppearance_MaterialComponents_Headline2=2131886462,
 ---@type LuaRef
-TextAppearance_AppCompat_Large_Inverse=2131689855,
+TextAppearance_MaterialComponents_Headline3=2131886463,
 ---@type LuaRef
-TextAppearance_AppCompat_Light_SearchResult_Subtitle=2131689856,
+TextAppearance_MaterialComponents_Headline4=2131886464,
 ---@type LuaRef
-TextAppearance_AppCompat_Light_SearchResult_Title=2131689857,
+TextAppearance_MaterialComponents_Headline5=2131886465,
 ---@type LuaRef
-TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=2131689858,
+TextAppearance_MaterialComponents_Headline6=2131886466,
 ---@type LuaRef
-TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=2131689859,
+TextAppearance_MaterialComponents_Overline=2131886467,
 ---@type LuaRef
-TextAppearance_AppCompat_Medium=2131689860,
+TextAppearance_MaterialComponents_Subtitle1=2131886468,
 ---@type LuaRef
-TextAppearance_AppCompat_Medium_Inverse=2131689861,
+TextAppearance_MaterialComponents_Subtitle2=2131886469,
 ---@type LuaRef
-TextAppearance_AppCompat_Menu=2131689862,
+TextAppearance_MaterialComponents_TimePicker_Title=2131886470,
 ---@type LuaRef
-TextAppearance_AppCompat_SearchResult_Subtitle=2131689863,
+TextAppearance_MaterialComponents_Tooltip=2131886471,
 ---@type LuaRef
-TextAppearance_AppCompat_SearchResult_Title=2131689864,
+TextAppearance_Widget_AppCompat_ExpandedMenu_Item=2131886472,
 ---@type LuaRef
-TextAppearance_AppCompat_Small=2131689865,
+TextAppearance_Widget_AppCompat_Toolbar_Subtitle=2131886473,
 ---@type LuaRef
-TextAppearance_AppCompat_Small_Inverse=2131689866,
+TextAppearance_Widget_AppCompat_Toolbar_Title=2131886474,
 ---@type LuaRef
-TextAppearance_AppCompat_Subhead=2131689867,
+ThemeOverlayColorAccentRed=2131886601,
 ---@type LuaRef
-TextAppearance_AppCompat_Subhead_Inverse=2131689868,
+ThemeOverlay_AppCompat=2131886553,
 ---@type LuaRef
-TextAppearance_AppCompat_Title=2131689869,
+ThemeOverlay_AppCompat_ActionBar=2131886554,
 ---@type LuaRef
-TextAppearance_AppCompat_Title_Inverse=2131689870,
+ThemeOverlay_AppCompat_Dark=2131886555,
 ---@type LuaRef
-TextAppearance_AppCompat_Tooltip=2131689871,
+ThemeOverlay_AppCompat_Dark_ActionBar=2131886556,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_ActionBar_Menu=2131689872,
+ThemeOverlay_AppCompat_DayNight=2131886557,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_ActionBar_Subtitle=2131689873,
+ThemeOverlay_AppCompat_DayNight_ActionBar=2131886558,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=2131689874,
+ThemeOverlay_AppCompat_Dialog=2131886559,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_ActionBar_Title=2131689875,
+ThemeOverlay_AppCompat_Dialog_Alert=2131886560,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=2131689876,
+ThemeOverlay_AppCompat_Light=2131886561,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_ActionMode_Subtitle=2131689877,
+ThemeOverlay_Design_TextInputEditText=2131886562,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=2131689878,
+ThemeOverlay_MaterialComponents=2131886563,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_ActionMode_Title=2131689879,
+ThemeOverlay_MaterialComponents_ActionBar=2131886564,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=2131689880,
+ThemeOverlay_MaterialComponents_ActionBar_Primary=2131886565,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_Button=2131689881,
+ThemeOverlay_MaterialComponents_ActionBar_Surface=2131886566,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_Button_Borderless_Colored=2131689882,
+ThemeOverlay_MaterialComponents_AutoCompleteTextView=2131886567,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_Button_Colored=2131689883,
+ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox=2131886568,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_Button_Inverse=2131689884,
+ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox_Dense=2131886569,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_DropDownItem=2131689885,
+ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox=2131886570,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_PopupMenu_Header=2131689886,
+ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense=2131886571,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_PopupMenu_Large=2131689887,
+ThemeOverlay_MaterialComponents_BottomAppBar_Primary=2131886572,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_PopupMenu_Small=2131689888,
+ThemeOverlay_MaterialComponents_BottomAppBar_Surface=2131886573,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_Switch=2131689889,
+ThemeOverlay_MaterialComponents_BottomSheetDialog=2131886574,
 ---@type LuaRef
-TextAppearance_AppCompat_Widget_TextView_SpinnerItem=2131689890,
+ThemeOverlay_MaterialComponents_Dark=2131886575,
 ---@type LuaRef
-TextAppearance_Compat_Notification=2131689891,
+ThemeOverlay_MaterialComponents_Dark_ActionBar=2131886576,
 ---@type LuaRef
-TextAppearance_Compat_Notification_Info=2131689892,
+ThemeOverlay_MaterialComponents_DayNight_BottomSheetDialog=2131886577,
 ---@type LuaRef
-TextAppearance_Compat_Notification_Info_Media=2131689893,
+ThemeOverlay_MaterialComponents_Dialog=2131886578,
 ---@type LuaRef
-TextAppearance_Compat_Notification_Line2=2131689894,
+ThemeOverlay_MaterialComponents_Dialog_Alert=2131886579,
 ---@type LuaRef
-TextAppearance_Compat_Notification_Line2_Media=2131689895,
+ThemeOverlay_MaterialComponents_Dialog_Alert_Framework=2131886580,
 ---@type LuaRef
-TextAppearance_Compat_Notification_Media=2131689896,
+ThemeOverlay_MaterialComponents_Light=2131886581,
 ---@type LuaRef
-TextAppearance_Compat_Notification_Time=2131689897,
+ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework=2131886582,
 ---@type LuaRef
-TextAppearance_Compat_Notification_Time_Media=2131689898,
+ThemeOverlay_MaterialComponents_MaterialAlertDialog=2131886583,
 ---@type LuaRef
-TextAppearance_Compat_Notification_Title=2131689899,
+ThemeOverlay_MaterialComponents_MaterialAlertDialog_Centered=2131886584,
 ---@type LuaRef
-TextAppearance_Compat_Notification_Title_Media=2131689900,
+ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date=2131886585,
 ---@type LuaRef
-TextAppearance_Design_CollapsingToolbar_Expanded=2131689901,
+ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Calendar=2131886586,
 ---@type LuaRef
-TextAppearance_Design_Counter=2131689902,
+ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text=2131886587,
 ---@type LuaRef
-TextAppearance_Design_Counter_Overflow=2131689903,
+ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text_Day=2131886588,
 ---@type LuaRef
-TextAppearance_Design_Error=2131689904,
+ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Spinner=2131886589,
 ---@type LuaRef
-TextAppearance_Design_HelperText=2131689905,
+ThemeOverlay_MaterialComponents_MaterialCalendar=2131886590,
 ---@type LuaRef
-TextAppearance_Design_Hint=2131689906,
+ThemeOverlay_MaterialComponents_MaterialCalendar_Fullscreen=2131886591,
 ---@type LuaRef
-TextAppearance_Design_Placeholder=2131689907,
+ThemeOverlay_MaterialComponents_TextInputEditText=2131886592,
 ---@type LuaRef
-TextAppearance_Design_Prefix=2131689908,
+ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox=2131886593,
 ---@type LuaRef
-TextAppearance_Design_Snackbar_Message=2131689909,
+ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense=2131886594,
 ---@type LuaRef
-TextAppearance_Design_Suffix=2131689910,
+ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox=2131886595,
 ---@type LuaRef
-TextAppearance_Design_Tab=2131689911,
+ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense=2131886596,
 ---@type LuaRef
-TextAppearance_Material3_ActionBar_Subtitle=2131689912,
+ThemeOverlay_MaterialComponents_TimePicker=2131886597,
 ---@type LuaRef
-TextAppearance_Material3_ActionBar_Title=2131689913,
+ThemeOverlay_MaterialComponents_TimePicker_Display=2131886598,
 ---@type LuaRef
-TextAppearance_Material3_BodyLarge=2131689914,
+ThemeOverlay_MaterialComponents_Toolbar_Primary=2131886599,
 ---@type LuaRef
-TextAppearance_Material3_BodyMedium=2131689915,
+ThemeOverlay_MaterialComponents_Toolbar_Surface=2131886600,
 ---@type LuaRef
-TextAppearance_Material3_BodySmall=2131689916,
+Theme_AppCompat=2131886475,
 ---@type LuaRef
-TextAppearance_Material3_DisplayLarge=2131689917,
+Theme_AppCompat_CompactMenu=2131886476,
 ---@type LuaRef
-TextAppearance_Material3_DisplayMedium=2131689918,
+Theme_AppCompat_DayNight=2131886477,
 ---@type LuaRef
-TextAppearance_Material3_DisplaySmall=2131689919,
+Theme_AppCompat_DayNight_DarkActionBar=2131886478,
 ---@type LuaRef
-TextAppearance_Material3_HeadlineLarge=2131689920,
+Theme_AppCompat_DayNight_Dialog=2131886479,
 ---@type LuaRef
-TextAppearance_Material3_HeadlineMedium=2131689921,
+Theme_AppCompat_DayNight_DialogWhenLarge=2131886482,
 ---@type LuaRef
-TextAppearance_Material3_HeadlineSmall=2131689922,
+Theme_AppCompat_DayNight_Dialog_Alert=2131886480,
 ---@type LuaRef
-TextAppearance_Material3_LabelLarge=2131689923,
+Theme_AppCompat_DayNight_Dialog_MinWidth=2131886481,
 ---@type LuaRef
-TextAppearance_Material3_LabelMedium=2131689924,
+Theme_AppCompat_DayNight_NoActionBar=2131886483,
 ---@type LuaRef
-TextAppearance_Material3_LabelSmall=2131689925,
+Theme_AppCompat_Dialog=2131886484,
 ---@type LuaRef
-TextAppearance_Material3_MaterialTimePicker_Title=2131689926,
+Theme_AppCompat_DialogWhenLarge=2131886487,
 ---@type LuaRef
-TextAppearance_Material3_TitleLarge=2131689927,
+Theme_AppCompat_Dialog_Alert=2131886485,
 ---@type LuaRef
-TextAppearance_Material3_TitleMedium=2131689928,
+Theme_AppCompat_Dialog_MinWidth=2131886486,
 ---@type LuaRef
-TextAppearance_Material3_TitleSmall=2131689929,
+Theme_AppCompat_Empty=2131886488,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Badge=2131689930,
+Theme_AppCompat_Light=2131886489,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Body1=2131689931,
+Theme_AppCompat_Light_DarkActionBar=2131886490,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Body2=2131689932,
+Theme_AppCompat_Light_Dialog=2131886491,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Button=2131689933,
+Theme_AppCompat_Light_DialogWhenLarge=2131886494,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Caption=2131689934,
+Theme_AppCompat_Light_Dialog_Alert=2131886492,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Chip=2131689935,
+Theme_AppCompat_Light_Dialog_MinWidth=2131886493,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Headline1=2131689936,
+Theme_AppCompat_Light_NoActionBar=2131886495,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Headline2=2131689937,
+Theme_AppCompat_NoActionBar=2131886496,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Headline3=2131689938,
+Theme_Design=2131886497,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Headline4=2131689939,
+Theme_Design_BottomSheetDialog=2131886498,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Headline5=2131689940,
+Theme_Design_Light=2131886499,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Headline6=2131689941,
+Theme_Design_Light_BottomSheetDialog=2131886500,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Overline=2131689942,
+Theme_Design_Light_NoActionBar=2131886501,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Subtitle1=2131689943,
+Theme_Design_NoActionBar=2131886502,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Subtitle2=2131689944,
+Theme_MaterialComponents=2131886503,
 ---@type LuaRef
-TextAppearance_MaterialComponents_TimePicker_Title=2131689945,
+Theme_MaterialComponents_BottomSheetDialog=2131886504,
 ---@type LuaRef
-TextAppearance_MaterialComponents_Tooltip=2131689946,
+Theme_MaterialComponents_Bridge=2131886505,
 ---@type LuaRef
-TextAppearance_Widget_AppCompat_ExpandedMenu_Item=2131689947,
+Theme_MaterialComponents_CompactMenu=2131886506,
 ---@type LuaRef
-TextAppearance_Widget_AppCompat_Toolbar_Subtitle=2131689948,
+Theme_MaterialComponents_DayNight=2131886507,
 ---@type LuaRef
-TextAppearance_Widget_AppCompat_Toolbar_Title=2131689949,
+Theme_MaterialComponents_DayNight_BottomSheetDialog=2131886508,
 ---@type LuaRef
-ThemeOverlayColorAccentRed=2131690148,
+Theme_MaterialComponents_DayNight_Bridge=2131886509,
 ---@type LuaRef
-ThemeOverlay_AppCompat=2131690051,
+Theme_MaterialComponents_DayNight_DarkActionBar=2131886510,
 ---@type LuaRef
-ThemeOverlay_AppCompat_ActionBar=2131690052,
+Theme_MaterialComponents_DayNight_DarkActionBar_Bridge=2131886511,
 ---@type LuaRef
-ThemeOverlay_AppCompat_Dark=2131690053,
+Theme_MaterialComponents_DayNight_Dialog=2131886512,
 ---@type LuaRef
-ThemeOverlay_AppCompat_Dark_ActionBar=2131690054,
+Theme_MaterialComponents_DayNight_DialogWhenLarge=2131886520,
 ---@type LuaRef
-ThemeOverlay_AppCompat_DayNight=2131690055,
+Theme_MaterialComponents_DayNight_Dialog_Alert=2131886513,
 ---@type LuaRef
-ThemeOverlay_AppCompat_DayNight_ActionBar=2131690056,
+Theme_MaterialComponents_DayNight_Dialog_Alert_Bridge=2131886514,
 ---@type LuaRef
-ThemeOverlay_AppCompat_Dialog=2131690057,
+Theme_MaterialComponents_DayNight_Dialog_Bridge=2131886515,
 ---@type LuaRef
-ThemeOverlay_AppCompat_Dialog_Alert=2131690058,
+Theme_MaterialComponents_DayNight_Dialog_FixedSize=2131886516,
 ---@type LuaRef
-ThemeOverlay_AppCompat_Light=2131690059,
+Theme_MaterialComponents_DayNight_Dialog_FixedSize_Bridge=2131886517,
 ---@type LuaRef
-ThemeOverlay_Design_TextInputEditText=2131690060,
+Theme_MaterialComponents_DayNight_Dialog_MinWidth=2131886518,
 ---@type LuaRef
-ThemeOverlay_Material3=2131690061,
+Theme_MaterialComponents_DayNight_Dialog_MinWidth_Bridge=2131886519,
 ---@type LuaRef
-ThemeOverlay_Material3_ActionBar=2131690062,
+Theme_MaterialComponents_DayNight_NoActionBar=2131886521,
 ---@type LuaRef
-ThemeOverlay_Material3_AutoCompleteTextView=2131690063,
+Theme_MaterialComponents_DayNight_NoActionBar_Bridge=2131886522,
 ---@type LuaRef
-ThemeOverlay_Material3_AutoCompleteTextView_FilledBox=2131690064,
+Theme_MaterialComponents_Dialog=2131886523,
 ---@type LuaRef
-ThemeOverlay_Material3_AutoCompleteTextView_FilledBox_Dense=2131690065,
+Theme_MaterialComponents_DialogWhenLarge=2131886531,
 ---@type LuaRef
-ThemeOverlay_Material3_AutoCompleteTextView_OutlinedBox=2131690066,
+Theme_MaterialComponents_Dialog_Alert=2131886524,
 ---@type LuaRef
-ThemeOverlay_Material3_AutoCompleteTextView_OutlinedBox_Dense=2131690067,
+Theme_MaterialComponents_Dialog_Alert_Bridge=2131886525,
 ---@type LuaRef
-ThemeOverlay_Material3_BottomAppBar=2131690068,
+Theme_MaterialComponents_Dialog_Bridge=2131886526,
 ---@type LuaRef
-ThemeOverlay_Material3_BottomSheetDialog=2131690069,
+Theme_MaterialComponents_Dialog_FixedSize=2131886527,
 ---@type LuaRef
-ThemeOverlay_Material3_Button=2131690070,
+Theme_MaterialComponents_Dialog_FixedSize_Bridge=2131886528,
 ---@type LuaRef
-ThemeOverlay_Material3_Button_ElevatedButton=2131690071,
+Theme_MaterialComponents_Dialog_MinWidth=2131886529,
 ---@type LuaRef
-ThemeOverlay_Material3_Button_TextButton=2131690072,
+Theme_MaterialComponents_Dialog_MinWidth_Bridge=2131886530,
 ---@type LuaRef
-ThemeOverlay_Material3_Button_TextButton_Snackbar=2131690073,
+Theme_MaterialComponents_Light=2131886532,
 ---@type LuaRef
-ThemeOverlay_Material3_Button_TonalButton=2131690074,
+Theme_MaterialComponents_Light_BarSize=2131886533,
 ---@type LuaRef
-ThemeOverlay_Material3_Chip=2131690075,
+Theme_MaterialComponents_Light_BottomSheetDialog=2131886534,
 ---@type LuaRef
-ThemeOverlay_Material3_Chip_Assist=2131690076,
+Theme_MaterialComponents_Light_Bridge=2131886535,
 ---@type LuaRef
-ThemeOverlay_Material3_Dark=2131690077,
+Theme_MaterialComponents_Light_DarkActionBar=2131886536,
 ---@type LuaRef
-ThemeOverlay_Material3_Dark_ActionBar=2131690078,
+Theme_MaterialComponents_Light_DarkActionBar_Bridge=2131886537,
 ---@type LuaRef
-ThemeOverlay_Material3_DayNight_BottomSheetDialog=2131690079,
+Theme_MaterialComponents_Light_Dialog=2131886538,
 ---@type LuaRef
-ThemeOverlay_Material3_Dialog=2131690080,
+Theme_MaterialComponents_Light_DialogWhenLarge=2131886546,
 ---@type LuaRef
-ThemeOverlay_Material3_Dialog_Alert=2131690081,
+Theme_MaterialComponents_Light_Dialog_Alert=2131886539,
 ---@type LuaRef
-ThemeOverlay_Material3_Dialog_Alert_Framework=2131690082,
+Theme_MaterialComponents_Light_Dialog_Alert_Bridge=2131886540,
 ---@type LuaRef
-ThemeOverlay_Material3_DynamicColors_Dark=2131690083,
+Theme_MaterialComponents_Light_Dialog_Bridge=2131886541,
 ---@type LuaRef
-ThemeOverlay_Material3_DynamicColors_DayNight=2131690084,
+Theme_MaterialComponents_Light_Dialog_FixedSize=2131886542,
 ---@type LuaRef
-ThemeOverlay_Material3_DynamicColors_Light=2131690085,
+Theme_MaterialComponents_Light_Dialog_FixedSize_Bridge=2131886543,
 ---@type LuaRef
-ThemeOverlay_Material3_FloatingActionButton_Primary=2131690086,
+Theme_MaterialComponents_Light_Dialog_MinWidth=2131886544,
 ---@type LuaRef
-ThemeOverlay_Material3_FloatingActionButton_Secondary=2131690087,
+Theme_MaterialComponents_Light_Dialog_MinWidth_Bridge=2131886545,
 ---@type LuaRef
-ThemeOverlay_Material3_FloatingActionButton_Surface=2131690088,
+Theme_MaterialComponents_Light_LargeTouch=2131886547,
 ---@type LuaRef
-ThemeOverlay_Material3_FloatingActionButton_Tertiary=2131690089,
+Theme_MaterialComponents_Light_NoActionBar=2131886548,
 ---@type LuaRef
-ThemeOverlay_Material3_Light=2131690090,
+Theme_MaterialComponents_Light_NoActionBar_Bridge=2131886549,
 ---@type LuaRef
-ThemeOverlay_Material3_Light_Dialog_Alert_Framework=2131690091,
+Theme_MaterialComponents_NoActionBar=2131886550,
 ---@type LuaRef
-ThemeOverlay_Material3_MaterialAlertDialog=2131690092,
+Theme_MaterialComponents_NoActionBar_Bridge=2131886551,
 ---@type LuaRef
-ThemeOverlay_Material3_MaterialAlertDialog_Centered=2131690093,
+Theme_PlayCore_Transparent=2131886552,
 ---@type LuaRef
-ThemeOverlay_Material3_MaterialCalendar=2131690094,
+Widget_AppCompat_ActionBar=2131886602,
 ---@type LuaRef
-ThemeOverlay_Material3_MaterialCalendar_Fullscreen=2131690095,
+Widget_AppCompat_ActionBar_Solid=2131886603,
 ---@type LuaRef
-ThemeOverlay_Material3_MaterialCalendar_HeaderCancelButton=2131690096,
+Widget_AppCompat_ActionBar_TabBar=2131886604,
 ---@type LuaRef
-ThemeOverlay_Material3_MaterialTimePicker=2131690097,
+Widget_AppCompat_ActionBar_TabText=2131886605,
 ---@type LuaRef
-ThemeOverlay_Material3_MaterialTimePicker_Display_TextInputEditText=2131690098,
+Widget_AppCompat_ActionBar_TabView=2131886606,
 ---@type LuaRef
-ThemeOverlay_Material3_NavigationView=2131690099,
+Widget_AppCompat_ActionButton=2131886607,
 ---@type LuaRef
-ThemeOverlay_Material3_Snackbar=2131690100,
+Widget_AppCompat_ActionButton_CloseMode=2131886608,
 ---@type LuaRef
-ThemeOverlay_Material3_TextInputEditText=2131690101,
+Widget_AppCompat_ActionButton_Overflow=2131886609,
 ---@type LuaRef
-ThemeOverlay_Material3_TextInputEditText_FilledBox=2131690102,
+Widget_AppCompat_ActionMode=2131886610,
 ---@type LuaRef
-ThemeOverlay_Material3_TextInputEditText_FilledBox_Dense=2131690103,
+Widget_AppCompat_ActivityChooserView=2131886611,
 ---@type LuaRef
-ThemeOverlay_Material3_TextInputEditText_OutlinedBox=2131690104,
+Widget_AppCompat_AutoCompleteTextView=2131886612,
 ---@type LuaRef
-ThemeOverlay_Material3_TextInputEditText_OutlinedBox_Dense=2131690105,
+Widget_AppCompat_Button=2131886613,
 ---@type LuaRef
-ThemeOverlay_Material3_Toolbar_Surface=2131690106,
+Widget_AppCompat_ButtonBar=2131886619,
 ---@type LuaRef
-ThemeOverlay_MaterialAlertDialog_Material3_Title_Icon=2131690107,
+Widget_AppCompat_ButtonBar_AlertDialog=2131886620,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents=2131690108,
+Widget_AppCompat_Button_Borderless=2131886614,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_ActionBar=2131690109,
+Widget_AppCompat_Button_Borderless_Colored=2131886615,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_ActionBar_Primary=2131690110,
+Widget_AppCompat_Button_ButtonBar_AlertDialog=2131886616,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_ActionBar_Surface=2131690111,
+Widget_AppCompat_Button_Colored=2131886617,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_AutoCompleteTextView=2131690112,
+Widget_AppCompat_Button_Small=2131886618,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox=2131690113,
+Widget_AppCompat_CompoundButton_CheckBox=2131886621,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox_Dense=2131690114,
+Widget_AppCompat_CompoundButton_RadioButton=2131886622,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox=2131690115,
+Widget_AppCompat_CompoundButton_Switch=2131886623,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense=2131690116,
+Widget_AppCompat_DrawerArrowToggle=2131886624,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_BottomAppBar_Primary=2131690117,
+Widget_AppCompat_DropDownItem_Spinner=2131886625,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_BottomAppBar_Surface=2131690118,
+Widget_AppCompat_EditText=2131886626,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_BottomSheetDialog=2131690119,
+Widget_AppCompat_ImageButton=2131886627,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_Dark=2131690120,
+Widget_AppCompat_Light_ActionBar=2131886628,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_Dark_ActionBar=2131690121,
+Widget_AppCompat_Light_ActionBar_Solid=2131886629,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_DayNight_BottomSheetDialog=2131690122,
+Widget_AppCompat_Light_ActionBar_Solid_Inverse=2131886630,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_Dialog=2131690123,
+Widget_AppCompat_Light_ActionBar_TabBar=2131886631,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_Dialog_Alert=2131690124,
+Widget_AppCompat_Light_ActionBar_TabBar_Inverse=2131886632,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_Dialog_Alert_Framework=2131690125,
+Widget_AppCompat_Light_ActionBar_TabText=2131886633,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_Light=2131690126,
+Widget_AppCompat_Light_ActionBar_TabText_Inverse=2131886634,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_Light_Dialog_Alert_Framework=2131690127,
+Widget_AppCompat_Light_ActionBar_TabView=2131886635,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_MaterialAlertDialog=2131690128,
+Widget_AppCompat_Light_ActionBar_TabView_Inverse=2131886636,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_MaterialAlertDialog_Centered=2131690129,
+Widget_AppCompat_Light_ActionButton=2131886637,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date=2131690130,
+Widget_AppCompat_Light_ActionButton_CloseMode=2131886638,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Calendar=2131690131,
+Widget_AppCompat_Light_ActionButton_Overflow=2131886639,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text=2131690132,
+Widget_AppCompat_Light_ActionMode_Inverse=2131886640,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text_Day=2131690133,
+Widget_AppCompat_Light_ActivityChooserView=2131886641,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Spinner=2131690134,
+Widget_AppCompat_Light_AutoCompleteTextView=2131886642,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_MaterialCalendar=2131690135,
+Widget_AppCompat_Light_DropDownItem_Spinner=2131886643,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_MaterialCalendar_Fullscreen=2131690136,
+Widget_AppCompat_Light_ListPopupWindow=2131886644,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_TextInputEditText=2131690137,
+Widget_AppCompat_Light_ListView_DropDown=2131886645,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox=2131690138,
+Widget_AppCompat_Light_PopupMenu=2131886646,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense=2131690139,
+Widget_AppCompat_Light_PopupMenu_Overflow=2131886647,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox=2131690140,
+Widget_AppCompat_Light_SearchView=2131886648,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense=2131690141,
+Widget_AppCompat_Light_Spinner_DropDown_ActionBar=2131886649,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_TimePicker=2131690142,
+Widget_AppCompat_ListMenuView=2131886650,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_TimePicker_Display=2131690143,
+Widget_AppCompat_ListPopupWindow=2131886651,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText=2131690144,
+Widget_AppCompat_ListView=2131886652,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary=2131690145,
+Widget_AppCompat_ListView_DropDown=2131886653,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_Toolbar_Primary=2131690146,
+Widget_AppCompat_ListView_Menu=2131886654,
 ---@type LuaRef
-ThemeOverlay_MaterialComponents_Toolbar_Surface=2131690147,
+Widget_AppCompat_PopupMenu=2131886655,
 ---@type LuaRef
-Theme_AppCompat=2131689950,
+Widget_AppCompat_PopupMenu_Overflow=2131886656,
 ---@type LuaRef
-Theme_AppCompat_CompactMenu=2131689951,
+Widget_AppCompat_PopupWindow=2131886657,
 ---@type LuaRef
-Theme_AppCompat_DayNight=2131689952,
+Widget_AppCompat_ProgressBar=2131886658,
 ---@type LuaRef
-Theme_AppCompat_DayNight_DarkActionBar=2131689953,
+Widget_AppCompat_ProgressBar_Horizontal=2131886659,
 ---@type LuaRef
-Theme_AppCompat_DayNight_Dialog=2131689954,
+Widget_AppCompat_RatingBar=2131886660,
 ---@type LuaRef
-Theme_AppCompat_DayNight_DialogWhenLarge=2131689957,
+Widget_AppCompat_RatingBar_Indicator=2131886661,
 ---@type LuaRef
-Theme_AppCompat_DayNight_Dialog_Alert=2131689955,
+Widget_AppCompat_RatingBar_Small=2131886662,
 ---@type LuaRef
-Theme_AppCompat_DayNight_Dialog_MinWidth=2131689956,
+Widget_AppCompat_SearchView=2131886663,
 ---@type LuaRef
-Theme_AppCompat_DayNight_NoActionBar=2131689958,
+Widget_AppCompat_SearchView_ActionBar=2131886664,
 ---@type LuaRef
-Theme_AppCompat_Dialog=2131689959,
+Widget_AppCompat_SeekBar=2131886665,
 ---@type LuaRef
-Theme_AppCompat_DialogWhenLarge=2131689962,
+Widget_AppCompat_SeekBar_Discrete=2131886666,
 ---@type LuaRef
-Theme_AppCompat_Dialog_Alert=2131689960,
+Widget_AppCompat_Spinner=2131886667,
 ---@type LuaRef
-Theme_AppCompat_Dialog_MinWidth=2131689961,
+Widget_AppCompat_Spinner_DropDown=2131886668,
 ---@type LuaRef
-Theme_AppCompat_Empty=2131689963,
+Widget_AppCompat_Spinner_DropDown_ActionBar=2131886669,
 ---@type LuaRef
-Theme_AppCompat_Light=2131689964,
+Widget_AppCompat_Spinner_Underlined=2131886670,
 ---@type LuaRef
-Theme_AppCompat_Light_DarkActionBar=2131689965,
+Widget_AppCompat_TextView=2131886671,
 ---@type LuaRef
-Theme_AppCompat_Light_Dialog=2131689966,
+Widget_AppCompat_TextView_SpinnerItem=2131886672,
 ---@type LuaRef
-Theme_AppCompat_Light_DialogWhenLarge=2131689969,
+Widget_AppCompat_Toolbar=2131886673,
 ---@type LuaRef
-Theme_AppCompat_Light_Dialog_Alert=2131689967,
+Widget_AppCompat_Toolbar_Button_Navigation=2131886674,
 ---@type LuaRef
-Theme_AppCompat_Light_Dialog_MinWidth=2131689968,
+Widget_Compat_NotificationActionContainer=2131886675,
 ---@type LuaRef
-Theme_AppCompat_Light_NoActionBar=2131689970,
+Widget_Compat_NotificationActionText=2131886676,
 ---@type LuaRef
-Theme_AppCompat_NoActionBar=2131689971,
+Widget_Design_AppBarLayout=2131886677,
 ---@type LuaRef
-Theme_Design=2131689972,
+Widget_Design_BottomNavigationView=2131886678,
 ---@type LuaRef
-Theme_Design_BottomSheetDialog=2131689973,
+Widget_Design_BottomSheet_Modal=2131886679,
 ---@type LuaRef
-Theme_Design_Light=2131689974,
+Widget_Design_CollapsingToolbar=2131886680,
 ---@type LuaRef
-Theme_Design_Light_BottomSheetDialog=2131689975,
+Widget_Design_FloatingActionButton=2131886681,
 ---@type LuaRef
-Theme_Design_Light_NoActionBar=2131689976,
+Widget_Design_NavigationView=2131886682,
 ---@type LuaRef
-Theme_Design_NoActionBar=2131689977,
+Widget_Design_ScrimInsetsFrameLayout=2131886683,
 ---@type LuaRef
-Theme_Material3_Dark=2131689978,
+Widget_Design_Snackbar=2131886684,
 ---@type LuaRef
-Theme_Material3_Dark_BottomSheetDialog=2131689979,
+Widget_Design_TabLayout=2131886685,
 ---@type LuaRef
-Theme_Material3_Dark_Dialog=2131689980,
+Widget_Design_TextInputEditText=2131886686,
 ---@type LuaRef
-Theme_Material3_Dark_DialogWhenLarge=2131689983,
+Widget_Design_TextInputLayout=2131886687,
 ---@type LuaRef
-Theme_Material3_Dark_Dialog_Alert=2131689981,
+Widget_MaterialComponents_ActionBar_Primary=2131886688,
 ---@type LuaRef
-Theme_Material3_Dark_Dialog_MinWidth=2131689982,
+Widget_MaterialComponents_ActionBar_PrimarySurface=2131886689,
 ---@type LuaRef
-Theme_Material3_Dark_NoActionBar=2131689984,
+Widget_MaterialComponents_ActionBar_Solid=2131886690,
 ---@type LuaRef
-Theme_Material3_DayNight=2131689985,
+Widget_MaterialComponents_ActionBar_Surface=2131886691,
 ---@type LuaRef
-Theme_Material3_DayNight_BottomSheetDialog=2131689986,
+Widget_MaterialComponents_AppBarLayout_Primary=2131886692,
 ---@type LuaRef
-Theme_Material3_DayNight_Dialog=2131689987,
+Widget_MaterialComponents_AppBarLayout_PrimarySurface=2131886693,
 ---@type LuaRef
-Theme_Material3_DayNight_DialogWhenLarge=2131689990,
+Widget_MaterialComponents_AppBarLayout_Surface=2131886694,
 ---@type LuaRef
-Theme_Material3_DayNight_Dialog_Alert=2131689988,
+Widget_MaterialComponents_AutoCompleteTextView_FilledBox=2131886695,
 ---@type LuaRef
-Theme_Material3_DayNight_Dialog_MinWidth=2131689989,
+Widget_MaterialComponents_AutoCompleteTextView_FilledBox_Dense=2131886696,
 ---@type LuaRef
-Theme_Material3_DayNight_NoActionBar=2131689991,
+Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox=2131886697,
 ---@type LuaRef
-Theme_Material3_DynamicColors_Dark=2131689992,
+Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense=2131886698,
 ---@type LuaRef
-Theme_Material3_DynamicColors_DayNight=2131689993,
+Widget_MaterialComponents_Badge=2131886699,
 ---@type LuaRef
-Theme_Material3_DynamicColors_Light=2131689994,
+Widget_MaterialComponents_BottomAppBar=2131886700,
 ---@type LuaRef
-Theme_Material3_Light=2131689995,
+Widget_MaterialComponents_BottomAppBar_Colored=2131886701,
 ---@type LuaRef
-Theme_Material3_Light_BottomSheetDialog=2131689996,
+Widget_MaterialComponents_BottomAppBar_PrimarySurface=2131886702,
 ---@type LuaRef
-Theme_Material3_Light_Dialog=2131689997,
+Widget_MaterialComponents_BottomNavigationView=2131886703,
 ---@type LuaRef
-Theme_Material3_Light_DialogWhenLarge=2131690000,
+Widget_MaterialComponents_BottomNavigationView_Colored=2131886704,
 ---@type LuaRef
-Theme_Material3_Light_Dialog_Alert=2131689998,
+Widget_MaterialComponents_BottomNavigationView_PrimarySurface=2131886705,
 ---@type LuaRef
-Theme_Material3_Light_Dialog_MinWidth=2131689999,
+Widget_MaterialComponents_BottomSheet=2131886706,
 ---@type LuaRef
-Theme_Material3_Light_NoActionBar=2131690001,
+Widget_MaterialComponents_BottomSheet_Modal=2131886707,
 ---@type LuaRef
-Theme_MaterialComponents=2131690002,
+Widget_MaterialComponents_Button=2131886708,
 ---@type LuaRef
-Theme_MaterialComponents_BottomSheetDialog=2131690003,
+Widget_MaterialComponents_Button_Icon=2131886709,
 ---@type LuaRef
-Theme_MaterialComponents_Bridge=2131690004,
+Widget_MaterialComponents_Button_OutlinedButton=2131886710,
 ---@type LuaRef
-Theme_MaterialComponents_CompactMenu=2131690005,
+Widget_MaterialComponents_Button_OutlinedButton_Icon=2131886711,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight=2131690006,
+Widget_MaterialComponents_Button_TextButton=2131886712,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_BottomSheetDialog=2131690007,
+Widget_MaterialComponents_Button_TextButton_Dialog=2131886713,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_Bridge=2131690008,
+Widget_MaterialComponents_Button_TextButton_Dialog_Flush=2131886714,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_DarkActionBar=2131690009,
+Widget_MaterialComponents_Button_TextButton_Dialog_Icon=2131886715,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_DarkActionBar_Bridge=2131690010,
+Widget_MaterialComponents_Button_TextButton_Icon=2131886716,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_Dialog=2131690011,
+Widget_MaterialComponents_Button_TextButton_Snackbar=2131886717,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_DialogWhenLarge=2131690019,
+Widget_MaterialComponents_Button_UnelevatedButton=2131886718,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_Dialog_Alert=2131690012,
+Widget_MaterialComponents_Button_UnelevatedButton_Icon=2131886719,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_Dialog_Alert_Bridge=2131690013,
+Widget_MaterialComponents_CardView=2131886720,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_Dialog_Bridge=2131690014,
+Widget_MaterialComponents_CheckedTextView=2131886721,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_Dialog_FixedSize=2131690015,
+Widget_MaterialComponents_ChipGroup=2131886726,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_Dialog_FixedSize_Bridge=2131690016,
+Widget_MaterialComponents_Chip_Action=2131886722,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_Dialog_MinWidth=2131690017,
+Widget_MaterialComponents_Chip_Choice=2131886723,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_Dialog_MinWidth_Bridge=2131690018,
+Widget_MaterialComponents_Chip_Entry=2131886724,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_NoActionBar=2131690020,
+Widget_MaterialComponents_Chip_Filter=2131886725,
 ---@type LuaRef
-Theme_MaterialComponents_DayNight_NoActionBar_Bridge=2131690021,
+Widget_MaterialComponents_CircularProgressIndicator=2131886727,
 ---@type LuaRef
-Theme_MaterialComponents_Dialog=2131690022,
+Widget_MaterialComponents_CircularProgressIndicator_ExtraSmall=2131886728,
 ---@type LuaRef
-Theme_MaterialComponents_DialogWhenLarge=2131690030,
+Widget_MaterialComponents_CircularProgressIndicator_Medium=2131886729,
 ---@type LuaRef
-Theme_MaterialComponents_Dialog_Alert=2131690023,
+Widget_MaterialComponents_CircularProgressIndicator_Small=2131886730,
 ---@type LuaRef
-Theme_MaterialComponents_Dialog_Alert_Bridge=2131690024,
+Widget_MaterialComponents_CollapsingToolbar=2131886731,
 ---@type LuaRef
-Theme_MaterialComponents_Dialog_Bridge=2131690025,
+Widget_MaterialComponents_CompoundButton_CheckBox=2131886732,
 ---@type LuaRef
-Theme_MaterialComponents_Dialog_FixedSize=2131690026,
+Widget_MaterialComponents_CompoundButton_RadioButton=2131886733,
 ---@type LuaRef
-Theme_MaterialComponents_Dialog_FixedSize_Bridge=2131690027,
+Widget_MaterialComponents_CompoundButton_Switch=2131886734,
 ---@type LuaRef
-Theme_MaterialComponents_Dialog_MinWidth=2131690028,
+Widget_MaterialComponents_ExtendedFloatingActionButton=2131886735,
 ---@type LuaRef
-Theme_MaterialComponents_Dialog_MinWidth_Bridge=2131690029,
+Widget_MaterialComponents_ExtendedFloatingActionButton_Icon=2131886736,
 ---@type LuaRef
-Theme_MaterialComponents_Light=2131690031,
+Widget_MaterialComponents_FloatingActionButton=2131886737,
 ---@type LuaRef
-Theme_MaterialComponents_Light_BarSize=2131690032,
+Widget_MaterialComponents_Light_ActionBar_Solid=2131886738,
 ---@type LuaRef
-Theme_MaterialComponents_Light_BottomSheetDialog=2131690033,
+Widget_MaterialComponents_LinearProgressIndicator=2131886739,
 ---@type LuaRef
-Theme_MaterialComponents_Light_Bridge=2131690034,
+Widget_MaterialComponents_MaterialButtonToggleGroup=2131886740,
 ---@type LuaRef
-Theme_MaterialComponents_Light_DarkActionBar=2131690035,
+Widget_MaterialComponents_MaterialCalendar=2131886741,
 ---@type LuaRef
-Theme_MaterialComponents_Light_DarkActionBar_Bridge=2131690036,
+Widget_MaterialComponents_MaterialCalendar_Day=2131886742,
 ---@type LuaRef
-Theme_MaterialComponents_Light_Dialog=2131690037,
+Widget_MaterialComponents_MaterialCalendar_DayTextView=2131886746,
 ---@type LuaRef
-Theme_MaterialComponents_Light_DialogWhenLarge=2131690045,
+Widget_MaterialComponents_MaterialCalendar_Day_Invalid=2131886743,
 ---@type LuaRef
-Theme_MaterialComponents_Light_Dialog_Alert=2131690038,
+Widget_MaterialComponents_MaterialCalendar_Day_Selected=2131886744,
 ---@type LuaRef
-Theme_MaterialComponents_Light_Dialog_Alert_Bridge=2131690039,
+Widget_MaterialComponents_MaterialCalendar_Day_Today=2131886745,
 ---@type LuaRef
-Theme_MaterialComponents_Light_Dialog_Bridge=2131690040,
+Widget_MaterialComponents_MaterialCalendar_Fullscreen=2131886747,
 ---@type LuaRef
-Theme_MaterialComponents_Light_Dialog_FixedSize=2131690041,
+Widget_MaterialComponents_MaterialCalendar_HeaderCancelButton=2131886748,
 ---@type LuaRef
-Theme_MaterialComponents_Light_Dialog_FixedSize_Bridge=2131690042,
+Widget_MaterialComponents_MaterialCalendar_HeaderConfirmButton=2131886749,
 ---@type LuaRef
-Theme_MaterialComponents_Light_Dialog_MinWidth=2131690043,
+Widget_MaterialComponents_MaterialCalendar_HeaderDivider=2131886750,
 ---@type LuaRef
-Theme_MaterialComponents_Light_Dialog_MinWidth_Bridge=2131690044,
+Widget_MaterialComponents_MaterialCalendar_HeaderLayout=2131886751,
 ---@type LuaRef
-Theme_MaterialComponents_Light_LargeTouch=2131690046,
+Widget_MaterialComponents_MaterialCalendar_HeaderSelection=2131886752,
 ---@type LuaRef
-Theme_MaterialComponents_Light_NoActionBar=2131690047,
+Widget_MaterialComponents_MaterialCalendar_HeaderSelection_Fullscreen=2131886753,
 ---@type LuaRef
-Theme_MaterialComponents_Light_NoActionBar_Bridge=2131690048,
+Widget_MaterialComponents_MaterialCalendar_HeaderTitle=2131886754,
 ---@type LuaRef
-Theme_MaterialComponents_NoActionBar=2131690049,
+Widget_MaterialComponents_MaterialCalendar_HeaderToggleButton=2131886755,
 ---@type LuaRef
-Theme_MaterialComponents_NoActionBar_Bridge=2131690050,
+Widget_MaterialComponents_MaterialCalendar_Item=2131886756,
 ---@type LuaRef
-Widget_AppCompat_ActionBar=2131690149,
+Widget_MaterialComponents_MaterialCalendar_MonthNavigationButton=2131886757,
 ---@type LuaRef
-Widget_AppCompat_ActionBar_Solid=2131690150,
+Widget_MaterialComponents_MaterialCalendar_MonthTextView=2131886758,
 ---@type LuaRef
-Widget_AppCompat_ActionBar_TabBar=2131690151,
+Widget_MaterialComponents_MaterialCalendar_Year=2131886759,
 ---@type LuaRef
-Widget_AppCompat_ActionBar_TabText=2131690152,
+Widget_MaterialComponents_MaterialCalendar_YearNavigationButton=2131886762,
 ---@type LuaRef
-Widget_AppCompat_ActionBar_TabView=2131690153,
+Widget_MaterialComponents_MaterialCalendar_Year_Selected=2131886760,
 ---@type LuaRef
-Widget_AppCompat_ActionButton=2131690154,
+Widget_MaterialComponents_MaterialCalendar_Year_Today=2131886761,
 ---@type LuaRef
-Widget_AppCompat_ActionButton_CloseMode=2131690155,
+Widget_MaterialComponents_NavigationRailView=2131886763,
 ---@type LuaRef
-Widget_AppCompat_ActionButton_Overflow=2131690156,
+Widget_MaterialComponents_NavigationRailView_Colored=2131886764,
 ---@type LuaRef
-Widget_AppCompat_ActionMode=2131690157,
+Widget_MaterialComponents_NavigationRailView_Colored_Compact=2131886765,
 ---@type LuaRef
-Widget_AppCompat_ActivityChooserView=2131690158,
+Widget_MaterialComponents_NavigationRailView_Compact=2131886766,
 ---@type LuaRef
-Widget_AppCompat_AutoCompleteTextView=2131690159,
+Widget_MaterialComponents_NavigationRailView_PrimarySurface=2131886767,
 ---@type LuaRef
-Widget_AppCompat_Button=2131690160,
+Widget_MaterialComponents_NavigationView=2131886768,
 ---@type LuaRef
-Widget_AppCompat_ButtonBar=2131690166,
+Widget_MaterialComponents_PopupMenu=2131886769,
 ---@type LuaRef
-Widget_AppCompat_ButtonBar_AlertDialog=2131690167,
+Widget_MaterialComponents_PopupMenu_ContextMenu=2131886770,
 ---@type LuaRef
-Widget_AppCompat_Button_Borderless=2131690161,
+Widget_MaterialComponents_PopupMenu_ListPopupWindow=2131886771,
 ---@type LuaRef
-Widget_AppCompat_Button_Borderless_Colored=2131690162,
+Widget_MaterialComponents_PopupMenu_Overflow=2131886772,
 ---@type LuaRef
-Widget_AppCompat_Button_ButtonBar_AlertDialog=2131690163,
+Widget_MaterialComponents_ProgressIndicator=2131886773,
 ---@type LuaRef
-Widget_AppCompat_Button_Colored=2131690164,
+Widget_MaterialComponents_ShapeableImageView=2131886774,
 ---@type LuaRef
-Widget_AppCompat_Button_Small=2131690165,
+Widget_MaterialComponents_Slider=2131886775,
 ---@type LuaRef
-Widget_AppCompat_CompoundButton_CheckBox=2131690168,
+Widget_MaterialComponents_Snackbar=2131886776,
 ---@type LuaRef
-Widget_AppCompat_CompoundButton_RadioButton=2131690169,
+Widget_MaterialComponents_Snackbar_FullWidth=2131886777,
 ---@type LuaRef
-Widget_AppCompat_CompoundButton_Switch=2131690170,
+Widget_MaterialComponents_Snackbar_TextView=2131886778,
 ---@type LuaRef
-Widget_AppCompat_DrawerArrowToggle=2131690171,
+Widget_MaterialComponents_TabLayout=2131886779,
 ---@type LuaRef
-Widget_AppCompat_DropDownItem_Spinner=2131690172,
+Widget_MaterialComponents_TabLayout_Colored=2131886780,
 ---@type LuaRef
-Widget_AppCompat_EditText=2131690173,
+Widget_MaterialComponents_TabLayout_PrimarySurface=2131886781,
 ---@type LuaRef
-Widget_AppCompat_ImageButton=2131690174,
+Widget_MaterialComponents_TextInputEditText_FilledBox=2131886782,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionBar=2131690175,
+Widget_MaterialComponents_TextInputEditText_FilledBox_Dense=2131886783,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionBar_Solid=2131690176,
+Widget_MaterialComponents_TextInputEditText_OutlinedBox=2131886784,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionBar_Solid_Inverse=2131690177,
+Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense=2131886785,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionBar_TabBar=2131690178,
+Widget_MaterialComponents_TextInputLayout_FilledBox=2131886786,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionBar_TabBar_Inverse=2131690179,
+Widget_MaterialComponents_TextInputLayout_FilledBox_Dense=2131886787,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionBar_TabText=2131690180,
+Widget_MaterialComponents_TextInputLayout_FilledBox_Dense_ExposedDropdownMenu=2131886788,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionBar_TabText_Inverse=2131690181,
+Widget_MaterialComponents_TextInputLayout_FilledBox_ExposedDropdownMenu=2131886789,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionBar_TabView=2131690182,
+Widget_MaterialComponents_TextInputLayout_OutlinedBox=2131886790,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionBar_TabView_Inverse=2131690183,
+Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense=2131886791,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionButton=2131690184,
+Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu=2131886792,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionButton_CloseMode=2131690185,
+Widget_MaterialComponents_TextInputLayout_OutlinedBox_ExposedDropdownMenu=2131886793,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionButton_Overflow=2131690186,
+Widget_MaterialComponents_TextView=2131886794,
 ---@type LuaRef
-Widget_AppCompat_Light_ActionMode_Inverse=2131690187,
+Widget_MaterialComponents_TimePicker=2131886795,
 ---@type LuaRef
-Widget_AppCompat_Light_ActivityChooserView=2131690188,
+Widget_MaterialComponents_TimePicker_Button=2131886796,
 ---@type LuaRef
-Widget_AppCompat_Light_AutoCompleteTextView=2131690189,
+Widget_MaterialComponents_TimePicker_Clock=2131886797,
 ---@type LuaRef
-Widget_AppCompat_Light_DropDownItem_Spinner=2131690190,
+Widget_MaterialComponents_TimePicker_Display=2131886798,
 ---@type LuaRef
-Widget_AppCompat_Light_ListPopupWindow=2131690191,
+Widget_MaterialComponents_TimePicker_Display_TextInputEditText=2131886799,
 ---@type LuaRef
-Widget_AppCompat_Light_ListView_DropDown=2131690192,
+Widget_MaterialComponents_TimePicker_ImageButton=2131886800,
 ---@type LuaRef
-Widget_AppCompat_Light_PopupMenu=2131690193,
+Widget_MaterialComponents_TimePicker_ImageButton_ShapeAppearance=2131886801,
 ---@type LuaRef
-Widget_AppCompat_Light_PopupMenu_Overflow=2131690194,
+Widget_MaterialComponents_Toolbar=2131886802,
 ---@type LuaRef
-Widget_AppCompat_Light_SearchView=2131690195,
+Widget_MaterialComponents_Toolbar_Primary=2131886803,
 ---@type LuaRef
-Widget_AppCompat_Light_Spinner_DropDown_ActionBar=2131690196,
+Widget_MaterialComponents_Toolbar_PrimarySurface=2131886804,
 ---@type LuaRef
-Widget_AppCompat_ListMenuView=2131690197,
+Widget_MaterialComponents_Toolbar_Surface=2131886805,
 ---@type LuaRef
-Widget_AppCompat_ListPopupWindow=2131690198,
+Widget_MaterialComponents_Tooltip=2131886806,
 ---@type LuaRef
-Widget_AppCompat_ListView=2131690199,
+Widget_Support_CoordinatorLayout=2131886807,
 ---@type LuaRef
-Widget_AppCompat_ListView_DropDown=2131690200,
----@type LuaRef
-Widget_AppCompat_ListView_Menu=2131690201,
----@type LuaRef
-Widget_AppCompat_PopupMenu=2131690202,
----@type LuaRef
-Widget_AppCompat_PopupMenu_Overflow=2131690203,
----@type LuaRef
-Widget_AppCompat_PopupWindow=2131690204,
----@type LuaRef
-Widget_AppCompat_ProgressBar=2131690205,
----@type LuaRef
-Widget_AppCompat_ProgressBar_Horizontal=2131690206,
----@type LuaRef
-Widget_AppCompat_RatingBar=2131690207,
----@type LuaRef
-Widget_AppCompat_RatingBar_Indicator=2131690208,
----@type LuaRef
-Widget_AppCompat_RatingBar_Small=2131690209,
----@type LuaRef
-Widget_AppCompat_SearchView=2131690210,
----@type LuaRef
-Widget_AppCompat_SearchView_ActionBar=2131690211,
----@type LuaRef
-Widget_AppCompat_SeekBar=2131690212,
----@type LuaRef
-Widget_AppCompat_SeekBar_Discrete=2131690213,
----@type LuaRef
-Widget_AppCompat_Spinner=2131690214,
----@type LuaRef
-Widget_AppCompat_Spinner_DropDown=2131690215,
----@type LuaRef
-Widget_AppCompat_Spinner_DropDown_ActionBar=2131690216,
----@type LuaRef
-Widget_AppCompat_Spinner_Underlined=2131690217,
----@type LuaRef
-Widget_AppCompat_TextView=2131690218,
----@type LuaRef
-Widget_AppCompat_TextView_SpinnerItem=2131690219,
----@type LuaRef
-Widget_AppCompat_Toolbar=2131690220,
----@type LuaRef
-Widget_AppCompat_Toolbar_Button_Navigation=2131690221,
----@type LuaRef
-Widget_Compat_NotificationActionContainer=2131690222,
----@type LuaRef
-Widget_Compat_NotificationActionText=2131690223,
----@type LuaRef
-Widget_Design_AppBarLayout=2131690224,
----@type LuaRef
-Widget_Design_BottomNavigationView=2131690225,
----@type LuaRef
-Widget_Design_BottomSheet_Modal=2131690226,
----@type LuaRef
-Widget_Design_CollapsingToolbar=2131690227,
----@type LuaRef
-Widget_Design_FloatingActionButton=2131690228,
----@type LuaRef
-Widget_Design_NavigationView=2131690229,
----@type LuaRef
-Widget_Design_ScrimInsetsFrameLayout=2131690230,
----@type LuaRef
-Widget_Design_Snackbar=2131690231,
----@type LuaRef
-Widget_Design_TabLayout=2131690232,
----@type LuaRef
-Widget_Design_TextInputEditText=2131690233,
----@type LuaRef
-Widget_Design_TextInputLayout=2131690234,
----@type LuaRef
-Widget_Material3_ActionBar_Solid=2131690235,
----@type LuaRef
-Widget_Material3_ActionMode=2131690236,
----@type LuaRef
-Widget_Material3_AppBarLayout=2131690237,
----@type LuaRef
-Widget_Material3_AutoCompleteTextView_FilledBox=2131690238,
----@type LuaRef
-Widget_Material3_AutoCompleteTextView_FilledBox_Dense=2131690239,
----@type LuaRef
-Widget_Material3_AutoCompleteTextView_OutlinedBox=2131690240,
----@type LuaRef
-Widget_Material3_AutoCompleteTextView_OutlinedBox_Dense=2131690241,
----@type LuaRef
-Widget_Material3_Badge=2131690242,
----@type LuaRef
-Widget_Material3_BottomAppBar=2131690243,
----@type LuaRef
-Widget_Material3_BottomNavigationView=2131690244,
----@type LuaRef
-Widget_Material3_BottomNavigationView_ActiveIndicator=2131690245,
----@type LuaRef
-Widget_Material3_BottomSheet=2131690246,
----@type LuaRef
-Widget_Material3_BottomSheet_Modal=2131690247,
----@type LuaRef
-Widget_Material3_Button=2131690248,
----@type LuaRef
-Widget_Material3_Button_ElevatedButton=2131690249,
----@type LuaRef
-Widget_Material3_Button_ElevatedButton_Icon=2131690250,
----@type LuaRef
-Widget_Material3_Button_Icon=2131690251,
----@type LuaRef
-Widget_Material3_Button_IconButton=2131690252,
----@type LuaRef
-Widget_Material3_Button_OutlinedButton=2131690253,
----@type LuaRef
-Widget_Material3_Button_OutlinedButton_Icon=2131690254,
----@type LuaRef
-Widget_Material3_Button_TextButton=2131690255,
----@type LuaRef
-Widget_Material3_Button_TextButton_Dialog=2131690256,
----@type LuaRef
-Widget_Material3_Button_TextButton_Dialog_Flush=2131690257,
----@type LuaRef
-Widget_Material3_Button_TextButton_Dialog_Icon=2131690258,
----@type LuaRef
-Widget_Material3_Button_TextButton_Icon=2131690259,
----@type LuaRef
-Widget_Material3_Button_TextButton_Snackbar=2131690260,
----@type LuaRef
-Widget_Material3_Button_TonalButton=2131690261,
----@type LuaRef
-Widget_Material3_Button_TonalButton_Icon=2131690262,
----@type LuaRef
-Widget_Material3_Button_UnelevatedButton=2131690263,
----@type LuaRef
-Widget_Material3_CardView_Elevated=2131690264,
----@type LuaRef
-Widget_Material3_CardView_Filled=2131690265,
----@type LuaRef
-Widget_Material3_CardView_Outlined=2131690266,
----@type LuaRef
-Widget_Material3_CheckedTextView=2131690267,
----@type LuaRef
-Widget_Material3_ChipGroup=2131690278,
----@type LuaRef
-Widget_Material3_Chip_Assist=2131690268,
----@type LuaRef
-Widget_Material3_Chip_Assist_Elevated=2131690269,
----@type LuaRef
-Widget_Material3_Chip_Filter=2131690270,
----@type LuaRef
-Widget_Material3_Chip_Filter_Elevated=2131690271,
----@type LuaRef
-Widget_Material3_Chip_Input=2131690272,
----@type LuaRef
-Widget_Material3_Chip_Input_Elevated=2131690273,
----@type LuaRef
-Widget_Material3_Chip_Input_Icon=2131690274,
----@type LuaRef
-Widget_Material3_Chip_Input_Icon_Elevated=2131690275,
----@type LuaRef
-Widget_Material3_Chip_Suggestion=2131690276,
----@type LuaRef
-Widget_Material3_Chip_Suggestion_Elevated=2131690277,
----@type LuaRef
-Widget_Material3_CircularProgressIndicator=2131690279,
----@type LuaRef
-Widget_Material3_CircularProgressIndicator_ExtraSmall=2131690280,
----@type LuaRef
-Widget_Material3_CircularProgressIndicator_Medium=2131690281,
----@type LuaRef
-Widget_Material3_CircularProgressIndicator_Small=2131690282,
----@type LuaRef
-Widget_Material3_CollapsingToolbar=2131690283,
----@type LuaRef
-Widget_Material3_CollapsingToolbar_Large=2131690284,
----@type LuaRef
-Widget_Material3_CollapsingToolbar_Medium=2131690285,
----@type LuaRef
-Widget_Material3_CompoundButton_CheckBox=2131690286,
----@type LuaRef
-Widget_Material3_CompoundButton_RadioButton=2131690287,
----@type LuaRef
-Widget_Material3_CompoundButton_Switch=2131690288,
----@type LuaRef
-Widget_Material3_DrawerLayout=2131690289,
----@type LuaRef
-Widget_Material3_ExtendedFloatingActionButton_Icon_Primary=2131690290,
----@type LuaRef
-Widget_Material3_ExtendedFloatingActionButton_Icon_Secondary=2131690291,
----@type LuaRef
-Widget_Material3_ExtendedFloatingActionButton_Icon_Surface=2131690292,
----@type LuaRef
-Widget_Material3_ExtendedFloatingActionButton_Icon_Tertiary=2131690293,
----@type LuaRef
-Widget_Material3_ExtendedFloatingActionButton_Primary=2131690294,
----@type LuaRef
-Widget_Material3_ExtendedFloatingActionButton_Secondary=2131690295,
----@type LuaRef
-Widget_Material3_ExtendedFloatingActionButton_Surface=2131690296,
----@type LuaRef
-Widget_Material3_ExtendedFloatingActionButton_Tertiary=2131690297,
----@type LuaRef
-Widget_Material3_FloatingActionButton_Large_Primary=2131690298,
----@type LuaRef
-Widget_Material3_FloatingActionButton_Large_Secondary=2131690299,
----@type LuaRef
-Widget_Material3_FloatingActionButton_Large_Surface=2131690300,
----@type LuaRef
-Widget_Material3_FloatingActionButton_Large_Tertiary=2131690301,
----@type LuaRef
-Widget_Material3_FloatingActionButton_Primary=2131690302,
----@type LuaRef
-Widget_Material3_FloatingActionButton_Secondary=2131690303,
----@type LuaRef
-Widget_Material3_FloatingActionButton_Surface=2131690304,
----@type LuaRef
-Widget_Material3_FloatingActionButton_Tertiary=2131690305,
----@type LuaRef
-Widget_Material3_Light_ActionBar_Solid=2131690306,
----@type LuaRef
-Widget_Material3_LinearProgressIndicator=2131690307,
----@type LuaRef
-Widget_Material3_MaterialCalendar=2131690308,
----@type LuaRef
-Widget_Material3_MaterialCalendar_Day=2131690309,
----@type LuaRef
-Widget_Material3_MaterialCalendar_DayOfWeekLabel=2131690313,
----@type LuaRef
-Widget_Material3_MaterialCalendar_DayTextView=2131690314,
----@type LuaRef
-Widget_Material3_MaterialCalendar_Day_Invalid=2131690310,
----@type LuaRef
-Widget_Material3_MaterialCalendar_Day_Selected=2131690311,
----@type LuaRef
-Widget_Material3_MaterialCalendar_Day_Today=2131690312,
----@type LuaRef
-Widget_Material3_MaterialCalendar_Fullscreen=2131690315,
----@type LuaRef
-Widget_Material3_MaterialCalendar_HeaderCancelButton=2131690316,
----@type LuaRef
-Widget_Material3_MaterialCalendar_HeaderDivider=2131690317,
----@type LuaRef
-Widget_Material3_MaterialCalendar_HeaderLayout=2131690318,
----@type LuaRef
-Widget_Material3_MaterialCalendar_HeaderSelection=2131690319,
----@type LuaRef
-Widget_Material3_MaterialCalendar_HeaderSelection_Fullscreen=2131690320,
----@type LuaRef
-Widget_Material3_MaterialCalendar_HeaderTitle=2131690321,
----@type LuaRef
-Widget_Material3_MaterialCalendar_HeaderToggleButton=2131690322,
----@type LuaRef
-Widget_Material3_MaterialCalendar_Item=2131690323,
----@type LuaRef
-Widget_Material3_MaterialCalendar_MonthNavigationButton=2131690324,
----@type LuaRef
-Widget_Material3_MaterialCalendar_MonthTextView=2131690325,
----@type LuaRef
-Widget_Material3_MaterialCalendar_Year=2131690326,
----@type LuaRef
-Widget_Material3_MaterialCalendar_YearNavigationButton=2131690329,
----@type LuaRef
-Widget_Material3_MaterialCalendar_Year_Selected=2131690327,
----@type LuaRef
-Widget_Material3_MaterialCalendar_Year_Today=2131690328,
----@type LuaRef
-Widget_Material3_MaterialDivider=2131690330,
----@type LuaRef
-Widget_Material3_MaterialDivider_Heavy=2131690331,
----@type LuaRef
-Widget_Material3_MaterialTimePicker=2131690332,
----@type LuaRef
-Widget_Material3_MaterialTimePicker_Button=2131690333,
----@type LuaRef
-Widget_Material3_MaterialTimePicker_Clock=2131690334,
----@type LuaRef
-Widget_Material3_MaterialTimePicker_Display=2131690335,
----@type LuaRef
-Widget_Material3_MaterialTimePicker_Display_Divider=2131690336,
----@type LuaRef
-Widget_Material3_MaterialTimePicker_Display_HelperText=2131690337,
----@type LuaRef
-Widget_Material3_MaterialTimePicker_Display_TextInputEditText=2131690338,
----@type LuaRef
-Widget_Material3_MaterialTimePicker_Display_TextInputLayout=2131690339,
----@type LuaRef
-Widget_Material3_MaterialTimePicker_ImageButton=2131690340,
----@type LuaRef
-Widget_Material3_NavigationRailView=2131690341,
----@type LuaRef
-Widget_Material3_NavigationRailView_ActiveIndicator=2131690342,
----@type LuaRef
-Widget_Material3_NavigationView=2131690343,
----@type LuaRef
-Widget_Material3_PopupMenu=2131690344,
----@type LuaRef
-Widget_Material3_PopupMenu_ContextMenu=2131690345,
----@type LuaRef
-Widget_Material3_PopupMenu_ListPopupWindow=2131690346,
----@type LuaRef
-Widget_Material3_PopupMenu_Overflow=2131690347,
----@type LuaRef
-Widget_Material3_Slider=2131690348,
----@type LuaRef
-Widget_Material3_Snackbar=2131690349,
----@type LuaRef
-Widget_Material3_Snackbar_FullWidth=2131690350,
----@type LuaRef
-Widget_Material3_Snackbar_TextView=2131690351,
----@type LuaRef
-Widget_Material3_TabLayout=2131690352,
----@type LuaRef
-Widget_Material3_TabLayout_OnSurface=2131690353,
----@type LuaRef
-Widget_Material3_TabLayout_Secondary=2131690354,
----@type LuaRef
-Widget_Material3_TextInputEditText_FilledBox=2131690355,
----@type LuaRef
-Widget_Material3_TextInputEditText_FilledBox_Dense=2131690356,
----@type LuaRef
-Widget_Material3_TextInputEditText_OutlinedBox=2131690357,
----@type LuaRef
-Widget_Material3_TextInputEditText_OutlinedBox_Dense=2131690358,
----@type LuaRef
-Widget_Material3_TextInputLayout_FilledBox=2131690359,
----@type LuaRef
-Widget_Material3_TextInputLayout_FilledBox_Dense=2131690360,
----@type LuaRef
-Widget_Material3_TextInputLayout_FilledBox_Dense_ExposedDropdownMenu=2131690361,
----@type LuaRef
-Widget_Material3_TextInputLayout_FilledBox_ExposedDropdownMenu=2131690362,
----@type LuaRef
-Widget_Material3_TextInputLayout_OutlinedBox=2131690363,
----@type LuaRef
-Widget_Material3_TextInputLayout_OutlinedBox_Dense=2131690364,
----@type LuaRef
-Widget_Material3_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu=2131690365,
----@type LuaRef
-Widget_Material3_TextInputLayout_OutlinedBox_ExposedDropdownMenu=2131690366,
----@type LuaRef
-Widget_Material3_Toolbar=2131690367,
----@type LuaRef
-Widget_Material3_Toolbar_OnSurface=2131690368,
----@type LuaRef
-Widget_Material3_Toolbar_Surface=2131690369,
----@type LuaRef
-Widget_Material3_Tooltip=2131690370,
----@type LuaRef
-Widget_MaterialComponents_ActionBar_Primary=2131690371,
----@type LuaRef
-Widget_MaterialComponents_ActionBar_PrimarySurface=2131690372,
----@type LuaRef
-Widget_MaterialComponents_ActionBar_Solid=2131690373,
----@type LuaRef
-Widget_MaterialComponents_ActionBar_Surface=2131690374,
----@type LuaRef
-Widget_MaterialComponents_AppBarLayout_Primary=2131690375,
----@type LuaRef
-Widget_MaterialComponents_AppBarLayout_PrimarySurface=2131690376,
----@type LuaRef
-Widget_MaterialComponents_AppBarLayout_Surface=2131690377,
----@type LuaRef
-Widget_MaterialComponents_AutoCompleteTextView_FilledBox=2131690378,
----@type LuaRef
-Widget_MaterialComponents_AutoCompleteTextView_FilledBox_Dense=2131690379,
----@type LuaRef
-Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox=2131690380,
----@type LuaRef
-Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense=2131690381,
----@type LuaRef
-Widget_MaterialComponents_Badge=2131690382,
----@type LuaRef
-Widget_MaterialComponents_BottomAppBar=2131690383,
----@type LuaRef
-Widget_MaterialComponents_BottomAppBar_Colored=2131690384,
----@type LuaRef
-Widget_MaterialComponents_BottomAppBar_PrimarySurface=2131690385,
----@type LuaRef
-Widget_MaterialComponents_BottomNavigationView=2131690386,
----@type LuaRef
-Widget_MaterialComponents_BottomNavigationView_Colored=2131690387,
----@type LuaRef
-Widget_MaterialComponents_BottomNavigationView_PrimarySurface=2131690388,
----@type LuaRef
-Widget_MaterialComponents_BottomSheet=2131690389,
----@type LuaRef
-Widget_MaterialComponents_BottomSheet_Modal=2131690390,
----@type LuaRef
-Widget_MaterialComponents_Button=2131690391,
----@type LuaRef
-Widget_MaterialComponents_Button_Icon=2131690392,
----@type LuaRef
-Widget_MaterialComponents_Button_OutlinedButton=2131690393,
----@type LuaRef
-Widget_MaterialComponents_Button_OutlinedButton_Icon=2131690394,
----@type LuaRef
-Widget_MaterialComponents_Button_TextButton=2131690395,
----@type LuaRef
-Widget_MaterialComponents_Button_TextButton_Dialog=2131690396,
----@type LuaRef
-Widget_MaterialComponents_Button_TextButton_Dialog_Flush=2131690397,
----@type LuaRef
-Widget_MaterialComponents_Button_TextButton_Dialog_Icon=2131690398,
----@type LuaRef
-Widget_MaterialComponents_Button_TextButton_Icon=2131690399,
----@type LuaRef
-Widget_MaterialComponents_Button_TextButton_Snackbar=2131690400,
----@type LuaRef
-Widget_MaterialComponents_Button_UnelevatedButton=2131690401,
----@type LuaRef
-Widget_MaterialComponents_Button_UnelevatedButton_Icon=2131690402,
----@type LuaRef
-Widget_MaterialComponents_CardView=2131690403,
----@type LuaRef
-Widget_MaterialComponents_CheckedTextView=2131690404,
----@type LuaRef
-Widget_MaterialComponents_ChipGroup=2131690409,
----@type LuaRef
-Widget_MaterialComponents_Chip_Action=2131690405,
----@type LuaRef
-Widget_MaterialComponents_Chip_Choice=2131690406,
----@type LuaRef
-Widget_MaterialComponents_Chip_Entry=2131690407,
----@type LuaRef
-Widget_MaterialComponents_Chip_Filter=2131690408,
----@type LuaRef
-Widget_MaterialComponents_CircularProgressIndicator=2131690410,
----@type LuaRef
-Widget_MaterialComponents_CircularProgressIndicator_ExtraSmall=2131690411,
----@type LuaRef
-Widget_MaterialComponents_CircularProgressIndicator_Medium=2131690412,
----@type LuaRef
-Widget_MaterialComponents_CircularProgressIndicator_Small=2131690413,
----@type LuaRef
-Widget_MaterialComponents_CollapsingToolbar=2131690414,
----@type LuaRef
-Widget_MaterialComponents_CompoundButton_CheckBox=2131690415,
----@type LuaRef
-Widget_MaterialComponents_CompoundButton_RadioButton=2131690416,
----@type LuaRef
-Widget_MaterialComponents_CompoundButton_Switch=2131690417,
----@type LuaRef
-Widget_MaterialComponents_ExtendedFloatingActionButton=2131690418,
----@type LuaRef
-Widget_MaterialComponents_ExtendedFloatingActionButton_Icon=2131690419,
----@type LuaRef
-Widget_MaterialComponents_FloatingActionButton=2131690420,
----@type LuaRef
-Widget_MaterialComponents_Light_ActionBar_Solid=2131690421,
----@type LuaRef
-Widget_MaterialComponents_LinearProgressIndicator=2131690422,
----@type LuaRef
-Widget_MaterialComponents_MaterialButtonToggleGroup=2131690423,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar=2131690424,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_Day=2131690425,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_DayOfWeekLabel=2131690429,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_DayTextView=2131690430,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_Day_Invalid=2131690426,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_Day_Selected=2131690427,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_Day_Today=2131690428,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_Fullscreen=2131690431,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_HeaderCancelButton=2131690432,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_HeaderConfirmButton=2131690433,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_HeaderDivider=2131690434,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_HeaderLayout=2131690435,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_HeaderSelection=2131690436,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_HeaderSelection_Fullscreen=2131690437,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_HeaderTitle=2131690438,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_HeaderToggleButton=2131690439,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_Item=2131690440,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_MonthNavigationButton=2131690441,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_MonthTextView=2131690442,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_Year=2131690443,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_YearNavigationButton=2131690446,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_Year_Selected=2131690444,
----@type LuaRef
-Widget_MaterialComponents_MaterialCalendar_Year_Today=2131690445,
----@type LuaRef
-Widget_MaterialComponents_MaterialDivider=2131690447,
----@type LuaRef
-Widget_MaterialComponents_NavigationRailView=2131690448,
----@type LuaRef
-Widget_MaterialComponents_NavigationRailView_Colored=2131690449,
----@type LuaRef
-Widget_MaterialComponents_NavigationRailView_Colored_Compact=2131690450,
----@type LuaRef
-Widget_MaterialComponents_NavigationRailView_Compact=2131690451,
----@type LuaRef
-Widget_MaterialComponents_NavigationRailView_PrimarySurface=2131690452,
----@type LuaRef
-Widget_MaterialComponents_NavigationView=2131690453,
----@type LuaRef
-Widget_MaterialComponents_PopupMenu=2131690454,
----@type LuaRef
-Widget_MaterialComponents_PopupMenu_ContextMenu=2131690455,
----@type LuaRef
-Widget_MaterialComponents_PopupMenu_ListPopupWindow=2131690456,
----@type LuaRef
-Widget_MaterialComponents_PopupMenu_Overflow=2131690457,
----@type LuaRef
-Widget_MaterialComponents_ProgressIndicator=2131690458,
----@type LuaRef
-Widget_MaterialComponents_ShapeableImageView=2131690459,
----@type LuaRef
-Widget_MaterialComponents_Slider=2131690460,
----@type LuaRef
-Widget_MaterialComponents_Snackbar=2131690461,
----@type LuaRef
-Widget_MaterialComponents_Snackbar_FullWidth=2131690462,
----@type LuaRef
-Widget_MaterialComponents_Snackbar_TextView=2131690463,
----@type LuaRef
-Widget_MaterialComponents_TabLayout=2131690464,
----@type LuaRef
-Widget_MaterialComponents_TabLayout_Colored=2131690465,
----@type LuaRef
-Widget_MaterialComponents_TabLayout_PrimarySurface=2131690466,
----@type LuaRef
-Widget_MaterialComponents_TextInputEditText_FilledBox=2131690467,
----@type LuaRef
-Widget_MaterialComponents_TextInputEditText_FilledBox_Dense=2131690468,
----@type LuaRef
-Widget_MaterialComponents_TextInputEditText_OutlinedBox=2131690469,
----@type LuaRef
-Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense=2131690470,
----@type LuaRef
-Widget_MaterialComponents_TextInputLayout_FilledBox=2131690471,
----@type LuaRef
-Widget_MaterialComponents_TextInputLayout_FilledBox_Dense=2131690472,
----@type LuaRef
-Widget_MaterialComponents_TextInputLayout_FilledBox_Dense_ExposedDropdownMenu=2131690473,
----@type LuaRef
-Widget_MaterialComponents_TextInputLayout_FilledBox_ExposedDropdownMenu=2131690474,
----@type LuaRef
-Widget_MaterialComponents_TextInputLayout_OutlinedBox=2131690475,
----@type LuaRef
-Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense=2131690476,
----@type LuaRef
-Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu=2131690477,
----@type LuaRef
-Widget_MaterialComponents_TextInputLayout_OutlinedBox_ExposedDropdownMenu=2131690478,
----@type LuaRef
-Widget_MaterialComponents_TextView=2131690479,
----@type LuaRef
-Widget_MaterialComponents_TimePicker=2131690480,
----@type LuaRef
-Widget_MaterialComponents_TimePicker_Button=2131690481,
----@type LuaRef
-Widget_MaterialComponents_TimePicker_Clock=2131690482,
----@type LuaRef
-Widget_MaterialComponents_TimePicker_Display=2131690483,
----@type LuaRef
-Widget_MaterialComponents_TimePicker_Display_Divider=2131690484,
----@type LuaRef
-Widget_MaterialComponents_TimePicker_Display_HelperText=2131690485,
----@type LuaRef
-Widget_MaterialComponents_TimePicker_Display_TextInputEditText=2131690486,
----@type LuaRef
-Widget_MaterialComponents_TimePicker_Display_TextInputLayout=2131690487,
----@type LuaRef
-Widget_MaterialComponents_TimePicker_ImageButton=2131690488,
----@type LuaRef
-Widget_MaterialComponents_TimePicker_ImageButton_ShapeAppearance=2131690489,
----@type LuaRef
-Widget_MaterialComponents_Toolbar=2131690490,
----@type LuaRef
-Widget_MaterialComponents_Toolbar_Primary=2131690491,
----@type LuaRef
-Widget_MaterialComponents_Toolbar_PrimarySurface=2131690492,
----@type LuaRef
-Widget_MaterialComponents_Toolbar_Surface=2131690493,
----@type LuaRef
-Widget_MaterialComponents_Tooltip=2131690494,
----@type LuaRef
-Widget_Support_CoordinatorLayout=2131690495,
----@type LuaRef
-generalnotitle=2131690496
+generalnotitle=2131886808
 
 }
 LR.style = style
@@ -8476,7 +6988,7 @@ LR.style = style
 ---@class styleable
 local styleable = {
 ---@type LuaRef
-ActionBar={[0] = 2130903100,2130903107,2130903108,2130903277,2130903278,2130903279,2130903280,2130903281,2130903282,2130903320,2130903336,2130903337,2130903368,2130903470,2130903477,2130903483,2130903484,2130903488,2130903500,2130903521,2130903634,2130903722,2130903768,2130903775,2130903776,2130903859,2130903863,2130903975,2130903988},
+ActionBar={[0] = 2130968642,2130968649,2130968650,2130968813,2130968814,2130968815,2130968816,2130968817,2130968818,2130968856,2130968877,2130968878,2130968903,2130968996,2130969003,2130969009,2130969010,2130969013,2130969031,2130969055,2130969172,2130969262,2130969314,2130969321,2130969322,2130969416,2130969420,2130969525,2130969537},
 ---@type LuaRef
 ActionBar_background=0,
 ---@type LuaRef
@@ -8545,7 +7057,7 @@ ActionMenuItemView={[0] = 16843071},
 ActionMenuItemView_android_minWidth=0,
 ---@type LuaRef
 ---@type LuaRef
-ActionMode={[0] = 2130903100,2130903107,2130903217,2130903470,2130903863,2130903988},
+ActionMode={[0] = 2130968642,2130968649,2130968774,2130968996,2130969420,2130969537},
 ---@type LuaRef
 ActionMode_background=0,
 ---@type LuaRef
@@ -8559,13 +7071,25 @@ ActionMode_subtitleTextStyle=4,
 ---@type LuaRef
 ActionMode_titleTextStyle=5,
 ---@type LuaRef
-ActivityChooserView={[0] = 2130903389,2130903506},
+ActivityChooserView={[0] = 2130968925,2130969037},
 ---@type LuaRef
 ActivityChooserView_expandActivityOverflowButtonDrawable=0,
 ---@type LuaRef
 ActivityChooserView_initialActivityCount=1,
 ---@type LuaRef
-AlertDialog={[0] = 16842994,2130903158,2130903159,2130903623,2130903624,2130903718,2130903819,2130903821},
+ActivityNavigator={[0] = 16842755,2130968578,2130968860,2130968861,2130969457},
+---@type LuaRef
+ActivityNavigator_android_name=0,
+---@type LuaRef
+ActivityNavigator_action=1,
+---@type LuaRef
+ActivityNavigator_data=2,
+---@type LuaRef
+ActivityNavigator_dataPattern=3,
+---@type LuaRef
+ActivityNavigator_targetPackage=4,
+---@type LuaRef
+AlertDialog={[0] = 16842994,2130968699,2130968700,2130969161,2130969162,2130969257,2130969374,2130969376},
 ---@type LuaRef
 AlertDialog_android_layout=0,
 ---@type LuaRef
@@ -8613,7 +7137,7 @@ AnimatedStateListDrawableTransition_android_fromId=2,
 ---@type LuaRef
 AnimatedStateListDrawableTransition_android_reversible=3,
 ---@type LuaRef
-AppBarLayout={[0] = 16842964,16843919,16844096,2130903368,2130903390,2130903613,2130903614,2130903849},
+AppBarLayout={[0] = 16842964,16843919,16844096,2130968903,2130968926,2130969151,2130969152,2130969410},
 ---@type LuaRef
 AppBarLayout_android_background=0,
 ---@type LuaRef
@@ -8631,7 +7155,7 @@ AppBarLayout_liftOnScrollTargetViewId=6,
 ---@type LuaRef
 AppBarLayout_statusBarForeground=7,
 ---@type LuaRef
-AppBarLayoutStates={[0] = 2130903843,2130903844,2130903846,2130903847},
+AppBarLayoutStates={[0] = 2130969404,2130969405,2130969407,2130969408},
 ---@type LuaRef
 AppBarLayoutStates_state_collapsed=0,
 ---@type LuaRef
@@ -8641,15 +7165,13 @@ AppBarLayoutStates_state_liftable=2,
 ---@type LuaRef
 AppBarLayoutStates_state_lifted=3,
 ---@type LuaRef
-AppBarLayout_Layout={[0] = 2130903610,2130903611,2130903612},
+AppBarLayout_Layout={[0] = 2130969148,2130969149},
 ---@type LuaRef
-AppBarLayout_Layout_layout_scrollEffect=0,
+AppBarLayout_Layout_layout_scrollFlags=0,
 ---@type LuaRef
-AppBarLayout_Layout_layout_scrollFlags=1,
+AppBarLayout_Layout_layout_scrollInterpolator=1,
 ---@type LuaRef
-AppBarLayout_Layout_layout_scrollInterpolator=2,
----@type LuaRef
-AppCompatImageView={[0] = 16843033,2130903834,2130903973,2130903974},
+AppCompatImageView={[0] = 16843033,2130969394,2130969523,2130969524},
 ---@type LuaRef
 AppCompatImageView_android_src=0,
 ---@type LuaRef
@@ -8659,7 +7181,7 @@ AppCompatImageView_tint=2,
 ---@type LuaRef
 AppCompatImageView_tintMode=3,
 ---@type LuaRef
-AppCompatSeekBar={[0] = 16843074,2130903969,2130903970,2130903971},
+AppCompatSeekBar={[0] = 16843074,2130969519,2130969520,2130969521},
 ---@type LuaRef
 AppCompatSeekBar_android_thumb=0,
 ---@type LuaRef
@@ -8685,7 +7207,7 @@ AppCompatTextHelper_android_drawableStart=5,
 ---@type LuaRef
 AppCompatTextHelper_android_drawableEnd=6,
 ---@type LuaRef
-AppCompatTextView={[0] = 16842804,2130903094,2130903095,2130903096,2130903097,2130903098,2130903349,2130903350,2130903351,2130903352,2130903354,2130903355,2130903356,2130903357,2130903419,2130903450,2130903459,2130903546,2130903616,2130903904,2130903953},
+AppCompatTextView={[0] = 16842804,2130968636,2130968637,2130968638,2130968639,2130968640,2130968886,2130968887,2130968888,2130968889,2130968891,2130968892,2130968893,2130968894,2130968950,2130968972,2130968981,2130969077,2130969154,2130969461,2130969495},
 ---@type LuaRef
 AppCompatTextView_android_textAppearance=0,
 ---@type LuaRef
@@ -8729,7 +7251,7 @@ AppCompatTextView_textAllCaps=19,
 ---@type LuaRef
 AppCompatTextView_textLocale=20,
 ---@type LuaRef
-AppCompatTheme={[0] = 16842839,16842926,2130903040,2130903041,2130903042,2130903043,2130903044,2130903045,2130903046,2130903047,2130903048,2130903049,2130903050,2130903051,2130903052,2130903054,2130903055,2130903056,2130903057,2130903058,2130903059,2130903060,2130903061,2130903062,2130903063,2130903064,2130903065,2130903066,2130903067,2130903068,2130903069,2130903070,2130903071,2130903072,2130903076,2130903077,2130903078,2130903079,2130903080,2130903093,2130903133,2130903151,2130903152,2130903153,2130903154,2130903155,2130903160,2130903161,2130903173,2130903182,2130903230,2130903231,2130903232,2130903234,2130903235,2130903236,2130903237,2130903254,2130903256,2130903266,2130903292,2130903333,2130903334,2130903335,2130903339,2130903344,2130903361,2130903362,2130903365,2130903366,2130903367,2130903483,2130903498,2130903619,2130903620,2130903621,2130903622,2130903625,2130903626,2130903627,2130903628,2130903629,2130903630,2130903631,2130903632,2130903633,2130903746,2130903747,2130903748,2130903767,2130903769,2130903780,2130903782,2130903783,2130903784,2130903800,2130903801,2130903802,2130903803,2130903831,2130903832,2130903870,2130903927,2130903929,2130903930,2130903931,2130903933,2130903934,2130903935,2130903936,2130903942,2130903943,2130903990,2130903991,2130903993,2130903994,2130904024,2130904033,2130904034,2130904035,2130904036,2130904037,2130904038,2130904039,2130904040,2130904041,2130904042},
+AppCompatTheme={[0] = 16842839,16842926,2130968579,2130968580,2130968581,2130968582,2130968583,2130968584,2130968585,2130968586,2130968587,2130968588,2130968589,2130968590,2130968591,2130968593,2130968594,2130968595,2130968596,2130968597,2130968598,2130968599,2130968600,2130968601,2130968602,2130968603,2130968604,2130968605,2130968606,2130968607,2130968608,2130968609,2130968610,2130968611,2130968615,2130968616,2130968617,2130968618,2130968619,2130968635,2130968675,2130968692,2130968693,2130968694,2130968695,2130968696,2130968701,2130968702,2130968724,2130968733,2130968782,2130968783,2130968784,2130968785,2130968786,2130968787,2130968788,2130968795,2130968796,2130968802,2130968828,2130968874,2130968875,2130968876,2130968879,2130968881,2130968897,2130968898,2130968900,2130968901,2130968902,2130969009,2130969025,2130969157,2130969158,2130969159,2130969160,2130969163,2130969164,2130969165,2130969166,2130969167,2130969168,2130969169,2130969170,2130969171,2130969287,2130969288,2130969289,2130969313,2130969315,2130969329,2130969331,2130969332,2130969333,2130969355,2130969356,2130969357,2130969358,2130969386,2130969387,2130969427,2130969472,2130969474,2130969475,2130969476,2130969478,2130969479,2130969480,2130969481,2130969489,2130969490,2130969539,2130969540,2130969541,2130969542,2130969573,2130969587,2130969588,2130969589,2130969590,2130969591,2130969592,2130969593,2130969594,2130969595,2130969596},
 ---@type LuaRef
 AppCompatTheme_android_windowIsFloating=0,
 ---@type LuaRef
@@ -8985,33 +7507,23 @@ AppCompatTheme_windowMinWidthMinor=125,
 ---@type LuaRef
 AppCompatTheme_windowNoTitle=126,
 ---@type LuaRef
-Badge={[0] = 2130903101,2130903111,2130903112,2130903114,2130903115,2130903116,2130903485,2130903486,2130903677,2130903728,2130904022,2130904023},
+Badge={[0] = 2130968643,2130968653,2130968655,2130969011,2130969205,2130969268,2130969572},
 ---@type LuaRef
 Badge_backgroundColor=0,
 ---@type LuaRef
 Badge_badgeGravity=1,
 ---@type LuaRef
-Badge_badgeRadius=2,
+Badge_badgeTextColor=2,
 ---@type LuaRef
-Badge_badgeTextColor=3,
+Badge_horizontalOffset=3,
 ---@type LuaRef
-Badge_badgeWidePadding=4,
+Badge_maxCharacterCount=4,
 ---@type LuaRef
-Badge_badgeWithTextRadius=5,
+Badge_number=5,
 ---@type LuaRef
-Badge_horizontalOffset=6,
+Badge_verticalOffset=6,
 ---@type LuaRef
-Badge_horizontalOffsetWithText=7,
----@type LuaRef
-Badge_maxCharacterCount=8,
----@type LuaRef
-Badge_number=9,
----@type LuaRef
-Badge_verticalOffset=10,
----@type LuaRef
-Badge_verticalOffsetWithText=11,
----@type LuaRef
-BaseProgressIndicator={[0] = 16843065,2130903475,2130903501,2130903687,2130903812,2130903814,2130904002,2130904005,2130904007},
+BaseProgressIndicator={[0] = 16843065,2130969001,2130969032,2130969217,2130969367,2130969369,2130969549,2130969552,2130969554},
 ---@type LuaRef
 BaseProgressIndicator_android_indeterminate=0,
 ---@type LuaRef
@@ -9031,7 +7543,7 @@ BaseProgressIndicator_trackCornerRadius=7,
 ---@type LuaRef
 BaseProgressIndicator_trackThickness=8,
 ---@type LuaRef
-BottomAppBar={[0] = 2130903109,2130903368,2130903407,2130903408,2130903409,2130903410,2130903411,2130903478,2130903721,2130903739,2130903741,2130903742},
+BottomAppBar={[0] = 2130968651,2130968903,2130968938,2130968939,2130968940,2130968941,2130968942,2130969004,2130969280,2130969282,2130969283},
 ---@type LuaRef
 BottomAppBar_backgroundTint=0,
 ---@type LuaRef
@@ -9049,71 +7561,59 @@ BottomAppBar_fabCradleVerticalOffset=6,
 ---@type LuaRef
 BottomAppBar_hideOnScroll=7,
 ---@type LuaRef
-BottomAppBar_navigationIconTint=8,
+BottomAppBar_paddingBottomSystemWindowInsets=8,
 ---@type LuaRef
-BottomAppBar_paddingBottomSystemWindowInsets=9,
+BottomAppBar_paddingLeftSystemWindowInsets=9,
 ---@type LuaRef
-BottomAppBar_paddingLeftSystemWindowInsets=10,
+BottomAppBar_paddingRightSystemWindowInsets=10,
 ---@type LuaRef
-BottomAppBar_paddingRightSystemWindowInsets=11,
+BottomNavigationView={[0] = 2130969050},
 ---@type LuaRef
-BottomNavigationView={[0] = 16843072,2130903515},
+BottomNavigationView_itemHorizontalTranslationEnabled=0,
 ---@type LuaRef
-BottomNavigationView_android_minHeight=0,
----@type LuaRef
-BottomNavigationView_itemHorizontalTranslationEnabled=1,
----@type LuaRef
-BottomSheetBehavior_Layout={[0] = 16843039,16843040,16843840,2130903109,2130903123,2130903124,2130903125,2130903126,2130903127,2130903129,2130903130,2130903131,2130903465,2130903739,2130903741,2130903742,2130903745,2130903806,2130903809},
+BottomSheetBehavior_Layout={[0] = 16843039,16843840,2130968651,2130968662,2130968663,2130968664,2130968665,2130968666,2130968668,2130968669,2130968670,2130968987,2130969280,2130969282,2130969283,2130969286,2130969362,2130969365},
 ---@type LuaRef
 BottomSheetBehavior_Layout_android_maxWidth=0,
 ---@type LuaRef
-BottomSheetBehavior_Layout_android_maxHeight=1,
+BottomSheetBehavior_Layout_android_elevation=1,
 ---@type LuaRef
-BottomSheetBehavior_Layout_android_elevation=2,
+BottomSheetBehavior_Layout_backgroundTint=2,
 ---@type LuaRef
-BottomSheetBehavior_Layout_backgroundTint=3,
+BottomSheetBehavior_Layout_behavior_draggable=3,
 ---@type LuaRef
-BottomSheetBehavior_Layout_behavior_draggable=4,
+BottomSheetBehavior_Layout_behavior_expandedOffset=4,
 ---@type LuaRef
-BottomSheetBehavior_Layout_behavior_expandedOffset=5,
+BottomSheetBehavior_Layout_behavior_fitToContents=5,
 ---@type LuaRef
-BottomSheetBehavior_Layout_behavior_fitToContents=6,
+BottomSheetBehavior_Layout_behavior_halfExpandedRatio=6,
 ---@type LuaRef
-BottomSheetBehavior_Layout_behavior_halfExpandedRatio=7,
+BottomSheetBehavior_Layout_behavior_hideable=7,
 ---@type LuaRef
-BottomSheetBehavior_Layout_behavior_hideable=8,
+BottomSheetBehavior_Layout_behavior_peekHeight=8,
 ---@type LuaRef
-BottomSheetBehavior_Layout_behavior_peekHeight=9,
+BottomSheetBehavior_Layout_behavior_saveFlags=9,
 ---@type LuaRef
-BottomSheetBehavior_Layout_behavior_saveFlags=10,
+BottomSheetBehavior_Layout_behavior_skipCollapsed=10,
 ---@type LuaRef
-BottomSheetBehavior_Layout_behavior_skipCollapsed=11,
+BottomSheetBehavior_Layout_gestureInsetBottomIgnored=11,
 ---@type LuaRef
-BottomSheetBehavior_Layout_gestureInsetBottomIgnored=12,
+BottomSheetBehavior_Layout_paddingBottomSystemWindowInsets=12,
 ---@type LuaRef
-BottomSheetBehavior_Layout_paddingBottomSystemWindowInsets=13,
+BottomSheetBehavior_Layout_paddingLeftSystemWindowInsets=13,
 ---@type LuaRef
-BottomSheetBehavior_Layout_paddingLeftSystemWindowInsets=14,
+BottomSheetBehavior_Layout_paddingRightSystemWindowInsets=14,
 ---@type LuaRef
-BottomSheetBehavior_Layout_paddingRightSystemWindowInsets=15,
+BottomSheetBehavior_Layout_paddingTopSystemWindowInsets=15,
 ---@type LuaRef
-BottomSheetBehavior_Layout_paddingTopSystemWindowInsets=16,
+BottomSheetBehavior_Layout_shapeAppearance=16,
 ---@type LuaRef
-BottomSheetBehavior_Layout_shapeAppearance=17,
+BottomSheetBehavior_Layout_shapeAppearanceOverlay=17,
 ---@type LuaRef
-BottomSheetBehavior_Layout_shapeAppearanceOverlay=18,
----@type LuaRef
-ButtonBarLayout={[0] = 2130903081},
+ButtonBarLayout={[0] = 2130968620},
 ---@type LuaRef
 ButtonBarLayout_allowStacking=0,
 ---@type LuaRef
-Capability={[0] = 2130903779,2130903811},
----@type LuaRef
-Capability_queryPatterns=0,
----@type LuaRef
-Capability_shortcutMatchRequired=1,
----@type LuaRef
-CardView={[0] = 16843071,16843072,2130903164,2130903165,2130903166,2130903168,2130903169,2130903170,2130903283,2130903284,2130903286,2130903287,2130903289},
+CardView={[0] = 16843071,16843072,2130968705,2130968706,2130968707,2130968709,2130968710,2130968711,2130968819,2130968820,2130968822,2130968823,2130968825},
 ---@type LuaRef
 CardView_android_minWidth=0,
 ---@type LuaRef
@@ -9141,7 +7641,29 @@ CardView_contentPaddingRight=11,
 ---@type LuaRef
 CardView_contentPaddingTop=12,
 ---@type LuaRef
-Chip={[0] = 16842804,16842901,16842904,16842923,16843039,16843087,16843237,2130903176,2130903177,2130903180,2130903181,2130903183,2130903184,2130903185,2130903187,2130903188,2130903189,2130903190,2130903191,2130903192,2130903193,2130903198,2130903199,2130903200,2130903202,2130903210,2130903211,2130903212,2130903213,2130903214,2130903215,2130903216,2130903381,2130903476,2130903489,2130903493,2130903791,2130903806,2130903809,2130903816,2130903944,2130903954},
+Carousel={[0] = 2130968713,2130968714,2130968715,2130968716,2130968717,2130968718,2130968719,2130968720,2130968721,2130968722},
+---@type LuaRef
+Carousel_carousel_backwardTransition=0,
+---@type LuaRef
+Carousel_carousel_emptyViewsBehavior=1,
+---@type LuaRef
+Carousel_carousel_firstView=2,
+---@type LuaRef
+Carousel_carousel_forwardTransition=3,
+---@type LuaRef
+Carousel_carousel_infinite=4,
+---@type LuaRef
+Carousel_carousel_nextState=5,
+---@type LuaRef
+Carousel_carousel_previousState=6,
+---@type LuaRef
+Carousel_carousel_touchUpMode=7,
+---@type LuaRef
+Carousel_carousel_touchUp_dampeningFactor=8,
+---@type LuaRef
+Carousel_carousel_touchUp_velocityThreshold=9,
+---@type LuaRef
+Chip={[0] = 16842804,16842901,16842904,16842923,16843039,16843087,16843237,2130968727,2130968728,2130968731,2130968732,2130968734,2130968735,2130968736,2130968738,2130968739,2130968740,2130968741,2130968742,2130968743,2130968744,2130968749,2130968750,2130968751,2130968753,2130968767,2130968768,2130968769,2130968770,2130968771,2130968772,2130968773,2130968915,2130969002,2130969014,2130969018,2130969344,2130969362,2130969365,2130969371,2130969491,2130969500},
 ---@type LuaRef
 Chip_android_textAppearance=0,
 ---@type LuaRef
@@ -9227,7 +7749,7 @@ Chip_textEndPadding=40,
 ---@type LuaRef
 Chip_textStartPadding=41,
 ---@type LuaRef
-ChipGroup={[0] = 2130903175,2130903194,2130903195,2130903196,2130903804,2130903822,2130903823},
+ChipGroup={[0] = 2130968726,2130968745,2130968746,2130968747,2130969359,2130969377,2130969378},
 ---@type LuaRef
 ChipGroup_checkedChip=0,
 ---@type LuaRef
@@ -9243,7 +7765,7 @@ ChipGroup_singleLine=5,
 ---@type LuaRef
 ChipGroup_singleSelection=6,
 ---@type LuaRef
-CircularProgressIndicator={[0] = 2130903502,2130903504,2130903505},
+CircularProgressIndicator={[0] = 2130969033,2130969035,2130969036},
 ---@type LuaRef
 CircularProgressIndicator_indicatorDirectionCircular=0,
 ---@type LuaRef
@@ -9251,13 +7773,13 @@ CircularProgressIndicator_indicatorInset=1,
 ---@type LuaRef
 CircularProgressIndicator_indicatorSize=2,
 ---@type LuaRef
-ClockFaceView={[0] = 2130903206,2130903209},
+ClockFaceView={[0] = 2130968763,2130968766},
 ---@type LuaRef
 ClockFaceView_clockFaceBackgroundColor=0,
 ---@type LuaRef
 ClockFaceView_clockNumberTextColor=1,
 ---@type LuaRef
-ClockHandView={[0] = 2130903207,2130903665,2130903805},
+ClockHandView={[0] = 2130968764,2130969197,2130969360},
 ---@type LuaRef
 ClockHandView_clockHandColor=0,
 ---@type LuaRef
@@ -9265,61 +7787,55 @@ ClockHandView_materialCircleRadius=1,
 ---@type LuaRef
 ClockHandView_selectorSize=2,
 ---@type LuaRef
-CollapsingToolbarLayout={[0] = 2130903221,2130903222,2130903223,2130903290,2130903392,2130903393,2130903394,2130903395,2130903396,2130903397,2130903398,2130903399,2130903406,2130903461,2130903680,2130903795,2130903797,2130903850,2130903975,2130903977,2130903978,2130903985,2130903989},
+CollapsingToolbarLayout={[0] = 2130968778,2130968779,2130968826,2130968928,2130968929,2130968930,2130968931,2130968932,2130968933,2130968934,2130968937,2130968983,2130969208,2130969350,2130969352,2130969411,2130969525,2130969527,2130969528,2130969538},
 ---@type LuaRef
 CollapsingToolbarLayout_collapsedTitleGravity=0,
 ---@type LuaRef
 CollapsingToolbarLayout_collapsedTitleTextAppearance=1,
 ---@type LuaRef
-CollapsingToolbarLayout_collapsedTitleTextColor=2,
+CollapsingToolbarLayout_contentScrim=2,
 ---@type LuaRef
-CollapsingToolbarLayout_contentScrim=3,
+CollapsingToolbarLayout_expandedTitleGravity=3,
 ---@type LuaRef
-CollapsingToolbarLayout_expandedTitleGravity=4,
+CollapsingToolbarLayout_expandedTitleMargin=4,
 ---@type LuaRef
-CollapsingToolbarLayout_expandedTitleMargin=5,
+CollapsingToolbarLayout_expandedTitleMarginBottom=5,
 ---@type LuaRef
-CollapsingToolbarLayout_expandedTitleMarginBottom=6,
+CollapsingToolbarLayout_expandedTitleMarginEnd=6,
 ---@type LuaRef
-CollapsingToolbarLayout_expandedTitleMarginEnd=7,
+CollapsingToolbarLayout_expandedTitleMarginStart=7,
 ---@type LuaRef
-CollapsingToolbarLayout_expandedTitleMarginStart=8,
+CollapsingToolbarLayout_expandedTitleMarginTop=8,
 ---@type LuaRef
-CollapsingToolbarLayout_expandedTitleMarginTop=9,
+CollapsingToolbarLayout_expandedTitleTextAppearance=9,
 ---@type LuaRef
-CollapsingToolbarLayout_expandedTitleTextAppearance=10,
+CollapsingToolbarLayout_extraMultilineHeightEnabled=10,
 ---@type LuaRef
-CollapsingToolbarLayout_expandedTitleTextColor=11,
+CollapsingToolbarLayout_forceApplySystemWindowInsetTop=11,
 ---@type LuaRef
-CollapsingToolbarLayout_extraMultilineHeightEnabled=12,
+CollapsingToolbarLayout_maxLines=12,
 ---@type LuaRef
-CollapsingToolbarLayout_forceApplySystemWindowInsetTop=13,
+CollapsingToolbarLayout_scrimAnimationDuration=13,
 ---@type LuaRef
-CollapsingToolbarLayout_maxLines=14,
+CollapsingToolbarLayout_scrimVisibleHeightTrigger=14,
 ---@type LuaRef
-CollapsingToolbarLayout_scrimAnimationDuration=15,
+CollapsingToolbarLayout_statusBarScrim=15,
 ---@type LuaRef
-CollapsingToolbarLayout_scrimVisibleHeightTrigger=16,
+CollapsingToolbarLayout_title=16,
 ---@type LuaRef
-CollapsingToolbarLayout_statusBarScrim=17,
+CollapsingToolbarLayout_titleCollapseMode=17,
 ---@type LuaRef
-CollapsingToolbarLayout_title=18,
+CollapsingToolbarLayout_titleEnabled=18,
 ---@type LuaRef
-CollapsingToolbarLayout_titleCollapseMode=19,
+CollapsingToolbarLayout_toolbarId=19,
 ---@type LuaRef
-CollapsingToolbarLayout_titleEnabled=20,
----@type LuaRef
-CollapsingToolbarLayout_titlePositionInterpolator=21,
----@type LuaRef
-CollapsingToolbarLayout_toolbarId=22,
----@type LuaRef
-CollapsingToolbarLayout_Layout={[0] = 2130903554,2130903555},
+CollapsingToolbarLayout_Layout={[0] = 2130969086,2130969087},
 ---@type LuaRef
 CollapsingToolbarLayout_Layout_layout_collapseMode=0,
 ---@type LuaRef
 CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier=1,
 ---@type LuaRef
-ColorStateListItem={[0] = 16843173,16843551,2130903082},
+ColorStateListItem={[0] = 16843173,16843551,2130968621},
 ---@type LuaRef
 ColorStateListItem_android_color=0,
 ---@type LuaRef
@@ -9327,7 +7843,7 @@ ColorStateListItem_android_alpha=1,
 ---@type LuaRef
 ColorStateListItem_alpha=2,
 ---@type LuaRef
-CompoundButton={[0] = 16843015,2130903156,2130903162,2130903163},
+CompoundButton={[0] = 16843015,2130968697,2130968703,2130968704},
 ---@type LuaRef
 CompoundButton_android_button=0,
 ---@type LuaRef
@@ -9337,7 +7853,7 @@ CompoundButton_buttonTint=2,
 ---@type LuaRef
 CompoundButton_buttonTintMode=3,
 ---@type LuaRef
-Constraint={[0] = 16842948,16842960,16842972,16842996,16842997,16842999,16843000,16843001,16843002,16843039,16843040,16843071,16843072,16843551,16843552,16843553,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843701,16843702,16843770,16843840,2130903085,2130903118,2130903119,2130903120,2130903172,2130903273,2130903348,2130903430,2130903431,2130903432,2130903433,2130903434,2130903435,2130903436,2130903437,2130903438,2130903439,2130903440,2130903441,2130903442,2130903444,2130903445,2130903446,2130903447,2130903448,2130903556,2130903557,2130903558,2130903559,2130903560,2130903561,2130903562,2130903563,2130903564,2130903565,2130903566,2130903567,2130903568,2130903569,2130903570,2130903571,2130903572,2130903573,2130903574,2130903575,2130903576,2130903577,2130903578,2130903579,2130903580,2130903581,2130903582,2130903583,2130903584,2130903585,2130903586,2130903587,2130903588,2130903589,2130903590,2130903591,2130903592,2130903593,2130903594,2130903595,2130903596,2130903597,2130903599,2130903600,2130903601,2130903602,2130903603,2130903604,2130903605,2130903606,2130903712,2130903713,2130903754,2130903761,2130904011,2130904013,2130904025},
+Constraint={[0] = 16842948,16842960,16842972,16842996,16842997,16842999,16843000,16843001,16843002,16843039,16843040,16843071,16843072,16843551,16843552,16843553,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843701,16843702,16843770,16843840,2130968624,2130968625,2130968657,2130968658,2130968659,2130968723,2130968808,2130968809,2130968885,2130968952,2130968953,2130968954,2130968955,2130968956,2130968957,2130968958,2130968959,2130968960,2130968961,2130968962,2130968963,2130968964,2130968966,2130968967,2130968968,2130968969,2130968970,2130968992,2130969088,2130969089,2130969090,2130969091,2130969092,2130969093,2130969094,2130969095,2130969096,2130969097,2130969098,2130969099,2130969100,2130969101,2130969102,2130969103,2130969104,2130969105,2130969106,2130969107,2130969108,2130969109,2130969110,2130969111,2130969112,2130969113,2130969114,2130969115,2130969116,2130969117,2130969118,2130969119,2130969120,2130969121,2130969122,2130969123,2130969124,2130969125,2130969126,2130969127,2130969128,2130969129,2130969130,2130969131,2130969132,2130969133,2130969135,2130969136,2130969137,2130969138,2130969139,2130969140,2130969141,2130969142,2130969143,2130969146,2130969150,2130969251,2130969252,2130969295,2130969302,2130969307,2130969324,2130969325,2130969326,2130969557,2130969559,2130969561,2130969578},
 ---@type LuaRef
 Constraint_android_orientation=0,
 ---@type LuaRef
@@ -9393,171 +7909,201 @@ Constraint_android_translationZ=25,
 ---@type LuaRef
 Constraint_android_elevation=26,
 ---@type LuaRef
-Constraint_animate_relativeTo=27,
+Constraint_animateCircleAngleTo=27,
 ---@type LuaRef
-Constraint_barrierAllowsGoneWidgets=28,
+Constraint_animateRelativeTo=28,
 ---@type LuaRef
-Constraint_barrierDirection=29,
+Constraint_barrierAllowsGoneWidgets=29,
 ---@type LuaRef
-Constraint_barrierMargin=30,
+Constraint_barrierDirection=30,
 ---@type LuaRef
-Constraint_chainUseRtl=31,
+Constraint_barrierMargin=31,
 ---@type LuaRef
-Constraint_constraint_referenced_ids=32,
+Constraint_chainUseRtl=32,
 ---@type LuaRef
-Constraint_drawPath=33,
+Constraint_constraint_referenced_ids=33,
 ---@type LuaRef
-Constraint_flow_firstHorizontalBias=34,
+Constraint_constraint_referenced_tags=34,
 ---@type LuaRef
-Constraint_flow_firstHorizontalStyle=35,
+Constraint_drawPath=35,
 ---@type LuaRef
-Constraint_flow_firstVerticalBias=36,
+Constraint_flow_firstHorizontalBias=36,
 ---@type LuaRef
-Constraint_flow_firstVerticalStyle=37,
+Constraint_flow_firstHorizontalStyle=37,
 ---@type LuaRef
-Constraint_flow_horizontalAlign=38,
+Constraint_flow_firstVerticalBias=38,
 ---@type LuaRef
-Constraint_flow_horizontalBias=39,
+Constraint_flow_firstVerticalStyle=39,
 ---@type LuaRef
-Constraint_flow_horizontalGap=40,
+Constraint_flow_horizontalAlign=40,
 ---@type LuaRef
-Constraint_flow_horizontalStyle=41,
+Constraint_flow_horizontalBias=41,
 ---@type LuaRef
-Constraint_flow_lastHorizontalBias=42,
+Constraint_flow_horizontalGap=42,
 ---@type LuaRef
-Constraint_flow_lastHorizontalStyle=43,
+Constraint_flow_horizontalStyle=43,
 ---@type LuaRef
-Constraint_flow_lastVerticalBias=44,
+Constraint_flow_lastHorizontalBias=44,
 ---@type LuaRef
-Constraint_flow_lastVerticalStyle=45,
+Constraint_flow_lastHorizontalStyle=45,
 ---@type LuaRef
-Constraint_flow_maxElementsWrap=46,
+Constraint_flow_lastVerticalBias=46,
 ---@type LuaRef
-Constraint_flow_verticalAlign=47,
+Constraint_flow_lastVerticalStyle=47,
 ---@type LuaRef
-Constraint_flow_verticalBias=48,
+Constraint_flow_maxElementsWrap=48,
 ---@type LuaRef
-Constraint_flow_verticalGap=49,
+Constraint_flow_verticalAlign=49,
 ---@type LuaRef
-Constraint_flow_verticalStyle=50,
+Constraint_flow_verticalBias=50,
 ---@type LuaRef
-Constraint_flow_wrapMode=51,
+Constraint_flow_verticalGap=51,
 ---@type LuaRef
-Constraint_layout_constrainedHeight=52,
+Constraint_flow_verticalStyle=52,
 ---@type LuaRef
-Constraint_layout_constrainedWidth=53,
+Constraint_flow_wrapMode=53,
 ---@type LuaRef
-Constraint_layout_constraintBaseline_creator=54,
+Constraint_guidelineUseRtl=54,
 ---@type LuaRef
-Constraint_layout_constraintBaseline_toBaselineOf=55,
+Constraint_layout_constrainedHeight=55,
 ---@type LuaRef
-Constraint_layout_constraintBottom_creator=56,
+Constraint_layout_constrainedWidth=56,
 ---@type LuaRef
-Constraint_layout_constraintBottom_toBottomOf=57,
+Constraint_layout_constraintBaseline_creator=57,
 ---@type LuaRef
-Constraint_layout_constraintBottom_toTopOf=58,
+Constraint_layout_constraintBaseline_toBaselineOf=58,
 ---@type LuaRef
-Constraint_layout_constraintCircle=59,
+Constraint_layout_constraintBaseline_toBottomOf=59,
 ---@type LuaRef
-Constraint_layout_constraintCircleAngle=60,
+Constraint_layout_constraintBaseline_toTopOf=60,
 ---@type LuaRef
-Constraint_layout_constraintCircleRadius=61,
+Constraint_layout_constraintBottom_creator=61,
 ---@type LuaRef
-Constraint_layout_constraintDimensionRatio=62,
+Constraint_layout_constraintBottom_toBottomOf=62,
 ---@type LuaRef
-Constraint_layout_constraintEnd_toEndOf=63,
+Constraint_layout_constraintBottom_toTopOf=63,
 ---@type LuaRef
-Constraint_layout_constraintEnd_toStartOf=64,
+Constraint_layout_constraintCircle=64,
 ---@type LuaRef
-Constraint_layout_constraintGuide_begin=65,
+Constraint_layout_constraintCircleAngle=65,
 ---@type LuaRef
-Constraint_layout_constraintGuide_end=66,
+Constraint_layout_constraintCircleRadius=66,
 ---@type LuaRef
-Constraint_layout_constraintGuide_percent=67,
+Constraint_layout_constraintDimensionRatio=67,
 ---@type LuaRef
-Constraint_layout_constraintHeight_default=68,
+Constraint_layout_constraintEnd_toEndOf=68,
 ---@type LuaRef
-Constraint_layout_constraintHeight_max=69,
+Constraint_layout_constraintEnd_toStartOf=69,
 ---@type LuaRef
-Constraint_layout_constraintHeight_min=70,
+Constraint_layout_constraintGuide_begin=70,
 ---@type LuaRef
-Constraint_layout_constraintHeight_percent=71,
+Constraint_layout_constraintGuide_end=71,
 ---@type LuaRef
-Constraint_layout_constraintHorizontal_bias=72,
+Constraint_layout_constraintGuide_percent=72,
 ---@type LuaRef
-Constraint_layout_constraintHorizontal_chainStyle=73,
+Constraint_layout_constraintHeight=73,
 ---@type LuaRef
-Constraint_layout_constraintHorizontal_weight=74,
+Constraint_layout_constraintHeight_default=74,
 ---@type LuaRef
-Constraint_layout_constraintLeft_creator=75,
+Constraint_layout_constraintHeight_max=75,
 ---@type LuaRef
-Constraint_layout_constraintLeft_toLeftOf=76,
+Constraint_layout_constraintHeight_min=76,
 ---@type LuaRef
-Constraint_layout_constraintLeft_toRightOf=77,
+Constraint_layout_constraintHeight_percent=77,
 ---@type LuaRef
-Constraint_layout_constraintRight_creator=78,
+Constraint_layout_constraintHorizontal_bias=78,
 ---@type LuaRef
-Constraint_layout_constraintRight_toLeftOf=79,
+Constraint_layout_constraintHorizontal_chainStyle=79,
 ---@type LuaRef
-Constraint_layout_constraintRight_toRightOf=80,
+Constraint_layout_constraintHorizontal_weight=80,
 ---@type LuaRef
-Constraint_layout_constraintStart_toEndOf=81,
+Constraint_layout_constraintLeft_creator=81,
 ---@type LuaRef
-Constraint_layout_constraintStart_toStartOf=82,
+Constraint_layout_constraintLeft_toLeftOf=82,
 ---@type LuaRef
-Constraint_layout_constraintTag=83,
+Constraint_layout_constraintLeft_toRightOf=83,
 ---@type LuaRef
-Constraint_layout_constraintTop_creator=84,
+Constraint_layout_constraintRight_creator=84,
 ---@type LuaRef
-Constraint_layout_constraintTop_toBottomOf=85,
+Constraint_layout_constraintRight_toLeftOf=85,
 ---@type LuaRef
-Constraint_layout_constraintTop_toTopOf=86,
+Constraint_layout_constraintRight_toRightOf=86,
 ---@type LuaRef
-Constraint_layout_constraintVertical_bias=87,
+Constraint_layout_constraintStart_toEndOf=87,
 ---@type LuaRef
-Constraint_layout_constraintVertical_chainStyle=88,
+Constraint_layout_constraintStart_toStartOf=88,
 ---@type LuaRef
-Constraint_layout_constraintVertical_weight=89,
+Constraint_layout_constraintTag=89,
 ---@type LuaRef
-Constraint_layout_constraintWidth_default=90,
+Constraint_layout_constraintTop_creator=90,
 ---@type LuaRef
-Constraint_layout_constraintWidth_max=91,
+Constraint_layout_constraintTop_toBottomOf=91,
 ---@type LuaRef
-Constraint_layout_constraintWidth_min=92,
+Constraint_layout_constraintTop_toTopOf=92,
 ---@type LuaRef
-Constraint_layout_constraintWidth_percent=93,
+Constraint_layout_constraintVertical_bias=93,
 ---@type LuaRef
-Constraint_layout_editor_absoluteX=94,
+Constraint_layout_constraintVertical_chainStyle=94,
 ---@type LuaRef
-Constraint_layout_editor_absoluteY=95,
+Constraint_layout_constraintVertical_weight=95,
 ---@type LuaRef
-Constraint_layout_goneMarginBottom=96,
+Constraint_layout_constraintWidth=96,
 ---@type LuaRef
-Constraint_layout_goneMarginEnd=97,
+Constraint_layout_constraintWidth_default=97,
 ---@type LuaRef
-Constraint_layout_goneMarginLeft=98,
+Constraint_layout_constraintWidth_max=98,
 ---@type LuaRef
-Constraint_layout_goneMarginRight=99,
+Constraint_layout_constraintWidth_min=99,
 ---@type LuaRef
-Constraint_layout_goneMarginStart=100,
+Constraint_layout_constraintWidth_percent=100,
 ---@type LuaRef
-Constraint_layout_goneMarginTop=101,
+Constraint_layout_editor_absoluteX=101,
 ---@type LuaRef
-Constraint_motionProgress=102,
+Constraint_layout_editor_absoluteY=102,
 ---@type LuaRef
-Constraint_motionStagger=103,
+Constraint_layout_goneMarginBaseline=103,
 ---@type LuaRef
-Constraint_pathMotionArc=104,
+Constraint_layout_goneMarginBottom=104,
 ---@type LuaRef
-Constraint_pivotAnchor=105,
+Constraint_layout_goneMarginEnd=105,
 ---@type LuaRef
-Constraint_transitionEasing=106,
+Constraint_layout_goneMarginLeft=106,
 ---@type LuaRef
-Constraint_transitionPathRotate=107,
+Constraint_layout_goneMarginRight=107,
 ---@type LuaRef
-Constraint_visibilityMode=108,
+Constraint_layout_goneMarginStart=108,
 ---@type LuaRef
-ConstraintLayout_Layout={[0] = 16842948,16842965,16842966,16842967,16842968,16842969,16842972,16843039,16843040,16843071,16843072,16843699,16843700,16843840,2130903118,2130903119,2130903120,2130903172,2130903270,2130903273,2130903430,2130903431,2130903432,2130903433,2130903434,2130903435,2130903436,2130903437,2130903438,2130903439,2130903440,2130903441,2130903442,2130903444,2130903445,2130903446,2130903447,2130903448,2130903548,2130903556,2130903557,2130903558,2130903559,2130903560,2130903561,2130903562,2130903563,2130903564,2130903565,2130903566,2130903567,2130903568,2130903569,2130903570,2130903571,2130903572,2130903573,2130903574,2130903575,2130903576,2130903577,2130903578,2130903579,2130903580,2130903581,2130903582,2130903583,2130903584,2130903585,2130903586,2130903587,2130903588,2130903589,2130903590,2130903591,2130903592,2130903593,2130903594,2130903595,2130903596,2130903597,2130903599,2130903600,2130903601,2130903602,2130903603,2130903604,2130903605,2130903606,2130903609},
+Constraint_layout_goneMarginTop=109,
+---@type LuaRef
+Constraint_layout_marginBaseline=110,
+---@type LuaRef
+Constraint_layout_wrapBehaviorInParent=111,
+---@type LuaRef
+Constraint_motionProgress=112,
+---@type LuaRef
+Constraint_motionStagger=113,
+---@type LuaRef
+Constraint_pathMotionArc=114,
+---@type LuaRef
+Constraint_pivotAnchor=115,
+---@type LuaRef
+Constraint_polarRelativeTo=116,
+---@type LuaRef
+Constraint_quantizeMotionInterpolator=117,
+---@type LuaRef
+Constraint_quantizeMotionPhase=118,
+---@type LuaRef
+Constraint_quantizeMotionSteps=119,
+---@type LuaRef
+Constraint_transformPivotTarget=120,
+---@type LuaRef
+Constraint_transitionEasing=121,
+---@type LuaRef
+Constraint_transitionPathRotate=122,
+---@type LuaRef
+Constraint_visibilityMode=123,
+---@type LuaRef
+ConstraintLayout_Layout={[0] = 16842948,16842965,16842966,16842967,16842968,16842969,16842972,16842996,16842997,16842998,16842999,16843000,16843001,16843002,16843039,16843040,16843071,16843072,16843699,16843700,16843701,16843702,16843840,16844091,16844092,2130968657,2130968658,2130968659,2130968723,2130968756,2130968757,2130968758,2130968759,2130968760,2130968805,2130968808,2130968809,2130968952,2130968953,2130968954,2130968955,2130968956,2130968957,2130968958,2130968959,2130968960,2130968961,2130968962,2130968963,2130968964,2130968966,2130968967,2130968968,2130968969,2130968970,2130968992,2130969080,2130969088,2130969089,2130969090,2130969091,2130969092,2130969093,2130969094,2130969095,2130969096,2130969097,2130969098,2130969099,2130969100,2130969101,2130969102,2130969103,2130969104,2130969105,2130969106,2130969107,2130969108,2130969109,2130969110,2130969111,2130969112,2130969113,2130969114,2130969115,2130969116,2130969117,2130969118,2130969119,2130969120,2130969121,2130969122,2130969123,2130969124,2130969125,2130969126,2130969127,2130969128,2130969129,2130969130,2130969131,2130969132,2130969133,2130969135,2130969136,2130969137,2130969138,2130969139,2130969140,2130969141,2130969142,2130969143,2130969146,2130969147,2130969150},
 ---@type LuaRef
 ConstraintLayout_Layout_android_orientation=0,
 ---@type LuaRef
@@ -9573,179 +8119,457 @@ ConstraintLayout_Layout_android_paddingBottom=5,
 ---@type LuaRef
 ConstraintLayout_Layout_android_visibility=6,
 ---@type LuaRef
-ConstraintLayout_Layout_android_maxWidth=7,
+ConstraintLayout_Layout_android_layout_width=7,
 ---@type LuaRef
-ConstraintLayout_Layout_android_maxHeight=8,
+ConstraintLayout_Layout_android_layout_height=8,
 ---@type LuaRef
-ConstraintLayout_Layout_android_minWidth=9,
+ConstraintLayout_Layout_android_layout_margin=9,
 ---@type LuaRef
-ConstraintLayout_Layout_android_minHeight=10,
+ConstraintLayout_Layout_android_layout_marginLeft=10,
 ---@type LuaRef
-ConstraintLayout_Layout_android_paddingStart=11,
+ConstraintLayout_Layout_android_layout_marginTop=11,
 ---@type LuaRef
-ConstraintLayout_Layout_android_paddingEnd=12,
+ConstraintLayout_Layout_android_layout_marginRight=12,
 ---@type LuaRef
-ConstraintLayout_Layout_android_elevation=13,
+ConstraintLayout_Layout_android_layout_marginBottom=13,
 ---@type LuaRef
-ConstraintLayout_Layout_barrierAllowsGoneWidgets=14,
+ConstraintLayout_Layout_android_maxWidth=14,
 ---@type LuaRef
-ConstraintLayout_Layout_barrierDirection=15,
+ConstraintLayout_Layout_android_maxHeight=15,
 ---@type LuaRef
-ConstraintLayout_Layout_barrierMargin=16,
+ConstraintLayout_Layout_android_minWidth=16,
 ---@type LuaRef
-ConstraintLayout_Layout_chainUseRtl=17,
+ConstraintLayout_Layout_android_minHeight=17,
 ---@type LuaRef
-ConstraintLayout_Layout_constraintSet=18,
+ConstraintLayout_Layout_android_paddingStart=18,
 ---@type LuaRef
-ConstraintLayout_Layout_constraint_referenced_ids=19,
+ConstraintLayout_Layout_android_paddingEnd=19,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_firstHorizontalBias=20,
+ConstraintLayout_Layout_android_layout_marginStart=20,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_firstHorizontalStyle=21,
+ConstraintLayout_Layout_android_layout_marginEnd=21,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_firstVerticalBias=22,
+ConstraintLayout_Layout_android_elevation=22,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_firstVerticalStyle=23,
+ConstraintLayout_Layout_android_layout_marginHorizontal=23,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_horizontalAlign=24,
+ConstraintLayout_Layout_android_layout_marginVertical=24,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_horizontalBias=25,
+ConstraintLayout_Layout_barrierAllowsGoneWidgets=25,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_horizontalGap=26,
+ConstraintLayout_Layout_barrierDirection=26,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_horizontalStyle=27,
+ConstraintLayout_Layout_barrierMargin=27,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_lastHorizontalBias=28,
+ConstraintLayout_Layout_chainUseRtl=28,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_lastHorizontalStyle=29,
+ConstraintLayout_Layout_circularflow_angles=29,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_lastVerticalBias=30,
+ConstraintLayout_Layout_circularflow_defaultAngle=30,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_lastVerticalStyle=31,
+ConstraintLayout_Layout_circularflow_defaultRadius=31,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_maxElementsWrap=32,
+ConstraintLayout_Layout_circularflow_radiusInDP=32,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_verticalAlign=33,
+ConstraintLayout_Layout_circularflow_viewCenter=33,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_verticalBias=34,
+ConstraintLayout_Layout_constraintSet=34,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_verticalGap=35,
+ConstraintLayout_Layout_constraint_referenced_ids=35,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_verticalStyle=36,
+ConstraintLayout_Layout_constraint_referenced_tags=36,
 ---@type LuaRef
-ConstraintLayout_Layout_flow_wrapMode=37,
+ConstraintLayout_Layout_flow_firstHorizontalBias=37,
 ---@type LuaRef
-ConstraintLayout_Layout_layoutDescription=38,
+ConstraintLayout_Layout_flow_firstHorizontalStyle=38,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constrainedHeight=39,
+ConstraintLayout_Layout_flow_firstVerticalBias=39,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constrainedWidth=40,
+ConstraintLayout_Layout_flow_firstVerticalStyle=40,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintBaseline_creator=41,
+ConstraintLayout_Layout_flow_horizontalAlign=41,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=42,
+ConstraintLayout_Layout_flow_horizontalBias=42,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintBottom_creator=43,
+ConstraintLayout_Layout_flow_horizontalGap=43,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=44,
+ConstraintLayout_Layout_flow_horizontalStyle=44,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintBottom_toTopOf=45,
+ConstraintLayout_Layout_flow_lastHorizontalBias=45,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintCircle=46,
+ConstraintLayout_Layout_flow_lastHorizontalStyle=46,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintCircleAngle=47,
+ConstraintLayout_Layout_flow_lastVerticalBias=47,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintCircleRadius=48,
+ConstraintLayout_Layout_flow_lastVerticalStyle=48,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintDimensionRatio=49,
+ConstraintLayout_Layout_flow_maxElementsWrap=49,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintEnd_toEndOf=50,
+ConstraintLayout_Layout_flow_verticalAlign=50,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintEnd_toStartOf=51,
+ConstraintLayout_Layout_flow_verticalBias=51,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintGuide_begin=52,
+ConstraintLayout_Layout_flow_verticalGap=52,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintGuide_end=53,
+ConstraintLayout_Layout_flow_verticalStyle=53,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintGuide_percent=54,
+ConstraintLayout_Layout_flow_wrapMode=54,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintHeight_default=55,
+ConstraintLayout_Layout_guidelineUseRtl=55,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintHeight_max=56,
+ConstraintLayout_Layout_layoutDescription=56,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintHeight_min=57,
+ConstraintLayout_Layout_layout_constrainedHeight=57,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintHeight_percent=58,
+ConstraintLayout_Layout_layout_constrainedWidth=58,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintHorizontal_bias=59,
+ConstraintLayout_Layout_layout_constraintBaseline_creator=59,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=60,
+ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=60,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintHorizontal_weight=61,
+ConstraintLayout_Layout_layout_constraintBaseline_toBottomOf=61,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintLeft_creator=62,
+ConstraintLayout_Layout_layout_constraintBaseline_toTopOf=62,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=63,
+ConstraintLayout_Layout_layout_constraintBottom_creator=63,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintLeft_toRightOf=64,
+ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=64,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintRight_creator=65,
+ConstraintLayout_Layout_layout_constraintBottom_toTopOf=65,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintRight_toLeftOf=66,
+ConstraintLayout_Layout_layout_constraintCircle=66,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintRight_toRightOf=67,
+ConstraintLayout_Layout_layout_constraintCircleAngle=67,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintStart_toEndOf=68,
+ConstraintLayout_Layout_layout_constraintCircleRadius=68,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintStart_toStartOf=69,
+ConstraintLayout_Layout_layout_constraintDimensionRatio=69,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintTag=70,
+ConstraintLayout_Layout_layout_constraintEnd_toEndOf=70,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintTop_creator=71,
+ConstraintLayout_Layout_layout_constraintEnd_toStartOf=71,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintTop_toBottomOf=72,
+ConstraintLayout_Layout_layout_constraintGuide_begin=72,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintTop_toTopOf=73,
+ConstraintLayout_Layout_layout_constraintGuide_end=73,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintVertical_bias=74,
+ConstraintLayout_Layout_layout_constraintGuide_percent=74,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintVertical_chainStyle=75,
+ConstraintLayout_Layout_layout_constraintHeight=75,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintVertical_weight=76,
+ConstraintLayout_Layout_layout_constraintHeight_default=76,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintWidth_default=77,
+ConstraintLayout_Layout_layout_constraintHeight_max=77,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintWidth_max=78,
+ConstraintLayout_Layout_layout_constraintHeight_min=78,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintWidth_min=79,
+ConstraintLayout_Layout_layout_constraintHeight_percent=79,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_constraintWidth_percent=80,
+ConstraintLayout_Layout_layout_constraintHorizontal_bias=80,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_editor_absoluteX=81,
+ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=81,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_editor_absoluteY=82,
+ConstraintLayout_Layout_layout_constraintHorizontal_weight=82,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_goneMarginBottom=83,
+ConstraintLayout_Layout_layout_constraintLeft_creator=83,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_goneMarginEnd=84,
+ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=84,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_goneMarginLeft=85,
+ConstraintLayout_Layout_layout_constraintLeft_toRightOf=85,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_goneMarginRight=86,
+ConstraintLayout_Layout_layout_constraintRight_creator=86,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_goneMarginStart=87,
+ConstraintLayout_Layout_layout_constraintRight_toLeftOf=87,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_goneMarginTop=88,
+ConstraintLayout_Layout_layout_constraintRight_toRightOf=88,
 ---@type LuaRef
-ConstraintLayout_Layout_layout_optimizationLevel=89,
+ConstraintLayout_Layout_layout_constraintStart_toEndOf=89,
 ---@type LuaRef
-ConstraintLayout_placeholder={[0] = 2130903275,2130903765},
+ConstraintLayout_Layout_layout_constraintStart_toStartOf=90,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintTag=91,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintTop_creator=92,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintTop_toBottomOf=93,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintTop_toTopOf=94,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintVertical_bias=95,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintVertical_chainStyle=96,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintVertical_weight=97,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintWidth=98,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintWidth_default=99,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintWidth_max=100,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintWidth_min=101,
+---@type LuaRef
+ConstraintLayout_Layout_layout_constraintWidth_percent=102,
+---@type LuaRef
+ConstraintLayout_Layout_layout_editor_absoluteX=103,
+---@type LuaRef
+ConstraintLayout_Layout_layout_editor_absoluteY=104,
+---@type LuaRef
+ConstraintLayout_Layout_layout_goneMarginBaseline=105,
+---@type LuaRef
+ConstraintLayout_Layout_layout_goneMarginBottom=106,
+---@type LuaRef
+ConstraintLayout_Layout_layout_goneMarginEnd=107,
+---@type LuaRef
+ConstraintLayout_Layout_layout_goneMarginLeft=108,
+---@type LuaRef
+ConstraintLayout_Layout_layout_goneMarginRight=109,
+---@type LuaRef
+ConstraintLayout_Layout_layout_goneMarginStart=110,
+---@type LuaRef
+ConstraintLayout_Layout_layout_goneMarginTop=111,
+---@type LuaRef
+ConstraintLayout_Layout_layout_marginBaseline=112,
+---@type LuaRef
+ConstraintLayout_Layout_layout_optimizationLevel=113,
+---@type LuaRef
+ConstraintLayout_Layout_layout_wrapBehaviorInParent=114,
+---@type LuaRef
+ConstraintLayout_ReactiveGuide={[0] = 2130969334,2130969335,2130969336,2130969337},
+---@type LuaRef
+ConstraintLayout_ReactiveGuide_reactiveGuide_animateChange=0,
+---@type LuaRef
+ConstraintLayout_ReactiveGuide_reactiveGuide_applyToAllConstraintSets=1,
+---@type LuaRef
+ConstraintLayout_ReactiveGuide_reactiveGuide_applyToConstraintSet=2,
+---@type LuaRef
+ConstraintLayout_ReactiveGuide_reactiveGuide_valueId=3,
+---@type LuaRef
+ConstraintLayout_placeholder={[0] = 2130968811,2130969306},
 ---@type LuaRef
 ConstraintLayout_placeholder_content=0,
 ---@type LuaRef
 ConstraintLayout_placeholder_placeholder_emptyVisibility=1,
 ---@type LuaRef
-ConstraintSet={[0] = 16842948,16842960,16842972,16842996,16842997,16842999,16843000,16843001,16843002,16843039,16843040,16843071,16843072,16843189,16843190,16843551,16843552,16843553,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843701,16843702,16843770,16843840,2130903085,2130903118,2130903119,2130903120,2130903172,2130903273,2130903332,2130903348,2130903430,2130903431,2130903432,2130903433,2130903434,2130903435,2130903436,2130903437,2130903438,2130903439,2130903440,2130903441,2130903442,2130903444,2130903445,2130903446,2130903447,2130903448,2130903556,2130903557,2130903558,2130903559,2130903560,2130903561,2130903562,2130903563,2130903564,2130903565,2130903566,2130903567,2130903568,2130903569,2130903570,2130903571,2130903572,2130903573,2130903574,2130903575,2130903576,2130903577,2130903578,2130903579,2130903580,2130903581,2130903582,2130903583,2130903584,2130903585,2130903586,2130903587,2130903588,2130903589,2130903590,2130903591,2130903592,2130903593,2130903594,2130903595,2130903596,2130903597,2130903599,2130903600,2130903601,2130903602,2130903603,2130903604,2130903605,2130903606,2130903712,2130903713,2130903754,2130903761,2130904011,2130904013},
+ConstraintOverride={[0] = 16842948,16842960,16842972,16842996,16842997,16842999,16843000,16843001,16843002,16843039,16843040,16843071,16843072,16843551,16843552,16843553,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843701,16843702,16843770,16843840,2130968624,2130968625,2130968657,2130968658,2130968659,2130968723,2130968808,2130968885,2130968952,2130968953,2130968954,2130968955,2130968956,2130968957,2130968958,2130968959,2130968960,2130968961,2130968962,2130968963,2130968964,2130968966,2130968967,2130968968,2130968969,2130968970,2130968992,2130969088,2130969089,2130969090,2130969094,2130969098,2130969099,2130969100,2130969103,2130969104,2130969105,2130969106,2130969107,2130969108,2130969109,2130969110,2130969111,2130969112,2130969113,2130969114,2130969117,2130969122,2130969123,2130969126,2130969127,2130969128,2130969129,2130969130,2130969131,2130969132,2130969133,2130969135,2130969136,2130969137,2130969138,2130969139,2130969140,2130969141,2130969142,2130969143,2130969146,2130969150,2130969251,2130969252,2130969253,2130969295,2130969302,2130969307,2130969324,2130969325,2130969326,2130969557,2130969559,2130969561,2130969578},
+---@type LuaRef
+ConstraintOverride_android_orientation=0,
+---@type LuaRef
+ConstraintOverride_android_id=1,
+---@type LuaRef
+ConstraintOverride_android_visibility=2,
+---@type LuaRef
+ConstraintOverride_android_layout_width=3,
+---@type LuaRef
+ConstraintOverride_android_layout_height=4,
+---@type LuaRef
+ConstraintOverride_android_layout_marginLeft=5,
+---@type LuaRef
+ConstraintOverride_android_layout_marginTop=6,
+---@type LuaRef
+ConstraintOverride_android_layout_marginRight=7,
+---@type LuaRef
+ConstraintOverride_android_layout_marginBottom=8,
+---@type LuaRef
+ConstraintOverride_android_maxWidth=9,
+---@type LuaRef
+ConstraintOverride_android_maxHeight=10,
+---@type LuaRef
+ConstraintOverride_android_minWidth=11,
+---@type LuaRef
+ConstraintOverride_android_minHeight=12,
+---@type LuaRef
+ConstraintOverride_android_alpha=13,
+---@type LuaRef
+ConstraintOverride_android_transformPivotX=14,
+---@type LuaRef
+ConstraintOverride_android_transformPivotY=15,
+---@type LuaRef
+ConstraintOverride_android_translationX=16,
+---@type LuaRef
+ConstraintOverride_android_translationY=17,
+---@type LuaRef
+ConstraintOverride_android_scaleX=18,
+---@type LuaRef
+ConstraintOverride_android_scaleY=19,
+---@type LuaRef
+ConstraintOverride_android_rotation=20,
+---@type LuaRef
+ConstraintOverride_android_rotationX=21,
+---@type LuaRef
+ConstraintOverride_android_rotationY=22,
+---@type LuaRef
+ConstraintOverride_android_layout_marginStart=23,
+---@type LuaRef
+ConstraintOverride_android_layout_marginEnd=24,
+---@type LuaRef
+ConstraintOverride_android_translationZ=25,
+---@type LuaRef
+ConstraintOverride_android_elevation=26,
+---@type LuaRef
+ConstraintOverride_animateCircleAngleTo=27,
+---@type LuaRef
+ConstraintOverride_animateRelativeTo=28,
+---@type LuaRef
+ConstraintOverride_barrierAllowsGoneWidgets=29,
+---@type LuaRef
+ConstraintOverride_barrierDirection=30,
+---@type LuaRef
+ConstraintOverride_barrierMargin=31,
+---@type LuaRef
+ConstraintOverride_chainUseRtl=32,
+---@type LuaRef
+ConstraintOverride_constraint_referenced_ids=33,
+---@type LuaRef
+ConstraintOverride_drawPath=34,
+---@type LuaRef
+ConstraintOverride_flow_firstHorizontalBias=35,
+---@type LuaRef
+ConstraintOverride_flow_firstHorizontalStyle=36,
+---@type LuaRef
+ConstraintOverride_flow_firstVerticalBias=37,
+---@type LuaRef
+ConstraintOverride_flow_firstVerticalStyle=38,
+---@type LuaRef
+ConstraintOverride_flow_horizontalAlign=39,
+---@type LuaRef
+ConstraintOverride_flow_horizontalBias=40,
+---@type LuaRef
+ConstraintOverride_flow_horizontalGap=41,
+---@type LuaRef
+ConstraintOverride_flow_horizontalStyle=42,
+---@type LuaRef
+ConstraintOverride_flow_lastHorizontalBias=43,
+---@type LuaRef
+ConstraintOverride_flow_lastHorizontalStyle=44,
+---@type LuaRef
+ConstraintOverride_flow_lastVerticalBias=45,
+---@type LuaRef
+ConstraintOverride_flow_lastVerticalStyle=46,
+---@type LuaRef
+ConstraintOverride_flow_maxElementsWrap=47,
+---@type LuaRef
+ConstraintOverride_flow_verticalAlign=48,
+---@type LuaRef
+ConstraintOverride_flow_verticalBias=49,
+---@type LuaRef
+ConstraintOverride_flow_verticalGap=50,
+---@type LuaRef
+ConstraintOverride_flow_verticalStyle=51,
+---@type LuaRef
+ConstraintOverride_flow_wrapMode=52,
+---@type LuaRef
+ConstraintOverride_guidelineUseRtl=53,
+---@type LuaRef
+ConstraintOverride_layout_constrainedHeight=54,
+---@type LuaRef
+ConstraintOverride_layout_constrainedWidth=55,
+---@type LuaRef
+ConstraintOverride_layout_constraintBaseline_creator=56,
+---@type LuaRef
+ConstraintOverride_layout_constraintBottom_creator=57,
+---@type LuaRef
+ConstraintOverride_layout_constraintCircleAngle=58,
+---@type LuaRef
+ConstraintOverride_layout_constraintCircleRadius=59,
+---@type LuaRef
+ConstraintOverride_layout_constraintDimensionRatio=60,
+---@type LuaRef
+ConstraintOverride_layout_constraintGuide_begin=61,
+---@type LuaRef
+ConstraintOverride_layout_constraintGuide_end=62,
+---@type LuaRef
+ConstraintOverride_layout_constraintGuide_percent=63,
+---@type LuaRef
+ConstraintOverride_layout_constraintHeight=64,
+---@type LuaRef
+ConstraintOverride_layout_constraintHeight_default=65,
+---@type LuaRef
+ConstraintOverride_layout_constraintHeight_max=66,
+---@type LuaRef
+ConstraintOverride_layout_constraintHeight_min=67,
+---@type LuaRef
+ConstraintOverride_layout_constraintHeight_percent=68,
+---@type LuaRef
+ConstraintOverride_layout_constraintHorizontal_bias=69,
+---@type LuaRef
+ConstraintOverride_layout_constraintHorizontal_chainStyle=70,
+---@type LuaRef
+ConstraintOverride_layout_constraintHorizontal_weight=71,
+---@type LuaRef
+ConstraintOverride_layout_constraintLeft_creator=72,
+---@type LuaRef
+ConstraintOverride_layout_constraintRight_creator=73,
+---@type LuaRef
+ConstraintOverride_layout_constraintTag=74,
+---@type LuaRef
+ConstraintOverride_layout_constraintTop_creator=75,
+---@type LuaRef
+ConstraintOverride_layout_constraintVertical_bias=76,
+---@type LuaRef
+ConstraintOverride_layout_constraintVertical_chainStyle=77,
+---@type LuaRef
+ConstraintOverride_layout_constraintVertical_weight=78,
+---@type LuaRef
+ConstraintOverride_layout_constraintWidth=79,
+---@type LuaRef
+ConstraintOverride_layout_constraintWidth_default=80,
+---@type LuaRef
+ConstraintOverride_layout_constraintWidth_max=81,
+---@type LuaRef
+ConstraintOverride_layout_constraintWidth_min=82,
+---@type LuaRef
+ConstraintOverride_layout_constraintWidth_percent=83,
+---@type LuaRef
+ConstraintOverride_layout_editor_absoluteX=84,
+---@type LuaRef
+ConstraintOverride_layout_editor_absoluteY=85,
+---@type LuaRef
+ConstraintOverride_layout_goneMarginBaseline=86,
+---@type LuaRef
+ConstraintOverride_layout_goneMarginBottom=87,
+---@type LuaRef
+ConstraintOverride_layout_goneMarginEnd=88,
+---@type LuaRef
+ConstraintOverride_layout_goneMarginLeft=89,
+---@type LuaRef
+ConstraintOverride_layout_goneMarginRight=90,
+---@type LuaRef
+ConstraintOverride_layout_goneMarginStart=91,
+---@type LuaRef
+ConstraintOverride_layout_goneMarginTop=92,
+---@type LuaRef
+ConstraintOverride_layout_marginBaseline=93,
+---@type LuaRef
+ConstraintOverride_layout_wrapBehaviorInParent=94,
+---@type LuaRef
+ConstraintOverride_motionProgress=95,
+---@type LuaRef
+ConstraintOverride_motionStagger=96,
+---@type LuaRef
+ConstraintOverride_motionTarget=97,
+---@type LuaRef
+ConstraintOverride_pathMotionArc=98,
+---@type LuaRef
+ConstraintOverride_pivotAnchor=99,
+---@type LuaRef
+ConstraintOverride_polarRelativeTo=100,
+---@type LuaRef
+ConstraintOverride_quantizeMotionInterpolator=101,
+---@type LuaRef
+ConstraintOverride_quantizeMotionPhase=102,
+---@type LuaRef
+ConstraintOverride_quantizeMotionSteps=103,
+---@type LuaRef
+ConstraintOverride_transformPivotTarget=104,
+---@type LuaRef
+ConstraintOverride_transitionEasing=105,
+---@type LuaRef
+ConstraintOverride_transitionPathRotate=106,
+---@type LuaRef
+ConstraintOverride_visibilityMode=107,
+---@type LuaRef
+ConstraintSet={[0] = 16842948,16842960,16842972,16842996,16842997,16842999,16843000,16843001,16843002,16843039,16843040,16843071,16843072,16843189,16843190,16843551,16843552,16843553,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843701,16843702,16843770,16843840,2130968624,2130968625,2130968657,2130968658,2130968659,2130968723,2130968804,2130968808,2130968809,2130968872,2130968885,2130968952,2130968953,2130968954,2130968955,2130968956,2130968957,2130968958,2130968959,2130968960,2130968961,2130968962,2130968963,2130968964,2130968966,2130968967,2130968968,2130968969,2130968970,2130968992,2130969088,2130969089,2130969090,2130969091,2130969092,2130969093,2130969094,2130969095,2130969096,2130969097,2130969098,2130969099,2130969100,2130969101,2130969102,2130969103,2130969104,2130969105,2130969107,2130969108,2130969109,2130969110,2130969111,2130969112,2130969113,2130969114,2130969115,2130969116,2130969117,2130969118,2130969119,2130969120,2130969121,2130969122,2130969123,2130969124,2130969125,2130969126,2130969127,2130969128,2130969130,2130969131,2130969132,2130969133,2130969135,2130969136,2130969137,2130969138,2130969139,2130969140,2130969141,2130969142,2130969143,2130969146,2130969150,2130969251,2130969252,2130969295,2130969302,2130969307,2130969326,2130969559,2130969561},
 ---@type LuaRef
 ConstraintSet_android_orientation=0,
 ---@type LuaRef
@@ -9805,177 +8629,199 @@ ConstraintSet_android_translationZ=27,
 ---@type LuaRef
 ConstraintSet_android_elevation=28,
 ---@type LuaRef
-ConstraintSet_animate_relativeTo=29,
+ConstraintSet_animateCircleAngleTo=29,
 ---@type LuaRef
-ConstraintSet_barrierAllowsGoneWidgets=30,
+ConstraintSet_animateRelativeTo=30,
 ---@type LuaRef
-ConstraintSet_barrierDirection=31,
+ConstraintSet_barrierAllowsGoneWidgets=31,
 ---@type LuaRef
-ConstraintSet_barrierMargin=32,
+ConstraintSet_barrierDirection=32,
 ---@type LuaRef
-ConstraintSet_chainUseRtl=33,
+ConstraintSet_barrierMargin=33,
 ---@type LuaRef
-ConstraintSet_constraint_referenced_ids=34,
+ConstraintSet_chainUseRtl=34,
 ---@type LuaRef
-ConstraintSet_deriveConstraintsFrom=35,
+ConstraintSet_constraintRotate=35,
 ---@type LuaRef
-ConstraintSet_drawPath=36,
+ConstraintSet_constraint_referenced_ids=36,
 ---@type LuaRef
-ConstraintSet_flow_firstHorizontalBias=37,
+ConstraintSet_constraint_referenced_tags=37,
 ---@type LuaRef
-ConstraintSet_flow_firstHorizontalStyle=38,
+ConstraintSet_deriveConstraintsFrom=38,
 ---@type LuaRef
-ConstraintSet_flow_firstVerticalBias=39,
+ConstraintSet_drawPath=39,
 ---@type LuaRef
-ConstraintSet_flow_firstVerticalStyle=40,
+ConstraintSet_flow_firstHorizontalBias=40,
 ---@type LuaRef
-ConstraintSet_flow_horizontalAlign=41,
+ConstraintSet_flow_firstHorizontalStyle=41,
 ---@type LuaRef
-ConstraintSet_flow_horizontalBias=42,
+ConstraintSet_flow_firstVerticalBias=42,
 ---@type LuaRef
-ConstraintSet_flow_horizontalGap=43,
+ConstraintSet_flow_firstVerticalStyle=43,
 ---@type LuaRef
-ConstraintSet_flow_horizontalStyle=44,
+ConstraintSet_flow_horizontalAlign=44,
 ---@type LuaRef
-ConstraintSet_flow_lastHorizontalBias=45,
+ConstraintSet_flow_horizontalBias=45,
 ---@type LuaRef
-ConstraintSet_flow_lastHorizontalStyle=46,
+ConstraintSet_flow_horizontalGap=46,
 ---@type LuaRef
-ConstraintSet_flow_lastVerticalBias=47,
+ConstraintSet_flow_horizontalStyle=47,
 ---@type LuaRef
-ConstraintSet_flow_lastVerticalStyle=48,
+ConstraintSet_flow_lastHorizontalBias=48,
 ---@type LuaRef
-ConstraintSet_flow_maxElementsWrap=49,
+ConstraintSet_flow_lastHorizontalStyle=49,
 ---@type LuaRef
-ConstraintSet_flow_verticalAlign=50,
+ConstraintSet_flow_lastVerticalBias=50,
 ---@type LuaRef
-ConstraintSet_flow_verticalBias=51,
+ConstraintSet_flow_lastVerticalStyle=51,
 ---@type LuaRef
-ConstraintSet_flow_verticalGap=52,
+ConstraintSet_flow_maxElementsWrap=52,
 ---@type LuaRef
-ConstraintSet_flow_verticalStyle=53,
+ConstraintSet_flow_verticalAlign=53,
 ---@type LuaRef
-ConstraintSet_flow_wrapMode=54,
+ConstraintSet_flow_verticalBias=54,
 ---@type LuaRef
-ConstraintSet_layout_constrainedHeight=55,
+ConstraintSet_flow_verticalGap=55,
 ---@type LuaRef
-ConstraintSet_layout_constrainedWidth=56,
+ConstraintSet_flow_verticalStyle=56,
 ---@type LuaRef
-ConstraintSet_layout_constraintBaseline_creator=57,
+ConstraintSet_flow_wrapMode=57,
 ---@type LuaRef
-ConstraintSet_layout_constraintBaseline_toBaselineOf=58,
+ConstraintSet_guidelineUseRtl=58,
 ---@type LuaRef
-ConstraintSet_layout_constraintBottom_creator=59,
+ConstraintSet_layout_constrainedHeight=59,
 ---@type LuaRef
-ConstraintSet_layout_constraintBottom_toBottomOf=60,
+ConstraintSet_layout_constrainedWidth=60,
 ---@type LuaRef
-ConstraintSet_layout_constraintBottom_toTopOf=61,
+ConstraintSet_layout_constraintBaseline_creator=61,
 ---@type LuaRef
-ConstraintSet_layout_constraintCircle=62,
+ConstraintSet_layout_constraintBaseline_toBaselineOf=62,
 ---@type LuaRef
-ConstraintSet_layout_constraintCircleAngle=63,
+ConstraintSet_layout_constraintBaseline_toBottomOf=63,
 ---@type LuaRef
-ConstraintSet_layout_constraintCircleRadius=64,
+ConstraintSet_layout_constraintBaseline_toTopOf=64,
 ---@type LuaRef
-ConstraintSet_layout_constraintDimensionRatio=65,
+ConstraintSet_layout_constraintBottom_creator=65,
 ---@type LuaRef
-ConstraintSet_layout_constraintEnd_toEndOf=66,
+ConstraintSet_layout_constraintBottom_toBottomOf=66,
 ---@type LuaRef
-ConstraintSet_layout_constraintEnd_toStartOf=67,
+ConstraintSet_layout_constraintBottom_toTopOf=67,
 ---@type LuaRef
-ConstraintSet_layout_constraintGuide_begin=68,
+ConstraintSet_layout_constraintCircle=68,
 ---@type LuaRef
-ConstraintSet_layout_constraintGuide_end=69,
+ConstraintSet_layout_constraintCircleAngle=69,
 ---@type LuaRef
-ConstraintSet_layout_constraintGuide_percent=70,
+ConstraintSet_layout_constraintCircleRadius=70,
 ---@type LuaRef
-ConstraintSet_layout_constraintHeight_default=71,
+ConstraintSet_layout_constraintDimensionRatio=71,
 ---@type LuaRef
-ConstraintSet_layout_constraintHeight_max=72,
+ConstraintSet_layout_constraintEnd_toEndOf=72,
 ---@type LuaRef
-ConstraintSet_layout_constraintHeight_min=73,
+ConstraintSet_layout_constraintEnd_toStartOf=73,
 ---@type LuaRef
-ConstraintSet_layout_constraintHeight_percent=74,
+ConstraintSet_layout_constraintGuide_begin=74,
 ---@type LuaRef
-ConstraintSet_layout_constraintHorizontal_bias=75,
+ConstraintSet_layout_constraintGuide_end=75,
 ---@type LuaRef
-ConstraintSet_layout_constraintHorizontal_chainStyle=76,
+ConstraintSet_layout_constraintGuide_percent=76,
 ---@type LuaRef
-ConstraintSet_layout_constraintHorizontal_weight=77,
+ConstraintSet_layout_constraintHeight_default=77,
 ---@type LuaRef
-ConstraintSet_layout_constraintLeft_creator=78,
+ConstraintSet_layout_constraintHeight_max=78,
 ---@type LuaRef
-ConstraintSet_layout_constraintLeft_toLeftOf=79,
+ConstraintSet_layout_constraintHeight_min=79,
 ---@type LuaRef
-ConstraintSet_layout_constraintLeft_toRightOf=80,
+ConstraintSet_layout_constraintHeight_percent=80,
 ---@type LuaRef
-ConstraintSet_layout_constraintRight_creator=81,
+ConstraintSet_layout_constraintHorizontal_bias=81,
 ---@type LuaRef
-ConstraintSet_layout_constraintRight_toLeftOf=82,
+ConstraintSet_layout_constraintHorizontal_chainStyle=82,
 ---@type LuaRef
-ConstraintSet_layout_constraintRight_toRightOf=83,
+ConstraintSet_layout_constraintHorizontal_weight=83,
 ---@type LuaRef
-ConstraintSet_layout_constraintStart_toEndOf=84,
+ConstraintSet_layout_constraintLeft_creator=84,
 ---@type LuaRef
-ConstraintSet_layout_constraintStart_toStartOf=85,
+ConstraintSet_layout_constraintLeft_toLeftOf=85,
 ---@type LuaRef
-ConstraintSet_layout_constraintTag=86,
+ConstraintSet_layout_constraintLeft_toRightOf=86,
 ---@type LuaRef
-ConstraintSet_layout_constraintTop_creator=87,
+ConstraintSet_layout_constraintRight_creator=87,
 ---@type LuaRef
-ConstraintSet_layout_constraintTop_toBottomOf=88,
+ConstraintSet_layout_constraintRight_toLeftOf=88,
 ---@type LuaRef
-ConstraintSet_layout_constraintTop_toTopOf=89,
+ConstraintSet_layout_constraintRight_toRightOf=89,
 ---@type LuaRef
-ConstraintSet_layout_constraintVertical_bias=90,
+ConstraintSet_layout_constraintStart_toEndOf=90,
 ---@type LuaRef
-ConstraintSet_layout_constraintVertical_chainStyle=91,
+ConstraintSet_layout_constraintStart_toStartOf=91,
 ---@type LuaRef
-ConstraintSet_layout_constraintVertical_weight=92,
+ConstraintSet_layout_constraintTag=92,
 ---@type LuaRef
-ConstraintSet_layout_constraintWidth_default=93,
+ConstraintSet_layout_constraintTop_creator=93,
 ---@type LuaRef
-ConstraintSet_layout_constraintWidth_max=94,
+ConstraintSet_layout_constraintTop_toBottomOf=94,
 ---@type LuaRef
-ConstraintSet_layout_constraintWidth_min=95,
+ConstraintSet_layout_constraintTop_toTopOf=95,
 ---@type LuaRef
-ConstraintSet_layout_constraintWidth_percent=96,
+ConstraintSet_layout_constraintVertical_bias=96,
 ---@type LuaRef
-ConstraintSet_layout_editor_absoluteX=97,
+ConstraintSet_layout_constraintVertical_chainStyle=97,
 ---@type LuaRef
-ConstraintSet_layout_editor_absoluteY=98,
+ConstraintSet_layout_constraintVertical_weight=98,
 ---@type LuaRef
-ConstraintSet_layout_goneMarginBottom=99,
+ConstraintSet_layout_constraintWidth_default=99,
 ---@type LuaRef
-ConstraintSet_layout_goneMarginEnd=100,
+ConstraintSet_layout_constraintWidth_max=100,
 ---@type LuaRef
-ConstraintSet_layout_goneMarginLeft=101,
+ConstraintSet_layout_constraintWidth_min=101,
 ---@type LuaRef
-ConstraintSet_layout_goneMarginRight=102,
+ConstraintSet_layout_constraintWidth_percent=102,
 ---@type LuaRef
-ConstraintSet_layout_goneMarginStart=103,
+ConstraintSet_layout_editor_absoluteX=103,
 ---@type LuaRef
-ConstraintSet_layout_goneMarginTop=104,
+ConstraintSet_layout_editor_absoluteY=104,
 ---@type LuaRef
-ConstraintSet_motionProgress=105,
+ConstraintSet_layout_goneMarginBaseline=105,
 ---@type LuaRef
-ConstraintSet_motionStagger=106,
+ConstraintSet_layout_goneMarginBottom=106,
 ---@type LuaRef
-ConstraintSet_pathMotionArc=107,
+ConstraintSet_layout_goneMarginEnd=107,
 ---@type LuaRef
-ConstraintSet_pivotAnchor=108,
+ConstraintSet_layout_goneMarginLeft=108,
 ---@type LuaRef
-ConstraintSet_transitionEasing=109,
+ConstraintSet_layout_goneMarginRight=109,
 ---@type LuaRef
-ConstraintSet_transitionPathRotate=110,
+ConstraintSet_layout_goneMarginStart=110,
 ---@type LuaRef
-CoordinatorLayout={[0] = 2130903542,2130903848},
+ConstraintSet_layout_goneMarginTop=111,
+---@type LuaRef
+ConstraintSet_layout_marginBaseline=112,
+---@type LuaRef
+ConstraintSet_layout_wrapBehaviorInParent=113,
+---@type LuaRef
+ConstraintSet_motionProgress=114,
+---@type LuaRef
+ConstraintSet_motionStagger=115,
+---@type LuaRef
+ConstraintSet_pathMotionArc=116,
+---@type LuaRef
+ConstraintSet_pivotAnchor=117,
+---@type LuaRef
+ConstraintSet_polarRelativeTo=118,
+---@type LuaRef
+ConstraintSet_quantizeMotionSteps=119,
+---@type LuaRef
+ConstraintSet_transitionEasing=120,
+---@type LuaRef
+ConstraintSet_transitionPathRotate=121,
+---@type LuaRef
+CoordinatorLayout={[0] = 2130969073,2130969409},
 ---@type LuaRef
 CoordinatorLayout_keylines=0,
 ---@type LuaRef
 CoordinatorLayout_statusBarBackground=1,
 ---@type LuaRef
-CoordinatorLayout_Layout={[0] = 16842931,2130903551,2130903552,2130903553,2130903598,2130903607,2130903608},
+CoordinatorLayout_Layout={[0] = 16842931,2130969083,2130969084,2130969085,2130969134,2130969144,2130969145},
 ---@type LuaRef
 CoordinatorLayout_Layout_android_layout_gravity=0,
 ---@type LuaRef
@@ -9991,7 +8837,7 @@ CoordinatorLayout_Layout_layout_insetEdge=5,
 ---@type LuaRef
 CoordinatorLayout_Layout_layout_keyline=6,
 ---@type LuaRef
-CustomAttribute={[0] = 2130903092,2130903314,2130903315,2130903316,2130903317,2130903318,2130903319,2130903321,2130903322},
+CustomAttribute={[0] = 2130968633,2130968850,2130968851,2130968852,2130968853,2130968854,2130968855,2130968857,2130968858,2130968859,2130969214},
 ---@type LuaRef
 CustomAttribute_attributeName=0,
 ---@type LuaRef
@@ -10009,9 +8855,17 @@ CustomAttribute_customIntegerValue=6,
 ---@type LuaRef
 CustomAttribute_customPixelDimension=7,
 ---@type LuaRef
-CustomAttribute_customStringValue=8,
+CustomAttribute_customReference=8,
 ---@type LuaRef
-DrawerArrowToggle={[0] = 2130903090,2130903091,2130903117,2130903229,2130903353,2130903464,2130903830,2130903957},
+CustomAttribute_customStringValue=9,
+---@type LuaRef
+CustomAttribute_methodName=10,
+---@type LuaRef
+DialogFragmentNavigator={[0] = 16842755},
+---@type LuaRef
+DialogFragmentNavigator_android_name=0,
+---@type LuaRef
+DrawerArrowToggle={[0] = 2130968631,2130968632,2130968656,2130968781,2130968890,2130968986,2130969385,2130969507},
 ---@type LuaRef
 DrawerArrowToggle_arrowHeadLength=0,
 ---@type LuaRef
@@ -10029,11 +8883,33 @@ DrawerArrowToggle_spinBars=6,
 ---@type LuaRef
 DrawerArrowToggle_thickness=7,
 ---@type LuaRef
-DrawerLayout={[0] = 2130903368},
+DrawerLayout={[0] = 2130968903},
 ---@type LuaRef
 DrawerLayout_elevation=0,
 ---@type LuaRef
-ExtendedFloatingActionButton={[0] = 2130903220,2130903368,2130903400,2130903476,2130903816,2130903820},
+DynamicActivityNavigator={[0] = 2130969227},
+---@type LuaRef
+DynamicActivityNavigator_moduleName=0,
+---@type LuaRef
+DynamicFragmentNavigator={[0] = 2130969227},
+---@type LuaRef
+DynamicFragmentNavigator_moduleName=0,
+---@type LuaRef
+DynamicGraphNavigator={[0] = 2130969227,2130969323},
+---@type LuaRef
+DynamicGraphNavigator_moduleName=0,
+---@type LuaRef
+DynamicGraphNavigator_progressDestination=1,
+---@type LuaRef
+DynamicIncludeGraphNavigator={[0] = 2130968990,2130968991,2130969227},
+---@type LuaRef
+DynamicIncludeGraphNavigator_graphPackage=0,
+---@type LuaRef
+DynamicIncludeGraphNavigator_graphResName=1,
+---@type LuaRef
+DynamicIncludeGraphNavigator_moduleName=2,
+---@type LuaRef
+ExtendedFloatingActionButton={[0] = 2130968777,2130968903,2130968935,2130969002,2130969371,2130969375},
 ---@type LuaRef
 ExtendedFloatingActionButton_collapsedSize=0,
 ---@type LuaRef
@@ -10047,13 +8923,13 @@ ExtendedFloatingActionButton_showMotionSpec=4,
 ---@type LuaRef
 ExtendedFloatingActionButton_shrinkMotionSpec=5,
 ---@type LuaRef
-ExtendedFloatingActionButton_Behavior_Layout={[0] = 2130903121,2130903122},
+ExtendedFloatingActionButton_Behavior_Layout={[0] = 2130968660,2130968661},
 ---@type LuaRef
 ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide=0,
 ---@type LuaRef
 ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink=1,
 ---@type LuaRef
-FloatingActionButton={[0] = 16842766,2130903109,2130903110,2130903132,2130903368,2130903381,2130903412,2130903413,2130903476,2130903487,2130903679,2130903774,2130903791,2130903806,2130903809,2130903816,2130904019},
+FloatingActionButton={[0] = 16842766,2130968651,2130968652,2130968674,2130968903,2130968915,2130968943,2130968944,2130969002,2130969012,2130969207,2130969320,2130969344,2130969362,2130969365,2130969371,2130969569},
 ---@type LuaRef
 FloatingActionButton_android_enabled=0,
 ---@type LuaRef
@@ -10089,17 +8965,17 @@ FloatingActionButton_showMotionSpec=15,
 ---@type LuaRef
 FloatingActionButton_useCompatPadding=16,
 ---@type LuaRef
-FloatingActionButton_Behavior_Layout={[0] = 2130903121},
+FloatingActionButton_Behavior_Layout={[0] = 2130968660},
 ---@type LuaRef
 FloatingActionButton_Behavior_Layout_behavior_autoHide=0,
 ---@type LuaRef
-FlowLayout={[0] = 2130903532,2130903617},
+FlowLayout={[0] = 2130969064,2130969155},
 ---@type LuaRef
 FlowLayout_itemSpacing=0,
 ---@type LuaRef
 FlowLayout_lineSpacing=1,
 ---@type LuaRef
-FontFamily={[0] = 2130903451,2130903452,2130903453,2130903454,2130903455,2130903456,2130903457},
+FontFamily={[0] = 2130968973,2130968974,2130968975,2130968976,2130968977,2130968978,2130968979},
 ---@type LuaRef
 FontFamily_fontProviderAuthority=0,
 ---@type LuaRef
@@ -10115,7 +8991,7 @@ FontFamily_fontProviderQuery=5,
 ---@type LuaRef
 FontFamily_fontProviderSystemFontFamily=6,
 ---@type LuaRef
-FontFamilyFont={[0] = 16844082,16844083,16844095,16844143,16844144,2130903449,2130903458,2130903459,2130903460,2130904018},
+FontFamilyFont={[0] = 16844082,16844083,16844095,16844143,16844144,2130968971,2130968980,2130968981,2130968982,2130969566},
 ---@type LuaRef
 FontFamilyFont_android_font=0,
 ---@type LuaRef
@@ -10137,7 +9013,7 @@ FontFamilyFont_fontWeight=8,
 ---@type LuaRef
 FontFamilyFont_ttcIndex=9,
 ---@type LuaRef
-ForegroundLinearLayout={[0] = 16843017,16843264,2130903462},
+ForegroundLinearLayout={[0] = 16843017,16843264,2130968984},
 ---@type LuaRef
 ForegroundLinearLayout_android_foreground=0,
 ---@type LuaRef
@@ -10158,6 +9034,10 @@ FragmentContainerView={[0] = 16842755,16842961},
 FragmentContainerView_android_name=0,
 ---@type LuaRef
 FragmentContainerView_android_tag=1,
+---@type LuaRef
+FragmentNavigator={[0] = 16842755},
+---@type LuaRef
+FragmentNavigator_android_name=0,
 ---@type LuaRef
 GradientColor={[0] = 16843165,16843166,16843169,16843170,16843171,16843172,16843265,16843275,16844048,16844049,16844050,16844051},
 ---@type LuaRef
@@ -10191,27 +9071,37 @@ GradientColorItem_android_color=0,
 ---@type LuaRef
 GradientColorItem_android_offset=1,
 ---@type LuaRef
-ImageFilterView={[0] = 2130903084,2130903150,2130903291,2130903311,2130903737,2130903792,2130903793,2130903794,2130904027},
+ImageFilterView={[0] = 2130968623,2130968671,2130968691,2130968827,2130968847,2130969026,2130969027,2130969028,2130969029,2130969278,2130969346,2130969347,2130969348,2130969580},
 ---@type LuaRef
 ImageFilterView_altSrc=0,
 ---@type LuaRef
-ImageFilterView_brightness=1,
+ImageFilterView_blendSrc=1,
 ---@type LuaRef
-ImageFilterView_contrast=2,
+ImageFilterView_brightness=2,
 ---@type LuaRef
-ImageFilterView_crossfade=3,
+ImageFilterView_contrast=3,
 ---@type LuaRef
-ImageFilterView_overlay=4,
+ImageFilterView_crossfade=4,
 ---@type LuaRef
-ImageFilterView_round=5,
+ImageFilterView_imagePanX=5,
 ---@type LuaRef
-ImageFilterView_roundPercent=6,
+ImageFilterView_imagePanY=6,
 ---@type LuaRef
-ImageFilterView_saturation=7,
+ImageFilterView_imageRotate=7,
 ---@type LuaRef
-ImageFilterView_warmth=8,
+ImageFilterView_imageZoom=8,
 ---@type LuaRef
-Insets={[0] = 2130903739,2130903741,2130903742,2130903745},
+ImageFilterView_overlay=9,
+---@type LuaRef
+ImageFilterView_round=10,
+---@type LuaRef
+ImageFilterView_roundPercent=11,
+---@type LuaRef
+ImageFilterView_saturation=12,
+---@type LuaRef
+ImageFilterView_warmth=13,
+---@type LuaRef
+Insets={[0] = 2130969280,2130969282,2130969283,2130969286},
 ---@type LuaRef
 Insets_paddingBottomSystemWindowInsets=0,
 ---@type LuaRef
@@ -10221,7 +9111,7 @@ Insets_paddingRightSystemWindowInsets=2,
 ---@type LuaRef
 Insets_paddingTopSystemWindowInsets=3,
 ---@type LuaRef
-KeyAttribute={[0] = 16843551,16843552,16843553,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843770,16843840,2130903313,2130903463,2130903712,2130903714,2130904011,2130904013},
+KeyAttribute={[0] = 16843551,16843552,16843553,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843770,16843840,2130968849,2130968985,2130969251,2130969253,2130969557,2130969559,2130969561},
 ---@type LuaRef
 KeyAttribute_android_alpha=0,
 ---@type LuaRef
@@ -10255,11 +9145,13 @@ KeyAttribute_motionProgress=14,
 ---@type LuaRef
 KeyAttribute_motionTarget=15,
 ---@type LuaRef
-KeyAttribute_transitionEasing=16,
+KeyAttribute_transformPivotTarget=16,
 ---@type LuaRef
-KeyAttribute_transitionPathRotate=17,
+KeyAttribute_transitionEasing=17,
 ---@type LuaRef
-KeyCycle={[0] = 16843551,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843770,16843840,2130903313,2130903463,2130903712,2130903714,2130904011,2130904013,2130904029,2130904030,2130904031,2130904032},
+KeyAttribute_transitionPathRotate=18,
+---@type LuaRef
+KeyCycle={[0] = 16843551,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843770,16843840,2130968849,2130968985,2130969251,2130969253,2130969559,2130969561,2130969582,2130969583,2130969584,2130969585,2130969586},
 ---@type LuaRef
 KeyCycle_android_alpha=0,
 ---@type LuaRef
@@ -10297,14 +9189,16 @@ KeyCycle_waveOffset=16,
 ---@type LuaRef
 KeyCycle_wavePeriod=17,
 ---@type LuaRef
-KeyCycle_waveShape=18,
+KeyCycle_wavePhase=18,
 ---@type LuaRef
-KeyCycle_waveVariesBy=19,
+KeyCycle_waveShape=19,
+---@type LuaRef
+KeyCycle_waveVariesBy=20,
 ---@type LuaRef
 ---@type LuaRef
 ---@type LuaRef
 ---@type LuaRef
-KeyPosition={[0] = 2130903313,2130903348,2130903463,2130903540,2130903714,2130903754,2130903756,2130903757,2130903758,2130903759,2130903824,2130904011},
+KeyPosition={[0] = 2130968849,2130968885,2130968985,2130969071,2130969253,2130969295,2130969297,2130969298,2130969299,2130969300,2130969379,2130969559},
 ---@type LuaRef
 KeyPosition_curveFit=0,
 ---@type LuaRef
@@ -10330,7 +9224,7 @@ KeyPosition_sizePercent=10,
 ---@type LuaRef
 KeyPosition_transitionEasing=11,
 ---@type LuaRef
-KeyTimeCycle={[0] = 16843551,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843770,16843840,2130903313,2130903463,2130903712,2130903714,2130904011,2130904013,2130904028,2130904029,2130904030,2130904031},
+KeyTimeCycle={[0] = 16843551,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843770,16843840,2130968849,2130968985,2130969251,2130969253,2130969559,2130969561,2130969581,2130969582,2130969583,2130969584,2130969585},
 ---@type LuaRef
 KeyTimeCycle_android_alpha=0,
 ---@type LuaRef
@@ -10370,9 +9264,11 @@ KeyTimeCycle_waveOffset=17,
 ---@type LuaRef
 KeyTimeCycle_wavePeriod=18,
 ---@type LuaRef
-KeyTimeCycle_waveShape=19,
+KeyTimeCycle_wavePhase=19,
 ---@type LuaRef
-KeyTrigger={[0] = 2130903463,2130903714,2130903715,2130903716,2130903730,2130903732,2130903733,2130904015,2130904016,2130904017},
+KeyTimeCycle_waveShape=20,
+---@type LuaRef
+KeyTrigger={[0] = 2130968985,2130969253,2130969254,2130969255,2130969270,2130969272,2130969273,2130969563,2130969564,2130969565,2130969575,2130969576,2130969577},
 ---@type LuaRef
 KeyTrigger_framePosition=0,
 ---@type LuaRef
@@ -10394,7 +9290,13 @@ KeyTrigger_triggerReceiver=8,
 ---@type LuaRef
 KeyTrigger_triggerSlack=9,
 ---@type LuaRef
-Layout={[0] = 16842948,16842996,16842997,16842999,16843000,16843001,16843002,16843701,16843702,2130903118,2130903119,2130903120,2130903172,2130903273,2130903556,2130903557,2130903558,2130903559,2130903560,2130903561,2130903562,2130903563,2130903564,2130903565,2130903566,2130903567,2130903568,2130903569,2130903570,2130903571,2130903572,2130903573,2130903574,2130903575,2130903576,2130903577,2130903578,2130903579,2130903580,2130903581,2130903582,2130903583,2130903584,2130903585,2130903586,2130903588,2130903589,2130903590,2130903591,2130903592,2130903593,2130903594,2130903595,2130903596,2130903597,2130903599,2130903600,2130903601,2130903602,2130903603,2130903604,2130903605,2130903606,2130903678,2130903682,2130903686,2130903690},
+KeyTrigger_viewTransitionOnCross=10,
+---@type LuaRef
+KeyTrigger_viewTransitionOnNegativeCross=11,
+---@type LuaRef
+KeyTrigger_viewTransitionOnPositiveCross=12,
+---@type LuaRef
+Layout={[0] = 16842948,16842996,16842997,16842999,16843000,16843001,16843002,16843701,16843702,2130968657,2130968658,2130968659,2130968723,2130968808,2130968809,2130968992,2130969088,2130969089,2130969090,2130969091,2130969092,2130969093,2130969094,2130969095,2130969096,2130969097,2130969098,2130969099,2130969100,2130969101,2130969102,2130969103,2130969104,2130969105,2130969106,2130969107,2130969108,2130969109,2130969110,2130969111,2130969112,2130969113,2130969114,2130969115,2130969116,2130969117,2130969118,2130969119,2130969120,2130969121,2130969123,2130969124,2130969125,2130969126,2130969127,2130969128,2130969129,2130969130,2130969131,2130969132,2130969133,2130969135,2130969136,2130969137,2130969138,2130969139,2130969140,2130969141,2130969142,2130969143,2130969146,2130969150,2130969206,2130969210,2130969216,2130969220},
 ---@type LuaRef
 Layout_android_orientation=0,
 ---@type LuaRef
@@ -10424,113 +9326,131 @@ Layout_chainUseRtl=12,
 ---@type LuaRef
 Layout_constraint_referenced_ids=13,
 ---@type LuaRef
-Layout_layout_constrainedHeight=14,
+Layout_constraint_referenced_tags=14,
 ---@type LuaRef
-Layout_layout_constrainedWidth=15,
+Layout_guidelineUseRtl=15,
 ---@type LuaRef
-Layout_layout_constraintBaseline_creator=16,
+Layout_layout_constrainedHeight=16,
 ---@type LuaRef
-Layout_layout_constraintBaseline_toBaselineOf=17,
+Layout_layout_constrainedWidth=17,
 ---@type LuaRef
-Layout_layout_constraintBottom_creator=18,
+Layout_layout_constraintBaseline_creator=18,
 ---@type LuaRef
-Layout_layout_constraintBottom_toBottomOf=19,
+Layout_layout_constraintBaseline_toBaselineOf=19,
 ---@type LuaRef
-Layout_layout_constraintBottom_toTopOf=20,
+Layout_layout_constraintBaseline_toBottomOf=20,
 ---@type LuaRef
-Layout_layout_constraintCircle=21,
+Layout_layout_constraintBaseline_toTopOf=21,
 ---@type LuaRef
-Layout_layout_constraintCircleAngle=22,
+Layout_layout_constraintBottom_creator=22,
 ---@type LuaRef
-Layout_layout_constraintCircleRadius=23,
+Layout_layout_constraintBottom_toBottomOf=23,
 ---@type LuaRef
-Layout_layout_constraintDimensionRatio=24,
+Layout_layout_constraintBottom_toTopOf=24,
 ---@type LuaRef
-Layout_layout_constraintEnd_toEndOf=25,
+Layout_layout_constraintCircle=25,
 ---@type LuaRef
-Layout_layout_constraintEnd_toStartOf=26,
+Layout_layout_constraintCircleAngle=26,
 ---@type LuaRef
-Layout_layout_constraintGuide_begin=27,
+Layout_layout_constraintCircleRadius=27,
 ---@type LuaRef
-Layout_layout_constraintGuide_end=28,
+Layout_layout_constraintDimensionRatio=28,
 ---@type LuaRef
-Layout_layout_constraintGuide_percent=29,
+Layout_layout_constraintEnd_toEndOf=29,
 ---@type LuaRef
-Layout_layout_constraintHeight_default=30,
+Layout_layout_constraintEnd_toStartOf=30,
 ---@type LuaRef
-Layout_layout_constraintHeight_max=31,
+Layout_layout_constraintGuide_begin=31,
 ---@type LuaRef
-Layout_layout_constraintHeight_min=32,
+Layout_layout_constraintGuide_end=32,
 ---@type LuaRef
-Layout_layout_constraintHeight_percent=33,
+Layout_layout_constraintGuide_percent=33,
 ---@type LuaRef
-Layout_layout_constraintHorizontal_bias=34,
+Layout_layout_constraintHeight=34,
 ---@type LuaRef
-Layout_layout_constraintHorizontal_chainStyle=35,
+Layout_layout_constraintHeight_default=35,
 ---@type LuaRef
-Layout_layout_constraintHorizontal_weight=36,
+Layout_layout_constraintHeight_max=36,
 ---@type LuaRef
-Layout_layout_constraintLeft_creator=37,
+Layout_layout_constraintHeight_min=37,
 ---@type LuaRef
-Layout_layout_constraintLeft_toLeftOf=38,
+Layout_layout_constraintHeight_percent=38,
 ---@type LuaRef
-Layout_layout_constraintLeft_toRightOf=39,
+Layout_layout_constraintHorizontal_bias=39,
 ---@type LuaRef
-Layout_layout_constraintRight_creator=40,
+Layout_layout_constraintHorizontal_chainStyle=40,
 ---@type LuaRef
-Layout_layout_constraintRight_toLeftOf=41,
+Layout_layout_constraintHorizontal_weight=41,
 ---@type LuaRef
-Layout_layout_constraintRight_toRightOf=42,
+Layout_layout_constraintLeft_creator=42,
 ---@type LuaRef
-Layout_layout_constraintStart_toEndOf=43,
+Layout_layout_constraintLeft_toLeftOf=43,
 ---@type LuaRef
-Layout_layout_constraintStart_toStartOf=44,
+Layout_layout_constraintLeft_toRightOf=44,
 ---@type LuaRef
-Layout_layout_constraintTop_creator=45,
+Layout_layout_constraintRight_creator=45,
 ---@type LuaRef
-Layout_layout_constraintTop_toBottomOf=46,
+Layout_layout_constraintRight_toLeftOf=46,
 ---@type LuaRef
-Layout_layout_constraintTop_toTopOf=47,
+Layout_layout_constraintRight_toRightOf=47,
 ---@type LuaRef
-Layout_layout_constraintVertical_bias=48,
+Layout_layout_constraintStart_toEndOf=48,
 ---@type LuaRef
-Layout_layout_constraintVertical_chainStyle=49,
+Layout_layout_constraintStart_toStartOf=49,
 ---@type LuaRef
-Layout_layout_constraintVertical_weight=50,
+Layout_layout_constraintTop_creator=50,
 ---@type LuaRef
-Layout_layout_constraintWidth_default=51,
+Layout_layout_constraintTop_toBottomOf=51,
 ---@type LuaRef
-Layout_layout_constraintWidth_max=52,
+Layout_layout_constraintTop_toTopOf=52,
 ---@type LuaRef
-Layout_layout_constraintWidth_min=53,
+Layout_layout_constraintVertical_bias=53,
 ---@type LuaRef
-Layout_layout_constraintWidth_percent=54,
+Layout_layout_constraintVertical_chainStyle=54,
 ---@type LuaRef
-Layout_layout_editor_absoluteX=55,
+Layout_layout_constraintVertical_weight=55,
 ---@type LuaRef
-Layout_layout_editor_absoluteY=56,
+Layout_layout_constraintWidth=56,
 ---@type LuaRef
-Layout_layout_goneMarginBottom=57,
+Layout_layout_constraintWidth_default=57,
 ---@type LuaRef
-Layout_layout_goneMarginEnd=58,
+Layout_layout_constraintWidth_max=58,
 ---@type LuaRef
-Layout_layout_goneMarginLeft=59,
+Layout_layout_constraintWidth_min=59,
 ---@type LuaRef
-Layout_layout_goneMarginRight=60,
+Layout_layout_constraintWidth_percent=60,
 ---@type LuaRef
-Layout_layout_goneMarginStart=61,
+Layout_layout_editor_absoluteX=61,
 ---@type LuaRef
-Layout_layout_goneMarginTop=62,
+Layout_layout_editor_absoluteY=62,
 ---@type LuaRef
-Layout_maxHeight=63,
+Layout_layout_goneMarginBaseline=63,
 ---@type LuaRef
-Layout_maxWidth=64,
+Layout_layout_goneMarginBottom=64,
 ---@type LuaRef
-Layout_minHeight=65,
+Layout_layout_goneMarginEnd=65,
 ---@type LuaRef
-Layout_minWidth=66,
+Layout_layout_goneMarginLeft=66,
 ---@type LuaRef
-LinearLayoutCompat={[0] = 16842927,16842948,16843046,16843047,16843048,2130903337,2130903342,2130903683,2130903815},
+Layout_layout_goneMarginRight=67,
+---@type LuaRef
+Layout_layout_goneMarginStart=68,
+---@type LuaRef
+Layout_layout_goneMarginTop=69,
+---@type LuaRef
+Layout_layout_marginBaseline=70,
+---@type LuaRef
+Layout_layout_wrapBehaviorInParent=71,
+---@type LuaRef
+Layout_maxHeight=72,
+---@type LuaRef
+Layout_maxWidth=73,
+---@type LuaRef
+Layout_minHeight=74,
+---@type LuaRef
+Layout_minWidth=75,
+---@type LuaRef
+LinearLayoutCompat={[0] = 16842927,16842948,16843046,16843047,16843048,2130968878,2130968880,2130969211,2130969370},
 ---@type LuaRef
 LinearLayoutCompat_android_gravity=0,
 ---@type LuaRef
@@ -10560,7 +9480,7 @@ LinearLayoutCompat_Layout_android_layout_height=2,
 ---@type LuaRef
 LinearLayoutCompat_Layout_android_layout_weight=3,
 ---@type LuaRef
-LinearProgressIndicator={[0] = 2130903499,2130903503},
+LinearProgressIndicator={[0] = 2130969030,2130969034},
 ---@type LuaRef
 LinearProgressIndicator_indeterminateAnimationType=0,
 ---@type LuaRef
@@ -10572,7 +9492,7 @@ ListPopupWindow_android_dropDownHorizontalOffset=0,
 ---@type LuaRef
 ListPopupWindow_android_dropDownVerticalOffset=1,
 ---@type LuaRef
-MaterialAlertDialog={[0] = 2130903102,2130903103,2130903104,2130903105},
+MaterialAlertDialog={[0] = 2130968644,2130968645,2130968646,2130968647},
 ---@type LuaRef
 MaterialAlertDialog_backgroundInsetBottom=0,
 ---@type LuaRef
@@ -10582,25 +9502,23 @@ MaterialAlertDialog_backgroundInsetStart=2,
 ---@type LuaRef
 MaterialAlertDialog_backgroundInsetTop=3,
 ---@type LuaRef
-MaterialAlertDialogTheme={[0] = 2130903637,2130903638,2130903639,2130903640,2130903641,2130903642},
+MaterialAlertDialogTheme={[0] = 2130969174,2130969175,2130969176,2130969177,2130969178},
 ---@type LuaRef
 MaterialAlertDialogTheme_materialAlertDialogBodyTextStyle=0,
 ---@type LuaRef
-MaterialAlertDialogTheme_materialAlertDialogButtonSpacerVisibility=1,
+MaterialAlertDialogTheme_materialAlertDialogTheme=1,
 ---@type LuaRef
-MaterialAlertDialogTheme_materialAlertDialogTheme=2,
+MaterialAlertDialogTheme_materialAlertDialogTitleIconStyle=2,
 ---@type LuaRef
-MaterialAlertDialogTheme_materialAlertDialogTitleIconStyle=3,
+MaterialAlertDialogTheme_materialAlertDialogTitlePanelStyle=3,
 ---@type LuaRef
-MaterialAlertDialogTheme_materialAlertDialogTitlePanelStyle=4,
----@type LuaRef
-MaterialAlertDialogTheme_materialAlertDialogTitleTextStyle=5,
+MaterialAlertDialogTheme_materialAlertDialogTitleTextStyle=4,
 ---@type LuaRef
 MaterialAutoCompleteTextView={[0] = 16843296},
 ---@type LuaRef
 MaterialAutoCompleteTextView_android_inputType=0,
 ---@type LuaRef
-MaterialButton={[0] = 16842964,16843191,16843192,16843193,16843194,16843237,2130903109,2130903110,2130903299,2130903368,2130903488,2130903490,2130903491,2130903492,2130903494,2130903495,2130903791,2130903806,2130903809,2130903851,2130903852},
+MaterialButton={[0] = 16842964,16843191,16843192,16843193,16843194,16843237,2130968651,2130968652,2130968835,2130968903,2130969013,2130969015,2130969016,2130969017,2130969019,2130969020,2130969344,2130969362,2130969365,2130969412,2130969413},
 ---@type LuaRef
 MaterialButton_android_background=0,
 ---@type LuaRef
@@ -10644,7 +9562,7 @@ MaterialButton_strokeColor=19,
 ---@type LuaRef
 MaterialButton_strokeWidth=20,
 ---@type LuaRef
-MaterialButtonToggleGroup={[0] = 2130903174,2130903804,2130903823},
+MaterialButtonToggleGroup={[0] = 2130968725,2130969359,2130969378},
 ---@type LuaRef
 MaterialButtonToggleGroup_checkedButton=0,
 ---@type LuaRef
@@ -10652,7 +9570,7 @@ MaterialButtonToggleGroup_selectionRequired=1,
 ---@type LuaRef
 MaterialButtonToggleGroup_singleSelection=2,
 ---@type LuaRef
-MaterialCalendar={[0] = 16843277,2130903323,2130903324,2130903325,2130903326,2130903727,2130903781,2130904043,2130904044,2130904045},
+MaterialCalendar={[0] = 16843277,2130968862,2130968863,2130968864,2130968865,2130969266,2130969330,2130969597,2130969598,2130969599},
 ---@type LuaRef
 MaterialCalendar_android_windowFullscreen=0,
 ---@type LuaRef
@@ -10674,7 +9592,7 @@ MaterialCalendar_yearStyle=8,
 ---@type LuaRef
 MaterialCalendar_yearTodayStyle=9,
 ---@type LuaRef
-MaterialCalendarItem={[0] = 16843191,16843192,16843193,16843194,2130903513,2130903525,2130903526,2130903533,2130903534,2130903538},
+MaterialCalendarItem={[0] = 16843191,16843192,16843193,16843194,2130969048,2130969057,2130969058,2130969065,2130969066,2130969070},
 ---@type LuaRef
 MaterialCalendarItem_android_insetLeft=0,
 ---@type LuaRef
@@ -10696,7 +9614,7 @@ MaterialCalendarItem_itemStrokeWidth=8,
 ---@type LuaRef
 MaterialCalendarItem_itemTextColor=9,
 ---@type LuaRef
-MaterialCardView={[0] = 16843237,2130903167,2130903176,2130903178,2130903179,2130903180,2130903791,2130903806,2130903809,2130903845,2130903851,2130903852},
+MaterialCardView={[0] = 16843237,2130968708,2130968727,2130968729,2130968730,2130968731,2130969344,2130969362,2130969365,2130969406,2130969412,2130969413},
 ---@type LuaRef
 MaterialCardView_android_checkable=0,
 ---@type LuaRef
@@ -10722,35 +9640,25 @@ MaterialCardView_strokeColor=10,
 ---@type LuaRef
 MaterialCardView_strokeWidth=11,
 ---@type LuaRef
-MaterialCheckBox={[0] = 2130903162,2130904020},
+MaterialCheckBox={[0] = 2130968703,2130969570},
 ---@type LuaRef
 MaterialCheckBox_buttonTint=0,
 ---@type LuaRef
 MaterialCheckBox_useMaterialThemeColors=1,
 ---@type LuaRef
-MaterialDivider={[0] = 2130903338,2130903340,2130903341,2130903343},
----@type LuaRef
-MaterialDivider_dividerColor=0,
----@type LuaRef
-MaterialDivider_dividerInsetEnd=1,
----@type LuaRef
-MaterialDivider_dividerInsetStart=2,
----@type LuaRef
-MaterialDivider_dividerThickness=3,
----@type LuaRef
-MaterialRadioButton={[0] = 2130903162,2130904020},
+MaterialRadioButton={[0] = 2130968703,2130969570},
 ---@type LuaRef
 MaterialRadioButton_buttonTint=0,
 ---@type LuaRef
 MaterialRadioButton_useMaterialThemeColors=1,
 ---@type LuaRef
-MaterialShape={[0] = 2130903806,2130903809},
+MaterialShape={[0] = 2130969362,2130969365},
 ---@type LuaRef
 MaterialShape_shapeAppearance=0,
 ---@type LuaRef
 MaterialShape_shapeAppearanceOverlay=1,
 ---@type LuaRef
-MaterialTextAppearance={[0] = 16843958,16844159,2130903616},
+MaterialTextAppearance={[0] = 16843958,16844159,2130969154},
 ---@type LuaRef
 MaterialTextAppearance_android_letterSpacing=0,
 ---@type LuaRef
@@ -10758,7 +9666,7 @@ MaterialTextAppearance_android_lineHeight=1,
 ---@type LuaRef
 MaterialTextAppearance_lineHeight=2,
 ---@type LuaRef
-MaterialTextView={[0] = 16842804,16844159,2130903616},
+MaterialTextView={[0] = 16842804,16844159,2130969154},
 ---@type LuaRef
 MaterialTextView_android_textAppearance=0,
 ---@type LuaRef
@@ -10766,13 +9674,13 @@ MaterialTextView_android_lineHeight=1,
 ---@type LuaRef
 MaterialTextView_lineHeight=2,
 ---@type LuaRef
-MaterialTimePicker={[0] = 2130903208,2130903541},
+MaterialTimePicker={[0] = 2130968765,2130969072},
 ---@type LuaRef
 MaterialTimePicker_clockIcon=0,
 ---@type LuaRef
 MaterialTimePicker_keyboardIcon=1,
 ---@type LuaRef
-MaterialToolbar={[0] = 2130903721,2130903860,2130903976},
+MaterialToolbar={[0] = 2130969261,2130969417,2130969526},
 ---@type LuaRef
 MaterialToolbar_navigationIconTint=0,
 ---@type LuaRef
@@ -10794,7 +9702,7 @@ MenuGroup_android_orderInCategory=4,
 ---@type LuaRef
 MenuGroup_android_checkableBehavior=5,
 ---@type LuaRef
-MenuItem={[0] = 16842754,16842766,16842960,16843014,16843156,16843230,16843231,16843233,16843234,16843235,16843236,16843237,16843375,2130903053,2130903073,2130903075,2130903083,2130903276,2130903494,2130903495,2130903729,2130903813,2130903996},
+MenuItem={[0] = 16842754,16842766,16842960,16843014,16843156,16843230,16843231,16843233,16843234,16843235,16843236,16843237,16843375,2130968592,2130968612,2130968614,2130968622,2130968812,2130969019,2130969020,2130969269,2130969368,2130969544},
 ---@type LuaRef
 MenuItem_android_icon=0,
 ---@type LuaRef
@@ -10842,7 +9750,7 @@ MenuItem_showAsAction=21,
 ---@type LuaRef
 MenuItem_tooltipText=22,
 ---@type LuaRef
-MenuView={[0] = 16842926,16843052,16843053,16843054,16843055,16843056,16843057,2130903773,2130903853},
+MenuView={[0] = 16842926,16843052,16843053,16843054,16843055,16843056,16843057,2130969319,2130969414},
 ---@type LuaRef
 MenuView_android_windowAnimationStyle=0,
 ---@type LuaRef
@@ -10862,7 +9770,7 @@ MenuView_preserveIconSpacing=7,
 ---@type LuaRef
 MenuView_subMenuArrow=8,
 ---@type LuaRef
-MockView={[0] = 2130903691,2130903692,2130903693,2130903694,2130903695,2130903696},
+MockView={[0] = 2130969221,2130969222,2130969223,2130969224,2130969225,2130969226},
 ---@type LuaRef
 MockView_mock_diagonalsColor=0,
 ---@type LuaRef
@@ -10876,27 +9784,105 @@ MockView_mock_showDiagonals=4,
 ---@type LuaRef
 MockView_mock_showLabel=5,
 ---@type LuaRef
-Motion={[0] = 2130903085,2130903348,2130903711,2130903713,2130903754,2130904011},
+Motion={[0] = 2130968624,2130968625,2130968885,2130969250,2130969252,2130969295,2130969324,2130969325,2130969326,2130969559},
 ---@type LuaRef
-Motion_animate_relativeTo=0,
+Motion_animateCircleAngleTo=0,
 ---@type LuaRef
-Motion_drawPath=1,
+Motion_animateRelativeTo=1,
 ---@type LuaRef
-Motion_motionPathRotate=2,
+Motion_drawPath=2,
 ---@type LuaRef
-Motion_motionStagger=3,
+Motion_motionPathRotate=3,
 ---@type LuaRef
-Motion_pathMotionArc=4,
+Motion_motionStagger=4,
 ---@type LuaRef
-Motion_transitionEasing=5,
+Motion_pathMotionArc=5,
 ---@type LuaRef
-MotionHelper={[0] = 2130903731,2130903734},
+Motion_quantizeMotionInterpolator=6,
+---@type LuaRef
+Motion_quantizeMotionPhase=7,
+---@type LuaRef
+Motion_quantizeMotionSteps=8,
+---@type LuaRef
+Motion_transitionEasing=9,
+---@type LuaRef
+MotionEffect={[0] = 2130969240,2130969241,2130969242,2130969243,2130969244,2130969245,2130969246,2130969247},
+---@type LuaRef
+MotionEffect_motionEffect_alpha=0,
+---@type LuaRef
+MotionEffect_motionEffect_end=1,
+---@type LuaRef
+MotionEffect_motionEffect_move=2,
+---@type LuaRef
+MotionEffect_motionEffect_start=3,
+---@type LuaRef
+MotionEffect_motionEffect_strict=4,
+---@type LuaRef
+MotionEffect_motionEffect_translationX=5,
+---@type LuaRef
+MotionEffect_motionEffect_translationY=6,
+---@type LuaRef
+MotionEffect_motionEffect_viewTransition=7,
+---@type LuaRef
+MotionHelper={[0] = 2130969271,2130969274},
 ---@type LuaRef
 MotionHelper_onHide=0,
 ---@type LuaRef
 MotionHelper_onShow=1,
 ---@type LuaRef
-MotionLayout={[0] = 2130903088,2130903312,2130903548,2130903697,2130903712,2130903817},
+MotionLabel={[0] = 16842901,16842902,16842903,16842904,16842927,16843087,16843108,16843692,16844085,2130968672,2130968673,2130969349,2130969484,2130969485,2130969486,2130969487,2130969488,2130969496,2130969497,2130969498,2130969499,2130969501,2130969502,2130969503,2130969504},
+---@type LuaRef
+MotionLabel_android_textSize=0,
+---@type LuaRef
+MotionLabel_android_typeface=1,
+---@type LuaRef
+MotionLabel_android_textStyle=2,
+---@type LuaRef
+MotionLabel_android_textColor=3,
+---@type LuaRef
+MotionLabel_android_gravity=4,
+---@type LuaRef
+MotionLabel_android_text=5,
+---@type LuaRef
+MotionLabel_android_shadowRadius=6,
+---@type LuaRef
+MotionLabel_android_fontFamily=7,
+---@type LuaRef
+MotionLabel_android_autoSizeTextType=8,
+---@type LuaRef
+MotionLabel_borderRound=9,
+---@type LuaRef
+MotionLabel_borderRoundPercent=10,
+---@type LuaRef
+MotionLabel_scaleFromTextSize=11,
+---@type LuaRef
+MotionLabel_textBackground=12,
+---@type LuaRef
+MotionLabel_textBackgroundPanX=13,
+---@type LuaRef
+MotionLabel_textBackgroundPanY=14,
+---@type LuaRef
+MotionLabel_textBackgroundRotate=15,
+---@type LuaRef
+MotionLabel_textBackgroundZoom=16,
+---@type LuaRef
+MotionLabel_textOutlineColor=17,
+---@type LuaRef
+MotionLabel_textOutlineThickness=18,
+---@type LuaRef
+MotionLabel_textPanX=19,
+---@type LuaRef
+MotionLabel_textPanY=20,
+---@type LuaRef
+MotionLabel_textureBlurFactor=21,
+---@type LuaRef
+MotionLabel_textureEffect=22,
+---@type LuaRef
+MotionLabel_textureHeight=23,
+---@type LuaRef
+MotionLabel_textureWidth=24,
+---@type LuaRef
+MotionLayout={[0] = 2130968628,2130968848,2130969080,2130969228,2130969251,2130969372},
 ---@type LuaRef
 MotionLayout_applyMotionScene=0,
 ---@type LuaRef
@@ -10910,13 +9896,13 @@ MotionLayout_motionProgress=4,
 ---@type LuaRef
 MotionLayout_showPaths=5,
 ---@type LuaRef
-MotionScene={[0] = 2130903327,2130903549},
+MotionScene={[0] = 2130968866,2130969081},
 ---@type LuaRef
 MotionScene_defaultDuration=0,
 ---@type LuaRef
 MotionScene_layoutDuringTransition=1,
 ---@type LuaRef
-MotionTelltales={[0] = 2130903901,2130903902,2130903903},
+MotionTelltales={[0] = 2130969458,2130969459,2130969460},
 ---@type LuaRef
 MotionTelltales_telltales_tailColor=0,
 ---@type LuaRef
@@ -10924,159 +9910,193 @@ MotionTelltales_telltales_tailScale=1,
 ---@type LuaRef
 MotionTelltales_telltales_velocityMode=2,
 ---@type LuaRef
-NavigationBarActiveIndicator={[0] = 16843093,16843097,16843173,2130903636,2130903806},
+NavAction={[0] = 16842960,2130968873,2130968916,2130968924,2130969078,2130969308,2130969309,2130969310,2130969311},
 ---@type LuaRef
-NavigationBarActiveIndicator_android_height=0,
+NavAction_android_id=0,
 ---@type LuaRef
-NavigationBarActiveIndicator_android_width=1,
+NavAction_destination=1,
 ---@type LuaRef
-NavigationBarActiveIndicator_android_color=2,
+NavAction_enterAnim=2,
 ---@type LuaRef
-NavigationBarActiveIndicator_marginHorizontal=3,
+NavAction_exitAnim=3,
 ---@type LuaRef
-NavigationBarActiveIndicator_shapeAppearance=4,
+NavAction_launchSingleTop=4,
 ---@type LuaRef
-NavigationBarView={[0] = 2130903109,2130903368,2130903511,2130903512,2130903517,2130903518,2130903522,2130903523,2130903524,2130903536,2130903537,2130903538,2130903545,2130903684},
+NavAction_popEnterAnim=5,
+---@type LuaRef
+NavAction_popExitAnim=6,
+---@type LuaRef
+NavAction_popUpTo=7,
+---@type LuaRef
+NavAction_popUpToInclusive=8,
+---@type LuaRef
+NavArgument={[0] = 16842755,16843245,2130968630,2130969267},
+---@type LuaRef
+NavArgument_android_name=0,
+---@type LuaRef
+NavArgument_android_defaultValue=1,
+---@type LuaRef
+NavArgument_argType=2,
+---@type LuaRef
+NavArgument_nullable=3,
+---@type LuaRef
+NavDeepLink={[0] = 16844014,2130968578,2130969215,2130969568},
+---@type LuaRef
+NavDeepLink_android_autoVerify=0,
+---@type LuaRef
+NavDeepLink_action=1,
+---@type LuaRef
+NavDeepLink_mimeType=2,
+---@type LuaRef
+NavDeepLink_uri=3,
+---@type LuaRef
+NavGraphNavigator={[0] = 2130969397},
+---@type LuaRef
+NavGraphNavigator_startDestination=0,
+---@type LuaRef
+NavHost={[0] = 2130969258},
+---@type LuaRef
+NavHost_navGraph=0,
+---@type LuaRef
+NavHostFragment={[0] = 2130968867},
+---@type LuaRef
+NavHostFragment_defaultNavHost=0,
+---@type LuaRef
+NavInclude={[0] = 2130968989},
+---@type LuaRef
+NavInclude_graph=0,
+---@type LuaRef
+NavigationBarView={[0] = 2130968651,2130968903,2130969047,2130969052,2130969053,2130969056,2130969068,2130969069,2130969070,2130969076,2130969212},
 ---@type LuaRef
 NavigationBarView_backgroundTint=0,
 ---@type LuaRef
 NavigationBarView_elevation=1,
 ---@type LuaRef
-NavigationBarView_itemActiveIndicatorStyle=2,
+NavigationBarView_itemBackground=2,
 ---@type LuaRef
-NavigationBarView_itemBackground=3,
+NavigationBarView_itemIconSize=3,
 ---@type LuaRef
-NavigationBarView_itemIconSize=4,
+NavigationBarView_itemIconTint=4,
 ---@type LuaRef
-NavigationBarView_itemIconTint=5,
+NavigationBarView_itemRippleColor=5,
 ---@type LuaRef
-NavigationBarView_itemPaddingBottom=6,
+NavigationBarView_itemTextAppearanceActive=6,
 ---@type LuaRef
-NavigationBarView_itemPaddingTop=7,
+NavigationBarView_itemTextAppearanceInactive=7,
 ---@type LuaRef
-NavigationBarView_itemRippleColor=8,
+NavigationBarView_itemTextColor=8,
 ---@type LuaRef
-NavigationBarView_itemTextAppearanceActive=9,
+NavigationBarView_labelVisibilityMode=9,
 ---@type LuaRef
-NavigationBarView_itemTextAppearanceInactive=10,
+NavigationBarView_menu=10,
 ---@type LuaRef
-NavigationBarView_itemTextColor=11,
----@type LuaRef
-NavigationBarView_labelVisibilityMode=12,
----@type LuaRef
-NavigationBarView_menu=13,
----@type LuaRef
-NavigationRailView={[0] = 2130903469,2130903520,2130903685},
+NavigationRailView={[0] = 2130968995,2130969213},
 ---@type LuaRef
 NavigationRailView_headerLayout=0,
 ---@type LuaRef
-NavigationRailView_itemMinHeight=1,
+NavigationRailView_menuGravity=1,
 ---@type LuaRef
-NavigationRailView_menuGravity=2,
+NavigationView={[0] = 16842964,16842973,16843039,2130968903,2130968995,2130969047,2130969049,2130969051,2130969052,2130969053,2130969054,2130969057,2130969058,2130969059,2130969060,2130969061,2130969062,2130969063,2130969067,2130969070,2130969212,2130969362,2130969365},
 ---@type LuaRef
-NavigationView={[0] = 16842931,16842964,16842973,16843039,2130903135,2130903340,2130903341,2130903359,2130903368,2130903469,2130903512,2130903514,2130903516,2130903517,2130903518,2130903519,2130903525,2130903526,2130903527,2130903528,2130903529,2130903530,2130903531,2130903535,2130903538,2130903539,2130903684,2130903806,2130903809,2130903854,2130903855,2130903856,2130903857,2130903997},
+NavigationView_android_background=0,
 ---@type LuaRef
-NavigationView_android_layout_gravity=0,
+NavigationView_android_fitsSystemWindows=1,
 ---@type LuaRef
-NavigationView_android_background=1,
+NavigationView_android_maxWidth=2,
 ---@type LuaRef
-NavigationView_android_fitsSystemWindows=2,
+NavigationView_elevation=3,
 ---@type LuaRef
-NavigationView_android_maxWidth=3,
+NavigationView_headerLayout=4,
 ---@type LuaRef
-NavigationView_bottomInsetScrimEnabled=4,
+NavigationView_itemBackground=5,
 ---@type LuaRef
-NavigationView_dividerInsetEnd=5,
+NavigationView_itemHorizontalPadding=6,
 ---@type LuaRef
-NavigationView_dividerInsetStart=6,
+NavigationView_itemIconPadding=7,
 ---@type LuaRef
-NavigationView_drawerLayoutCornerSize=7,
+NavigationView_itemIconSize=8,
 ---@type LuaRef
-NavigationView_elevation=8,
+NavigationView_itemIconTint=9,
 ---@type LuaRef
-NavigationView_headerLayout=9,
+NavigationView_itemMaxLines=10,
 ---@type LuaRef
-NavigationView_itemBackground=10,
+NavigationView_itemShapeAppearance=11,
 ---@type LuaRef
-NavigationView_itemHorizontalPadding=11,
+NavigationView_itemShapeAppearanceOverlay=12,
 ---@type LuaRef
-NavigationView_itemIconPadding=12,
+NavigationView_itemShapeFillColor=13,
 ---@type LuaRef
-NavigationView_itemIconSize=13,
+NavigationView_itemShapeInsetBottom=14,
 ---@type LuaRef
-NavigationView_itemIconTint=14,
+NavigationView_itemShapeInsetEnd=15,
 ---@type LuaRef
-NavigationView_itemMaxLines=15,
+NavigationView_itemShapeInsetStart=16,
 ---@type LuaRef
-NavigationView_itemShapeAppearance=16,
+NavigationView_itemShapeInsetTop=17,
 ---@type LuaRef
-NavigationView_itemShapeAppearanceOverlay=17,
+NavigationView_itemTextAppearance=18,
 ---@type LuaRef
-NavigationView_itemShapeFillColor=18,
+NavigationView_itemTextColor=19,
 ---@type LuaRef
-NavigationView_itemShapeInsetBottom=19,
+NavigationView_menu=20,
 ---@type LuaRef
-NavigationView_itemShapeInsetEnd=20,
+NavigationView_shapeAppearance=21,
 ---@type LuaRef
-NavigationView_itemShapeInsetStart=21,
+NavigationView_shapeAppearanceOverlay=22,
 ---@type LuaRef
-NavigationView_itemShapeInsetTop=22,
+Navigator={[0] = 16842753,16842960},
 ---@type LuaRef
-NavigationView_itemTextAppearance=23,
+Navigator_android_label=0,
 ---@type LuaRef
-NavigationView_itemTextColor=24,
+Navigator_android_id=1,
 ---@type LuaRef
-NavigationView_itemVerticalPadding=25,
----@type LuaRef
-NavigationView_menu=26,
----@type LuaRef
-NavigationView_shapeAppearance=27,
----@type LuaRef
-NavigationView_shapeAppearanceOverlay=28,
----@type LuaRef
-NavigationView_subheaderColor=29,
----@type LuaRef
-NavigationView_subheaderInsetEnd=30,
----@type LuaRef
-NavigationView_subheaderInsetStart=31,
----@type LuaRef
-NavigationView_subheaderTextAppearance=32,
----@type LuaRef
-NavigationView_topInsetScrimEnabled=33,
----@type LuaRef
-OnClick={[0] = 2130903205,2130903900},
+OnClick={[0] = 2130968762,2130969456},
 ---@type LuaRef
 OnClick_clickAction=0,
 ---@type LuaRef
 OnClick_targetId=1,
 ---@type LuaRef
-OnSwipe={[0] = 2130903345,2130903346,2130903347,2130903615,2130903674,2130903681,2130903717,2130903725,2130903735,2130903998,2130903999,2130904000},
+OnSwipe={[0] = 2130968634,2130968882,2130968883,2130968884,2130969153,2130969202,2130969209,2130969256,2130969265,2130969276,2130969345,2130969389,2130969390,2130969391,2130969392,2130969393,2130969545,2130969546,2130969547},
 ---@type LuaRef
-OnSwipe_dragDirection=0,
+OnSwipe_autoCompleteMode=0,
 ---@type LuaRef
-OnSwipe_dragScale=1,
+OnSwipe_dragDirection=1,
 ---@type LuaRef
-OnSwipe_dragThreshold=2,
+OnSwipe_dragScale=2,
 ---@type LuaRef
-OnSwipe_limitBoundsTo=3,
+OnSwipe_dragThreshold=3,
 ---@type LuaRef
-OnSwipe_maxAcceleration=4,
+OnSwipe_limitBoundsTo=4,
 ---@type LuaRef
-OnSwipe_maxVelocity=5,
+OnSwipe_maxAcceleration=5,
 ---@type LuaRef
-OnSwipe_moveWhenScrollAtTop=6,
+OnSwipe_maxVelocity=6,
 ---@type LuaRef
-OnSwipe_nestedScrollFlags=7,
+OnSwipe_moveWhenScrollAtTop=7,
 ---@type LuaRef
-OnSwipe_onTouchUp=8,
+OnSwipe_nestedScrollFlags=8,
 ---@type LuaRef
-OnSwipe_touchAnchorId=9,
+OnSwipe_onTouchUp=9,
 ---@type LuaRef
-OnSwipe_touchAnchorSide=10,
+OnSwipe_rotationCenterId=10,
 ---@type LuaRef
-OnSwipe_touchRegionId=11,
+OnSwipe_springBoundary=11,
 ---@type LuaRef
-PopupWindow={[0] = 16843126,16843465,2130903736},
+OnSwipe_springDamping=12,
+---@type LuaRef
+OnSwipe_springMass=13,
+---@type LuaRef
+OnSwipe_springStiffness=14,
+---@type LuaRef
+OnSwipe_springStopThreshold=15,
+---@type LuaRef
+OnSwipe_touchAnchorId=16,
+---@type LuaRef
+OnSwipe_touchAnchorSide=17,
+---@type LuaRef
+OnSwipe_touchRegionId=18,
+---@type LuaRef
+PopupWindow={[0] = 16843126,16843465,2130969277},
 ---@type LuaRef
 PopupWindow_android_popupBackground=0,
 ---@type LuaRef
@@ -11084,11 +10104,11 @@ PopupWindow_android_popupAnimationStyle=1,
 ---@type LuaRef
 PopupWindow_overlapAnchor=2,
 ---@type LuaRef
-PopupWindowBackgroundState={[0] = 2130903842},
+PopupWindowBackgroundState={[0] = 2130969403},
 ---@type LuaRef
 PopupWindowBackgroundState_state_above_anchor=0,
 ---@type LuaRef
-PropertySet={[0] = 16842972,16843551,2130903587,2130903712,2130904025},
+PropertySet={[0] = 16842972,16843551,2130969122,2130969251,2130969578},
 ---@type LuaRef
 PropertySet_android_visibility=0,
 ---@type LuaRef
@@ -11100,23 +10120,23 @@ PropertySet_motionProgress=3,
 ---@type LuaRef
 PropertySet_visibilityMode=4,
 ---@type LuaRef
-RadialViewGroup={[0] = 2130903665},
+RadialViewGroup={[0] = 2130969197},
 ---@type LuaRef
 RadialViewGroup_materialCircleRadius=0,
 ---@type LuaRef
-RangeSlider={[0] = 2130903688,2130904021},
+RangeSlider={[0] = 2130969218,2130969571},
 ---@type LuaRef
 RangeSlider_minSeparation=0,
 ---@type LuaRef
 RangeSlider_values=1,
 ---@type LuaRef
-RecycleListView={[0] = 2130903738,2130903744},
+RecycleListView={[0] = 2130969279,2130969285},
 ---@type LuaRef
 RecycleListView_paddingBottomNoButtons=0,
 ---@type LuaRef
 RecycleListView_paddingTopNoTitle=1,
 ---@type LuaRef
-RecyclerView={[0] = 16842948,16842987,16842993,2130903414,2130903415,2130903416,2130903417,2130903418,2130903550,2130903790,2130903829,2130903835},
+RecyclerView={[0] = 16842948,16842987,16842993,2130968945,2130968946,2130968947,2130968948,2130968949,2130969082,2130969343,2130969384,2130969395},
 ---@type LuaRef
 RecyclerView_android_orientation=0,
 ---@type LuaRef
@@ -11142,15 +10162,15 @@ RecyclerView_spanCount=10,
 ---@type LuaRef
 RecyclerView_stackFromEnd=11,
 ---@type LuaRef
-ScrimInsetsFrameLayout={[0] = 2130903507},
+ScrimInsetsFrameLayout={[0] = 2130969038},
 ---@type LuaRef
 ScrimInsetsFrameLayout_insetForeground=0,
 ---@type LuaRef
-ScrollingViewBehavior_Layout={[0] = 2130903128},
+ScrollingViewBehavior_Layout={[0] = 2130968667},
 ---@type LuaRef
 ScrollingViewBehavior_Layout_behavior_overlapTop=0,
 ---@type LuaRef
-SearchView={[0] = 16842970,16843039,16843296,16843364,2130903210,2130903269,2130903328,2130903466,2130903496,2130903547,2130903777,2130903778,2130903798,2130903799,2130903858,2130903867,2130904026},
+SearchView={[0] = 16842970,16843039,16843296,16843364,2130968767,2130968803,2130968868,2130968988,2130969021,2130969079,2130969327,2130969328,2130969353,2130969354,2130969415,2130969424,2130969579},
 ---@type LuaRef
 SearchView_android_focusable=0,
 ---@type LuaRef
@@ -11186,7 +10206,7 @@ SearchView_suggestionRowLayout=15,
 ---@type LuaRef
 SearchView_voiceIcon=16,
 ---@type LuaRef
-ShapeAppearance={[0] = 2130903294,2130903295,2130903296,2130903297,2130903298,2130903300,2130903301,2130903302,2130903303,2130903304},
+ShapeAppearance={[0] = 2130968830,2130968831,2130968832,2130968833,2130968834,2130968836,2130968837,2130968838,2130968839,2130968840},
 ---@type LuaRef
 ShapeAppearance_cornerFamily=0,
 ---@type LuaRef
@@ -11208,7 +10228,7 @@ ShapeAppearance_cornerSizeTopLeft=8,
 ---@type LuaRef
 ShapeAppearance_cornerSizeTopRight=9,
 ---@type LuaRef
-ShapeableImageView={[0] = 2130903283,2130903284,2130903285,2130903286,2130903287,2130903288,2130903289,2130903806,2130903809,2130903851,2130903852},
+ShapeableImageView={[0] = 2130968819,2130968820,2130968821,2130968822,2130968823,2130968824,2130968825,2130969362,2130969365,2130969412,2130969413},
 ---@type LuaRef
 ShapeableImageView_contentPadding=0,
 ---@type LuaRef
@@ -11232,7 +10252,7 @@ ShapeableImageView_strokeColor=9,
 ---@type LuaRef
 ShapeableImageView_strokeWidth=10,
 ---@type LuaRef
-Slider={[0] = 16842766,16842788,16843078,16843486,16843487,2130903467,2130903468,2130903543,2130903544,2130903958,2130903959,2130903960,2130903961,2130903962,2130903966,2130903967,2130903968,2130903972,2130904002,2130904003,2130904004,2130904006},
+Slider={[0] = 16842766,16842788,16843078,16843486,16843487,2130968993,2130968994,2130969074,2130969075,2130969508,2130969509,2130969510,2130969511,2130969512,2130969516,2130969517,2130969518,2130969522,2130969549,2130969550,2130969551,2130969553},
 ---@type LuaRef
 Slider_android_enabled=0,
 ---@type LuaRef
@@ -11278,7 +10298,7 @@ Slider_trackColorInactive=20,
 ---@type LuaRef
 Slider_trackHeight=21,
 ---@type LuaRef
-Snackbar={[0] = 2130903826,2130903827,2130903828},
+Snackbar={[0] = 2130969381,2130969382,2130969383},
 ---@type LuaRef
 Snackbar_snackbarButtonStyle=0,
 ---@type LuaRef
@@ -11286,7 +10306,7 @@ Snackbar_snackbarStyle=1,
 ---@type LuaRef
 Snackbar_snackbarTextViewStyle=2,
 ---@type LuaRef
-SnackbarLayout={[0] = 16843039,2130903074,2130903086,2130903106,2130903109,2130903110,2130903368,2130903675},
+SnackbarLayout={[0] = 16843039,2130968613,2130968626,2130968648,2130968651,2130968652,2130968903,2130969203},
 ---@type LuaRef
 SnackbarLayout_android_maxWidth=0,
 ---@type LuaRef
@@ -11304,7 +10324,7 @@ SnackbarLayout_elevation=6,
 ---@type LuaRef
 SnackbarLayout_maxActionInlineWidth=7,
 ---@type LuaRef
-Spinner={[0] = 16842930,16843126,16843131,16843362,2130903768},
+Spinner={[0] = 16842930,16843126,16843131,16843362,2130969314},
 ---@type LuaRef
 Spinner_android_entries=0,
 ---@type LuaRef
@@ -11316,7 +10336,7 @@ Spinner_android_dropDownWidth=3,
 ---@type LuaRef
 Spinner_popupTheme=4,
 ---@type LuaRef
-State={[0] = 16842960,2130903274},
+State={[0] = 16842960,2130968810},
 ---@type LuaRef
 State_android_id=0,
 ---@type LuaRef
@@ -11340,11 +10360,11 @@ StateListDrawableItem={[0] = 16843161},
 ---@type LuaRef
 StateListDrawableItem_android_drawable=0,
 ---@type LuaRef
-StateSet={[0] = 2130903329},
+StateSet={[0] = 2130968869},
 ---@type LuaRef
 StateSet_defaultState=0,
 ---@type LuaRef
-SwitchCompat={[0] = 16843044,16843045,16843074,2130903818,2130903833,2130903868,2130903869,2130903871,2130903963,2130903964,2130903965,2130904001,2130904008,2130904009},
+SwitchCompat={[0] = 16843044,16843045,16843074,2130969373,2130969388,2130969425,2130969426,2130969428,2130969513,2130969514,2130969515,2130969548,2130969555,2130969556},
 ---@type LuaRef
 SwitchCompat_android_textOn=0,
 ---@type LuaRef
@@ -11374,7 +10394,7 @@ SwitchCompat_trackTint=12,
 ---@type LuaRef
 SwitchCompat_trackTintMode=13,
 ---@type LuaRef
-SwitchMaterial={[0] = 2130904020},
+SwitchMaterial={[0] = 2130969570},
 ---@type LuaRef
 SwitchMaterial_useMaterialThemeColors=0,
 ---@type LuaRef
@@ -11386,7 +10406,7 @@ TabItem_android_layout=1,
 ---@type LuaRef
 TabItem_android_text=2,
 ---@type LuaRef
-TabLayout={[0] = 2130903872,2130903873,2130903874,2130903875,2130903876,2130903877,2130903878,2130903879,2130903880,2130903881,2130903882,2130903883,2130903884,2130903885,2130903886,2130903887,2130903888,2130903889,2130903890,2130903891,2130903892,2130903893,2130903895,2130903897,2130903898,2130903899},
+TabLayout={[0] = 2130969429,2130969430,2130969431,2130969432,2130969433,2130969434,2130969435,2130969436,2130969437,2130969438,2130969439,2130969440,2130969441,2130969442,2130969443,2130969444,2130969445,2130969446,2130969447,2130969448,2130969449,2130969450,2130969451,2130969453,2130969454,2130969455},
 ---@type LuaRef
 TabLayout_tabBackground=0,
 ---@type LuaRef
@@ -11440,7 +10460,7 @@ TabLayout_tabTextColor=24,
 ---@type LuaRef
 TabLayout_tabUnboundedRipple=25,
 ---@type LuaRef
-TextAppearance={[0] = 16842901,16842902,16842903,16842904,16842906,16842907,16843105,16843106,16843107,16843108,16843692,16844165,2130903450,2130903459,2130903904,2130903953},
+TextAppearance={[0] = 16842901,16842902,16842903,16842904,16842906,16842907,16843105,16843106,16843107,16843108,16843692,16844165,2130968972,2130968981,2130969461,2130969495},
 ---@type LuaRef
 TextAppearance_android_textSize=0,
 ---@type LuaRef
@@ -11474,11 +10494,41 @@ TextAppearance_textAllCaps=14,
 ---@type LuaRef
 TextAppearance_textLocale=15,
 ---@type LuaRef
-TextInputEditText={[0] = 2130903948},
+TextEffects={[0] = 16842901,16842902,16842903,16843087,16843105,16843106,16843107,16843108,16843692,2130968672,2130968673,2130969492,2130969496,2130969497},
+---@type LuaRef
+TextEffects_android_textSize=0,
+---@type LuaRef
+TextEffects_android_typeface=1,
+---@type LuaRef
+TextEffects_android_textStyle=2,
+---@type LuaRef
+TextEffects_android_text=3,
+---@type LuaRef
+TextEffects_android_shadowColor=4,
+---@type LuaRef
+TextEffects_android_shadowDx=5,
+---@type LuaRef
+TextEffects_android_shadowDy=6,
+---@type LuaRef
+TextEffects_android_shadowRadius=7,
+---@type LuaRef
+TextEffects_android_fontFamily=8,
+---@type LuaRef
+TextEffects_borderRound=9,
+---@type LuaRef
+TextEffects_borderRoundPercent=10,
+---@type LuaRef
+TextEffects_textFillColor=11,
+---@type LuaRef
+TextEffects_textOutlineColor=12,
+---@type LuaRef
+TextEffects_textOutlineThickness=13,
+---@type LuaRef
+TextInputEditText={[0] = 2130969493},
 ---@type LuaRef
 TextInputEditText_textInputLayoutFocusedRectEnabled=0,
 ---@type LuaRef
-TextInputLayout={[0] = 16842766,16842906,16843039,16843071,16843088,2130903139,2130903140,2130903141,2130903142,2130903143,2130903144,2130903145,2130903146,2130903147,2130903148,2130903149,2130903305,2130903306,2130903307,2130903308,2130903309,2130903310,2130903373,2130903374,2130903375,2130903376,2130903377,2130903378,2130903382,2130903383,2130903384,2130903385,2130903386,2130903387,2130903388,2130903391,2130903471,2130903472,2130903473,2130903474,2130903479,2130903480,2130903481,2130903482,2130903749,2130903750,2130903751,2130903752,2130903753,2130903762,2130903763,2130903764,2130903770,2130903771,2130903772,2130903806,2130903809,2130903837,2130903838,2130903839,2130903840,2130903841,2130903864,2130903865,2130903866},
+TextInputLayout={[0] = 16842766,16842906,16843039,16843071,16843088,2130968680,2130968681,2130968682,2130968683,2130968684,2130968685,2130968686,2130968687,2130968688,2130968689,2130968690,2130968841,2130968842,2130968843,2130968844,2130968845,2130968846,2130968907,2130968908,2130968909,2130968910,2130968911,2130968912,2130968917,2130968918,2130968919,2130968920,2130968921,2130968922,2130968923,2130968927,2130968997,2130968998,2130968999,2130969000,2130969005,2130969006,2130969007,2130969008,2130969290,2130969291,2130969292,2130969293,2130969294,2130969303,2130969304,2130969305,2130969316,2130969317,2130969318,2130969362,2130969365,2130969398,2130969399,2130969400,2130969401,2130969402,2130969421,2130969422,2130969423},
 ---@type LuaRef
 TextInputLayout_android_enabled=0,
 ---@type LuaRef
@@ -11610,7 +10660,7 @@ TextInputLayout_suffixTextAppearance=63,
 ---@type LuaRef
 TextInputLayout_suffixTextColor=64,
 ---@type LuaRef
-ThemeEnforcement={[0] = 16842804,2130903379,2130903380},
+ThemeEnforcement={[0] = 16842804,2130968913,2130968914},
 ---@type LuaRef
 ThemeEnforcement_android_textAppearance=0,
 ---@type LuaRef
@@ -11618,7 +10668,7 @@ ThemeEnforcement_enforceMaterialTheme=1,
 ---@type LuaRef
 ThemeEnforcement_enforceTextAppearance=2,
 ---@type LuaRef
-Toolbar={[0] = 16842927,16843072,2130903157,2130903218,2130903219,2130903277,2130903278,2130903279,2130903280,2130903281,2130903282,2130903634,2130903635,2130903676,2130903684,2130903719,2130903720,2130903768,2130903859,2130903861,2130903862,2130903975,2130903979,2130903980,2130903981,2130903982,2130903983,2130903984,2130903986,2130903987},
+Toolbar={[0] = 16842927,16843072,2130968698,2130968775,2130968776,2130968813,2130968814,2130968815,2130968816,2130968817,2130968818,2130969172,2130969173,2130969204,2130969212,2130969259,2130969260,2130969314,2130969416,2130969418,2130969419,2130969525,2130969529,2130969530,2130969531,2130969532,2130969533,2130969534,2130969535,2130969536},
 ---@type LuaRef
 Toolbar_android_gravity=0,
 ---@type LuaRef
@@ -11680,25 +10730,23 @@ Toolbar_titleTextAppearance=28,
 ---@type LuaRef
 Toolbar_titleTextColor=29,
 ---@type LuaRef
-Tooltip={[0] = 16842804,16842904,16842965,16842998,16843071,16843072,16843087,2130903109},
+Tooltip={[0] = 16842804,16842965,16842998,16843071,16843072,16843087,2130968651},
 ---@type LuaRef
 Tooltip_android_textAppearance=0,
 ---@type LuaRef
-Tooltip_android_textColor=1,
+Tooltip_android_padding=1,
 ---@type LuaRef
-Tooltip_android_padding=2,
+Tooltip_android_layout_margin=2,
 ---@type LuaRef
-Tooltip_android_layout_margin=3,
+Tooltip_android_minWidth=3,
 ---@type LuaRef
-Tooltip_android_minWidth=4,
+Tooltip_android_minHeight=4,
 ---@type LuaRef
-Tooltip_android_minHeight=5,
+Tooltip_android_text=5,
 ---@type LuaRef
-Tooltip_android_text=6,
+Tooltip_backgroundTint=6,
 ---@type LuaRef
-Tooltip_backgroundTint=7,
----@type LuaRef
-Transform={[0] = 16843552,16843553,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843770,16843840},
+Transform={[0] = 16843552,16843553,16843554,16843555,16843556,16843557,16843558,16843559,16843560,16843770,16843840,2130969557},
 ---@type LuaRef
 Transform_android_transformPivotX=0,
 ---@type LuaRef
@@ -11722,7 +10770,9 @@ Transform_android_translationZ=9,
 ---@type LuaRef
 Transform_android_elevation=10,
 ---@type LuaRef
-Transition={[0] = 16842960,2130903099,2130903271,2130903272,2130903363,2130903549,2130903709,2130903754,2130903836,2130904010,2130904012},
+Transform_transformPivotTarget=11,
+---@type LuaRef
+Transition={[0] = 16842960,2130968641,2130968806,2130968807,2130968899,2130969081,2130969248,2130969295,2130969396,2130969558,2130969560},
 ---@type LuaRef
 Transition_android_id=0,
 ---@type LuaRef
@@ -11746,7 +10796,7 @@ Transition_transitionDisable=9,
 ---@type LuaRef
 Transition_transitionFlags=10,
 ---@type LuaRef
-Variant={[0] = 2130903274,2130903786,2130903787,2130903788,2130903789},
+Variant={[0] = 2130968810,2130969339,2130969340,2130969341,2130969342},
 ---@type LuaRef
 Variant_constraints=0,
 ---@type LuaRef
@@ -11758,7 +10808,7 @@ Variant_region_widthLessThan=3,
 ---@type LuaRef
 Variant_region_widthMoreThan=4,
 ---@type LuaRef
-View={[0] = 16842752,16842970,2130903740,2130903743,2130903955},
+View={[0] = 16842752,16842970,2130969281,2130969284,2130969505},
 ---@type LuaRef
 View_android_theme=0,
 ---@type LuaRef
@@ -11770,7 +10820,7 @@ View_paddingStart=3,
 ---@type LuaRef
 View_theme=4,
 ---@type LuaRef
-ViewBackgroundHelper={[0] = 16842964,2130903109,2130903110},
+ViewBackgroundHelper={[0] = 16842964,2130968651,2130968652},
 ---@type LuaRef
 ViewBackgroundHelper_android_background=0,
 ---@type LuaRef
@@ -11790,7 +10840,57 @@ ViewStubCompat_android_layout=1,
 ---@type LuaRef
 ViewStubCompat_android_inflatedId=2,
 ---@type LuaRef
-lua={[0] = 2130903497},
+ViewTransition={[0] = 16842960,2130968576,2130968577,2130968761,2130968899,2130969023,2130969024,2130969248,2130969253,2130969275,2130969295,2130969361,2130969558,2130969567,2130969574},
+---@type LuaRef
+ViewTransition_android_id=0,
+---@type LuaRef
+ViewTransition_SharedValue=1,
+---@type LuaRef
+ViewTransition_SharedValueId=2,
+---@type LuaRef
+ViewTransition_clearsTag=3,
+---@type LuaRef
+ViewTransition_duration=4,
+---@type LuaRef
+ViewTransition_ifTagNotSet=5,
+---@type LuaRef
+ViewTransition_ifTagSet=6,
+---@type LuaRef
+ViewTransition_motionInterpolator=7,
+---@type LuaRef
+ViewTransition_motionTarget=8,
+---@type LuaRef
+ViewTransition_onStateTransition=9,
+---@type LuaRef
+ViewTransition_pathMotionArc=10,
+---@type LuaRef
+ViewTransition_setsTag=11,
+---@type LuaRef
+ViewTransition_transitionDisable=12,
+---@type LuaRef
+ViewTransition_upDuration=13,
+---@type LuaRef
+ViewTransition_viewTransitionMode=14,
+---@type LuaRef
+include={[0] = 2130968805},
+---@type LuaRef
+include_constraintSet=0,
+---@type LuaRef
+ios={[0] = 2130969039,2130969040,2130969041,2130969042,2130969043,2130969044},
+---@type LuaRef
+ios_iosBottomSafeArea=0,
+---@type LuaRef
+ios_iosDarkProgress=1,
+---@type LuaRef
+ios_iosHorizontalProgress=2,
+---@type LuaRef
+ios_iosSmallProgress=3,
+---@type LuaRef
+ios_iosTheme=4,
+---@type LuaRef
+ios_iosToolbarTextColor=5,
+---@type LuaRef
+lua={[0] = 2130969022},
 ---@type LuaRef
 lua_id=0
 
@@ -11800,15 +10900,15 @@ LR.styleable = styleable
 ---@class xml
 local xml = {
 ---@type LuaRef
-standalone_badge=2131820544,
+standalone_badge=2132017152,
 ---@type LuaRef
-standalone_badge_gravity_bottom_end=2131820545,
+standalone_badge_gravity_bottom_end=2132017153,
 ---@type LuaRef
-standalone_badge_gravity_bottom_start=2131820546,
+standalone_badge_gravity_bottom_start=2132017154,
 ---@type LuaRef
-standalone_badge_gravity_top_start=2131820547,
+standalone_badge_gravity_top_start=2132017155,
 ---@type LuaRef
-standalone_badge_offset=2131820548
+standalone_badge_offset=2132017156
 
 }
 LR.xml = xml

@@ -25,10 +25,6 @@ task unzipParser(type: Copy) {
 
 preBuild.dependsOn unzipParser
 
-gradle.taskGraph.afterTask {
-
-}
-
 gradle.taskGraph.afterTask { task, state ->
     if(task.path.contains("process") && task.path.contains("Resources"))
     {
@@ -46,5 +42,15 @@ gradle.taskGraph.afterTask { task, state ->
         proc.in.eachLine {line -> println line}
         //proc.err.eachLine {line -> println 'ERROR: ' + line}
         proc.waitFor()
+
+        /*if(os.toFamilyName().equalsIgnoreCase("windows"))
+            args = ["cmd", "/c", "copy \"${projectDir}\\doclua\\LR.lua\" \"${projectDir}\\src\\main\\assets\\scripts\\LR.lua\" /Y"]
+        else
+            args = ["sh", "-c", "cp -f \"${projectDir}/doclua/LR.lua\" \"${projectDir}/src/main/assets/scripts/LR.lua\""]
+        println(args.toArrayString())
+        proc = args.execute()
+        proc.in.eachLine {line -> println line}
+        proc.err.eachLine {line -> println 'ERROR: ' + line}
+        proc.waitFor()*/
     }
 }

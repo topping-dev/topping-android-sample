@@ -1,45 +1,47 @@
+function FormTestLL_Constructor(pGUI, luacontext)
+	local button = pGUI:getViewById(LR.id.formTestButton);
+	button:setOnClickListener(LuaTranslator.register(button, "TestButton_Click"));
+    button:setTextRef(LR.string.teststring);
+	local checkbox = pGUI:getViewById(LR.id.formTestCheckBox);
+	checkbox:setOnCheckedChangedListener(LuaTranslator.register(checkbox, "TestCheckBox_CheckedChanged"));
+	local combobox = pGUI:getViewById(LR.id.formTestComboBox);
+    combobox:addItem("Item 1", 1);
+    combobox:addItem("Item 2", 2);
+    combobox:addItem("Item 3", 3);
+    combobox:addItem("Item 4", 4);
+	combobox:setOnComboChangedListener(LuaTranslator.register(combobox, "TestComboBox_Changed"));
+	local edittext = pGUI:getViewById(LR.id.formTestEt);
+    local pb = pGUI:getViewById(LR.id.formTestProgressBar);
+    pb:setMax(100);
+    pb:setProgress(35);
+end
+
 function TestCheckBox_CheckedChanged(pGUI, context, isChecked)
-	LuaToast.Show(context, "CheckBox value is " .. tostring(isChecked), 1000);
+	LuaToast.showInternal(context, "CheckBox value is " .. tostring(isChecked), 1000);
 end
 
 function TestButton_Click(pGUI, context)
-	LuaToast.Show(context, "Test button clicked", 1000);
+	LuaToast.show(context, LR.string.test_button_clicked, 1000);
+    pGUI:findNavController():navigate(LR.id.action_menuFragment_to_receiveFragment)
 end
 
 function TestComboBox_Changed(pGUI, context, name, value)
-	LuaToast.Show(context, "Combobox id " .. name, 1000);
+	LuaToast.showInternal(context, "Combobox id " .. name, 1000);
+end
+
+function dump(o)
+   if type(o) == 'table' then
+      local s = '{ '
+      for k,v in pairs(o) do
+         if type(k) ~= 'number' then k = '"'..k..'"' end
+         s = s .. '['..k..'] = ' .. dump(v) .. ','
+      end
+      return s .. '} '
+   else
+      return tostring(o)
+   end
 end
 
 
-function FormTestLL_Constructor(pGUI, luacontext)
-    local autocompletetextview = pGUI:GetViewById("formTestAutoCompTV");
-    print("xxxxxxxxx");
-    local autoCompleteAdapter = LGAdapterView.Create(luacontext, "AutoCompleteAdapter");
-    print("yyyyyyyy");
-    autoCompleteAdapter:AddValue("AutoComplete 1");
-    autoCompleteAdapter:AddValue("AutoComplete 2");
-    print("zzzzzzz");
-    print(autocompletetextview)
-    autocompletetextview:SetAdapter(autoCompleteAdapter);
-    autoCompleteAdapter:Notify();
-    print("ttttttt");
-	local button = pGUI:GetViewById("formTestButton");
-	button:SetOnClickListener(TestButton_Click);
-	local checkbox = pGUI:GetViewById("formTestCheckBox");
-	checkbox:SetOnCheckedChangedListener(TestCheckBox_CheckedChanged);
-	local combobox = pGUI:GetViewById("formTestComboBox");
-	combobox:AddItem("Item 1", 1);
-	combobox:AddItem("Item 2", 2);
-	combobox:AddItem("Item 3", 3);
-	combobox:AddItem("Item 4", 4);
-	combobox:SetOnComboChangedListener(TestComboBox_Changed);
-	local edittext = pGUI:GetViewById("formTestEt");
-	local pb = pGUI:GetViewById("formTestProgressBar");
-	pb:SetMax(100);
-	pb:SetProgress(15);
-	local bindings = pGUI:GetBindings();
-	local pb2 = bindings.formTestProgressBar;
-    pb2:SetProgress(50);
-end
-
-LuaForm.RegisterFormEvent("formTestLL", LuaForm.FORM_EVENT_CREATE, FormTestLL_Constructor);
+print(dump(LR))
+LuaEvent.registerUIEvent(LR.id.formTestLL, LuaEvent.UI_EVENT_VIEW_CREATE, FormTestLL_Constructor)

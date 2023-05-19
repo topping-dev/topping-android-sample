@@ -4,5 +4,7 @@
     <string name="app_name">LuaAndroidTest</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="label">label</string>
+    <string name="receive">Receive</string>
 
 </resources>
