@@ -10,7 +10,7 @@ gradle.taskGraph.afterTask { task, state ->
             || task.path.contains("generateReleaseResources"))
     {
         def val = applicationId.replace(".", "/");
-        println "${buildDir}/generated/source/r/" + val + "/"
+        //println "${buildDir}/generated/source/r/" + val + "/"
 
     }
 }
@@ -38,19 +38,20 @@ gradle.taskGraph.afterTask { task, state ->
             args = ["cmd", "/c", "java -jar ${projectDir}/parser.jar 1 ${buildDir}/intermediates/compile_and_runtime_not_namespaced_r_class_jar/" + outputType + "/R.jar ${projectDir}/doclua/ " + applicationId + ".R"]
         else
             args = ["sh", "-c", "java -jar ${projectDir}/parser.jar 1 ${buildDir}/intermediates/compile_and_runtime_not_namespaced_r_class_jar/" + outputType + "/R.jar ${projectDir}/doclua/ " + applicationId + ".R"]
+
         def proc = args.execute()
         proc.in.eachLine {line -> println line}
         //proc.err.eachLine {line -> println 'ERROR: ' + line}
         proc.waitFor()
 
-        /*if(os.toFamilyName().equalsIgnoreCase("windows"))
-            args = ["cmd", "/c", "copy \"${projectDir}\\doclua\\LR.lua\" \"${projectDir}\\src\\main\\assets\\scripts\\LR.lua\" /Y"]
+        if(os.toFamilyName().equalsIgnoreCase("windows"))
+            args = ["cmd", "/c", "copy /Y \"${projectDir}\\doclua\\LRR.lua\" \"${projectDir}\\src\\main\\assets\\scripts\\LR.lua\""]
         else
-            args = ["sh", "-c", "cp -f \"${projectDir}/doclua/LR.lua\" \"${projectDir}/src/main/assets/scripts/LR.lua\""]
-        println(args.toArrayString())
+            args = ["sh", "-c", "cp -f \"${projectDir}/doclua/LRR.lua\" \"${projectDir}/src/main/assets/LR.lua\""]
+
         proc = args.execute()
         proc.in.eachLine {line -> println line}
         proc.err.eachLine {line -> println 'ERROR: ' + line}
-        proc.waitFor()*/
+        proc.waitFor()
     }
 }

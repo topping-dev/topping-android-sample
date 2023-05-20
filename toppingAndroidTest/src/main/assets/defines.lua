@@ -17,7 +17,7 @@ UIRoot = "ui";
 -- if you want to use tab system, overload the create event of the
 -- MainForm(LuaForm) and add tab using LuaTabForm.
 -- MainUI = "main.xml"
-MainUI = "testbed.xml";
+MainUI = "form.xml";
 
 -- Startup Form
 MainForm = "Main";

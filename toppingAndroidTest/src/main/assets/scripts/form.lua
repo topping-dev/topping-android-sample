@@ -29,19 +29,4 @@ function TestComboBox_Changed(pGUI, context, name, value)
 	LuaToast.showInternal(context, "Combobox id " .. name, 1000);
 end
 
-function dump(o)
-   if type(o) == 'table' then
-      local s = '{ '
-      for k,v in pairs(o) do
-         if type(k) ~= 'number' then k = '"'..k..'"' end
-         s = s .. '['..k..'] = ' .. dump(v) .. ','
-      end
-      return s .. '} '
-   else
-      return tostring(o)
-   end
-end
-
-
-print(dump(LR))
 LuaEvent.registerUIEvent(LR.id.formTestLL, LuaEvent.UI_EVENT_VIEW_CREATE, FormTestLL_Constructor)

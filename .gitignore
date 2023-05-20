@@ -4,3 +4,6 @@
 build
 toppingAndroidTest/.idea
 toppingAndroidTest/build
+**/doclua
+**/LR.lua
+.DS_Store
