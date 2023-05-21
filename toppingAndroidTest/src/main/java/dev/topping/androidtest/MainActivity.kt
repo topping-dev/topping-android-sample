@@ -38,8 +38,8 @@ class MainActivity : LuaForm(), LuaInterface, Handler.Callback {
             override fun onFinished() {
                 //android.os.Debug.waitForDebugger();
                 setContentView(R.layout.main)
-                luaId = toppingEngine.getMainForm()
-                val initUI = toppingEngine.getMainUI()
+                luaId = toppingEngine.mainForm
+                val initUI = toppingEngine.mainUI
                 if (initUI.compareTo("") != 0) {
                     val inflater = LuaViewInflator(luaContext)
                     view = inflater.parseFile(initUI, null)
@@ -49,7 +49,7 @@ class MainActivity : LuaForm(), LuaInterface, Handler.Callback {
             }
         }
         handler.sendEmptyMessage(LuaLoadHandler.INIT_MESSAGE)
-        setContentView(R.layout.main)
+        setContentView(R.layout.splash)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
