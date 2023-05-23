@@ -20,17 +20,6 @@ class MainActivity : LuaForm(), LuaInterface, Handler.Callback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         luaContext = LuaContext.createLuaContext(this)
-        supportFragmentManager.fragmentFactory = object : FragmentFactory() {
-            override fun instantiate(classLoader: ClassLoader, className: String): Fragment {
-                try {
-                    return super.instantiate(classLoader, className)
-                } catch (ex: Exception)
-                {
-                    val res = resources.getIdentifier(className, "id", packageName)
-                    return LuaFragment.create(this@MainActivity.luaContext!!, LuaRef.withValue(res), null)
-                }
-            }
-        }
         val toppingEngine = ToppingEngine.getInstance()
         val ht = HandlerThread("Lua Loader Thread", Process.THREAD_PRIORITY_URGENT_DISPLAY)
         ht.start()
