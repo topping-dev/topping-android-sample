@@ -118,7 +118,7 @@ function ListViewTest_Constructor(pGUI, luacontext)
 end
 
 function Toolbar_Constructor(pToolbar, luacontext)
-    pToolbar:setSubtitle("Test title");
+    --pToolbar:setSubtitle("Test title");
 end
 
 function Main_Constructor(pForm, luacontext)
