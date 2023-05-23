@@ -31,47 +31,46 @@
         />
 
     </com.google.android.material.textfield.TextInputLayout>
-	<LGAutoCompleteTextView
+	<AutoCompleteTextView
 	    android:id="@+id/formTestAutoCompTV"
 	    android:layout_width="match_parent"
     	android:layout_height="wrap_content">
-	</LGAutoCompleteTextView>
-	<LGButton
+	</AutoCompleteTextView>
+	<Button
         android:id="@+id/formTestButton"
 	    android:layout_width="match_parent"
     	android:layout_height="wrap_content"
-    	android:text="Button Text"
-        android:textColor="@color/statelist">
-	</LGButton>
-	<LGCheckBox
+    	android:text="Button Text">
+	</Button>
+	<CheckBox
         android:id="@+id/formTestCheckBox"
 	    android:layout_width="match_parent"
     	android:layout_height="wrap_content"
     	android:text="Checkbox text"
         android:checked="@bool/checkbox_checked">
-	</LGCheckBox>
-	<LGComboBox
+	</CheckBox>
+	<!--ComboBox
         android:id="@+id/formTestComboBox"
 	    android:layout_width="match_parent"
     	android:layout_height="wrap_content">
-	</LGComboBox>
-	<LGEditText
+	</ComboBox-->
+	<EditText
         android:id="@+id/formTestEt"
 	    android:layout_width="match_parent"
     	android:layout_height="wrap_content"
         android:hint="test hint">
-	</LGEditText>
-	<LGProgressBar
+	</EditText>
+	<ProgressBar
         android:id="@+id/formTestProgressBar"
 	    android:layout_width="match_parent"
     	android:layout_height="wrap_content"
         android:background="#ffffff"
         android:progress="15">
-	</LGProgressBar>
-	<LGImageView
+	</ProgressBar>
+	<ImageView
         android:id="@+id/formTestIv"
 	    android:layout_width="40dp"
     	android:layout_height="wrap_content"
         android:src="@drawable/indexbutleft">
-	</LGImageView>
+	</ImageView>
 </LinearLayout>

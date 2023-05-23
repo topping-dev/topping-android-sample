@@ -4,12 +4,12 @@ function FormTestLL_Constructor(pGUI, luacontext)
     button:setTextRef(LR.string.teststring);
 	local checkbox = pGUI:getViewById(LR.id.formTestCheckBox);
 	checkbox:setOnCheckedChangedListener(LuaTranslator.register(checkbox, "TestCheckBox_CheckedChanged"));
-	local combobox = pGUI:getViewById(LR.id.formTestComboBox);
+	--[[local combobox = pGUI:getViewById(LR.id.formTestComboBox);
     combobox:addItem("Item 1", 1);
     combobox:addItem("Item 2", 2);
     combobox:addItem("Item 3", 3);
     combobox:addItem("Item 4", 4);
-	combobox:setOnComboChangedListener(LuaTranslator.register(combobox, "TestComboBox_Changed"));
+	combobox:setOnComboChangedListener(LuaTranslator.register(combobox, "TestComboBox_Changed"));--]]
 	local edittext = pGUI:getViewById(LR.id.formTestEt);
     local pb = pGUI:getViewById(LR.id.formTestProgressBar);
     pb:setMax(100);

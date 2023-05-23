@@ -26,14 +26,14 @@ class MainActivity : LuaForm(), LuaInterface, Handler.Callback {
         val handler: LuaLoadHandler = object : LuaLoadHandler(this, ht.looper) {
             override fun onFinished() {
                 //android.os.Debug.waitForDebugger();
-                setContentView(R.layout.main)
                 luaId = toppingEngine.mainForm
                 val initUI = toppingEngine.mainUI
                 if (initUI.compareTo("") != 0) {
                     val inflater = LuaViewInflator(luaContext)
                     view = inflater.parseFile(initUI, null)
                     setContentView(view?.view)
-                } else LuaEvent.onUIEvent(this@MainActivity, LuaEvent.UI_EVENT_CREATE, luaContext)
+                }
+                LuaEvent.onUIEvent(this@MainActivity, LuaEvent.UI_EVENT_CREATE, luaContext)
                 ht.quit()
             }
         }
